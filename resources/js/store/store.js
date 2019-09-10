@@ -1,12 +1,13 @@
+import IndexModul from './modules/IModul.js';
+import AboutModul from './modules/AboutModul.js';
+import PriceModul from './modules/PriceModul.js';
+import WikiModul from './modules/WikiModul.js';
+
 export default {
-    state:{
-        welcom: 'Welcomasdfasfdf'
-    },
-    mutations:{},
-    getters:{
-        welcom(state){
-            return state.welcom;
-        }
-    },
-    actions:{}
+    modules:{
+        Index: IndexModul,
+        About: AboutModul,
+        Price: PriceModul,
+        Wiki: WikiModul
+    }
 };

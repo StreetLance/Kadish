@@ -4,13 +4,23 @@
         <div class="row d-flex justify-content-center text-center">
 
             <div class="col-md-10">
-                <div class="card">
-                    <div class="card-header">Example Component</div>
 
-                    <div class="card-body">
-                        Price
-                    </div>
-                </div>
+                <!-- Heading -->
+                <h2 class="display-4 font-weight-bold white-text pt-5 mb-2">{{title}}</h2>
+                    <p class="white-text">
+
+                        {{body}}
+                    </p>
+                <!--                &lt;!&ndash;                -->
+                <!--<i class="fas fa-church fa-10x orange-text"></i>-->
+                <!-- Divider -->
+                <hr class="hr-light">
+
+                <!-- Description -->
+                <h4 class="white-text my-4">Please fill in the fields below for ordering kaddish or notify about the upcoming yahrzeit</h4>
+                <button type="button" class="btn btn-outline-warning ">Arrange Kaddish<i class="fa fa-book ml-2"></i></button>
+
+
 
             </div>
 
@@ -23,7 +33,8 @@
     export default {
         data: function () {
             return{
-                articles:[]
+                    title: "Price",
+                    body: "Price"
             }
         } ,
         mounted() {

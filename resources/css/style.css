@@ -1,0 +1,60 @@
+@font-face {/*24562940*/
+    font-family: 'kp';
+    src: url('../images/kp.eot?24562940');
+    src: url('../images/kp.eot?24562940#iefix') format('embedded-opentype'),
+    url('../images/kp.woff?24562940') format('woff'),
+    url('../images/kp.ttf?24562940') format('truetype'),
+    url('../images/kp.svg?24562940#kp') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+
+#intro {
+    background: url("../images/bg.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.top-nav-collapse {
+    background-color: #24355C;
+}
+@media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+        background-color: #24355C;
+        display: flex;
+        text-align: center;
+    }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+        background-color: #24355C;
+        display: flex;
+        text-align: center;
+    }
+}
+.moveInUp-enter-active{
+    animation: fadeIn 0.7s ease-in;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.logo-separate {display: inline-block; text-align: center; font: normal normal 25px/normal 'kp';}
+.logo-separate:before {content: '\e771'; display: block; margin-bottom: .2em;}
+.logo-separate:after {content: '\e772'; display: block; font-size: 225%;}
+
