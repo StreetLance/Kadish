@@ -19,43 +19,7 @@
 <body>
 <header id="app">
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-        <div class="container">
-            <!-- Navbar brand -->
-            <a class="navbar-brand orange-text disabled" href="#" ><i class="fas fa-star-of-david  orange-text"></i> Kaddish Prayer</a>
-            <!-- Collapse button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-                    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Collapsible content -->
-            <div class="collapse navbar-collapse" id="basicExampleNav">
-                <!-- Links -->
-                    <ul class="navbar-nav mr-auto smooth-scroll">
-                        <li class="nav-item">
-                        </li>
-                        <li class="nav-item">
-                            <router-link class="nav-link" to="/">Home</router-link>
-                        </li>
-                        <li class="nav-item">
-                            <router-link class="nav-link" to="/price">Price</router-link>
-                        </li>
-                        <li class="nav-item">
-                            <router-link class="nav-link" to="/about">About</router-link>
-                        </li>
-                        <li class="nav-item">
-                            <router-link class="nav-link" to="/wiki">Wiki</router-link>
-                        </li>
-                    </ul>
-
-            </div>
-            <select class="browser-default custom-select-sm">
-                <option value="en" selected>EN</option>
-                <option value="ru" >RU</option>
-            </select>
-            <!-- Collapsible content -->
-        </div>
-    </nav>
+            <nav-bar></nav-bar>
     <!--/.Navbar-->
     <div id="intro" class="view">
         <div class="mask rgba-black-light">

@@ -15,9 +15,9 @@ class CreateMultilangugesTable extends Migration
     {
         Schema::create('multilanguges', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->char('page_name');
             $table->char('Language');
             $table->integer('Language_id');
+            $table->string('Language_type');
             $table->timestamps();
         });
     }

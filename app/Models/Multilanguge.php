@@ -6,10 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Multilanguge extends Model
 {
-protected $table ='localization';
+protected $table ='multilanguges';
     //создаю полиморфную связь
     public function local(){
-        return $this->morphTo();
+            return $this->belongsTo('App\Models\Page');
     }
 
 }

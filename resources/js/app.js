@@ -6,9 +6,11 @@ import IndexModul from "./store/modules/IModul";
 import AboutModul from "./store/modules/AboutModul";
 import PriceModul from "./store/modules/PriceModul";
 import WikiModul from "./store/modules/WikiModul";
+import navbar from "./components/nav-bar";
 
 require('./bootstrap');
 Vue.use(Vuex);
+Vue.component('nav-bar', navbar)
 const store = new Vuex.Store({
     strict:true,
     modules:{

@@ -38,6 +38,50 @@ We will make sure all your problems will be resolved in the best manner. You sho
 We worked long and hard to make this program and we want to offer it to various Jewish communities throughout the world so a jew could do these mizvos no matter where he lives.
 We wish everyone to fulfill the words of prophet Isaiah (25:8): He has concealed death forever, and the Lord God shall wipe the tears off every face, and the shame of His people He shall remove from upon the entire earth, for the Lord has spoken.',
                 'vew'=>'1'
+            ],[
+                'Pages'=>'Wiki',
+                'Title'=>'Text of Kaddish Prayer in Loshen Koydesh',
+                'SubTitle'=>' ',
+                'Body'=>'Kaddish Yatom is a prayer that is read for a diseased person. It means "sanctification" in Aramaic. The primary meaning of this prayer is that a person recognizes, celebrates and blesses the just power of the Almighty, and praise all acts of the Creator despite his (or her) loss of a loved one.
+Mystical significance of a Kaddish Prayer.
+According to the Jewish tradition, a soul is being cleansed after death of its body. A soul is lowered into gehinnom to be cleansed off the sins stuck to it throughout the material life. As it is written in our holy books, the maximum period that a soul stays there is 11 months. This is just the very time when we read the Kaddish Prayer for the soul.
+It is written in the Talmud Shabbat, page 119b that a mystical power of the Kadish Prayer may change the sentence of the heavenly court.
+A duty of Kadish prayer reading falls on a son (or a spouse). And according to our traditions it is extremely important for the son to read the Kaddish prayer. But if he can not read the Kaddish during 3 daily prayers, he has to read whenever he can. And in addition, he should order Kadish prayer.
+If no one can read Kaddish Prayer, you can order reading of the Kaddish online.',
+                'vew'=>'1'
+            ],[
+                'Pages'=>'Wiki',
+                'Title'=>'About Kaddish Prayer',
+                'SubTitle'=>' ',
+                'Body'=>'Kaddish Yatom is a prayer that is read for a diseased person. It means "sanctification" in Aramaic. The primary meaning of this prayer is that a person recognizes, celebrates and blesses the just power of the Almighty, and praise all acts of the Creator despite his (or her) loss of a loved one.
+Mystical significance of a Kaddish Prayer.
+According to the Jewish tradition, a soul is being cleansed after death of its body. A soul is lowered into gehinnom to be cleansed off the sins stuck to it throughout the material life. As it is written in our holy books, the maximum period that a soul stays there is 11 months. This is just the very time when we read the Kaddish Prayer for the soul.
+It is written in the Talmud Shabbat, page 119b that a mystical power of the Kadish Prayer may change the sentence of the heavenly court.
+A duty of Kadish prayer reading falls on a son (or a spouse). And according to our traditions it is extremely important for the son to read the Kaddish prayer. But if he can not read the Kaddish during 3 daily prayers, he has to read whenever he can. And in addition, he should order Kadish prayer.
+If no one can read Kaddish Prayer, you can order reading of the Kaddish online.',
+                'vew'=>'1'
+            ],[
+                'Pages'=>'Wiki',
+                'Title'=>'About Kaddish Prayer',
+                'SubTitle'=>' ',
+                'Body'=>'Kaddish Yatom is a prayer that is read for a diseased person. It means "sanctification" in Aramaic. The primary meaning of this prayer is that a person recognizes, celebrates and blesses the just power of the Almighty, and praise all acts of the Creator despite his (or her) loss of a loved one.
+Mystical significance of a Kaddish Prayer.
+According to the Jewish tradition, a soul is being cleansed after death of its body. A soul is lowered into gehinnom to be cleansed off the sins stuck to it throughout the material life. As it is written in our holy books, the maximum period that a soul stays there is 11 months. This is just the very time when we read the Kaddish Prayer for the soul.
+It is written in the Talmud Shabbat, page 119b that a mystical power of the Kadish Prayer may change the sentence of the heavenly court.
+A duty of Kadish prayer reading falls on a son (or a spouse). And according to our traditions it is extremely important for the son to read the Kaddish prayer. But if he can not read the Kaddish during 3 daily prayers, he has to read whenever he can. And in addition, he should order Kadish prayer.
+If no one can read Kaddish Prayer, you can order reading of the Kaddish online.',
+                'vew'=>'1'
+            ],[
+                'Pages'=>'Wiki',
+                'Title'=>'About Kaddish Prayer',
+                'SubTitle'=>' ',
+                'Body'=>'Kaddish Yatom is a prayer that is read for a diseased person. It means "sanctification" in Aramaic. The primary meaning of this prayer is that a person recognizes, celebrates and blesses the just power of the Almighty, and praise all acts of the Creator despite his (or her) loss of a loved one.
+Mystical significance of a Kaddish Prayer.
+According to the Jewish tradition, a soul is being cleansed after death of its body. A soul is lowered into gehinnom to be cleansed off the sins stuck to it throughout the material life. As it is written in our holy books, the maximum period that a soul stays there is 11 months. This is just the very time when we read the Kaddish Prayer for the soul.
+It is written in the Talmud Shabbat, page 119b that a mystical power of the Kadish Prayer may change the sentence of the heavenly court.
+A duty of Kadish prayer reading falls on a son (or a spouse). And according to our traditions it is extremely important for the son to read the Kaddish prayer. But if he can not read the Kaddish during 3 daily prayers, he has to read whenever he can. And in addition, he should order Kadish prayer.
+If no one can read Kaddish Prayer, you can order reading of the Kaddish online.',
+                'vew'=>'1'
             ],
         ];
 

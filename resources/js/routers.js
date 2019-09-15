@@ -9,10 +9,13 @@ Vue.use(VueRouter);
 
 export default  new VueRouter({
     routes: [
-        {path: '/', component: IndexComponent},
-        {path: '/about', component: AboutComponent},
-        {path: '/price', component: PriceComponent },
-        {path: '/wiki', component: WikiComponent }
+        {path: '/:lang', component: IndexComponent, name:"H"},
+            // children:[
+                {path: '/:lang/about', component: AboutComponent, name:"A"},
+                {path: '/:lang/price', component: PriceComponent , name:"P"},
+                {path: '/:lang/wiki', component: WikiComponent , name:"W"},
+            // ]
+        {path: '/:lang/*', redirect:"/en" }
     ],
     mode: 'history'
 

@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Page as Pages;
 use Illuminate\Http\Request;
+use Illuminate\Database\Eloquent\Builder;
+use function MongoDB\BSON\toJSON;
 
 class PageController extends BaseController
 {
@@ -14,12 +16,10 @@ class PageController extends BaseController
      */
     public function index()
     {
-        $item=Pages::all();
-//        dd($item);
-//            Pages::
-        return;
-    }
+//        dd($request->Language);
 
+
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -47,9 +47,15 @@ class PageController extends BaseController
      * @param  \App\Models\Page  $pageController
      * @return \Illuminate\Http\Response
      */
-    public function show( Page $pageController)
+    public function show($lang,$Page)
     {
-        //
+        $item = Pages::whereHas('localization',function ( Builder $query ) use ($lang){
+
+            $query->where('Language','=',  $lang);
+
+        })->where('Pages', '=', $Page)->get(['id','Title','Body','SubTitle']);
+        $item=collect($item);
+        return $item;
     }
 
     /**

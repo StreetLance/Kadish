@@ -19,4 +19,4 @@ Auth::routes();
 
 Route::get('/{any}', 'HomeController@index')->where('any','.*');
 
-Route::resource('/api','PageController')->except('create','update','store');
+

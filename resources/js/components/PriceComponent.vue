@@ -1,31 +1,22 @@
 <template>
     <div class="container-fluid d-flex align-items-center justify-content-center h-100">
-
         <div class="row d-flex justify-content-center text-center">
-
             <div class="col-md-10">
-
                 <!-- Heading -->
-                <h2 class="display-4 font-weight-bold white-text pt-5 mb-2">{{title}}</h2>
-                    <p class="white-text">
+                <h2 class="display-4 font-weight-bold white-text pt-5 mb-2"  v-for="(item,index) in Item">{{item.Title}}</h2>
+                <div id="cont">
+                    <hr class="hr-light">
+                    <p class="white-text text-left pl-2" v-for="(item,index) in Item" ><span v-html="item.Body"></span></p>
+                    <hr class="hr-light">
+                </div>
 
-                        {{body}}
-                    </p>
                 <!--                &lt;!&ndash;                -->
                 <!--<i class="fas fa-church fa-10x orange-text"></i>-->
                 <!-- Divider -->
-                <hr class="hr-light">
 
                 <!-- Description -->
-                <h4 class="white-text my-4">Please fill in the fields below for ordering kaddish or notify about the upcoming yahrzeit</h4>
-                <button type="button" class="btn btn-outline-warning ">Arrange Kaddish<i class="fa fa-book ml-2"></i></button>
-
-
-
             </div>
-
         </div>
-
     </div>
 </template>
 
@@ -33,13 +24,28 @@
     export default {
         data: function () {
             return{
-                    title: "Price",
-                    body: "Price"
+                Item:[]
             }
         } ,
-        mounted() {
-            console.log('Component mounted.')
+        // created() {
+        //     this.getDate()
+        // },
+        beforeRouteEnter (to, from, next) {
+            next(vm => vm.getDate())
         },
-
+        methods: {
+            getDate() {
+                console.log(this.$route.params);
+                axios.get('/api/v1/'+this.$route.params.lang+'/page/Price').then((response) => {
+                    console.log(response.data);
+                    this.Item = response.data;
+                })
+            }
+        },
+        beforeRouteUpdate(to, from, next) {
+            this.getDate()
+            console.log('true');
+            next()
+        }
     }
 </script>

@@ -58,3 +58,7 @@ header,
 .logo-separate:before {content: '\e771'; display: block; margin-bottom: .2em;}
 .logo-separate:after {content: '\e772'; display: block; font-size: 225%;}
 
+#cont{
+    background-color: #1d2124;
+    opacity: 0.8;
+}
