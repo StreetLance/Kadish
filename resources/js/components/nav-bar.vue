@@ -18,9 +18,13 @@
                 <li class="nav-item"><router-link class="nav-link" :to="{name: 'A', params: {lang: lang}}">{{Page.About}}</router-link></li>
                 <li class="nav-item"><router-link class="nav-link" :to="{name: 'W', params: {lang: lang}}">{{Page.Wiki}}</router-link></li>
             </ul>
-            <select class="browser-default custom-select-sm" v-model="lang" @change="language">
-                <option value="en" selected>EN</option>
-                <option value="ru" >RU</option>
+            <div class="lang">
+                    <i class="en" ></i>
+<!--                    <i class="ru" ></i>-->
+            </div>
+            <select class="browser-default custom-select-sm " v-model="lang" @change="language">
+                <option value="en"  selected><b class="en">English</b></option>
+                <option value="ru" ><b class="ru">Русский</b></option>
             </select>
         </div>
         <!-- Collapsible content -->
@@ -32,6 +36,8 @@
         data:function () {
             return{
                 lang: 'en',
+                falgEn: false,
+                falgRu: false,
                 Page:[],
                 Pages:{en:{
                             Index :  "Home",
@@ -40,10 +46,10 @@
                             Wiki : "Wiki"
                         },
                     ru:{
-                        Index :  "Главная",
-                        About  : "Прочее",
-                        Price  : "Прайс",
-                        Wiki : "Вики"
+                        Index : "Заказать кадиш",
+                        About  : "О проекте",
+                        Price  : "Стоимость",
+                        Wiki : "Энциклопедия"
                     }}}},
 
         mounted(){
@@ -61,10 +67,12 @@
             Langueges(){
                 if (this.$route.params.lang ==='en' ){
                     this.Page = this.Pages.en
+                    this.falgEn = true
                     console.log(this.Lang)
                 }else if ( this.$route.params.lang ==='ru') {
                     this.Page = this.Pages.ru
                     console.log(this.Lang)
+                    this.falgRu = true
                 }
             },
             language(){
