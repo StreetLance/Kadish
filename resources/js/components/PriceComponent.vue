@@ -35,7 +35,6 @@
         },
         methods: {
             getDate() {
-                console.log(this.$route.params);
                 axios.get('/api/v1/'+this.$route.params.lang+'/page/Price').then((response) => {
                     console.log(response.data);
                     this.Item = response.data;
@@ -44,7 +43,6 @@
         },
         beforeRouteUpdate(to, from, next) {
             this.getDate()
-            console.log('true');
             next()
         }
     }

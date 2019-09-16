@@ -93,27 +93,26 @@
                         Send :"Send"
                     }, ru:{
                         Title:"Каддиш",
-                        Button1 :"",
-                        Button2 :"",
-                        NemeD :"",
-                        Sunset :"",
-                        Mail :"",
-                        Phone :"",
+                        Button1 :"Напомнить Yahrzeit",
+                        Button2 :"Заказать Kaddish",
+                        NameD :"Name of Deceased...",
+                        NameFD :"Name of Father of Deceased...",
+                        Sunset :"После заката",
+                        Mail :"Ваша почта",
+                        Phone :"Телефон",
                         Send :"Отправить"
                     }}
             }
         },
-        // created() {
-        //     this.getDate()
-        // },
         beforeRouteEnter (to, from, next) {
+            // let test =this.getDate()
+
              next(vm =>  vm.getDate())
         },
-
         mounted(){
+            this.getDate()
             this.Langueges()
         },
-
         methods: {
             Langueges(){
                 if (this.$route.params.lang ==='en' ){
@@ -128,20 +127,17 @@
               this.choice= ! this.choice;
             },
             getDate() {
-                this.Langueges
                 axios.get('/api/v1/'+this.$route.params.lang+'/page/Index').then((response) => {
                     this.Item = response.data;
                 })}
         },
-
         watch: {
             '$route'(to, from) {
                 this.Langueges()
-                this.getDate()
+                // this.getDate()
             }
         },
         beforeRouteUpdate(to, from, next) {
-            this.getDate()
             this.Langueges()
             next()
         }

@@ -7,10 +7,12 @@ import AboutModul from "./store/modules/AboutModul";
 import PriceModul from "./store/modules/PriceModul";
 import WikiModul from "./store/modules/WikiModul";
 import navbar from "./components/nav-bar";
+import Wikinavbar from "./components/Wiki/nav";
 
 require('./bootstrap');
 Vue.use(Vuex);
-Vue.component('nav-bar', navbar)
+Vue.component('nav-bar', navbar);
+Vue.component('wiki-bar', Wikinavbar);
 const store = new Vuex.Store({
     strict:true,
     modules:{

@@ -31,7 +31,7 @@
     export default {
         data:function () {
             return{
-                lang: '',
+                lang: 'en',
                 Page:[],
                 Pages:{en:{
                             Index :  "Home",
