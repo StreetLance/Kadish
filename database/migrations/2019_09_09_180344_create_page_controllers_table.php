@@ -17,9 +17,7 @@ class CreatePageControllersTable extends Migration
             $table->bigIncrements('id');
             $table->char('Pages');
             $table->char('Title');
-            $table->char('SubTitle');
             $table->text('Body');
-            $table->boolean('vew');
             $table->timestamps();
         });
     }
