@@ -1,8 +1,8 @@
 <template>
     <!--Mask-->
-    <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+    <div class="container-fluid d-flex align-items-top justify-content-center h-100">
 
-        <div class="row d-flex justify-content-center text-center">
+        <div class="row d-flex justify-content-center text-center mt-5 pt-3">
 
             <div class="col-md-10">
                 <!-- Heading -->
@@ -13,8 +13,13 @@
                 <!-- Divider -->
                 <hr class="hr-light">
                 <!-- Description -->
-                <h3 class="white-text my-4 " >{{$t('Pages.Index.Title')}}</h3>
-                <h3 class="white-text my-4 " >{{$t('Pages.Index.Body')}}</h3>
+<!--                <div class="row d-flex justify-content-center text-center">-->
+<!--                    <div class="col-md-8">-->
+                        <h3 class="white-text my-4 " >{{$t('Pages.Index.Title')}}</h3>
+                        <h3 class="white-text my-4 " >{{$t('Pages.Index.Body')}}</h3>
+<!--                    </div>-->
+<!--                </div>-->
+
                 <div class="row d-flex justify-content-around">
                     <div class="col-md-4"> <button type="button"  @click="Inverse" class="btn btn-outline-warning ">{{$t('Button.Button1')}}<i class="fa fa-book ml-2"></i></button></div>
                     <div class="col-md-4"><button type="button" class="btn btn-outline-warning ">{{$t('Button.Button2')}}<i class="fab fa-amazon-pay" fa-2x></i></button></div>

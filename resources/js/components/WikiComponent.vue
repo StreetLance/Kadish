@@ -1,6 +1,6 @@
 <template>
-    <div class="container-fluid d-flex align-items-center justify-content-center h-100">
-        <div class="row d-flex justify-content-center text-center">
+    <div class="container-fluid d-flex align-items-top justify-content-center h-100">
+        <div class="row d-flex justify-content-center text-center mt-5 pt-5">
             <div class="col-md-10">
                         <div class="row d-flex justify-content-center text-center">
                             <wiki-bar></wiki-bar>

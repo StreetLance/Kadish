@@ -33,7 +33,7 @@ header,
         text-align: center;
     }
     #intro{
-        height: 1400px;
+        height: 1200px;
     }
 }
 @media (max-width: 768px) {
@@ -43,7 +43,7 @@ header,
         text-align: center;
     }
     #intro{
-        height: 1500px;
+        height: 1330px;
     }
 }
 @media (min-width: 800px) and (max-width: 850px) {
@@ -53,9 +53,20 @@ header,
         text-align: center;
     }
     #intro{
-        height: 1500px;
+        height: 1230px;
     }
 }
+@media (max-width: 660px) {
+    .navbar:not(.top-nav-collapse) {
+        background-color: #24355C;
+        display: flex;
+        text-align: center;
+    }
+    #intro{
+        height: 1600px;
+    }
+}
+
 .moveInUp-enter-active{
     animation: fadeIn 0.7s ease-in;
 }
