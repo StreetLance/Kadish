@@ -3,18 +3,12 @@
         <div class="row d-flex justify-content-center text-center">
             <div class="col-md-10">
                 <!-- Heading -->
-                <h2 class="display-4 font-weight-bold white-text pt-5 mb-2"  v-for="(item,index) in Item">{{item.Title}}</h2>
-                <div id="cont">
+                <h2 class="display-4 font-weight-bold white-text pt-5 mb-2" >{{$t('Pages.Price.Title')}}</h2>
+                <div class="cont">
                     <hr class="hr-light">
-                    <p class="white-text text-left pl-2" v-for="(item,index) in Item" ><span v-html="item.Body"></span></p>
+                    <p class="white-text text-left pl-2" ><span v-html="$t('Pages.Price.Body')"></span></p>
                     <hr class="hr-light">
                 </div>
-
-                <!--                &lt;!&ndash;                -->
-                <!--<i class="fas fa-church fa-10x orange-text"></i>-->
-                <!-- Divider -->
-
-                <!-- Description -->
             </div>
         </div>
     </div>
@@ -22,28 +16,9 @@
 
 <script>
     export default {
-        data: function () {
-            return{
-                Item:[]
-            }
-        } ,
-        // created() {
-        //     this.getDate()
-        // },
-        beforeRouteEnter (to, from, next) {
-            next(vm => vm.getDate())
-        },
-        methods: {
-            getDate() {
-                axios.get('/api/v1/'+this.$route.params.lang+'/page/Price').then((response) => {
-                    console.log(response.data);
-                    this.Item = response.data;
-                })
-            }
-        },
-        beforeRouteUpdate(to, from, next) {
-            this.getDate()
-            next()
-        }
+        data: function () {return{}} ,
+        beforeRouteEnter (to, from, next) {next()},
+        methods: {},
+        beforeRouteUpdate(to, from, next) {next()}
     }
 </script>

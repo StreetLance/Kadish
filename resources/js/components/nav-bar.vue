@@ -13,16 +13,21 @@
             <!-- Links -->
             <ul class="navbar-nav mr-auto smooth-scroll">
                 <li class="nav-item"></li>
-                <li class="nav-item"><router-link class="nav-link" :to="{name: 'H', params: {lang: lang}}">{{Page.Index}}</router-link></li>
-                <li class="nav-item"><router-link class="nav-link" :to="{name: 'P', params: {lang: lang}}">{{Page.Price}}</router-link></li>
-                <li class="nav-item"><router-link class="nav-link" :to="{name: 'A', params: {lang: lang}}">{{Page.About}}</router-link></li>
-                <li class="nav-item"><router-link class="nav-link" :to="{name: 'W', params: {lang: lang}}">{{Page.Wiki}}</router-link></li>
+                <li class="nav-item"><router-link class="nav-link" :to="{name: 'H', params: {lang: lang}}">{{$t('Nav.Index')}}</router-link></li>
+                <li class="nav-item"><router-link class="nav-link" :to="{name: 'P', params: {lang: lang}}">{{$t('Nav.Price')}}</router-link></li>
+                <li class="nav-item"><router-link class="nav-link" :to="{name: 'A', params: {lang: lang}}">{{$t('Nav.About')}}</router-link></li>
+                <li class="nav-item"><router-link class="nav-link" :to="{name: 'W', params: {lang: lang}}">{{$t('Nav.Wiki')}}</router-link></li>
             </ul>
             <div class="lang">
-                    <i class="en" ></i>
+
+                    <li>
+                        <i class="en" ></i>
+                    </li>
+
+
 <!--                    <i class="ru" ></i>-->
             </div>
-            <select class="browser-default custom-select-sm " v-model="lang" @change="language">
+            <select class="browser-default custom-select-sm " v-model="$i18n.locale">
                 <option value="en"  selected><b class="en">English</b></option>
                 <option value="ru" ><b class="ru">Русский</b></option>
             </select>
@@ -34,63 +39,41 @@
 <script>
     export default {
         data:function () {
-            return{
+            return {
                 lang: 'en',
-                falgEn: false,
-                falgRu: false,
-                Page:[],
-                Pages:{en:{
-                            Index :  "Home",
-                            About  :"About",
-                            Price : "Price",
-                            Wiki : "Wiki"
-                        },
-                    ru:{
-                        Index : "Заказать кадиш",
-                        About  : "О проекте",
-                        Price  : "Стоимость",
-                        Wiki : "Энциклопедия"
-                    }}}},
-
+            }
+        },
         mounted(){
-            if(!(this.$route.params.lang ==='ru')){
-            this.$router.push({name:"H", params: { lang: "en" }})
-            this.Page = this.Pages.en
-        }else
-            if (!(this.$route.params.lang ==='en') ){
-                this.$router.push({name:"H", params: { lang: "ru" }})
-                    this.Page = this.Pages.ru
-            }
+
+            this.$i18n.locale = this.$route.params.lang;
+            this.lang =this.$i18n.locale;
+            console.log(this.lang);
+        //     if((this.$route.params.lang ==='ru')){
+        //     this.$router.push({name:"H", params: { lang: "en" }})
+        //
+        // }else
+        //     if (!(this.$route.params.lang ==='en') ){
+        //         this.$router.push({name:"H", params: { lang: "ru" }})
+        //             this.Page = this.Pages.ru
+        //     }
         },
 
-        methods:{
-            Langueges(){
-                if (this.$route.params.lang ==='en' ){
-                    this.Page = this.Pages.en
-                    this.falgEn = true
-                    console.log(this.Lang)
-                }else if ( this.$route.params.lang ==='ru') {
-                    this.Page = this.Pages.ru
-                    console.log(this.Lang)
-                    this.falgRu = true
-                }
-            },
-            language(){
-                if (this.lang ==='en' ){
-                    this.$router.push({name:"H", params: { lang: this.lang }})
-                }else if ( this.lang ==='ru') {
-                    this.$router.push({name:"H", params: { lang: this.lang }})
-                }else {
-                        this.$router.push({name:"H", params: { lang: "en" }})
-                    }
-                }
-            },
-        // отслеживание извенения в ссылке
-        watch: {
-            '$route'(to, from) {
-                this.Langueges()
-            }
-        },
+        // methods:{
+        //     language(){
+        //         // this.$route.params.lang = this.lang;
+        //         console.log(this.lang)
+        //         // if (this.lang ==='en' ){
+        //         // }else if ( this.lang ==='ru') {
+        //         //
+        //         // }else {
+        //         //     }
+        //         // }
+        //     },
+        //     // watch: {'$route'(to, from) {
+        //     //
+        //     //     }},
+        //     beforeRouteUpdate(to, from, next) {next()}
+    // },
     }
 </script>
 <style scoped></style>

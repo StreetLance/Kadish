@@ -1,54 +1,23 @@
 <template>
-    <div id="list-example" class="list-group">
-        <a class="list-group-item list-group-item-action " href="#list-item-1">{{Article.Izkor}}</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-2">{{Article.Yorzhat}}</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-3">{{Article.Text}}</a>
-        <a class="list-group-item list-group-item-action" href="#list-item-4">{{Article.KadishZS}}</a>
+    <div class="col-xs-6 col-md-4  mb-5">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-Izkor-tab" data-toggle="pill" href="#v0" role="tab" aria-controls="v0" aria-selected="true">{{$t('WikiNav.Izkor')}}</a>
+            <a class="nav-link" id="v-pills-Yorzhat-tab" data-toggle="pill" href="#v1" role="tab" aria-controls="v1" aria-selected="false">  {{$t('WikiNav.Yorzhat')}}</a>
+            <a class="nav-link" id="v-pills-Text-tab" data-toggle="pill" href="#v2" role="tab" aria-controls="v2" aria-selected="false"> {{$t('WikiNav.Text')}}</a>
+            <a class="nav-link" id="v-pills-Kadish-tab" data-toggle="pill" href="#v3" role="tab" aria-controls="v3" aria-selected="false">{{$t('WikiNav.Kadish')}}</a>
+            <a class="nav-link" id="v-pills-KadishYS-tab" data-toggle="pill" href="#v4" role="tab" aria-controls="v4" aria-selected="false">{{$t('WikiNav.KadishYS')}}</a>
+            <a class="nav-link banner small"  href="/en"  v-html="$t('WikiNav.KadishBy')"></a>
+        </div>
     </div>
 </template>
 
 <script>
     export default {
-        data:function () {
-            return{
-                lang: 'en',
-                Article:[],
-                Wiki:{en:{
-                        Izkor :  "",
-                        Yorzhat  : "",
-                        Text  : "",
-                        KadishZS : ""
-                    },
-                    ru:{
-                        Izkor :  "Изкор",
-                        Yorzhat  : "Что такое йорцайт",
-                        Text  : "Текст молитвы кадиш на иврите",
-                        KadishZS : "Значение и смысл молитвы кадиш"
-                    }}}},
-
-        mounted(){
-        },
-
-        methods:{
-            Langueges(){
-                if (this.$route.params.lang ==='en' ){
-                    this.Article = this.Wiki.en
-                    console.log(this.Lang)
-                }else if ( this.$route.params.lang ==='ru') {
-                    this.Article = this.Wiki.ru
-                    console.log(this.Lang)
-                }
-            }
-        },
-        // отслеживание извенения в ссылке
-        watch: {
-            '$route'(to, from) {
-                this.Langueges()
-            }
-        },
+        data:function () {return{}},
+        mounted(){},
+        methods:{},
+        watch: {'$route'(to, from) {}},
     }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

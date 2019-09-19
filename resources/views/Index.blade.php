@@ -9,12 +9,14 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     <!-- Styles -->
     <!-- Font Awesome -->
-    <link href="{{asset('css/all.css')}}" rel="stylesheet">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/css/mdb.min.css" rel="stylesheet">
+    <link href="{{asset('css/all.css')}}" rel="stylesheet">
 </head>
 <body>
 <header id="app">
@@ -22,16 +24,17 @@
             <nav-bar></nav-bar>
     <!--/.Navbar-->
     <div id="intro" class="view">
-        <div class="mask rgba-black-light">
+        <div class="mask rgba-black-strong">
             <transition name="moveInUp">
             <router-view></router-view>
             </transition>
         </div>
     </div>
+
     <!--/.Mask-->
 </header>
 <!-- Footer -->
-<footer class="page-footer font-small unique-color-dark">
+<footer class="page-footer font-small unique-color-dark fixed-bottom">
     <!-- Social buttons -->
     <div class="unique-color-dark">
         <div class="container">

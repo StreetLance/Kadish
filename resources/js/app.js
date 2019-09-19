@@ -8,9 +8,13 @@ import PriceModul from "./store/modules/PriceModul";
 import WikiModul from "./store/modules/WikiModul";
 import navbar from "./components/nav-bar";
 import Wikinavbar from "./components/Wiki/nav";
+import VueInternationalization from 'vue-i18n';
+import Locale from './vue-i18n-locales.generated';
 
 require('./bootstrap');
 Vue.use(Vuex);
+Vue.use(VueInternationalization);
+
 Vue.component('nav-bar', navbar);
 Vue.component('wiki-bar', Wikinavbar);
 const store = new Vuex.Store({
@@ -24,9 +28,13 @@ const store = new Vuex.Store({
 
 
 });
-
+const i18n = new VueInternationalization({
+    locale: 'en',
+    messages: Locale
+});
 const app = new Vue({
     el: '#app',
     store,
-    router
+    router,
+    i18n,
 });

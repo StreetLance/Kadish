@@ -93,7 +93,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'ru',
 
     /*
     |--------------------------------------------------------------------------
@@ -176,8 +176,8 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         //Barryvdh\LaravelIdeHelper
-        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class
-
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        MartinLindhe \ VueInternationalizationGenerator \ GeneratorProvider :: class ,
     ],
 
     /*
