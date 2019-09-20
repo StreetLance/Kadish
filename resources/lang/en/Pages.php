@@ -3,13 +3,13 @@
     return [
 
         'Index' => [
-            'Name'=>'Kaddish',
-            'Title'=>'Arrange kaddish Or Yahrzeit reminder',
-            'Body'=>'Please fill in the fields below for ordering kaddish or notify about the upcoming yahrzeit'
+            'Name' => 'Kaddish',
+            'Title' => 'Arrange kaddish Or Yahrzeit reminder',
+            'Body' => 'Please fill in the fields below for ordering kaddish or notify about the upcoming yahrzeit'
         ],
         'About' => [
-            'Title'=>'About Kaddish Prayer',
-            'Body'=>'Our team more than 7 years is engaged in the organization of reciting kaddish and mourning events. We have helped more than 700 people in 6 countries.</br></br>
+            'Title' => 'About Kaddish Prayer',
+            'Body' => 'Our team more than 7 years is engaged in the organization of reciting kaddish and mourning events. We have helped more than 700 people in 6 countries.</br></br>
 While doing this holy work, we encountered 2 main issues:</br></br>
 1.The first one is that most people live by Gregorian calendar and skip yahrzeit of their beloved ones very often, since we observe an anniversary of passing according to Hebrew calendar.</br>
 
@@ -20,14 +20,14 @@ We worked long and hard to make this program and we want to offer it to various 
 We wish everyone to fulfill the words of prophet Isaiah (25:8): He has concealed death forever, and the Lord God shall wipe the tears off every face, and the shame of His people He shall remove from upon the entire earth, for the Lord has spoken.'
         ],
         'Price' => [
-            'Title'=>'This is Price',
-            'Body'=>'Order reciting kaddish for the yahrzeit costs $</br></br>
+            'Title' => 'This is Price',
+            'Body' => 'Order reciting kaddish for the yahrzeit costs $</br></br>
                     Order the reciting kaddish during the first year is $ per day.</br></br>
                     Please note that you only need to enter the date of withdrawal, and the program itself, depending on the date, will offer you the required plan.'
         ],
         'wiki1' => [
-            'Title'=>'Yizkor',
-            'Body'=>'Yizkor is a special memorial prayer which is said in a synagogue four times per year: the last day of Passover, the second day of Shavuot, Shmini Atseret and Yom Kipur.</br>
+            'Title' => 'Yizkor',
+            'Body' => 'Yizkor is a special memorial prayer which is said in a synagogue four times per year: the last day of Passover, the second day of Shavuot, Shmini Atseret and Yom Kipur.</br>
 </br>
 Yizkor in Hebrew means "Remember". This is not only the first word in the prayer but also its key point. In this prayer we ask G-d to remember souls of our relatives and friends who aren\'t with us.</br>
 </br>
@@ -45,8 +45,8 @@ When reading Yizkor for more than one person, repeat all the prayer for every pe
 </br>'
         ],
         'wiki2' => [
-            'Title'=>'Kaddish text in Hebrew',
-            'Body'=>'יִתְגַּדַּל וְיִתְקַדַּשׁ שְׁמֵהּ רַבָּא. אמן
+            'Title' => 'Kaddish text in Hebrew',
+            'Body' => 'יִתְגַּדַּל וְיִתְקַדַּשׁ שְׁמֵהּ רַבָּא. אמן
 <br>
 בְּעָלְמָא דִי בְרָא כִרְעוּתֵהּ וְיַמְלִיךְ מַלְכוּתֵהּ וְיַצְמַח פּוּרְקָנֵהּ וִיקָרֵב מְשִׁיחֵהּ. אמן
 <br>
@@ -61,8 +61,8 @@ When reading Yizkor for more than one person, repeat all the prayer for every pe
 עוֹשֶׂה שָׁלוֹם בִּמְרוֹמָיו הוּא יַעֲשֶׂה שָׁלוֹם עָלֵינוּ וְעַל כָּל יִשְׂרָאֵל, וְאִמְרוּ אָמֵן'
         ],
         'wiki3' => [
-            'Title'=>'Meaning of Purpose of the Kaddish Prayer',
-            'Body'=>'Kaddish Yatom is a prayer that is read for a diseased person. It means "sanctification" in Aramaic. The primary meaning of this prayer is that a person recognizes, celebrates and blesses the just power of the Almighty, and praise all acts of the Creator despite his (or her) loss of a loved one.</br>
+            'Title' => 'Meaning of Purpose of the Kaddish Prayer',
+            'Body' => 'Kaddish Yatom is a prayer that is read for a diseased person. It means "sanctification" in Aramaic. The primary meaning of this prayer is that a person recognizes, celebrates and blesses the just power of the Almighty, and praise all acts of the Creator despite his (or her) loss of a loved one.</br>
 </br>
 <h6>Mystical significance of a Kaddish Prayer.</h6></br>
 </br>
@@ -74,8 +74,8 @@ A duty of Kadish prayer reading falls on a son (or a spouse). And according to o
 If no one can read Kaddish Prayer, you can order reading of the Kaddish online.</br>'
         ],
         'wiki4' => [
-            'Title'=>'What is Yahrzeit',
-            'Body'=>'Yahrzeit is the anniversary of passing. The word yahrzeit (anniversary) comes from the Yiddish language (Yahr is the year, Zeit –time, or”Yom ha Shana” in Hebrew). A special commemorative procedure on the parents’ death anniversary is discussed in the Talmud. The deceased is remembered this day, tribute is paid to him, and close relative and friends meditate on the essence of the life of the deceased.</br></br>
+            'Title' => 'What is Yahrzeit',
+            'Body' => 'Yahrzeit is the anniversary of passing. The word yahrzeit (anniversary) comes from the Yiddish language (Yahr is the year, Zeit –time, or”Yom ha Shana” in Hebrew). A special commemorative procedure on the parents’ death anniversary is discussed in the Talmud. The deceased is remembered this day, tribute is paid to him, and close relative and friends meditate on the essence of the life of the deceased.</br></br>
 Yahrzeit is a special time for the soul of the deceased. It has a particularly strong connection with living relatives on this day. And it is important for the soul to be remembered.</br>
 </br>
 <h6>Yahrzeit customs</h6></br>
@@ -89,8 +89,9 @@ Yahrzeit is a special time for the soul of the deceased. It has a particularly s
 </ol>'
         ],
         'wiki5' => [
-            'Title'=>'Mourner’s kaddish audio',
-            'Aydio1'=>'Kaddish Yatom Sfaradic',
-            'Aydio2'=>'Kaddish Yatom Ashkenaz',
-        ]
+            'Title' => 'Mourner’s kaddish audio',
+            'Aydio1' => 'Kaddish Yatom Sfaradic',
+            'Aydio2' => 'Kaddish Yatom Ashkenaz',
+        ],
+        "Footer"=>"© All rights reserved. Contact us: info@kaddish-prayer.com | Refund policy"
     ];

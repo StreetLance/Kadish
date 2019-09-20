@@ -17,6 +17,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-    Route::resource('/v1.page','PageController')->parameters([
-        'v1'=>'lang'
-    ])->except('create','update','store');
+    Route::get('/J/{D}/{M}/{Y}','CallController@getJewishDate');
+    Route::get('/G/{D}/{M}/{Y}','CallController@getGregorianDate');

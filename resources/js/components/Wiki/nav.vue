@@ -1,5 +1,5 @@
 <template>
-    <div class="col-xs-6 col-md-4  mb-5">
+    <div class=" col-md-4  mb-5 mt-5">
         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
             <a class="nav-link active" id="v-pills-Izkor-tab" data-toggle="pill" href="#v0" role="tab" aria-controls="v0" aria-selected="true">{{$t('WikiNav.Izkor')}}</a>
             <a class="nav-link" id="v-pills-Yorzhat-tab" data-toggle="pill" href="#v1" role="tab" aria-controls="v1" aria-selected="false">  {{$t('WikiNav.Yorzhat')}}</a>

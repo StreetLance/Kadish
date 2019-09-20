@@ -14,7 +14,8 @@ export default  new VueRouter({
                 {path: '/:lang/about', component: AboutComponent, name:"A"},
                 {path: '/:lang/price', component: PriceComponent , name:"P"},
                 {path: '/:lang/wiki', component: WikiComponent , name:"W"},
-        {path: '/:lang/*', redirect:"/en" }
+        {path: '/:lang/*', redirect:"/en" },
+        {path: '/*', redirect:"/en" }
     ],
     mode: 'history'
 

@@ -32,9 +32,9 @@ header,
         display: flex;
         text-align: center;
     }
-    #intro{
-        height: 1200px;
-    }
+    /*#intro{*/
+    /*    height: 1200px;*/
+    /*}*/
 }
 @media (max-width: 768px) {
     .navbar:not(.top-nav-collapse) {
@@ -42,9 +42,9 @@ header,
         display: flex;
         text-align: center;
     }
-    #intro{
-        height: 1330px;
-    }
+    /*#intro{*/
+    /*    height: 1330px;*/
+    /*}*/
 }
 @media (min-width: 800px) and (max-width: 850px) {
     .navbar:not(.top-nav-collapse) {
@@ -52,9 +52,9 @@ header,
         display: flex;
         text-align: center;
     }
-    #intro{
-        height: 1230px;
-    }
+    /*#intro{*/
+    /*    height: 1230px;*/
+    /*}*/
 }
 @media (max-width: 660px) {
     .navbar:not(.top-nav-collapse) {
@@ -62,9 +62,9 @@ header,
         display: flex;
         text-align: center;
     }
-    #intro{
-        height: 1600px;
-    }
+    /*#intro{*/
+    /*    height: 1600px;*/
+    /*}*/
 }
 
 .moveInUp-enter-active{

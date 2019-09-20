@@ -23,13 +23,13 @@
     <!--Navbar-->
             <nav-bar></nav-bar>
     <!--/.Navbar-->
-    <div id="intro" class="view">
-        <div class="mask rgba-black-strong">
+{{--    <div id="intro" class="view">--}}
+{{--        <div class="mask rgba-black-strong">--}}
             <transition name="moveInUp">
             <router-view></router-view>
             </transition>
-        </div>
-    </div>
+{{--        </div>--}}
+{{--    </div>--}}
 
     <!--/.Mask-->
 </header>

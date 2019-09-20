@@ -1,6 +1,6 @@
 <?php
     return [
-        "Izkor" =>  "Yizkor",
+        "Izkor" => "Yizkor",
         "Yorzhat" => "What is Yahrzeit",
         "Text" => "Kaddish text in Hebrew",
         "Kadish" => "Meaning of Purpose of the Kaddish Prayer",
