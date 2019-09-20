@@ -57,10 +57,10 @@
                                             <h4 id="list-item-6">{{$t('Pages.wiki5.Aydio1')}}</h4>
                                             <p>
                                                 <audio controls>
-                                                    <!--                                                    <source src="../../../public/media/kaddish_yatom_sfaradic.mp3" type="audio/mpeg">-->
-                                                    <!--                                                    <source src="../../../public/media/kaddish_yatom_sfaradic.ogg" type="audio/ogg">-->
-                                                    <!--                                                    <source src="../../../public/media/kaddish_yatom_sfaradic.wav" type="audio/wav">-->
-                                                    <!--                                                    <source src="../../../public/media/kaddish_yatom_sfaradic.aiff" type="audio/x-aiff">-->
+<!--                                                                                                        <source src="../../../public/media/kaddish_yatom_sfaradic.mp3" type="audio/mpeg">-->
+<!--                                                                                                        <source src="../../../public/media/kaddish_yatom_sfaradic.ogg" type="audio/ogg">-->
+<!--                                                                                                        <source src="../../../public/media/kaddish_yatom_sfaradic.wav" type="audio/wav">-->
+<!--                                                                                                        <source src="../../../public/media/kaddish_yatom_sfaradic.aiff" type="audio/x-aiff">-->
                                                     <object>
                                                         <param name="autostart" value="true">
                                                         <param name="src"
@@ -69,7 +69,7 @@
                                                         <param name="controller" value="false">
                                                         <embed src="../../../public/media/kaddish_yatom_sfaradic.mp3"
                                                                controller="true" autoplay="false" autostart="false"
-                                                               type="audio/mpeg"></embed>
+                                                               type="audio/mpeg">
                                                     </object>
                                                 </audio>
                                             </p>
@@ -77,10 +77,10 @@
                                             <h4 id="list-item-7">{{$t('Pages.wiki5.Aydio2')}}</h4>
                                             <p>
                                                 <audio controls>
-                                                    <!--                                                    <source src="../../../public/media/kaddish_yatom_ashkenaz.mp3" type="audio/mpeg">-->
-                                                    <!--                                                    <source src="../../../public/media/kaddish_yatom_ashkenaz.ogg" type="audio/ogg">-->
-                                                    <!--                                                    <source src="../../../public/media/kaddish_yatom_ashkenaz.wav" type="audio/wav">-->
-                                                    <!--                                                    <source src="../../../public/media/kaddish_yatom_ashkenaz.aiff" type="audio/x-aiff">-->
+<!--                                                                                                        <source src="../../../public/media/kaddish_yatom_ashkenaz.mp3" type="audio/mpeg">-->
+<!--                                                                                                        <source src="../../../public/media/kaddish_yatom_ashkenaz.ogg" type="audio/ogg">-->
+<!--                                                                                                        <source src="../../../public/media/kaddish_yatom_ashkenaz.wav" type="audio/wav">-->
+<!--                                                                                                        <source src="../../../public/media/kaddish_yatom_ashkenaz.aiff" type="audio/x-aiff">-->
                                                     <object>
                                                         <param name="autostart" value="true">
                                                         <param name="src"
