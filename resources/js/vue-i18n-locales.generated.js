@@ -14,8 +14,8 @@ export default {
             "Mail": "Your email",
             "TitleDP": "DATE OF PASSING:",
             "Phone": "Phone",
-            "JewishCal": "Jewish date",
-            "JewishCal2": "Gregorian date",
+            "JewishCal": "Jewish </br> date",
+            "JewishCal2": "Gregorian </br>date",
             "TitleSunset": "If you register Yahrzeit date according to the Gregorian calendar and the death occurred after sunset — mark this.",
             "JewishTitle": "If you know the jewish date of passing please switch to jewish calendar",
             "JewishTitle2": "If you know the jewish date of passing please switch to jewish calendar",
@@ -90,7 +90,8 @@ export default {
                 "Title": "Mourner’s kaddish audio",
                 "Aydio1": "Kaddish Yatom Sfaradic",
                 "Aydio2": "Kaddish Yatom Ashkenaz"
-            }
+            },
+            "Footer": "© All rights reserved. Contact us: info@kaddish-prayer.com | Refund policy"
         },
         "pagination": {
             "previous": "&laquo; Previous",
@@ -233,8 +234,8 @@ export default {
             "Mail": "Ваша почта",
             "TitleDP": "ДАТА УХОДА:",
             "Phone": "Ваш номер телефона...",
-            "JewishCal": "Еврейский календарь",
-            "JewishCal2": "Григорианский календарь",
+            "JewishCal": "Еврейский</br>календарь",
+            "JewishCal2": "Григорианский</br> календарь",
             "TitleSunset": "Если вы регистрируете дату йорцайт по григорианскому календарю и смерть наступила после захода солнца — отметьте это.",
             "JewishTitle": "Если вы знаете еврейскую дату - переключите на еврейский календарь",
             "JewishTitle2": "Если вы знаете григорианскую дату - переключите на григорианский календарь",
@@ -309,7 +310,8 @@ export default {
                 "Title": "Кадиш скорбящего аудио",
                 "Aydio1": "Сефардский кадиш ятом",
                 "Aydio2": "Ашкеназский кадиш ятом"
-            }
+            },
+            "Footer": "© Все права защищены. Связатся с нами: "
         },
         "WikiNav": {
             "Izkor": "Изкор",

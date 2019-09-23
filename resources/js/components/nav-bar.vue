@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
     <div class="container">
         <!-- Navbar brand -->
-        <a class="navbar-brand orange-text disabled" href="#" ><i class="fas fa-star-of-david  orange-text"></i> Kaddish Prayer</a>
+         <router-link class="nav-link navbar-brand orange-text" :to="{name: 'H', params: {lang: lang}}"> <span class="logo orange-text "></span> Kaddish Prayer</router-link>
         <!-- Collapse button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
                 aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,9 +27,9 @@
 
 <!--                    <i class="ru" ></i>-->
             </div>
-            <select class="browser-default custom-select-sm " v-model="$i18n.locale">
+            <select class="browser-default custom-select-sm select-default text-white" v-model="lang" @change="language">
                 <option value="en"  selected><b class="en">English</b></option>
-                <option value="ru" ><b class="ru">Русский</b></option>
+                <option value="ru"  ><b class="ru">Русский</b></option>
             </select>
         </div>
         <!-- Collapsible content -->
@@ -47,7 +47,6 @@
 
             this.$i18n.locale = this.$route.params.lang;
             this.lang =this.$i18n.locale;
-            console.log(this.lang);
         //     if((this.$route.params.lang ==='ru')){
         //     this.$router.push({name:"H", params: { lang: "en" }})
         //
@@ -58,22 +57,23 @@
         //     }
         },
 
-        // methods:{
-        //     language(){
-        //         // this.$route.params.lang = this.lang;
-        //         console.log(this.lang)
-        //         // if (this.lang ==='en' ){
-        //         // }else if ( this.lang ==='ru') {
-        //         //
-        //         // }else {
-        //         //     }
-        //         // }
-        //     },
+        methods:{
+            language(){
+                // this.$route.params.lang = this.lang;
+
+                let path =this.$route.matched[0].path;
+                let NewPath = path.split('/');
+                NewPath[1] = `${this.lang}`;
+                path = NewPath.join('/');
+                this.$router.push({path: path });
+                this.$i18n.locale = this.$route.params.lang;
+            },
         //     // watch: {'$route'(to, from) {
         //     //
         //     //     }},
         //     beforeRouteUpdate(to, from, next) {next()}
     // },
+    },
     }
 </script>
 <style scoped></style>

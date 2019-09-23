@@ -47,17 +47,15 @@ class PageController extends BaseController
      * @param  \App\Models\Page  $pageController
      * @return \Illuminate\Http\Response
      */
-    public function show($D,$M,$Y)
+    public function show($local,$p)
     {
-        $jd = gregoriantojd($D, $M, $Y);
-        return cal_from_jd($jd,CAL_JEWISH);
-//        $item = Pages::whereHas('localization',function ( Builder $query ) use ($lang){
-//
-//            $query->where('Language','=',  $lang);
-//
-//        })->where('Pages', '=', $Page)->get(['id','Title','Body','SubTitle']);
-//        $item=collect($item);
-//        return $item;
+        $item = Pages::whereHas('localization',function ( Builder $query ) use ($lang){
+
+            $query->where('Language','=',  $lang);
+
+        })->where('Pages', '=', $Page)->get(['id','Title','Body','SubTitle']);
+        $item=collect($item);
+        return $item;
     }
 
     /**
