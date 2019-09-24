@@ -13,7 +13,7 @@
                                         <h4 id="list-item-1">{{$t('Pages.wiki1.Title')}}</h4>
                                         <div class="cont">
                                             <hr class="hr-light">
-                                            <p class="text-left ml-5 mr-5 mb-5 mt-5"><span
+                                            <p class="text-left ml-5 mr-5 mb-5 mt-5" id="p0"><span
                                                 v-html="$t('Pages.wiki1.Body')"></span></p>
                                             <hr class="hr-light">
                                         </div>
@@ -23,7 +23,7 @@
                                         <h4 id="list-item-2">{{$t('Pages.wiki2.Title')}}</h4>
                                         <div class="cont">
                                             <hr class="hr-light">
-                                            <p class="text-left ml-5 mr-5 mb-5 mt-5"><span
+                                            <p class="text-left ml-5 mr-5 mb-5 mt-5" id="p1"><span
                                                 v-html="$t('Pages.wiki2.Body')"></span></p>
                                             <hr class="hr-light">
                                         </div>

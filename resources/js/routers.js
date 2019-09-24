@@ -4,6 +4,7 @@ import IndexComponent from "./components/IndexComponent";
 import AboutComponent from "./components/AboutComponent";
 import PriceComponent from "./components/PriceComponent";
 import WikiComponent from "./components/WikiComponent";
+import PayComponent from "./components/PayComponent";
 
 Vue.use(VueRouter);
 
@@ -14,6 +15,7 @@ export default  new VueRouter({
                 {path: '/:lang/about', component: AboutComponent, name:"A"},
                 {path: '/:lang/price', component: PriceComponent , name:"P"},
                 {path: '/:lang/wiki', component: WikiComponent , name:"W"},
+                {path: '/:lang/Pay', component: PayComponent , name:"Pay"},
         {path: '/:lang/*', redirect:"/en" },
         {path: '/*', redirect:"/en" }
     ],

@@ -275,6 +275,7 @@
                     }
                 }).then((response) => {
                     console.log(response.data);
+                    this.$router.push({ name: 'Pay', query: { id: response.data.id } })
                 });
 
             }
