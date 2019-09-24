@@ -2077,6 +2077,35 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -6952,7 +6981,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.field-wr input[type=email][type=tel][data-v-754b2df6]{\n     text-overflow: ellipsis;\n}\n.field-wr input[type=tel][data-v-754b2df6]{\n     font: normal 300 18px/26px 'Roboto', sans-serif;\n     width: 100%;\n     background: none;\n     padding: 0 2px;\n     color: #fff;\n     border: none;\n     outline: none;\n}\nlabel[data-v-754b2df6] {\n     display: inline-block;\n     margin-bottom: 0rem;\n}\n.mw[data-v-754b2df6]{\n    max-width: 75%\n}\n.np[data-v-754b2df6]{\n     padding: 0px;\n}\n.top-np[data-v-754b2df6]{\n     padding: 0px 0px 14px 0px;\n}\n.bot-np[data-v-754b2df6]{\n     padding: 14px 0px 0px 0px;\n}\nform[data-v-754b2df6] {\n     font-size: 0;\n     font-family: 'Roboto', sans-serif;\n     transition: all 0.4s ease;\n}\n.custom-select[data-v-754b2df6] {\n     display: inline-block;\n     width: 100%;\n     height: calc(1.5em + .75rem + 2px);\n     padding: .375rem 1.75rem .375rem .75rem;\n     font: normal 300 18px/26px 'Roboto', sans-serif;\n     line-height: 1.5;\n     color: #495057;\n     vertical-align: middle;\n     background: url(data:image/svg+xml,%3csvg xmlns= 'http://www.w3.org/2000/svg' viewBox= '0 0 4 5' %3e%3cpath fill= '%23343a40' d= 'M2 0L0 2h4zm0 5L0 3h4z' /%3e%3c/svg%3e) no-repeat right .75 rem center / 8 px 10 px;\n     background-color: #000000;\n     border: 1px solid #423d3d;\n     border-radius: .25rem;\n     -webkit-appearance: none;\n     -moz-appearance: none;\n     appearance: none;\n}\n@media (max-width: 1200px) {\n#intro[data-v-754b2df6] {height: 920px;}\n}\n@media (min-width: 800px) and (max-width: 850px) {\n#intro[data-v-754b2df6] {height: 996px;}\n}\n@media (max-width: 768px) {\n#intro[data-v-754b2df6] {height: 1000px;}\n}\n@media (max-width: 660px) {\n#intro[data-v-754b2df6] {height: 1035px;}\n}\n", ""]);
+exports.push([module.i, "\n.field-wr input[type=email][type=tel][data-v-754b2df6] {text-overflow: ellipsis;}\n.field-wr input[type=tel][data-v-754b2df6] {\n    font: normal 300 18px/26px 'Roboto', sans-serif;\n    width: 100%;\n    background: none;\n    padding: 0 2px;\n    color: #fff;\n    border: none;\n    outline: none;\n}\nlabel[data-v-754b2df6] {display: inline-block;margin-bottom: 0rem;}\n.mw[data-v-754b2df6] {max-width: 75%}\n.np[data-v-754b2df6] {padding: 0px;}\n.top-np[data-v-754b2df6] {padding: 0px 0px 14px 0px;}\n.bot-np[data-v-754b2df6] {padding: 14px 0px 0px 0px;}\nform[data-v-754b2df6] {\n    font-size: 0;\n    font-family: 'Roboto', sans-serif;\n    transition: all 0.4s ease;\n}\n.mv2[data-v-754b2df6] {max-width: 955px;}\n.pp[data-v-754b2df6] {padding: 0 2px;}\n.fs[data-v-754b2df6] {font: normal 300 16px/26px 'Roboto', sans-serif;}\nhr[data-v-754b2df6] {margin-top: 10px;;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.custom-select[data-v-754b2df6] {\n    display: inline-block;\n    width: 100%;\n    height: calc(1.5em + .75rem + 2px);\n    padding: .375rem 1.75rem .375rem .75rem;\n    font: normal 300 18px/26px 'Roboto', sans-serif;\n    line-height: 1.5;\n    color: #495057;\n    vertical-align: middle;\n    background: url(data:image/svg+xml,%3csvg xmlns= 'http://www.w3.org/2000/svg' viewBox= '0 0 4 5' %3e%3cpath fill= '%23343a40' d= 'M2 0L0 2h4zm0 5L0 3h4z' /%3e%3c/svg%3e) no-repeat right .75 rem center / 8 px 10 px;\n    background-color: #000000;\n    /*border: 1px solid #423d3d;*/\n    border-radius: .25rem;\n    -webkit-appearance: none;\n    -moz-appearance: none;\n    appearance: none;\n    border: none;\n}\n@media (max-height: 800px){\n#intro[data-v-754b2df6] {height: 950px;}}\n@media (max-width: 1200px) {\n#intro[data-v-754b2df6] {height: 920px;}}\n@media (max-width: 850px) {\n#intro[data-v-754b2df6] {height: 1050px;}\n.field-wr.divider .I[data-v-754b2df6], .field-wr.dname .I[data-v-754b2df6], .field-wr.ddate .I[data-v-754b2df6], .field-wr.dmnth .I[data-v-754b2df6], .field-wr.dyear .I[data-v-754b2df6], .field-wr.cmail .I[data-v-754b2df6] {border-right: 0px;}\n.row[data-v-754b2df6] {\n        display: -ms-flexbox;\n        display: block;\n        flex-wrap: wrap;\n        margin-right: -15px;\n        margin-left: -15px;\n}\nhr[data-v-754b2df6] {margin-top: 10px;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.field-wr input[type=text][data-v-754b2df6], .field-wr label[data-v-754b2df6], .field-wr textarea[data-v-754b2df6] {\n        font: normal 300 15px/29px 'Roboto', sans-serif;\n        width: 100%;\n        background: none;\n        /*padding: 0 2px;*/\n        color: #fff;\n        border: none;\n        outline: none;\n}\n.field-wr.dsuns[data-v-754b2df6] {width: 30%;}\n.field-wr.switch-cal[data-v-754b2df6] {width: 15%; text-align: right;}\n}\n@media (max-width: 760px) {\n#intro[data-v-754b2df6] {height: 1200px;}\n.field-wr.divider .I[data-v-754b2df6], .field-wr.dname .I[data-v-754b2df6], .field-wr.ddate .I[data-v-754b2df6], .field-wr.dmnth .I[data-v-754b2df6], .field-wr.dyear .I[data-v-754b2df6], .field-wr.cmail .I[data-v-754b2df6] {border-right: 0px;}\n.row[data-v-754b2df6] {\n        display: -ms-flexbox;\n        display: block;\n        flex-wrap: wrap;\n        margin-right: -15px;\n        margin-left: -15px;\n}\nhr[data-v-754b2df6] {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.field-wr input[type=text][data-v-754b2df6], .field-wr label[data-v-754b2df6], .field-wr textarea[data-v-754b2df6] {\n        font: normal 300 15px/29px 'Roboto', sans-serif;\n        width: 100%;\n        background: none;\n        /*padding: 0 2px;*/\n        color: #fff;\n        border: none;\n        outline: none;\n}\n.field-wr.dsuns[data-v-754b2df6] {width: 30%;}\n.field-wr.switch-cal[data-v-754b2df6] {width: 15%; text-align: right;}\n}\n@media (max-width: 660px) {#intro[data-v-754b2df6] {height: 1435px;}\n.field-wr.divider .I[data-v-754b2df6], .field-wr.dname .I[data-v-754b2df6], .field-wr.cmail .I[data-v-754b2df6] {border-right: 0px;}\n.field-wr.ddate .I[data-v-754b2df6], .field-wr.dmnth .I[data-v-754b2df6], .field-wr.dyear .I[data-v-754b2df6] {border: 1px solid #666;}\n.row[data-v-754b2df6] {\n        display: -ms-flexbox;\n        display: block;\n        flex-wrap: wrap;\n        margin-right: -15px;\n        margin-left: -15px;\n}\nhr[data-v-754b2df6] {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.field-wr input[type=text][data-v-754b2df6], .field-wr label[data-v-754b2df6], .field-wr textarea[data-v-754b2df6] {\n        font: normal 300 15px/29px 'Roboto', sans-serif;\n        width: 100%;\n        background: none;\n        /*padding: 0 2px;*/\n        color: #fff;\n        border: none;\n        outline: none;\n}\n.field-wr.ddate[data-v-754b2df6], .field-wr.dmnth[data-v-754b2df6], .field-wr.dyear[data-v-754b2df6] {width: 100%;max-width: 100%;}\n.mw[data-v-754b2df6][data-v-754b2df6] {max-width: 100%;}\n.field-wr.dsuns[data-v-754b2df6] {width: 72%;}\n.field-wr.switch-cal[data-v-754b2df6] {width: 26%; text-align: right;}\n}\n\n", ""]);
 
 // exports
 
@@ -6971,7 +7000,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\np[data-v-089c5edf]{\n    font-size: 23px;\n}\n/*@media (max-width: 1200px) {  #intro {height: 1200px;}  }*/\n@media  (max-height: 480px) {\n#intro[data-v-089c5edf] {\n    height: 600px;\n}\np[data-v-089c5edf]{\n        font-size: 18px;\n}\n}\n@media (max-width: 654px) {\n#intro[data-v-089c5edf] {height: 730px;}\n}\n/*@media (max-width: 660px) {  #intro {height: 1600px;}  }*/\n", ""]);
+exports.push([module.i, "\np[data-v-089c5edf]{font-size: 23px;}\n@media (max-width: 1200px) {\n#intro[data-v-089c5edf] {height: 700px;}\n.cont[data-v-089c5edf] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 769px;\n}\np[data-v-089c5edf]{font-size: 20px;}\n}\n@media  (max-height: 480px) {\n#intro[data-v-089c5edf] {height: 600px;}p[data-v-089c5edf]{font-size: 18px;}\n}\n@media  (max-height: 650px) {#intro[data-v-089c5edf] {height: 650px;}\np[data-v-089c5edf]{font-size: 18px;}\n}\n@media (max-width: 654px) {\n#intro[data-v-089c5edf] {height: 730px;}\n.cont[data-v-089c5edf] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 569px;\n}\np[data-v-089c5edf]{font-size: 18px;}\n}\n@media (max-width: 860px) {\n#intro[data-v-089c5edf] {height: 700px;}\n.cont[data-v-089c5edf] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 609px;\n}\np[data-v-089c5edf]{font-size: 18px;}\n}\n@media (max-width: 600px) {\n#intro[data-v-089c5edf] {height: 730px;}\n.cont[data-v-089c5edf] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 469px;\n}\np[data-v-089c5edf]{font-size: 18px;}\n}\n@media (max-width: 500px) {\n#intro[data-v-089c5edf] {height: 730px;}\n.cont[data-v-089c5edf] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 369px;\n}\np[data-v-089c5edf]{font-size: 16px;}\n}\n@media (max-width: 360px) {\n#intro[data-v-089c5edf] {height: 830px;}\n.cont[data-v-089c5edf] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 269px;\n}\np[data-v-089c5edf]{font-size: 16px;}\n}\n", ""]);
 
 // exports
 
@@ -6990,7 +7019,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n@media (max-width: 1200px) {\n#intro[data-v-87121f5c] {height: 1065px;}\n}\n@media (max-width: 768px) {\n#intro[data-v-87121f5c] {height: 1302px;}\n}\n@media (min-width: 800px) and (max-width: 850px) {\n#intro[data-v-87121f5c] {height: 1230px;}\n}\n@media (max-width: 660px) {\n#intro[data-v-87121f5c] {height: 1426px;}\n}\n/*@media (max-height: 1000px) {  #intro {height: 1006px;}  }*/\n", ""]);
+exports.push([module.i, "\n.cont[data-v-87121f5c] {\n    background-color: #1d2124;\n    opacity: 0.8;\n    width: 860px;\n}\n@media (max-width: 1200px) {\n#intro[data-v-87121f5c] {height: 1065px;}\n}\n@media (max-width: 768px) {\n#intro[data-v-87121f5c] {height: 1302px;}\n}\n@media (min-width: 800px) and (max-width: 850px) {\n#intro[data-v-87121f5c] {height: 1230px;}\n}\n@media (max-width: 660px) {\n#intro[data-v-87121f5c] {height: 1927px;}\n}\n@media (max-height: 1000px) {\n#intro[data-v-87121f5c] {height: 1006px;}\n}\n", ""]);
 
 // exports
 
@@ -41321,7 +41350,7 @@ var render = function() {
         "div",
         {
           staticClass:
-            "container-fluid d-flex align-items-top justify-content-center h-100"
+            "container-fluid d-flex align-items-top justify-content-center mt-5 h-100"
         },
         [
           _c(
@@ -41341,7 +41370,7 @@ var render = function() {
                   "div",
                   { staticClass: "row justify-content-center text-center" },
                   [
-                    _c("div", { staticClass: "col-md-12" }, [
+                    _c("div", { staticClass: "col-md-12 mv2" }, [
                       _c("h4", { staticClass: "white-text my-4 " }, [
                         _vm._v(_vm._s(_vm.$t("Pages.Index.Title")))
                       ]),
@@ -41485,17 +41514,8 @@ var render = function() {
                                     [_vm._v(_vm._s(_vm.$t("Button.TitleDP")))]
                                   ),
                                   _vm._v(" "),
-                                  _c("div", { staticClass: "loading" }, [
-                                    _c("div", { attrs: { id: "ddate  " } }, [
-                                      _c("input", {
-                                        attrs: {
-                                          type: "hidden",
-                                          name: "type",
-                                          value: "greg",
-                                          required: ""
-                                        }
-                                      }),
-                                      _vm._v(" "),
+                                  _c("div", { staticClass: "loading " }, [
+                                    _c("div", { attrs: { id: "ddate" } }, [
                                       _c(
                                         "div",
                                         {
@@ -41614,7 +41634,8 @@ var render = function() {
                                                             _vm.$t(
                                                               "Month.January"
                                                             )
-                                                          )
+                                                          ) +
+                                                            "\n                                                                "
                                                         )
                                                       ]
                                                     ),
@@ -41826,11 +41847,13 @@ var render = function() {
                                                       },
                                                       [
                                                         _vm._v(
-                                                          _vm._s(
-                                                            _vm.$t(
-                                                              "JewishMonth.Tishry"
-                                                            )
-                                                          )
+                                                          "\n                                                                    " +
+                                                            _vm._s(
+                                                              _vm.$t(
+                                                                "JewishMonth.Tishry"
+                                                              )
+                                                            ) +
+                                                            "\n                                                                "
                                                         )
                                                       ]
                                                     ),
@@ -41844,7 +41867,8 @@ var render = function() {
                                                             _vm.$t(
                                                               "JewishMonth.Heshvan"
                                                             )
-                                                          )
+                                                          ) +
+                                                            "\n                                                                "
                                                         )
                                                       ]
                                                     ),
@@ -41858,7 +41882,8 @@ var render = function() {
                                                             _vm.$t(
                                                               "JewishMonth.Kislev"
                                                             )
-                                                          )
+                                                          ) +
+                                                            "\n                                                                "
                                                         )
                                                       ]
                                                     ),
@@ -41872,7 +41897,8 @@ var render = function() {
                                                             _vm.$t(
                                                               "JewishMonth.Tevet"
                                                             )
-                                                          )
+                                                          ) +
+                                                            "\n                                                                "
                                                         )
                                                       ]
                                                     ),
@@ -41886,7 +41912,8 @@ var render = function() {
                                                             _vm.$t(
                                                               "JewishMonth.Shevat"
                                                             )
-                                                          )
+                                                          ) +
+                                                            "\n                                                                "
                                                         )
                                                       ]
                                                     ),
@@ -41900,7 +41927,8 @@ var render = function() {
                                                             _vm.$t(
                                                               "JewishMonth.Adar"
                                                             )
-                                                          )
+                                                          ) +
+                                                            "\n                                                                "
                                                         )
                                                       ]
                                                     ),
@@ -41914,7 +41942,8 @@ var render = function() {
                                                             _vm.$t(
                                                               "JewishMonth.Adar II"
                                                             )
-                                                          )
+                                                          ) +
+                                                            "\n                                                                "
                                                         )
                                                       ]
                                                     ),
@@ -41928,7 +41957,8 @@ var render = function() {
                                                             _vm.$t(
                                                               "JewishMonth.Nissan"
                                                             )
-                                                          )
+                                                          ) +
+                                                            "\n                                                                "
                                                         )
                                                       ]
                                                     ),
@@ -41942,7 +41972,8 @@ var render = function() {
                                                             _vm.$t(
                                                               "JewishMonth.Iyar"
                                                             )
-                                                          )
+                                                          ) +
+                                                            "\n                                                                "
                                                         )
                                                       ]
                                                     ),
@@ -41958,7 +41989,8 @@ var render = function() {
                                                             _vm.$t(
                                                               "JewishMonth.Sevan"
                                                             )
-                                                          )
+                                                          ) +
+                                                            "\n                                                                "
                                                         )
                                                       ]
                                                     ),
@@ -41974,7 +42006,8 @@ var render = function() {
                                                             _vm.$t(
                                                               "JewishMonth.Tammuz"
                                                             )
-                                                          )
+                                                          ) +
+                                                            "\n                                                                "
                                                         )
                                                       ]
                                                     ),
@@ -42006,7 +42039,8 @@ var render = function() {
                                                             _vm.$t(
                                                               "JewishMonth.Elul"
                                                             )
-                                                          )
+                                                          ) +
+                                                            "\n                                                                "
                                                         )
                                                       ]
                                                     )
@@ -42033,6 +42067,7 @@ var render = function() {
                                                   expression: "Param.Year"
                                                 }
                                               ],
+                                              staticClass: "pp",
                                               attrs: {
                                                 type: "text",
                                                 name: "ddate_year",
@@ -42092,7 +42127,9 @@ var render = function() {
                                                 [
                                                   _c(
                                                     "label",
-                                                    { staticClass: "checkbox" },
+                                                    {
+                                                      staticClass: "checkbox fs"
+                                                    },
                                                     [
                                                       _c("input", {
                                                         directives: [
@@ -42184,30 +42221,24 @@ var render = function() {
                                                           _vm.$t(
                                                             "Button.Sunset"
                                                           )
-                                                        )
-                                                      )
-                                                    ]
-                                                  )
-                                                ]
-                                              ),
-                                              _vm._v(" "),
-                                              _c(
-                                                "div",
-                                                { staticClass: "col-md-1 np" },
-                                                [
-                                                  _c(
-                                                    "div",
-                                                    { staticClass: "hint" },
-                                                    [
-                                                      _c("i", [
-                                                        _vm._v(
-                                                          _vm._s(
-                                                            _vm.$t(
-                                                              "Button.TitleSunset"
+                                                        ) +
+                                                          "\n                                                                "
+                                                      ),
+                                                      _c(
+                                                        "div",
+                                                        { staticClass: "hint" },
+                                                        [
+                                                          _c("i", [
+                                                            _vm._v(
+                                                              _vm._s(
+                                                                _vm.$t(
+                                                                  "Button.TitleSunset"
+                                                                )
+                                                              )
                                                             )
-                                                          )
-                                                        )
-                                                      ])
+                                                          ])
+                                                        ]
+                                                      )
                                                     ]
                                                   )
                                                 ]
@@ -42228,7 +42259,9 @@ var render = function() {
                                             _c("div", { staticClass: "row" }, [
                                               _c(
                                                 "div",
-                                                { staticClass: "col-md-12" },
+                                                {
+                                                  staticClass: "col-md-12 pr-4"
+                                                },
                                                 [
                                                   _c(
                                                     "div",
@@ -42287,7 +42320,7 @@ var render = function() {
                                                             "div",
                                                             {
                                                               staticClass:
-                                                                "hint right"
+                                                                "hint right pr-2"
                                                             },
                                                             [
                                                               _c("i", {
@@ -42333,7 +42366,7 @@ var render = function() {
                                                             "div",
                                                             {
                                                               staticClass:
-                                                                "hint right"
+                                                                "hint right pr-2"
                                                             },
                                                             [
                                                               _c("i", [
@@ -42503,6 +42536,8 @@ var render = function() {
                         )
                       ]
                     ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-2" }),
                     _vm._v(" "),
                     _c(
                       "div",

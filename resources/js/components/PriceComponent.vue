@@ -26,19 +26,55 @@
     }
 </script>
 <style scoped>
-    p{
-        font-size: 23px;
-    }
-    /*@media (max-width: 1200px) {  #intro {height: 1200px;}  }*/
-    @media  (max-height: 480px) {
-        #intro {
-        height: 600px;
-    }
-        p{
-            font-size: 18px;
+    p{font-size: 23px;}
+    @media (max-width: 1200px) {  #intro {height: 700px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 769px;
         }
+        p{font-size: 20px;}
     }
+    @media  (max-height: 480px) {  #intro {height: 600px;}p{font-size: 18px;}  }
+        @media  (max-height: 650px) {#intro {height: 650px;}  p{font-size: 18px;}  }
     @media (max-width: 654px) {  #intro {height: 730px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 569px;
+        }
+        p{font-size: 18px;}
     }
-    /*@media (max-width: 660px) {  #intro {height: 1600px;}  }*/
+    @media (max-width: 860px) {  #intro {height: 700px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 609px;
+        }
+        p{font-size: 18px;}
+    }
+    @media (max-width: 600px) {  #intro {height: 730px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 469px;
+        }
+        p{font-size: 18px;}
+    }
+    @media (max-width: 500px) {  #intro {height: 730px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 369px;
+        }
+        p{font-size: 16px;}
+    }
+    @media (max-width: 360px) {  #intro {height: 830px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 269px;
+        }
+        p{font-size: 16px;}
+    }
 </style>

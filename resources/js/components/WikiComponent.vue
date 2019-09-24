@@ -117,12 +117,17 @@
     }
 </script>
 <style scoped>
+    .cont {
+        background-color: #1d2124;
+        opacity: 0.8;
+        width: 860px;
+    }
     @media (max-width: 1200px) {  #intro {height: 1065px;}  }
 
     @media (max-width: 768px) {  #intro {height: 1302px;}  }
 
     @media (min-width: 800px) and (max-width: 850px) {  #intro {height: 1230px;}  }
 
-    @media (max-width: 660px) {  #intro {height: 1426px;}  }
-    /*@media (max-height: 1000px) {  #intro {height: 1006px;}  }*/
+    @media (max-width: 660px) {  #intro {height: 1927px;}  }
+    @media (max-height: 1000px) {  #intro {height: 1006px;}  }
 </style>
