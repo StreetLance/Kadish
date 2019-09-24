@@ -15,7 +15,10 @@ export default  new VueRouter({
                 {path: '/:lang/about', component: AboutComponent, name:"A"},
                 {path: '/:lang/price', component: PriceComponent , name:"P"},
                 {path: '/:lang/wiki', component: WikiComponent , name:"W"},
-                {path: '/:lang/Pay', component: PayComponent , name:"Pay"},
+                {path: '/:lang/Pay',
+                    component: PayComponent ,
+                    name:"Pay",
+                    props: true},
         {path: '/:lang/*', redirect:"/en" },
         {path: '/*', redirect:"/en" }
     ],

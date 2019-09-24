@@ -274,8 +274,8 @@
                         Order: $order,
                     }
                 }).then((response) => {
-                    console.log(response.data);
-                    this.$router.push({ name: 'Pay', query: { id: response.data.id } })
+                    console.log(response);
+                    this.$router.push({ name: 'Pay', params: { id: response.data } })
                 });
 
             }

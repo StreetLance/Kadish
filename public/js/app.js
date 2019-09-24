@@ -2189,12 +2189,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                     Order: $order
                   }
                 }).then(function (response) {
-                  console.log(response.data);
+                  console.log(response);
 
                   _this2.$router.push({
                     name: 'Pay',
-                    query: {
-                      id: response.data.id
+                    params: {
+                      id: response.data
                     }
                   });
                 });
@@ -2234,7 +2234,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "Pay"
+  name: "Pay",
+  mounted: function mounted() {
+    console.log(this.$route.params.id);
+  }
 });
 
 /***/ }),
@@ -42650,7 +42653,9 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h1", { staticClass: "text-white" }, [_vm._v("Pay")])
+  return _c("h1", { staticClass: "text-white" }, [
+    _vm._v("Pay ID:" + _vm._s(_vm.$route.params.id))
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -60188,7 +60193,8 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
   }, {
     path: '/:lang/Pay',
     component: _components_PayComponent__WEBPACK_IMPORTED_MODULE_6__["default"],
-    name: "Pay"
+    name: "Pay",
+    props: true
   }, {
     path: '/:lang/*',
     redirect: "/en"
