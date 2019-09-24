@@ -44,7 +44,7 @@ In addition to the prayer Yizkor for the parents, one can read Yizkor for any Je
 When reading Yizkor for more than one person, repeat all the prayer for every person and replace the words "my father" or "my mother", with the corresponding word - for husband: "My husband", for the son: "My son" etc.</br>
 </br>'
         ],
-        'wiki2' => [
+        'wiki3' => [
             'Title' => 'Kaddish text in Hebrew',
             'Body' => 'יִתְגַּדַּל וְיִתְקַדַּשׁ שְׁמֵהּ רַבָּא. אמן
 <br>
@@ -60,7 +60,7 @@ When reading Yizkor for more than one person, repeat all the prayer for every pe
 <br>
 עוֹשֶׂה שָׁלוֹם בִּמְרוֹמָיו הוּא יַעֲשֶׂה שָׁלוֹם עָלֵינוּ וְעַל כָּל יִשְׂרָאֵל, וְאִמְרוּ אָמֵן'
         ],
-        'wiki3' => [
+        'wiki4' => [
             'Title' => 'Meaning of Purpose of the Kaddish Prayer',
             'Body' => 'Kaddish Yatom is a prayer that is read for a diseased person. It means "sanctification" in Aramaic. The primary meaning of this prayer is that a person recognizes, celebrates and blesses the just power of the Almighty, and praise all acts of the Creator despite his (or her) loss of a loved one.</br>
 </br>
@@ -73,7 +73,7 @@ A duty of Kadish prayer reading falls on a son (or a spouse). And according to o
 </br>
 If no one can read Kaddish Prayer, you can order reading of the Kaddish online.</br>'
         ],
-        'wiki4' => [
+        'wiki2' => [
             'Title' => 'What is Yahrzeit',
             'Body' => 'Yahrzeit is the anniversary of passing. The word yahrzeit (anniversary) comes from the Yiddish language (Yahr is the year, Zeit –time, or”Yom ha Shana” in Hebrew). A special commemorative procedure on the parents’ death anniversary is discussed in the Talmud. The deceased is remembered this day, tribute is paid to him, and close relative and friends meditate on the essence of the life of the deceased.</br></br>
 Yahrzeit is a special time for the soul of the deceased. It has a particularly strong connection with living relatives on this day. And it is important for the soul to be remembered.</br>

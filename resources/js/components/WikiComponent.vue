@@ -23,7 +23,7 @@
                                         <h4 id="list-item-2">{{$t('Pages.wiki2.Title')}}</h4>
                                         <div class="cont">
                                             <hr class="hr-light">
-                                            <p class="text-right ml-5 mr-5 mb-5 mt-5"><span
+                                            <p class="text-left ml-5 mr-5 mb-5 mt-5"><span
                                                 v-html="$t('Pages.wiki2.Body')"></span></p>
                                             <hr class="hr-light">
                                         </div>
@@ -33,7 +33,7 @@
                                         <h4 id="list-item-3">{{$t('Pages.wiki3.Title')}}</h4>
                                         <div class="cont">
                                             <hr class="hr-light">
-                                            <p class="text-left ml-5 mr-5 mb-5 mt-5"><span
+                                            <p class="text-right ml-5 mr-5 mb-5 mt-5"><span
                                                 v-html="$t('Pages.wiki3.Body')"></span></p>
                                             <hr class="hr-light">
                                         </div>
@@ -122,12 +122,47 @@
         opacity: 0.8;
         width: 860px;
     }
-    @media (max-width: 1200px) {  #intro {height: 1065px;}  }
+    @media (max-width: 1380px) {  #intro {height: 1065px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 758px;
+        }
+    }
+    @media (max-width: 1200px) {  #intro {height: 1065px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 698px;
+        }
+    }
+    @media (max-width: 1000px) {  #intro {height: 1065px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 560px;
+        }
+    }
 
-    @media (max-width: 768px) {  #intro {height: 1302px;}  }
 
-    @media (min-width: 800px) and (max-width: 850px) {  #intro {height: 1230px;}  }
 
-    @media (max-width: 660px) {  #intro {height: 1927px;}  }
-    @media (max-height: 1000px) {  #intro {height: 1006px;}  }
+    @media   (max-width: 850px) {  #intro {height: 1230px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 480px;
+        }
+    }
+    @media (max-width: 770px) {  #intro {height: 1202px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 100%;
+        }
+    }
+    @media  (max-width: 900px) {  #intro {height: 1230px;}  }
+    @media (max-width: 660px) {  #intro {height: 1527px;}  }
+    @media (max-width: 500px) {  #intro {height: 1927px;}  }
+    @media (max-height: 900px) {  #intro {height: 1848px;}  }
+    /*@media (max-height: 463px) {  #intro {height: 1948px;}  }*/
 </style>
