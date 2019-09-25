@@ -7047,7 +7047,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\np[data-v-5049bb1b]{font-size: 16px;}\n/*@media (max-width: 1300px) {  p{font-size: 14px;}  }*/\n@media (max-width: 1200px) {\n#intro[data-v-5049bb1b] {height: 1230px;}\n}\n@media (min-width: 800px) and (max-width: 850px) {\n#intro[data-v-5049bb1b] {height: 1359px;}\n}\n@media (max-width: 768px) {\n#intro[data-v-5049bb1b] {height: 1180px;}\n}\n@media (max-width: 660px) {\n#intro[data-v-5049bb1b] {height: 1381px;}\n}\n@media (max-width: 500px) {\n#intro[data-v-5049bb1b] {height: 1681px;}\n}\n@media (max-height: 970px) {\n#intro[data-v-5049bb1b] {height: 1681px;}\n}\n", ""]);
+exports.push([module.i, "\np[data-v-5049bb1b]{font-size: 16px;}\n/*@media (max-width: 1300px) {  p{font-size: 14px;}  }*/\n@media (max-width: 1200px) {\n#intro[data-v-5049bb1b] {height: 1230px;}\n}\n@media (min-width: 800px) and (max-width: 850px) {\n#intro[data-v-5049bb1b] {height: 1359px;}\n}\n@media (max-width: 768px) {\n#intro[data-v-5049bb1b] {height: 1180px;}\n}\n@media (max-width: 660px) {\n#intro[data-v-5049bb1b] {height: 1381px;}\n}\n@media (max-width: 500px) {\n#intro[data-v-5049bb1b] {height: 1681px;}\n}\n/*@media (max-height: 970px) {  #intro {height: 1681px;}  }*/\n", ""]);
 
 // exports
 

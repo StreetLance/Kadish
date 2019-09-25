@@ -36,5 +36,5 @@
     @media (max-width: 768px) {  #intro {height: 1180px;}  }
     @media (max-width: 660px) {  #intro {height: 1381px;}  }
     @media (max-width: 500px) {  #intro {height: 1681px;}  }
-    @media (max-height: 970px) {  #intro {height: 1681px;}  }
+    /*@media (max-height: 970px) {  #intro {height: 1681px;}  }*/
 </style>
