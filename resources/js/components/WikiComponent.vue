@@ -136,7 +136,7 @@
             width: 698px;
         }
     }
-    @media (max-width: 1000px) {  #intro {height: 1065px;}
+    @media (max-width: 1000px) {  #intro {height: 1165px;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
@@ -146,24 +146,45 @@
 
 
 
-    @media   (max-width: 850px) {  #intro {height: 1230px;}
+    @media   (max-width: 850px) {  #intro {height: 1330px;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
             width: 480px;
         }
     }
-    @media (max-width: 770px) {  #intro {height: 1202px;}
+    @media (max-width: 770px) {  #intro {height: 1452px;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
             width: 100%;
         }
     }
-    @media  (max-width: 900px) {  #intro {height: 1230px;}  }
-    @media (max-width: 660px) {  #intro {height: 1527px;}  }
-    @media (max-width: 500px) {  #intro {height: 1927px;}  }
-    @media (max-width: 660px)and (max-height: 900px) {  #intro {height: 1848px;}  }
-    @media (max-height: 900px) {  #intro {height: 1048px;}  }
+    @media (max-width: 660px) {  #intro {height: 1652px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 100%;
+        }
+    }
+    @media (max-width: 530px) {  #intro {height: 1852px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 100%;
+        }
+    }
+    @media (max-width: 470px) {  #intro {height: 2552px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 100%;
+        }
+    }
+    /*@media  (max-width: 900px) {  #intro {height: 1230px;}  }*/
+    /*@media (max-width: 660px) {  #intro {height: 1527px;}  }*/
+    /*@media (max-width: 500px) {  #intro {height: 1927px;}  }*/
+    /*@media (max-width: 660px)and (max-height: 900px) {  #intro {height: 1848px;}  }*/
+    /*@media (max-height: 900px) {  #intro {height: 1048px;}  }*/
     /*@media (max-height: 463px) {  #intro {height: 1948px;}  }*/
 </style>
