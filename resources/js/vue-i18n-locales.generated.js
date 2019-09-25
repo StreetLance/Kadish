@@ -21,6 +21,13 @@ export default {
             "JewishTitle2": "If you know the jewish date of passing please switch to jewish calendar",
             "Send": "Send"
         },
+        "Form": {
+            "required": "Required!",
+            "numeric": "Numbers",
+            "minLength": "Min length",
+            "maxLength": "Max length",
+            "email": "Try again"
+        },
         "JewishMonth": {
             "Tishry": "Tishry",
             "Heshvan": "Heshvan",
@@ -240,6 +247,13 @@ export default {
             "JewishTitle": "Если вы знаете еврейскую дату - переключите на еврейский календарь",
             "JewishTitle2": "Если вы знаете григорианскую дату - переключите на григорианский календарь",
             "Send": "Отправить"
+        },
+        "Form": {
+            "required": "Обязательно!",
+            "numeric": "Только цифры!",
+            "minLength": "Мин. длинна",
+            "maxLength": "Макс. длинна",
+            "email": "Повторите попытку"
         },
         "JewishMonth": {
             "Tishry": "Тишрей",

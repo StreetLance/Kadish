@@ -292,9 +292,9 @@ hr {border: none; color: #666; background-color: #666; height: 1px;}
 .field-wr {display: inline-block; padding:14px 0;  position: relative; vertical-align: middle;}
 .field-wr.lastline {border-bottom: none;}
 .field-wr .I {padding: 2px 4px; transition: all 0.3s ease;}
-.field-wr .error {/*background-color: rgba(255,0,0,.3);*/}
-.field-wr .error-mess {position: absolute; font-size: 12px; font-weight: 700; color: #f00; width: 100px; opacity: 0; transition: all 0.3s ease;}
-.field-wr .error .error-mess {opacity: 1;}
+.field-wr .form-group--error .error-mess {position: absolute; font-size: 12px; font-weight: 700; color: #980a0a; width: 100px; opacity: 1; transition: all 0.3s ease;}
+/*.field-wr .error-mess {position: absolute; font-size: 12px; font-weight: 700; color: #f00; width: 100px; opacity: 1; transition: all 0.3s ease;}*/
+/*.field-wr .error .error-mess {opacity: 1;}*/
 
 .field-wr input[type=text],
 .field-wr label,

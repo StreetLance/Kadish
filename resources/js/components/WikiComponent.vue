@@ -163,6 +163,7 @@
     @media  (max-width: 900px) {  #intro {height: 1230px;}  }
     @media (max-width: 660px) {  #intro {height: 1527px;}  }
     @media (max-width: 500px) {  #intro {height: 1927px;}  }
-    @media (max-height: 900px) {  #intro {height: 1848px;}  }
+    @media (max-width: 660px)and (max-height: 900px) {  #intro {height: 1848px;}  }
+    @media (max-height: 900px) {  #intro {height: 1048px;}  }
     /*@media (max-height: 463px) {  #intro {height: 1948px;}  }*/
 </style>

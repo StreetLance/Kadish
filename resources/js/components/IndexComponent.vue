@@ -25,41 +25,46 @@
                                         <form method="post" action="_frame_handler.php">
                                             <div class="fields-wr row">
                                                 <div class="field-wr halfwidth divider col-md-6">
-                                                    <div class="I"><input type="text" name="nameOfPassing"
+                                                    <div class="I " :class="{ 'form-group--error': $v.Form.Name_of_Deceased.$error }">
+                                                        <input type="text" name="nameOfPassing"
                                                                           :placeholder="$t('Button.NameD')"
-                                                                          v-model="Form.Name_of_Deceased" valid="com"
-                                                                          required>
-                                                        <div class="error-mess">Incorrect Data</div>
+                                                               v-model.trim="Form.Name_of_Deceased"
+                                                               @input="delayTouch($v.Form.Name_of_Deceased)">
+                                                        <div class="error-mess " v-if="!$v.Form.Name_of_Deceased.required">{{$t('Form.required')}}</div>-->
+                                                        <div class="error-mess" v-if="!$v.Form.Name_of_Deceased.minLength"> {{$t('Form.minLength')}} 2</div>
+                                                        <div class="error-mess" v-if="!$v.Form.Name_of_Deceased.maxLength"> {{$t('Form.maxLength')}} 15</div>
                                                     </div>
                                                 </div>
                                                 <hr class="mobile">
                                                 <div class="field-wr halfwidth col-md-6">
-                                                    <div class="I"><input type="text" name="nameOfFather"
+                                                    <div class="I" :class="{ 'form-group--error': $v.Form.Name_Father_Deceased.$error }"><input type="text" name="nameOfFather"
                                                                           :placeholder="$t('Button.NameFD')"
-                                                                          v-model="Form.Name_Father_Deceased"
-                                                                          valid="com" required>
-                                                        <div class="error-mess">Incorrect Data</div>
+                                                                          v-model.trim="Form.Name_Father_Deceased"
+                                                                          valid="com" @input="delayTouch($v.Form.Name_Father_Deceased)">
+                                                        <div class="error-mess" v-if="!$v.Form.Name_Father_Deceased.required">{{$t('Form.required')}}</div>
+                                                        <div class="error-mess" v-if="!$v.Form.Name_Father_Deceased.minLength"> {{$t('Form.minLength')}} 2</div>
+                                                        <div class="error-mess" v-if="!$v.Form.Name_Father_Deceased.maxLength"> {{$t('Form.maxLength')}} 15</div>
                                                     </div>
                                                 </div>
                                                 <div class="label col-md-12">{{$t('Button.TitleDP')}}</div>
                                                 <div class="loading ">
                                                     <div id="ddate">
                                                         <div class="field-wr ddate col-md-3 bot-np">
-                                                            <div class="I">
+                                                            <div class="I" :class="{ 'form-group--error': $v.Param.Day.$error }">
                                                                 <input type="text" name="ddate_date"
-                                                                       placeholder="Date..." value="16" min="1" max="31"
+                                                                       placeholder="Date..."
                                                                        id="ddate_date"
-                                                                       v-model="Param.Day" required>
-                                                                <div class="error-mess">Incorrect Date</div>
+                                                                       v-model.trim="Param.Day" @input="delayTouch($v.Param.Day)">
+                                                                <div class="error-mess" v-if="!$v.Param.Day.required">{{$t('Form.required')}}</div>
+                                                                <div class="error-mess" v-if="!$v.Param.Day.minLength"> {{$t('Form.minLength')}} 2</div>
+                                                                <div class="error-mess" v-if="!$v.Param.Day.maxLength"> {{$t('Form.maxLength')}} 15</div>
+                                                                <div class="error-mess" v-if="!$v.Param.Day.numeric"> {{$t('Form.numeric')}}.</div>
                                                             </div>
                                                         </div>
                                                         <div class="field-wr dmnth col-md-3 bot-np">
-                                                            <div class="I">
-                                                                <select v-model="Param.Month"
-                                                                        class="custom-select custom-select-sm text-white"
-                                                                        v-if="showJ">
-                                                                    <option value="1" selected>{{$t('Month.January')}}
-                                                                    </option>
+                                                            <div class="I" :class="{ 'form-group--error': $v.Param.Month.$error }">
+                                                                <select v-model.trim="Param.Month" class="custom-select custom-select-sm text-white" v-if="showJ">
+                                                                    <option value="1" selected>{{$t('Month.January')}}</option>
                                                                     <option value="2">{{$t('Month.February')}}</option>
                                                                     <option value="3">{{$t('Month.March')}}</option>
                                                                     <option value="4">{{$t('Month.April')}}</option>
@@ -72,32 +77,18 @@
                                                                     <option value="11">{{$t('Month.November')}}</option>
                                                                     <option value="12">{{$t('Month.December')}}</option>
                                                                 </select>
-                                                                <select v-model="Param.Month"
-                                                                        class="custom-select custom-select-sm text-white"
-                                                                        v-else>
-                                                                    <option value="1" selected>
-                                                                        {{$t('JewishMonth.Tishry')}}
-                                                                    </option>
-                                                                    <option value="2">{{$t('JewishMonth.Heshvan')}}
-                                                                    </option>
-                                                                    <option value="3">{{$t('JewishMonth.Kislev')}}
-                                                                    </option>
-                                                                    <option value="4">{{$t('JewishMonth.Tevet')}}
-                                                                    </option>
-                                                                    <option value="5">{{$t('JewishMonth.Shevat')}}
-                                                                    </option>
-                                                                    <option value="6">{{$t('JewishMonth.Adar')}}
-                                                                    </option>
-                                                                    <option value="7">{{$t('JewishMonth.Adar II')}}
-                                                                    </option>
-                                                                    <option value="8">{{$t('JewishMonth.Nissan')}}
-                                                                    </option>
-                                                                    <option value="9">{{$t('JewishMonth.Iyar')}}
-                                                                    </option>
-                                                                    <option value="10">{{$t('JewishMonth.Sevan')}}
-                                                                    </option>
-                                                                    <option value="11">{{$t('JewishMonth.Tammuz')}}
-                                                                    </option>
+                                                                <select v-model.trim="Param.Month" class="custom-select custom-select-sm text-white" v-else>
+                                                                    <option value="1" selected>{{$t('JewishMonth.Tishry')}}</option>
+                                                                    <option value="2">{{$t('JewishMonth.Heshvan')}}</option>
+                                                                    <option value="3">{{$t('JewishMonth.Kislev')}}</option>
+                                                                    <option value="4">{{$t('JewishMonth.Tevet')}}</option>
+                                                                    <option value="5">{{$t('JewishMonth.Shevat')}}</option>
+                                                                    <option value="6">{{$t('JewishMonth.Adar')}}</option>
+                                                                    <option value="7">{{$t('JewishMonth.Adar II')}}</option>
+                                                                    <option value="8">{{$t('JewishMonth.Nissan')}}</option>
+                                                                    <option value="9">{{$t('JewishMonth.Iyar')}}</option>
+                                                                    <option value="10">{{$t('JewishMonth.Sevan')}}</option>
+                                                                    <option value="11">{{$t('JewishMonth.Tammuz')}}</option>
                                                                     <option value="12">{{$t('JewishMonth.Av')}}</option>
                                                                     <option value="13">{{$t('JewishMonth.Elul')}}
                                                                     </option>
@@ -106,11 +97,15 @@
                                                             </div>
                                                         </div>
                                                         <div class="field-wr dyear col-md-2 bot-np">
-                                                            <div class="I">
+                                                            <div class="I" :class="{ 'form-group--error': $v.Param.Year.$error }">
                                                                 <input type="text" class="pp" name="ddate_year"
                                                                        placeholder="Year..." value="2019" min="1869"
                                                                        max="2019" id="ddate_year"
-                                                                       v-model="Param.Year" required>
+                                                                       v-model.trim="Param.Year"
+                                                                       @input="delayTouch($v.Param.Year)">
+                                                                <div class="error-mess" v-if="!$v.Param.Year.required">{{$t('Form.required')}}</div>
+                                                                <div class="error-mess" v-if="!$v.Param.Year.between">{{$v.Param.Year.$params.between.min}}-{{$v.Param.Year.$params.between.max}}</div>
+                                                                <div class="error-mess" v-if="!$v.Param.Year.numeric"> {{$t('Form.numeric')}}.</div>
                                                             </div>
                                                         </div>
                                                         <div class="field-wr dsuns col-md-4 bot-np">
@@ -118,7 +113,7 @@
                                                                 <div class="col-md-9 mw np"><label
                                                                     class="checkbox fs"><input
                                                                     type="checkbox" name="ddate_dsuns" id="ddate_dsuns"
-                                                                    v-model="Form.Sunset"><i></i>{{$t('Button.Sunset')}}
+                                                                    v-model.trim="Form.Sunset"><i></i>{{$t('Button.Sunset')}}
                                                                     <div class="hint">
                                                                         <i>{{$t('Button.TitleSunset')}}</i></div>
                                                                 </label>
@@ -155,24 +150,27 @@
                                                 </div>
 
                                                 <div class="field-wr top-np halfwidth divider lastline">
-                                                    <div class="I"><input type="text" name="email"
+                                                    <div class="I" :class="{ 'form-group--error': $v.Form.Email.$error }"><input type="text" name="email"
                                                                           :placeholder="$t('Button.Mail')"
-                                                                          v-model="Form.Email"
-                                                                          valid="com" minlength="5"
-                                                                          maxlength="15" required>
-                                                        <div class="error-mess">Incorrect Data</div>
+                                                                          v-model.trim="Form.Email"
+                                                                           @input="delayTouch($v.Form.Email)">
+                                                         <div class="error-mess" v-if="!$v.Form.Email.required">{{$t('Form.required')}}</div>
+                                                        <div class="error-mess" v-if="!$v.Form.Email.minLength"> {{$t('Form.minLength')}} 2</div>
+                                                        <div class="error-mess" v-if="!$v.Form.Email.maxLength"> {{$t('Form.maxLength')}} 15</div>
+                                                         <div class="error-mess" v-if="!$v.Form.Email.email"> {{$t('Form.email')}}</div>
                                                     </div>
                                                 </div>
                                                 <hr class="mobile">
                                                 <div class="field-wr top-np halfwidth lastline">
-                                                    <div class="I phone"><input type="text" name="phone"
+                                                    <div class="I phone" :class="{ 'form-group--error': $v.Form.Phone.$error }">
+                                                        <input type="text" name="phone"
                                                                                 :placeholder="$t('Button.Phone')"
                                                                                 valid="com"
-                                                                                minlength="5"
-                                                                                v-model="Form.Phone"
-                                                                                maxlength="15"
-                                                                                required>
-                                                        <div class="error-mess">Incorrect Data</div>
+                                                                                v-model.trim="Form.Phone" @input="delayTouch($v.Form.Phone)">
+                                                        <div class="error-mess" v-if="!$v.Form.Phone.required">{{$t('Form.required')}}</div>
+                                                        <div class="error-mess" v-if="!$v.Form.Phone.minLength"> {{$t('Form.minLength')}} 2</div>
+                                                        <div class="error-mess" v-if="!$v.Form.Phone.maxLength"> {{$t('Form.maxLength')}} 15</div>
+                                                        <div class="error-mess" v-if="!$v.Form.Phone.numeric"> {{$t('Form.numeric')}}.</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -202,88 +200,114 @@
                             </li>
                         </ul>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
 </template>
 <script>
+    import { required, minLength,email,numeric,maxLength,between } from 'vuelidate/lib/validators';
+    const touchMap = new WeakMap();
     export default {
 
         data: function () {
             return {
-                Item: [],
-                choice: false,
-                show: true,
-                showJ: true,
-                spiner: false,
-
-                Form: {
-                    Name_of_Deceased: "",
-                    Name_Father_Deceased: "",
-                    Email: "",
-                    Phone: "",
-                    Sunset: false
-                },
+                Item: [], choice: false, show: true, showJ: true, spiner: false,
+                Form: {Name_of_Deceased: "", Name_Father_Deceased: "", Email:"", Phone: "", Sunset: false},
                 Param: {Day: " ", Month: " ", Year: " ", DataSet: "G"},
             }
         },
-        // beforeRouteEnter(to, from, next) {next()},
-        mounted() {
-            var date = new Date();
+        validations: {
+            Form: {
+                Name_of_Deceased: {
+                    required,
+                    minLength: minLength(2),
+                    maxLength: maxLength(15),
+                },
+                Name_Father_Deceased: {
+                    required,
+                    minLength: minLength(2),
+                    maxLength: maxLength(15),
+                },
+                Email: {
+                    required,
+                    minLength: minLength(4),
+                    maxLength: maxLength(15),
+                    email,
+                },
+                Phone: {
+                    required,
+                    minLength: minLength(4),
+                    maxLength: maxLength(15),
+                    numeric,
+                }},
+            Param: {
+                Day: {
+                    required,
+                    minLength: minLength(1),
+                    maxLength: maxLength(2),
+                    numeric
+                },
+                Month: {
+                    required
+                },
+                Year:{
+                    required,
+                    between: between(1869, 2019),
+                    numeric
+                }},
+        },
+        mounted() {var date = new Date();
             this.Param.Day = date.getDate();
             this.Param.Month = String(date.getMonth() + 1);
             this.Param.Year = date.getFullYear();
         },
         methods: {
+            delayTouch($v) {
+                $v.$touch();
+                if (touchMap.has($v)) {
+                    clearTimeout(touchMap.get($v))
+                }
+                touchMap.set($v, setTimeout($v.$touch, 1000))
+            },
             HebrewCal($date) {
-                if (this.Param.Day !== " " && typeof this.Param.Day !== 'undefined' && this.Param.Month !== " " && typeof this.Param.Month !== 'undefined' && this.Param.Year !== " " && typeof this.Param.Year !== 'undefined') {
+                if (!this.$v.Param.$invalid){
                     this.spiner = true;
-                    if ($date === "J") {
-                        this.showJ = !this.showJ;
-                        this.show = !this.show;
-                        this.Param.DataSet = "J";
-                    } else if ($date === "G") {
-                        console.log('this is g')
-                        this.showJ = true;
-                        this.show = true;
-                        this.Param.DataSet = "G";
-                    }
+                    if ($date === "J") { this.showJ = !this.showJ; this.show = !this.show; this.Param.DataSet = "J";}
+
+                    else if ($date === "G") {this.showJ = true;this.show = true;this.Param.DataSet = "G";}
+
                     axios.get('api/' + $date + '/' + this.Param.Day + '/' + this.Param.Month + '/' + this.Param.Year).then((response) => {
-                        this.Param.Day = response.data.day;
-                        this.Param.Month = response.data.month;
-                        this.Param.Year = response.data.year;
-                        this.spiner = false;
+                        this.Param.Day = response.data.day; this.Param.Month = response.data.month; this.Param.Year = response.data.year; this.spiner = false;
                     });
                 }
             },
             async Kaddish($order) {
-                let Sunset
-                (this.Form.Sunset === false) ? Sunset = 0 : Sunset = 1;
-                await axios.get('api/kadish/create', {
-                    params: {
-                        Name_of_Deceased: this.Form.Name_of_Deceased,
-                        Name_Father_Deceased: this.Form.Name_Father_Deceased,
-                        Email: this.Form.Email,
-                        Phone: this.Form.Phone,
-                        Sunset: Sunset,
-                        Day: this.Param.Day,
-                        Month: this.Param.Month,
-                        Year: this.Param.Year,
-                        DataSet: this.Param.DataSet,
-                        Order: $order,
-                    }
-                }).then((response) => {
-                    console.log(response);
-                    this.$router.push({ name: 'Pay', params: { id: response.data } })
-                });
+                if (!this.$v.Form.$invalid && !this.$v.Param.$invalid) {
+                    let Sunset;
+                    (this.Form.Sunset === false) ? Sunset = 0 : Sunset = 1;
+                    await axios.get('api/kadish/create', {
+                        params: {
+                            Name_of_Deceased: this.Form.Name_of_Deceased,
+                            Name_Father_Deceased: this.Form.Name_Father_Deceased,
+                            Email: this.Form.Email,
+                            Phone: this.Form.Phone,
+                            Sunset: Sunset,
+                            Day: this.Param.Day,
+                            Month: this.Param.Month,
+                            Year: this.Param.Year,
+                            DataSet: this.Param.DataSet,
+                            Order: $order,
+                        }
+                    }).then((response) => {
+                        // console.log(response);
+                        this.$router.push({name: 'Pay', params: {id: response.data}})
+                    });
 
+                }
             }
-
         }
-
-        // watch: {'$route'(to, from) {}},
-        // beforeRouteUpdate(to, from, next) {next()}
     }
 </script>
 
@@ -343,9 +367,7 @@
             margin-right: -15px;
             margin-left: -15px;
         }
-
         hr {margin-top: 10px;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}
-
         .field-wr input[type=text], .field-wr label, .field-wr textarea {
             font: normal 300 15px/29px 'Roboto', sans-serif;
             width: 100%;
@@ -360,7 +382,6 @@
     }
 
     @media (max-width: 760px) {  #intro {height: 1200px;}
-
         .field-wr.divider .I, .field-wr.dname .I, .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I, .field-wr.cmail .I {border-right: 0px;}
         .row {
             display: -ms-flexbox;
