@@ -19,8 +19,8 @@ export default  new VueRouter({
                     component: PayComponent ,
                     name:"Pay",
                     props: true},
-        {path: '/:lang/*', redirect:"/en" },
-        {path: '/*', redirect:"/en" }
+        // {path: '/:lang/*', redirect:"/en" },
+        // {path: '/*', redirect:"/en" }
     ],
     mode: 'history'
 

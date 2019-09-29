@@ -104,7 +104,7 @@
                                                                        v-model.trim="Param.Year"
                                                                        @input="delayTouch($v.Param.Year)">
                                                                 <div class="error-mess" v-if="!$v.Param.Year.required">{{$t('Form.required')}}</div>
-                                                                <div class="error-mess" v-if="!$v.Param.Year.between">{{$v.Param.Year.$params.between.min}}-{{$v.Param.Year.$params.between.max}}</div>
+<!--                                                                <div class="error-mess" v-if="!$v.Param.Year.between">{{$v.Param.Year.$params.between.min}}-{{$v.Param.Year.$params.between.max}}</div>-->
                                                                 <div class="error-mess" v-if="!$v.Param.Year.numeric"> {{$t('Form.numeric')}}.</div>
                                                             </div>
                                                         </div>
@@ -124,19 +124,26 @@
                                                             <div class="I">
                                                                 <div class="row">
                                                                     <div class="col-md-12 pr-4">
-                                                                        <div class="spinner-grow text-warning"
-                                                                             role="status" v-show="spiner">
+
+                                                                        <a class="jdate orange-text np"
+                                                                           @click="HebrewCal('J')" v-if="showJ">
+                                                                            <div class="spinner-grow text-warning pl-5" role="status" v-show="spiner">
                                                                             <span class="sr-only">Loading...</span>
                                                                         </div>
-                                                                        <a class="jdate orange-text np"
-                                                                           @click="HebrewCal('J')" v-if="showJ"><span
+                                                                            <span
                                                                             v-html="$t('Button.JewishCal')"></span>
                                                                             <div class="hint right pr-2"><i
                                                                                 v-html="$t('Button.JewishTitle')"></i>
+
                                                                             </div>
+
                                                                         </a>
                                                                         <a class="jdate  orange-text np"
-                                                                           @click="HebrewCal('G')" v-else><span
+                                                                           @click="HebrewCal('G')" v-else>
+                                                                            <div class="spinner-grow text-warning pl-5" role="status" v-show="spiner">
+                                                                                <span class="sr-only">Loading...</span>
+                                                                            </div>
+                                                                            <span
                                                                             v-html="$t('Button.JewishCal2')"></span>
                                                                             <div class="hint right pr-2"><i>{{$t('Button.JewishTitle2')}}</i>
                                                                             </div>
@@ -199,6 +206,25 @@
                             <li class="godaddy"><span id="siteseal"></span>
                             </li>
                         </ul>
+
+                        //-------------------plaques
+
+                        <ul class="plaques" id="plaques-placeholder">
+                            <li class="plaque">
+                                <div class="plaque-content">
+                                    <h2>Rabinovich<br>Reuven Shimon<br>ben Levi Yehuda Naftali</h2>
+                                    <p>12 Teveta 5612<br>23 December 1882</p>
+                                    <p>9 Av 5732<br>17 July 2002</p>
+                                </div>
+                            </li>
+                            <li class="plaque tree">
+                                <div class="plaque-content">
+                                    <h2>Rabinovich<br>Reuven Shimon<br>ben Levi Yehuda Naftali</h2>
+                                    <p>12 Teveta 5612<br>23 December 1882</p>
+                                    <p>9 Av 5732<br>17 July 2002</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
 
                 </div>
@@ -215,7 +241,7 @@
             return {
                 Item: [], choice: false, show: true, showJ: true, spiner: false,
                 Form: {Name_of_Deceased: "", Name_Father_Deceased: "", Email:"", Phone: "", Sunset: false},
-                Param: {Day: " ", Month: " ", Year: " ", DataSet: "G"},
+                Param: {Day: "", Month:"", Year: "", DataSet: "G"},
             }
         },
         validations: {
@@ -223,30 +249,30 @@
                 Name_of_Deceased: {
                     required,
                     minLength: minLength(2),
-                    maxLength: maxLength(15),
+                    maxLength: maxLength(50),
                 },
                 Name_Father_Deceased: {
                     required,
                     minLength: minLength(2),
-                    maxLength: maxLength(15),
+                    maxLength: maxLength(50),
                 },
                 Email: {
                     required,
                     minLength: minLength(4),
-                    maxLength: maxLength(15),
+                    maxLength: maxLength(50),
                     email,
                 },
                 Phone: {
                     required,
                     minLength: minLength(4),
-                    maxLength: maxLength(15),
+                    maxLength: maxLength(50),
                     numeric,
                 }},
             Param: {
                 Day: {
                     required,
                     minLength: minLength(1),
-                    maxLength: maxLength(2),
+                    maxLength: maxLength(50),
                     numeric
                 },
                 Month: {
@@ -254,34 +280,42 @@
                 },
                 Year:{
                     required,
-                    between: between(1869, 2019),
+                    // between: between(1869, 2019),
                     numeric
                 }},
         },
-        mounted() {var date = new Date();
+        mounted() {
+            var date = new Date();
             this.Param.Day = date.getDate();
             this.Param.Month = String(date.getMonth() + 1);
             this.Param.Year = date.getFullYear();
         },
         methods: {
             delayTouch($v) {
-                $v.$touch();
-                if (touchMap.has($v)) {
-                    clearTimeout(touchMap.get($v))
-                }
-                touchMap.set($v, setTimeout($v.$touch, 1000))
+                // $v.$touch();
+                // if (touchMap.has($v)) {
+                //     clearTimeout(touchMap.get($v))
+                // }
+                // touchMap.set($v, setTimeout($v.$touch, 1000))
             },
             HebrewCal($date) {
+
+                console.log(this.Param.Month);
                 if (!this.$v.Param.$invalid){
+                    let month =this.Param.Month;
+                    this.Param.Month ="";
                     this.spiner = true;
+
                     if ($date === "J") { this.showJ = !this.showJ; this.show = !this.show; this.Param.DataSet = "J";}
 
                     else if ($date === "G") {this.showJ = true;this.show = true;this.Param.DataSet = "G";}
 
-                    axios.get('api/' + $date + '/' + this.Param.Day + '/' + this.Param.Month + '/' + this.Param.Year).then((response) => {
+                    axios.get('api/' + $date + '/' + this.Param.Day + '/' + month + '/' + this.Param.Year).then((response) => {
+                        this.Param.Month="";
+                        console.log(response);
                         this.Param.Day = response.data.day; this.Param.Month = response.data.month; this.Param.Year = response.data.year; this.spiner = false;
                     });
-                }
+                } else {this.$v.Param.$touch();}
             },
             async Kaddish($order) {
                 if (!this.$v.Form.$invalid && !this.$v.Param.$invalid) {
@@ -304,7 +338,8 @@
                         // console.log(response);
                         this.$router.push({name: 'Pay', params: {id: response.data}})
                     });
-
+                }else {
+                    this.$v.$touch();
                 }
             }
         }
@@ -355,9 +390,12 @@
         appearance: none;
         border: none;
     }
+    #intro{
+        height: 1162px;
+    }
+    @media (max-width: 1200px) {  #intro {height: 1200px;}}
     @media (max-height: 800px){ #intro {height: 950px;}}
-    @media (max-width: 1200px) {  #intro {height: 920px;}}
-    @media (max-width: 850px) {  #intro {height: 1050px;}
+    @media (max-width: 850px) {  #intro {height: 1162px;}
         .field-wr.divider .I, .field-wr.dname .I, .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I, .field-wr.cmail .I {border-right: 0px;}
         .row {
             display: -ms-flexbox;
@@ -381,7 +419,7 @@
         .field-wr.switch-cal {width: 15%; text-align: right;}
     }
 
-    @media (max-width: 760px) {  #intro {height: 1200px;}
+    @media (max-width: 760px) {  #intro {height: 1460px;}
         .field-wr.divider .I, .field-wr.dname .I, .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I, .field-wr.cmail .I {border-right: 0px;}
         .row {
             display: -ms-flexbox;
@@ -405,7 +443,7 @@
         .field-wr.switch-cal {width: 15%; text-align: right;}
     }
 
-    @media (max-width: 660px) {#intro {height: 1435px;}
+    @media (max-width: 660px) {#intro {height: 1635px;}
         .field-wr.divider .I, .field-wr.dname .I, .field-wr.cmail .I {border-right: 0px;}
         .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I {border: 1px solid #666;}
         .row {
@@ -431,5 +469,30 @@
         .field-wr.dsuns {width: 72%;}
         .field-wr.switch-cal {width: 26%; text-align: right;}
     }
-
+    @media (max-width: 350px) {#intro {height: 2000px;}
+        .field-wr.divider .I, .field-wr.dname .I, .field-wr.cmail .I {border-right: 0px;}
+        .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I {border: 1px solid #666;}
+        .row {
+            display: -ms-flexbox;
+            display: block;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+        hr {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}
+        .field-wr input[type=text], .field-wr label, .field-wr textarea {
+            font: normal 300 15px/29px 'Roboto', sans-serif;
+            width: 100%;
+            background: none;
+            /*padding: 0 2px;*/
+            color: #fff;
+            border: none;
+            outline: none;
+        }
+        .field-wr.ddate, .field-wr.dmnth, .field-wr.dyear {width: 100%;max-width: 100%;}
+        .mw[data-v-754b2df6] {max-width: 100%;}
+        .field-wr.dsuns {width: 72%;}
+        .field-wr.switch-cal {width: 26%; text-align: right;}
+    }
 </style>

@@ -2107,6 +2107,32 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 var touchMap = new WeakMap();
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2125,9 +2151,9 @@ var touchMap = new WeakMap();
         Sunset: false
       },
       Param: {
-        Day: " ",
-        Month: " ",
-        Year: " ",
+        Day: "",
+        Month: "",
+        Year: "",
         DataSet: "G"
       }
     };
@@ -2137,23 +2163,23 @@ var touchMap = new WeakMap();
       Name_of_Deceased: {
         required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["required"],
         minLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["minLength"])(2),
-        maxLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["maxLength"])(15)
+        maxLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["maxLength"])(50)
       },
       Name_Father_Deceased: {
         required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["required"],
         minLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["minLength"])(2),
-        maxLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["maxLength"])(15)
+        maxLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["maxLength"])(50)
       },
       Email: {
         required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["required"],
         minLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["minLength"])(4),
-        maxLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["maxLength"])(15),
+        maxLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["maxLength"])(50),
         email: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["email"]
       },
       Phone: {
         required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["required"],
         minLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["minLength"])(4),
-        maxLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["maxLength"])(15),
+        maxLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["maxLength"])(50),
         numeric: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["numeric"]
       }
     },
@@ -2161,7 +2187,7 @@ var touchMap = new WeakMap();
       Day: {
         required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["required"],
         minLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["minLength"])(1),
-        maxLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["maxLength"])(2),
+        maxLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["maxLength"])(50),
         numeric: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["numeric"]
       },
       Month: {
@@ -2169,7 +2195,7 @@ var touchMap = new WeakMap();
       },
       Year: {
         required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["required"],
-        between: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["between"])(1869, 2019),
+        // between: between(1869, 2019),
         numeric: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["numeric"]
       }
     }
@@ -2181,19 +2207,20 @@ var touchMap = new WeakMap();
     this.Param.Year = date.getFullYear();
   },
   methods: {
-    delayTouch: function delayTouch($v) {
-      $v.$touch();
-
-      if (touchMap.has($v)) {
-        clearTimeout(touchMap.get($v));
-      }
-
-      touchMap.set($v, setTimeout($v.$touch, 1000));
+    delayTouch: function delayTouch($v) {// $v.$touch();
+      // if (touchMap.has($v)) {
+      //     clearTimeout(touchMap.get($v))
+      // }
+      // touchMap.set($v, setTimeout($v.$touch, 1000))
     },
     HebrewCal: function HebrewCal($date) {
       var _this = this;
 
+      console.log(this.Param.Month);
+
       if (!this.$v.Param.$invalid) {
+        var month = this.Param.Month;
+        this.Param.Month = "";
         this.spiner = true;
 
         if ($date === "J") {
@@ -2206,12 +2233,16 @@ var touchMap = new WeakMap();
           this.Param.DataSet = "G";
         }
 
-        axios.get('api/' + $date + '/' + this.Param.Day + '/' + this.Param.Month + '/' + this.Param.Year).then(function (response) {
+        axios.get('api/' + $date + '/' + this.Param.Day + '/' + month + '/' + this.Param.Year).then(function (response) {
+          _this.Param.Month = "";
+          console.log(response);
           _this.Param.Day = response.data.day;
           _this.Param.Month = response.data.month;
           _this.Param.Year = response.data.year;
           _this.spiner = false;
         });
+      } else {
+        this.$v.Param.$touch();
       }
     },
     Kaddish: function () {
@@ -2226,7 +2257,7 @@ var touchMap = new WeakMap();
             switch (_context.prev = _context.next) {
               case 0:
                 if (!(!this.$v.Form.$invalid && !this.$v.Param.$invalid)) {
-                  _context.next = 4;
+                  _context.next = 6;
                   break;
                 }
 
@@ -2256,6 +2287,13 @@ var touchMap = new WeakMap();
                 });
 
               case 4:
+                _context.next = 7;
+                break;
+
+              case 6:
+                this.$v.$touch();
+
+              case 7:
               case "end":
                 return _context.stop();
             }
@@ -2379,6 +2417,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
 //
 //
 //
@@ -7066,7 +7106,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.field-wr input[type=email][type=tel][data-v-754b2df6] {text-overflow: ellipsis;}\n.field-wr input[type=tel][data-v-754b2df6] {\n    font: normal 300 18px/26px 'Roboto', sans-serif;\n    width: 100%;\n    background: none;\n    padding: 0 2px;\n    color: #fff;\n    border: none;\n    outline: none;\n}\nlabel[data-v-754b2df6] {display: inline-block;margin-bottom: 0rem;}\n.mw[data-v-754b2df6] {max-width: 75%}\n.np[data-v-754b2df6] {padding: 0px;}\n.top-np[data-v-754b2df6] {padding: 0px 0px 14px 0px;}\n.bot-np[data-v-754b2df6] {padding: 14px 0px 0px 0px;}\nform[data-v-754b2df6] {\n    font-size: 0;\n    font-family: 'Roboto', sans-serif;\n    transition: all 0.4s ease;\n}\n.mv2[data-v-754b2df6] {max-width: 955px;}\n.pp[data-v-754b2df6] {padding: 0 2px;}\n.fs[data-v-754b2df6] {font: normal 300 16px/26px 'Roboto', sans-serif;}\nhr[data-v-754b2df6] {margin-top: 10px;;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.custom-select[data-v-754b2df6] {\n    display: inline-block;\n    width: 100%;\n    height: calc(1.5em + .75rem + 2px);\n    padding: .375rem 1.75rem .375rem .75rem;\n    font: normal 300 18px/26px 'Roboto', sans-serif;\n    line-height: 1.5;\n    color: #495057;\n    vertical-align: middle;\n    background: url(data:image/svg+xml,%3csvg xmlns= 'http://www.w3.org/2000/svg' viewBox= '0 0 4 5' %3e%3cpath fill= '%23343a40' d= 'M2 0L0 2h4zm0 5L0 3h4z' /%3e%3c/svg%3e) no-repeat right .75 rem center / 8 px 10 px;\n    background-color: #000000;\n    /*border: 1px solid #423d3d;*/\n    border-radius: .25rem;\n    -webkit-appearance: none;\n    -moz-appearance: none;\n    appearance: none;\n    border: none;\n}\n@media (max-height: 800px){\n#intro[data-v-754b2df6] {height: 950px;}}\n@media (max-width: 1200px) {\n#intro[data-v-754b2df6] {height: 920px;}}\n@media (max-width: 850px) {\n#intro[data-v-754b2df6] {height: 1050px;}\n.field-wr.divider .I[data-v-754b2df6], .field-wr.dname .I[data-v-754b2df6], .field-wr.ddate .I[data-v-754b2df6], .field-wr.dmnth .I[data-v-754b2df6], .field-wr.dyear .I[data-v-754b2df6], .field-wr.cmail .I[data-v-754b2df6] {border-right: 0px;}\n.row[data-v-754b2df6] {\n        display: -ms-flexbox;\n        display: block;\n        flex-wrap: wrap;\n        margin-right: -15px;\n        margin-left: -15px;\n}\nhr[data-v-754b2df6] {margin-top: 10px;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.field-wr input[type=text][data-v-754b2df6], .field-wr label[data-v-754b2df6], .field-wr textarea[data-v-754b2df6] {\n        font: normal 300 15px/29px 'Roboto', sans-serif;\n        width: 100%;\n        background: none;\n        /*padding: 0 2px;*/\n        color: #fff;\n        border: none;\n        outline: none;\n}\n.field-wr.dsuns[data-v-754b2df6] {width: 30%;}\n.field-wr.switch-cal[data-v-754b2df6] {width: 15%; text-align: right;}\n}\n@media (max-width: 760px) {\n#intro[data-v-754b2df6] {height: 1200px;}\n.field-wr.divider .I[data-v-754b2df6], .field-wr.dname .I[data-v-754b2df6], .field-wr.ddate .I[data-v-754b2df6], .field-wr.dmnth .I[data-v-754b2df6], .field-wr.dyear .I[data-v-754b2df6], .field-wr.cmail .I[data-v-754b2df6] {border-right: 0px;}\n.row[data-v-754b2df6] {\n        display: -ms-flexbox;\n        display: block;\n        flex-wrap: wrap;\n        margin-right: -15px;\n        margin-left: -15px;\n}\nhr[data-v-754b2df6] {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.field-wr input[type=text][data-v-754b2df6], .field-wr label[data-v-754b2df6], .field-wr textarea[data-v-754b2df6] {\n        font: normal 300 15px/29px 'Roboto', sans-serif;\n        width: 100%;\n        background: none;\n        /*padding: 0 2px;*/\n        color: #fff;\n        border: none;\n        outline: none;\n}\n.field-wr.dsuns[data-v-754b2df6] {width: 30%;}\n.field-wr.switch-cal[data-v-754b2df6] {width: 15%; text-align: right;}\n}\n@media (max-width: 660px) {#intro[data-v-754b2df6] {height: 1435px;}\n.field-wr.divider .I[data-v-754b2df6], .field-wr.dname .I[data-v-754b2df6], .field-wr.cmail .I[data-v-754b2df6] {border-right: 0px;}\n.field-wr.ddate .I[data-v-754b2df6], .field-wr.dmnth .I[data-v-754b2df6], .field-wr.dyear .I[data-v-754b2df6] {border: 1px solid #666;}\n.row[data-v-754b2df6] {\n        display: -ms-flexbox;\n        display: block;\n        flex-wrap: wrap;\n        margin-right: -15px;\n        margin-left: -15px;\n}\nhr[data-v-754b2df6] {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.field-wr input[type=text][data-v-754b2df6], .field-wr label[data-v-754b2df6], .field-wr textarea[data-v-754b2df6] {\n        font: normal 300 15px/29px 'Roboto', sans-serif;\n        width: 100%;\n        background: none;\n        /*padding: 0 2px;*/\n        color: #fff;\n        border: none;\n        outline: none;\n}\n.field-wr.ddate[data-v-754b2df6], .field-wr.dmnth[data-v-754b2df6], .field-wr.dyear[data-v-754b2df6] {width: 100%;max-width: 100%;}\n.mw[data-v-754b2df6][data-v-754b2df6] {max-width: 100%;}\n.field-wr.dsuns[data-v-754b2df6] {width: 72%;}\n.field-wr.switch-cal[data-v-754b2df6] {width: 26%; text-align: right;}\n}\n\n", ""]);
+exports.push([module.i, "\n.field-wr input[type=email][type=tel][data-v-754b2df6] {text-overflow: ellipsis;}\n.field-wr input[type=tel][data-v-754b2df6] {\n    font: normal 300 18px/26px 'Roboto', sans-serif;\n    width: 100%;\n    background: none;\n    padding: 0 2px;\n    color: #fff;\n    border: none;\n    outline: none;\n}\nlabel[data-v-754b2df6] {display: inline-block;margin-bottom: 0rem;}\n.mw[data-v-754b2df6] {max-width: 75%}\n.np[data-v-754b2df6] {padding: 0px;}\n.top-np[data-v-754b2df6] {padding: 0px 0px 14px 0px;}\n.bot-np[data-v-754b2df6] {padding: 14px 0px 0px 0px;}\nform[data-v-754b2df6] {\n    font-size: 0;\n    font-family: 'Roboto', sans-serif;\n    transition: all 0.4s ease;\n}\n.mv2[data-v-754b2df6] {max-width: 955px;}\n.pp[data-v-754b2df6] {padding: 0 2px;}\n.fs[data-v-754b2df6] {font: normal 300 16px/26px 'Roboto', sans-serif;}\nhr[data-v-754b2df6] {margin-top: 10px;;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.custom-select[data-v-754b2df6] {\n    display: inline-block;\n    width: 100%;\n    height: calc(1.5em + .75rem + 2px);\n    padding: .375rem 1.75rem .375rem .75rem;\n    font: normal 300 18px/26px 'Roboto', sans-serif;\n    line-height: 1.5;\n    color: #495057;\n    vertical-align: middle;\n    background: url(data:image/svg+xml,%3csvg xmlns= 'http://www.w3.org/2000/svg' viewBox= '0 0 4 5' %3e%3cpath fill= '%23343a40' d= 'M2 0L0 2h4zm0 5L0 3h4z' /%3e%3c/svg%3e) no-repeat right .75 rem center / 8 px 10 px;\n    background-color: #000000;\n    /*border: 1px solid #423d3d;*/\n    border-radius: .25rem;\n    -webkit-appearance: none;\n    -moz-appearance: none;\n    appearance: none;\n    border: none;\n}\n#intro[data-v-754b2df6]{\n    height: 1162px;\n}\n@media (max-width: 1200px) {\n#intro[data-v-754b2df6] {height: 1200px;}}\n@media (max-height: 800px){\n#intro[data-v-754b2df6] {height: 950px;}}\n@media (max-width: 850px) {\n#intro[data-v-754b2df6] {height: 1162px;}\n.field-wr.divider .I[data-v-754b2df6], .field-wr.dname .I[data-v-754b2df6], .field-wr.ddate .I[data-v-754b2df6], .field-wr.dmnth .I[data-v-754b2df6], .field-wr.dyear .I[data-v-754b2df6], .field-wr.cmail .I[data-v-754b2df6] {border-right: 0px;}\n.row[data-v-754b2df6] {\n        display: -ms-flexbox;\n        display: block;\n        flex-wrap: wrap;\n        margin-right: -15px;\n        margin-left: -15px;\n}\nhr[data-v-754b2df6] {margin-top: 10px;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.field-wr input[type=text][data-v-754b2df6], .field-wr label[data-v-754b2df6], .field-wr textarea[data-v-754b2df6] {\n        font: normal 300 15px/29px 'Roboto', sans-serif;\n        width: 100%;\n        background: none;\n        /*padding: 0 2px;*/\n        color: #fff;\n        border: none;\n        outline: none;\n}\n.field-wr.dsuns[data-v-754b2df6] {width: 30%;}\n.field-wr.switch-cal[data-v-754b2df6] {width: 15%; text-align: right;}\n}\n@media (max-width: 760px) {\n#intro[data-v-754b2df6] {height: 1460px;}\n.field-wr.divider .I[data-v-754b2df6], .field-wr.dname .I[data-v-754b2df6], .field-wr.ddate .I[data-v-754b2df6], .field-wr.dmnth .I[data-v-754b2df6], .field-wr.dyear .I[data-v-754b2df6], .field-wr.cmail .I[data-v-754b2df6] {border-right: 0px;}\n.row[data-v-754b2df6] {\n        display: -ms-flexbox;\n        display: block;\n        flex-wrap: wrap;\n        margin-right: -15px;\n        margin-left: -15px;\n}\nhr[data-v-754b2df6] {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.field-wr input[type=text][data-v-754b2df6], .field-wr label[data-v-754b2df6], .field-wr textarea[data-v-754b2df6] {\n        font: normal 300 15px/29px 'Roboto', sans-serif;\n        width: 100%;\n        background: none;\n        /*padding: 0 2px;*/\n        color: #fff;\n        border: none;\n        outline: none;\n}\n.field-wr.dsuns[data-v-754b2df6] {width: 30%;}\n.field-wr.switch-cal[data-v-754b2df6] {width: 15%; text-align: right;}\n}\n@media (max-width: 660px) {#intro[data-v-754b2df6] {height: 1635px;}\n.field-wr.divider .I[data-v-754b2df6], .field-wr.dname .I[data-v-754b2df6], .field-wr.cmail .I[data-v-754b2df6] {border-right: 0px;}\n.field-wr.ddate .I[data-v-754b2df6], .field-wr.dmnth .I[data-v-754b2df6], .field-wr.dyear .I[data-v-754b2df6] {border: 1px solid #666;}\n.row[data-v-754b2df6] {\n        display: -ms-flexbox;\n        display: block;\n        flex-wrap: wrap;\n        margin-right: -15px;\n        margin-left: -15px;\n}\nhr[data-v-754b2df6] {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.field-wr input[type=text][data-v-754b2df6], .field-wr label[data-v-754b2df6], .field-wr textarea[data-v-754b2df6] {\n        font: normal 300 15px/29px 'Roboto', sans-serif;\n        width: 100%;\n        background: none;\n        /*padding: 0 2px;*/\n        color: #fff;\n        border: none;\n        outline: none;\n}\n.field-wr.ddate[data-v-754b2df6], .field-wr.dmnth[data-v-754b2df6], .field-wr.dyear[data-v-754b2df6] {width: 100%;max-width: 100%;}\n.mw[data-v-754b2df6][data-v-754b2df6] {max-width: 100%;}\n.field-wr.dsuns[data-v-754b2df6] {width: 72%;}\n.field-wr.switch-cal[data-v-754b2df6] {width: 26%; text-align: right;}\n}\n@media (max-width: 350px) {#intro[data-v-754b2df6] {height: 2000px;}\n.field-wr.divider .I[data-v-754b2df6], .field-wr.dname .I[data-v-754b2df6], .field-wr.cmail .I[data-v-754b2df6] {border-right: 0px;}\n.field-wr.ddate .I[data-v-754b2df6], .field-wr.dmnth .I[data-v-754b2df6], .field-wr.dyear .I[data-v-754b2df6] {border: 1px solid #666;}\n.row[data-v-754b2df6] {\n        display: -ms-flexbox;\n        display: block;\n        flex-wrap: wrap;\n        margin-right: -15px;\n        margin-left: -15px;\n}\nhr[data-v-754b2df6] {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.field-wr input[type=text][data-v-754b2df6], .field-wr label[data-v-754b2df6], .field-wr textarea[data-v-754b2df6] {\n        font: normal 300 15px/29px 'Roboto', sans-serif;\n        width: 100%;\n        background: none;\n        /*padding: 0 2px;*/\n        color: #fff;\n        border: none;\n        outline: none;\n}\n.field-wr.ddate[data-v-754b2df6], .field-wr.dmnth[data-v-754b2df6], .field-wr.dyear[data-v-754b2df6] {width: 100%;max-width: 100%;}\n.mw[data-v-754b2df6][data-v-754b2df6] {max-width: 100%;}\n.field-wr.dsuns[data-v-754b2df6] {width: 72%;}\n.field-wr.switch-cal[data-v-754b2df6] {width: 26%; text-align: right;}\n}\n", ""]);
 
 // exports
 
@@ -41565,7 +41605,7 @@ var render = function() {
                                               )
                                             : _vm._e(),
                                           _vm._v(
-                                            "-->\n                                                    "
+                                            "-->\n                                                        "
                                           ),
                                           !_vm.$v.Form.Name_of_Deceased
                                             .minLength
@@ -42399,7 +42439,7 @@ var render = function() {
                                                                 "JewishMonth.Elul"
                                                               )
                                                             ) +
-                                                              "\n                                                                "
+                                                              "\n                                                                    "
                                                           )
                                                         ]
                                                       )
@@ -42489,29 +42529,6 @@ var render = function() {
                                                             "Form.required"
                                                           )
                                                         )
-                                                      )
-                                                    ]
-                                                  )
-                                                : _vm._e(),
-                                              _vm._v(" "),
-                                              !_vm.$v.Param.Year.between
-                                                ? _c(
-                                                    "div",
-                                                    {
-                                                      staticClass: "error-mess"
-                                                    },
-                                                    [
-                                                      _vm._v(
-                                                        _vm._s(
-                                                          _vm.$v.Param.Year
-                                                            .$params.between.min
-                                                        ) +
-                                                          "-" +
-                                                          _vm._s(
-                                                            _vm.$v.Param.Year
-                                                              .$params.between
-                                                              .max
-                                                          )
                                                       )
                                                     ]
                                                   )
@@ -42669,7 +42686,7 @@ var render = function() {
                                                             "Button.Sunset"
                                                           )
                                                         ) +
-                                                          "\n                                                                "
+                                                          "\n                                                                    "
                                                       ),
                                                       _c(
                                                         "div",
@@ -42710,32 +42727,6 @@ var render = function() {
                                                   staticClass: "col-md-12 pr-4"
                                                 },
                                                 [
-                                                  _c(
-                                                    "div",
-                                                    {
-                                                      directives: [
-                                                        {
-                                                          name: "show",
-                                                          rawName: "v-show",
-                                                          value: _vm.spiner,
-                                                          expression: "spiner"
-                                                        }
-                                                      ],
-                                                      staticClass:
-                                                        "spinner-grow text-warning",
-                                                      attrs: { role: "status" }
-                                                    },
-                                                    [
-                                                      _c(
-                                                        "span",
-                                                        {
-                                                          staticClass: "sr-only"
-                                                        },
-                                                        [_vm._v("Loading...")]
-                                                      )
-                                                    ]
-                                                  ),
-                                                  _vm._v(" "),
                                                   _vm.showJ
                                                     ? _c(
                                                         "a",
@@ -42753,6 +42744,42 @@ var render = function() {
                                                           }
                                                         },
                                                         [
+                                                          _c(
+                                                            "div",
+                                                            {
+                                                              directives: [
+                                                                {
+                                                                  name: "show",
+                                                                  rawName:
+                                                                    "v-show",
+                                                                  value:
+                                                                    _vm.spiner,
+                                                                  expression:
+                                                                    "spiner"
+                                                                }
+                                                              ],
+                                                              staticClass:
+                                                                "spinner-grow text-warning pl-5",
+                                                              attrs: {
+                                                                role: "status"
+                                                              }
+                                                            },
+                                                            [
+                                                              _c(
+                                                                "span",
+                                                                {
+                                                                  staticClass:
+                                                                    "sr-only"
+                                                                },
+                                                                [
+                                                                  _vm._v(
+                                                                    "Loading..."
+                                                                  )
+                                                                ]
+                                                              )
+                                                            ]
+                                                          ),
+                                                          _vm._v(" "),
                                                           _c("span", {
                                                             domProps: {
                                                               innerHTML: _vm._s(
@@ -42799,6 +42826,42 @@ var render = function() {
                                                           }
                                                         },
                                                         [
+                                                          _c(
+                                                            "div",
+                                                            {
+                                                              directives: [
+                                                                {
+                                                                  name: "show",
+                                                                  rawName:
+                                                                    "v-show",
+                                                                  value:
+                                                                    _vm.spiner,
+                                                                  expression:
+                                                                    "spiner"
+                                                                }
+                                                              ],
+                                                              staticClass:
+                                                                "spinner-grow text-warning pl-5",
+                                                              attrs: {
+                                                                role: "status"
+                                                              }
+                                                            },
+                                                            [
+                                                              _c(
+                                                                "span",
+                                                                {
+                                                                  staticClass:
+                                                                    "sr-only"
+                                                                },
+                                                                [
+                                                                  _vm._v(
+                                                                    "Loading..."
+                                                                  )
+                                                                ]
+                                                              )
+                                                            ]
+                                                          ),
+                                                          _vm._v(" "),
                                                           _c("span", {
                                                             domProps: {
                                                               innerHTML: _vm._s(
@@ -43123,7 +43186,7 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                                " +
+                              "\n                                    " +
                                 _vm._s(_vm.$t("Button.Button1"))
                             ),
                             _c("b", { staticClass: "free" }, [_vm._v("Free")])
@@ -43162,7 +43225,11 @@ var render = function() {
                   ]
                 ),
                 _vm._v(" "),
-                _vm._m(0)
+                _vm._m(0),
+                _vm._v(
+                  "\n\n                        //-------------------plaques\n\n                        "
+                ),
+                _vm._m(1)
               ])
             ]
           )
@@ -43194,6 +43261,56 @@ var staticRenderFns = [
         _c("span", { attrs: { id: "siteseal" } })
       ])
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "ul",
+      { staticClass: "plaques", attrs: { id: "plaques-placeholder" } },
+      [
+        _c("li", { staticClass: "plaque" }, [
+          _c("div", { staticClass: "plaque-content" }, [
+            _c("h2", [
+              _vm._v("Rabinovich"),
+              _c("br"),
+              _vm._v("Reuven Shimon"),
+              _c("br"),
+              _vm._v("ben Levi Yehuda Naftali")
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("12 Teveta 5612"),
+              _c("br"),
+              _vm._v("23 December 1882")
+            ]),
+            _vm._v(" "),
+            _c("p", [_vm._v("9 Av 5732"), _c("br"), _vm._v("17 July 2002")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", { staticClass: "plaque tree" }, [
+          _c("div", { staticClass: "plaque-content" }, [
+            _c("h2", [
+              _vm._v("Rabinovich"),
+              _c("br"),
+              _vm._v("Reuven Shimon"),
+              _c("br"),
+              _vm._v("ben Levi Yehuda Naftali")
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("12 Teveta 5612"),
+              _c("br"),
+              _vm._v("23 December 1882")
+            ]),
+            _vm._v(" "),
+            _c("p", [_vm._v("9 Av 5732"), _c("br"), _vm._v("17 July 2002")])
+          ])
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -43695,6 +43812,28 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("p", [
       _c("audio", { attrs: { controls: "" } }, [
+        _c("source", {
+          attrs: {
+            src: "/media/kaddish_yatom_sfaradic.mp3",
+            type: "audio/mpeg"
+          }
+        }),
+        _vm._v(" "),
+        _c("source", {
+          attrs: { src: "/media/kaddish_yatom_sfaradic.ogg", type: "audio/ogg" }
+        }),
+        _vm._v(" "),
+        _c("source", {
+          attrs: { src: "/media/kaddish_yatom_sfaradic.wav", type: "audio/wav" }
+        }),
+        _vm._v(" "),
+        _c("source", {
+          attrs: {
+            src: "/media/kaddish_yatom_sfaradic.aiff",
+            type: "audio/x-aiff"
+          }
+        }),
+        _vm._v(" "),
         _c("object", [
           _c("param", { attrs: { name: "autostart", value: "true" } }),
           _vm._v(" "),
@@ -43728,6 +43867,28 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("p", [
       _c("audio", { attrs: { controls: "" } }, [
+        _c("source", {
+          attrs: {
+            src: "/media/kaddish_yatom_ashkenaz.mp3",
+            type: "audio/mpeg"
+          }
+        }),
+        _vm._v(" "),
+        _c("source", {
+          attrs: { src: "/media/kaddish_yatom_ashkenaz.ogg", type: "audio/ogg" }
+        }),
+        _vm._v(" "),
+        _c("source", {
+          attrs: { src: "/media/kaddish_yatom_ashkenaz.wav", type: "audio/wav" }
+        }),
+        _vm._v(" "),
+        _c("source", {
+          attrs: {
+            src: "/media/kaddish_yatom_ashkenaz.aiff",
+            type: "audio/x-aiff"
+          }
+        }),
+        _vm._v(" "),
         _c("object", [
           _c("param", { attrs: { name: "autostart", value: "true" } }),
           _vm._v(" "),
@@ -62684,13 +62845,9 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
     component: _components_PayComponent__WEBPACK_IMPORTED_MODULE_6__["default"],
     name: "Pay",
     props: true
-  }, {
-    path: '/:lang/*',
-    redirect: "/en"
-  }, {
-    path: '/*',
-    redirect: "/en"
-  }],
+  } // {path: '/:lang/*', redirect:"/en" },
+  // {path: '/*', redirect:"/en" }
+  ],
   mode: 'history'
 }));
 
