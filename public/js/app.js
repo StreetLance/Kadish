@@ -62845,9 +62845,13 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
     component: _components_PayComponent__WEBPACK_IMPORTED_MODULE_6__["default"],
     name: "Pay",
     props: true
-  } // {path: '/:lang/*', redirect:"/en" },
-  // {path: '/*', redirect:"/en" }
-  ],
+  }, {
+    path: '/:lang/*',
+    redirect: "/en"
+  }, {
+    path: '/*',
+    redirect: "/en"
+  }],
   mode: 'history'
 }));
 
