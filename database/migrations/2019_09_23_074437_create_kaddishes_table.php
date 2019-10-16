@@ -18,6 +18,8 @@ class CreateKaddishesTable extends Migration
             $table->string('Name_of_Deceased');
             $table->string('Fathers_Name');
             $table->string('G_Date');
+            $table->string('J_Date');
+            $table->string('Lang');
             $table->boolean('After_sunset');
             $table->boolean('Order');
             $table->boolean('Difference_Year');

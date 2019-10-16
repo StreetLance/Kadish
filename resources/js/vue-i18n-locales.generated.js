@@ -110,6 +110,14 @@ export default {
             "token": "This password reset token is invalid.",
             "user": "We can't find a user with that e-mail address."
         },
+        "Thankyou": {
+            "Thankyou": "Thank you, the order is saved successfuly.",
+            "Thankyou_Kaddish": "Thank you for using the service Kaddish-prayer.",
+            "ToHome": "Back to Home page",
+            "quote": "This service is done in order to help each person to fulfill his duty to the deceased loved ones. Click the link below and tell your friends on Facebook about the kaddish-prayer service, and we help them to do their duty.",
+            "Mail": "Please double check your records. A copy has been sent to you in the email. We recommend you to add email info@kaddish-prayer.com to the contacts in order to reminders were not included in the spam.",
+            "Descript": "Each year, you will get a reminder about an upcoming Yahrzeit and description of all the customs of the day for you to be able to conduct Yahrzeit on time and according to Jewish tradition."
+        },
         "validation": {
             "accepted": "The {attribute} must be accepted.",
             "active_url": "The {attribute} is not a valid URL.",
@@ -326,6 +334,14 @@ export default {
                 "Aydio2": "Ашкеназский кадиш ятом"
             },
             "Footer": "© Все права защищены. Связатся с нами: "
+        },
+        "Thankyou": {
+            "Thankyou": "Спасибо, ваш заказ успешно сохранен.",
+            "Thankyou_Kaddish": "Спасибо, что воспользовались сервисом Kaddish-prayer.",
+            "ToHome": "На главную",
+            "quote": "Этот сервис мы сделали для того, чтобы помочь каждому человеку выполнить свой долг перед умершими близкими людьми. Нажмите на ссылку ниже и  расскажите своим друзьям на Facebook о сервисе kaddish-prayer, а мы поможем им выполнить свой долг.",
+            "Mail": "Пожалуйста, проверьте ваши данные. Копия уже отправлена вам на имейл. Рекомендуем вам добавить e-mail <strong> globalkaddish@gmail.com</strong> в контакты для того чтоб напоминания не попали в спам..",
+            "Descript": "Каждый год вам будет приходить напоминание о наступающей дате йорцайт и описание всех обычаев этого дня для того чтоб вы могли отметить йорцайт в срок и согласно еврейским традициям"
         },
         "WikiNav": {
             "Izkor": "Изкор",

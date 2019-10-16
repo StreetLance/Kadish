@@ -26,6 +26,16 @@
         // methods: {},
         // beforeRouteEnter (to, from, next) {next()},
         // beforeRouteUpdate(to, from, next) {next()}
+        mounted() {
+            // var date = new Date();
+            // this.Param.Day = date.getDate();
+            // this.Param.Month = String(date.getMonth() + 1);
+            // this.Param.Year = date.getFullYear();
+
+            // axios.get('api/kadish').then( (response)=>{
+            //     console.log(response);
+            // });
+        },
     }
 </script>
 <style scoped>

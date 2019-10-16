@@ -5,10 +5,12 @@
                 <div class="row d-flex justify-content-center text-center">
                     <div class="col-md-8 ">
                         <!-- Heading -->
-                        <h2 class="display-4 font-weight-bold white-text pt-5 mb-2 "  >{{$t('Pages.About.Title')}}</h2>
+<!--                        <h2 class="display-4 font-weight-bold white-text pt-5 mb-2 "  >{{$t('Pages.About.Title')}}</h2>-->
                         <div class="cont">
                             <hr class="hr-light">
-                            <div id="paypal-button-container"></div>
+                                <ul>
+                                    <li></li>
+                                </ul>
                             <hr class="hr-light">
                         </div>
                     </div>
@@ -16,17 +18,19 @@
             </div>
         </div>
     </div>
-<!--    <h1 class="text-white">Pay ID:{{ $route.params.id}}</h1>-->
-
 </template>
 
 <script>
-
-    // export default {
-    //     name: "Pay"
-    // ,mounted() {console.log(this.$route.params.id);
-    //     }
-    // }
+    export default {
+        // data:function (){return ;},
+        mounted() {
+            axios.get(' http://kadish/api/kadish').then( response=>{
+                console.log(response);
+            }).catch(error => {
+                console.log(error);
+            });
+        },
+    }
 </script>
 
 <style scoped>

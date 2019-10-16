@@ -299,8 +299,6 @@
                 // touchMap.set($v, setTimeout($v.$touch, 1000))
             },
             HebrewCal($date) {
-
-                console.log(this.Param.Month);
                 if (!this.$v.Param.$invalid){
                     let month =this.Param.Month;
                     this.Param.Month ="";
@@ -312,7 +310,6 @@
 
                     axios.get('api/' + $date + '/' + this.Param.Day + '/' + month + '/' + this.Param.Year).then((response) => {
                         this.Param.Month="";
-                        console.log(response);
                         this.Param.Day = response.data.day; this.Param.Month = response.data.month; this.Param.Year = response.data.year; this.spiner = false;
                     });
                 } else {this.$v.Param.$touch();}
@@ -332,6 +329,7 @@
                             Month: this.Param.Month,
                             Year: this.Param.Year,
                             DataSet: this.Param.DataSet,
+                            Lang: this.$route.params.lang,
                             Order: $order,
                         }
                     }).then((response) => {
