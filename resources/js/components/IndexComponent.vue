@@ -217,7 +217,7 @@
                                     <p>9 Av 5732<br>17 July 2002</p>
                                 </div>
                             </li>
-                            <li class="plaque tree">
+                            <li class="plaque">
                                 <div class="plaque-content">
                                     <h2>Rabinovich<br>Reuven Shimon<br>ben Levi Yehuda Naftali</h2>
                                     <p>12 Teveta 5612<br>23 December 1882</p>
@@ -337,8 +337,10 @@
                         }
                         if (response.data.order === "0") {
                             this.$router.push({name: 'Thank'})
+                        }else{
+                            this.$router.push({name: 'Pay', params: {id: response.data}})
                         }
-                        this.$router.push({name: 'Pay', params: {id: response.data}})
+
                     });
                 }else {
                     this.$v.$touch();

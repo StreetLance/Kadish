@@ -2290,14 +2290,14 @@ var touchMap = new WeakMap();
                     _this2.$router.push({
                       name: 'Thank'
                     });
+                  } else {
+                    _this2.$router.push({
+                      name: 'Pay',
+                      params: {
+                        id: response.data
+                      }
+                    });
                   }
-
-                  _this2.$router.push({
-                    name: 'Pay',
-                    params: {
-                      id: response.data
-                    }
-                  });
                 });
 
               case 4:
@@ -85140,7 +85140,7 @@ var staticRenderFns = [
           ])
         ]),
         _vm._v(" "),
-        _c("li", { staticClass: "plaque tree" }, [
+        _c("li", { staticClass: "plaque" }, [
           _c("div", { staticClass: "plaque-content" }, [
             _c("h2", [
               _vm._v("Rabinovich"),
