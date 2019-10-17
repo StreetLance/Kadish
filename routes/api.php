@@ -19,5 +19,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
     Route::get('/J/{D}/{M}/{Y}','CallController@getJewishDate');
     Route::get('/G/{D}/{M}/{Y}','CallController@getGregorianDate');
-    Route::get('/paypal-transaction-complete','PayCheckout@getOrder');
-    Route::resource('/kadish','KaddishController')->only('index','show','create');
+//    Route::get('/paypal-transaction-complete','PayCheckout@getOrder');
+    Route::resource('/kadish','KaddishController')->only('index','show','create','update');

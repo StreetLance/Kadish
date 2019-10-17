@@ -19,8 +19,7 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/css/mdb.min.css" rel="stylesheet">
     <link href="{{asset('css/all.css')}}" rel="stylesheet">
-    <script
-        src="https://www.paypal.com/sdk/js?client-id=AamvJHqtBfrIM4oNPDknTMJmyC5kN-btQRU5baqABM-YEFktx28e_DDpB4nmXQeHUBJnJufE4hYjVxnB">
+    <script src="https://www.paypal.com/sdk/js?client-id=AamvJHqtBfrIM4oNPDknTMJmyC5kN-btQRU5baqABM-YEFktx28e_DDpB4nmXQeHUBJnJufE4hYjVxnB">
     </script>
 </head>
 <body>
@@ -29,14 +28,10 @@
             <nav-bar></nav-bar>
     <!--/.Navbar-->
 
-{{--    <div id="intro" class="view">--}}
-{{--        <div class="mask rgba-black-strong">--}}
+
             <transition name="moveInUp">
             <router-view></router-view>
             </transition>
-{{--        </div>--}}
-{{--    </div>--}}
-
     <!--/.Mask-->
 </header>
 <!-- Footer -->
@@ -56,53 +51,18 @@
         </div>
     </div>
     <!-- Social buttons -->
-
     <!-- Copyright -->
-
 </footer>
 <!-- JQuery -->
-<script>
-    paypal.Buttons({
-        style: {
-            color:  'blue',
-            shape:  'pill',
-            label:  'pay',
-            height: 40
-        },
-        createOrder: function(data, actions) {
-            return actions.order.create({
-                purchase_units: [{
-                    amount: {
-                        value: '20'
-                    }
-                }]
-            });
-        },
-        onApprove: function(data, actions) {
-            return actions.order.capture().then(function(details) {
-                alert('Transaction completed by ' + details.payer.name.given_name);
-                // Call your server to save the transaction
-                return fetch('/paypal-transaction-complete', {
-                    method: 'post',
-                    headers: {
-                        'content-type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        orderID: data.orderID
-                    })
-                });
-            });
-        }
-    }).render('#paypal-button-container');
-</script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- Bootstrap tooltips -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
 <!-- Bootstrap core JavaScript -->
 <script src="{{ asset('js/app.js') }}"></script>
 <!-- MDB core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/js/mdb.min.js"></script>
-
+{{--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/js/mdb.min.js"></script>--}}
+<script src = " https://unpkg.com/vue " ></script>
+<script src = " https://unpkg.com/vue-paypal-checkout@2.0.0/dist/vue-paypal-checkout.min.js "></script>
 
 </body>
 </html>

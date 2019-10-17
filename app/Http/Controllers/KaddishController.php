@@ -5,11 +5,9 @@ namespace App\Http\Controllers;
 use App\Kaddish as Kaddish;
 use App\Client as Clients;
 use Illuminate\Support\Facades\Mail;
-use App\Mail\KaddishSendMail1;
-use App\Mail\KaddishSendMail2;
 use Illuminate\Http\Request;
-use App\Jobs\SendMail as Send;
-
+use App\Mail\KaddishSendMailThank_Reg;
+use Illuminate\Support\Facades\DB;
 class KaddishController extends Controller
 {
     /**
@@ -18,13 +16,18 @@ class KaddishController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
+
     {
-        $Date_Now = cal_from_jd(date( "j.m.Y" ),CAL_JEWISH);
-        $item = Kaddish::all()
+        $jd = unixtojd(time());
+        $Date_Now = cal_from_jd( $jd,CAL_JEWISH);
+        $Date_Now = $Date_Now[ 'day' ].'.'.$Date_Now[ 'month' ].'.'.'%' ;
+        $item = DB::table('Kaddishes')
             ->where( 'Order', '=', '1' )
             ->where( 'Difference_Year', '=', '1' )
-            ->where( 'J_Date', '=',$Date_Now )-get(['Name_of_Deceased','Fathers_Name']);
+            ->where('J_Date', 'like', $Date_Now)
+            ->get();
         $item = collect( $item )->toJson();
+//        dd($item);
         return $item;
     }
     /**
@@ -74,12 +77,13 @@ class KaddishController extends Controller
         ];
 //Заполнение базы клиентов в случе отсутсвия почты и эмейла
         $client = Clients::firstOrCreate( [ "Email" => $request->Email, "Phone_number" => $request->Phone ] );
-
         $kadish = new Kaddish( $param );
         $kadish->client()->associate( $client ); // присвоение Client_id при помощи встреоной функции Laravel Relations
         $kadish->save();
+        $item['id'] = $kadish->id;
+        $item['order'] = $request->Order;
         Mail::to($request->Email)->send(new KaddishSendMailThank_Reg());
-        return $kadish->id;
+        return $item;
     }
 
     /**
@@ -110,9 +114,9 @@ class KaddishController extends Controller
      * @param  \App\Kaddish  $kaddish
      * @return \Illuminate\Http\Response
      */
-    public function edit(Kaddish $kaddish)
+    public function edit( $id)
     {
-        //
+
     }
 
     /**
@@ -122,9 +126,11 @@ class KaddishController extends Controller
      * @param  \App\Kaddish  $kaddish
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Kaddish $kaddish)
+    public function update(Request $request, $id)
     {
-        //
+        $client = Clients( [ "Name" => $request->Name, "Last_Name" => $request->Last_Name ] );
+        $kadish =  Kaddish::find($id);
+        $kadish->client()->save($client);
     }
 
     /**

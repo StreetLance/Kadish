@@ -333,7 +333,11 @@
                             Order: $order,
                         }
                     }).then((response) => {
-                        // console.log(response);
+                        if (response){
+                        }
+                        if (response.data.order === "0") {
+                            this.$router.push({name: 'Thank'})
+                        }
                         this.$router.push({name: 'Pay', params: {id: response.data}})
                     });
                 }else {

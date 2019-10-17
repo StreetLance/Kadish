@@ -4,6 +4,8 @@ import router from './routers.js';
 import VueInternationalization from 'vue-i18n';
 import Locale from './vue-i18n-locales.generated';
 import Vuelidate from 'vuelidate'
+import PayPal from 'vue-paypal-checkout'
+
 require('./bootstrap');
 // import Storedata from './store/store';
 // import IndexModul from "./store/modules/IModul";
@@ -20,7 +22,7 @@ Vue.use(VueInternationalization);
 
 Vue.component('nav-bar', navbar);
 Vue.component('wiki-bar', Wikinavbar);
-
+Vue.component('paypal-checkout', PayPal);
 // const store = new Vuex.Store({
 //     strict:true,
 //     modules:{
