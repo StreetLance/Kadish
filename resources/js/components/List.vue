@@ -28,7 +28,7 @@
             }
             },
         mounted() {
-            axios.get(' http://kadish/api/kadish').then( response=>{
+            axios.get(' http://149.28.51.36/api/kadish').then( response=>{
                 this.items = response.data;
                 cosole.log(response);
             }).catch(error => {
