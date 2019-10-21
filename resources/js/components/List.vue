@@ -55,17 +55,9 @@
             width: 600px;
         }
     }
-
-    @media (max-width: 760px) {  #intro {height: 1460px;}
-    }
-
-    @media (max-width: 660px) {#intro {height: 1635px;}
-    }
-    @media (max-width: 350px) {#intro {height: 9000px;}
-    }
     @media (max-height: 750px) {#intro {height: 750px;}
     }
-    @media (max-width: 238px) {#intro {height: 7000px;}
+    @media (max-width: 238px) {#intro {height: 950px;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
