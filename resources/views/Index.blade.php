@@ -62,7 +62,6 @@
 <!-- MDB core JavaScript -->
 {{--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/js/mdb.min.js"></script>--}}
 <script src = " https://unpkg.com/vue " ></script>
-<script src = " https://unpkg.com/vue-paypal-checkout@2.0.0/dist/vue-paypal-checkout.min.js "></script>
 
 </body>
 </html>
