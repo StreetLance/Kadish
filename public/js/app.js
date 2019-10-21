@@ -2366,7 +2366,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    axios.get(' http://149.28.51.36/api/kadish').then(function (response) {
+    axios.get(' http://kadish/api/kadish').then(function (response) {
       _this.items = response.data;
       cosole.log(response);
     })["catch"](function (error) {

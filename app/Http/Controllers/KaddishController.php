@@ -21,7 +21,7 @@ class KaddishController extends Controller
         $jd = unixtojd(time());
         $Date_Now = cal_from_jd( $jd,CAL_JEWISH);
         $Date_Now = $Date_Now[ 'day' ].'.'.$Date_Now[ 'month' ].'.'.'%' ;
-        $item = DB::table('Kaddishes')
+        $item = DB::table('kaddishes')
             ->where( 'Order', '=', '1' )
             ->where( 'Difference_Year', '=', '1' )
             ->where('J_Date', 'like', $Date_Now)
