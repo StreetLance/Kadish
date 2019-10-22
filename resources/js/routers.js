@@ -19,7 +19,7 @@ export default  new VueRouter({
                 {path: '/:lang/wiki', component: WikiComponent , name:"W"},
                 {path: '/:lang/thankyou', component: ThankComponent , name:"Thank"},
                 {path: '/:lang/list', component: ListComponent , name:"L"},
-                {path: '/:lang/Pay',
+                {path: '/:lang/pay',
                     component: PayComponent ,
                     name:"Pay",
                     props: true},

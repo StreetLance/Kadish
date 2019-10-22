@@ -19,8 +19,7 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/css/mdb.min.css" rel="stylesheet">
     <link href="{{asset('css/all.css')}}" rel="stylesheet">
-    <script src="https://www.paypal.com/sdk/js?client-id=AamvJHqtBfrIM4oNPDknTMJmyC5kN-btQRU5baqABM-YEFktx28e_DDpB4nmXQeHUBJnJufE4hYjVxnB">
-    </script>
+
 </head>
 <body>
 <header id="app">
@@ -60,8 +59,11 @@
 <!-- Bootstrap core JavaScript -->
 <script src="{{ asset('js/app.js') }}"></script>
 <!-- MDB core JavaScript -->
-{{--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/js/mdb.min.js"></script>--}}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/js/mdb.min.js"></script>
 <script src = " https://unpkg.com/vue " ></script>
+{{--<script src = " https://unpkg.com/vue-paypal-checkout@2.0.0/dist/vue-paypal-checkout.min.js "></script>--}}
+{{--<script src="https://www.paypal.com/sdk/js?client-id=AamvJHqtBfrIM4oNPDknTMJmyC5kN-btQRU5baqABM-YEFktx28e_DDpB4nmXQeHUBJnJufE4hYjVxnB">--}}
+{{--</script>--}}
 
 </body>
 </html>

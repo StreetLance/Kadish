@@ -308,7 +308,7 @@
 
                     else if ($date === "G") {this.showJ = true;this.show = true;this.Param.DataSet = "G";}
 
-                    axios.get('http://149.28.51.36/api/' + $date + '/' + this.Param.Day + '/' + month + '/' + this.Param.Year).then((response) => {
+                    axios.get('http://kadish/api/' + $date + '/' + this.Param.Day + '/' + month + '/' + this.Param.Year).then((response) => {
                         this.Param.Month="";
                         this.Param.Day = response.data.day; this.Param.Month = response.data.month; this.Param.Year = response.data.year; this.spiner = false;
                     });
@@ -447,7 +447,7 @@
         .field-wr.switch-cal {width: 15%; text-align: right;}
     }
 
-    @media (max-width: 660px) {#intro {height: 1635px;}
+    @media (max-width: 660px) {#intro {height: 1735px;}
         .field-wr.divider .I, .field-wr.dname .I, .field-wr.cmail .I {border-right: 0px;}
         .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I {border: 1px solid #666;}
         .row {

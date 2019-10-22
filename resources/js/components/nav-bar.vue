@@ -13,10 +13,10 @@
             <!-- Links -->
             <ul class="navbar-nav mr-auto smooth-scroll">
                 <li class="nav-item"></li>
-                <li class="nav-item"><router-link class="nav-link" :to="{name: 'H', params: {lang: lang}}">{{$t('Nav.Index')}}</router-link></li>
-                <li class="nav-item"><router-link class="nav-link" :to="{name: 'P', params: {lang: lang}}">{{$t('Nav.Price')}}</router-link></li>
-                <li class="nav-item"><router-link class="nav-link" :to="{name: 'A', params: {lang: lang}}">{{$t('Nav.About')}}</router-link></li>
-                <li class="nav-item"><router-link class="nav-link" :to="{name: 'W', params: {lang: lang}}">{{$t('Nav.Wiki')}}</router-link></li>
+                <li class="nav-item"><router-link data-toggle="collapse" data-target=".navbar-collapse" class="nav-link" :to="{name: 'H', params: {lang: lang}}">{{$t('Nav.Index')}}</router-link></li>
+                <li class="nav-item"><router-link data-toggle="collapse" data-target=".navbar-collapse" class="nav-link" :to="{name: 'P', params: {lang: lang}}">{{$t('Nav.Price')}}</router-link></li>
+                <li class="nav-item"><router-link data-toggle="collapse" data-target=".navbar-collapse" class="nav-link" :to="{name: 'A', params: {lang: lang}}">{{$t('Nav.About')}}</router-link></li>
+                <li class="nav-item"><router-link data-toggle="collapse" data-target=".navbar-collapse" class="nav-link" :to="{name: 'W', params: {lang: lang}}">{{$t('Nav.Wiki')}}</router-link></li>
             </ul>
             <div class="lang">
 

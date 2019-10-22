@@ -176,7 +176,7 @@
             width: 100%;
         }
     }
-    @media (max-width: 470px) {  #intro {height: 2552px;}
+    @media (max-width: 470px) {  #intro {height: 2252px;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
