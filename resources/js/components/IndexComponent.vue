@@ -338,7 +338,8 @@
                         if (response.data.order === "0") {
                             this.$router.push({name: 'Thank'})
                         }else{
-                            this.$router.push({name: 'Pay', params: {id: response.data}})
+                            // this.$router.push({name: 'Pay', params: {id: response.data}})
+                            this.$router.push({name: 'Pay'})
                         }
 
                     });
@@ -447,7 +448,7 @@
         .field-wr.switch-cal {width: 15%; text-align: right;}
     }
 
-    @media (max-width: 660px) {#intro {height: 1735px;}
+    @media (max-width: 660px) {#intro {height: 1800px;}
         .field-wr.divider .I, .field-wr.dname .I, .field-wr.cmail .I {border-right: 0px;}
         .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I {border: 1px solid #666;}
         .row {

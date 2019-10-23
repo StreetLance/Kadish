@@ -1,5 +1,5 @@
 <template>
-    <div id="intro" class="view">
+    <div  id="intro" class="view">
         <div class="mask rgba-black-strong">
             <div class="container-fluid d-flex align-items-top justify-content-center h-100">
                 <div class="row d-flex justify-content-center text-center mt-5 pt-5">
@@ -34,7 +34,7 @@
                                         <div class="cont">
                                             <hr class="hr-light">
                                             <p class="text-right ml-5 mr-5 mb-5 mt-5"><span
-                                                v-html="$t('Pages.wiki3.Body')"></span></p>
+                                                v-html="$t('Pages.wiki3.Body')" ></span></p>
                                             <hr class="hr-light">
                                         </div>
                                     </div>
@@ -113,7 +113,9 @@
         data: function () {return{}},
         // beforeRouteEnter (to, from, next) {next()},
         mounted(){},
-        methods: {Inverse(){this.choice= ! this.choice;}},
+        methods: {
+            Inverse(){this.choice= ! this.choice;},
+            },
         // watch: {'$route'(to, from) {}},
         // beforeRouteUpdate(to, from, next) {next()}
     }
@@ -145,8 +147,6 @@
             width: 560px;
         }
     }
-
-
 
     @media   (max-width: 850px) {  #intro {height: 1330px;}
         .cont {
@@ -182,11 +182,125 @@
             opacity: 0.8;
             width: 100%;
         }
+    }@media (max-width: 354px) {  #intro {height: 2493px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 100%;
+        }
     }
-    /*@media  (max-width: 900px) {  #intro {height: 1230px;}  }*/
-    /*@media (max-width: 660px) {  #intro {height: 1527px;}  }*/
-    /*@media (max-width: 500px) {  #intro {height: 1927px;}  }*/
-    /*@media (max-width: 660px)and (max-height: 900px) {  #intro {height: 1848px;}  }*/
-    /*@media (max-height: 900px) {  #intro {height: 1048px;}  }*/
-    /*@media (max-height: 463px) {  #intro {height: 1948px;}  }*/
+    @media (max-width: 1380px) {  #intro2 {height: 1065px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 758px;
+        }
+    }
+    @media (max-width: 1200px) {  #intro2 {height: 900px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 698px;
+        }
+    }
+    @media (max-width: 1000px) {  #intro2 {height: 900px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 560px;
+        }
+    }
+
+    @media   (max-width: 850px) {  #intro2 {height: 900px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 480px;
+        }
+    }
+    @media (max-width: 770px) {  #intro2 {height: 900px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 100%;
+        }
+    }
+    @media (max-width: 660px) {  #intro2 {height: 900px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 100%;
+        }
+    }
+    @media (max-width: 530px) {  #intro2 {height: 900px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 100%;
+        }
+    }
+    @media (max-width: 470px) {  #intro2 {height: 900px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 100%;
+        }
+    }
+    @media (max-width: 1380px) {  #intro3 {height: 900px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 758px;
+        }
+    }
+    @media (max-width: 1200px) {  #intro3 {height: 900px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 698px;
+        }
+    }
+    @media (max-width: 1000px) {  #intro3 {height: 900px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 560px;
+        }
+    }
+
+    @media   (max-width: 850px) {  #intro3 {height: 900px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 480px;
+        }
+    }
+    @media (max-width: 770px) {  #intro3 {height: 400px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 100%;
+        }
+    }
+    @media (max-width: 660px) {  #intro3 {height: 1252px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 100%;
+        }
+    }
+    @media (max-width: 530px) {  #intro3 {height: 1352px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 100%;
+        }
+    }
+    @media (max-width: 470px) {  #intro3 {height: 1506px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 100%;
+        }
+    }
 </style>

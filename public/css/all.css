@@ -12,11 +12,14 @@
 html,
 body,
 header,
-#intro {
+#intro,
+#intro2,
+#intro3
+{
     height: 100%;
 }
 
-#intro {
+#intro,#intro2,#intro3 {
     background: url("../images/bg.jpg")no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
