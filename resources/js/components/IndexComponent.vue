@@ -208,23 +208,25 @@
                         </ul>
 
                         //-------------------plaques
+<div class="row mt-5">
+    <ul class="plaques" id="plaques-placeholder col-md-12">
+        <li class="plaque ">
+            <div class="plaque-content">
+                <h2>Rabinovich<br>Reuven Shimon<br>ben Levi Yehuda Naftali</h2>
+                <p>12 Teveta 5612<br>23 December 1882</p>
+                <p>9 Av 5732<br>17 July 2002</p>
+            </div>
+        </li>
+        <li class="plaque">
+            <div class="plaque-content">
+                <h2>Rabinovich<br>Reuven Shimon<br>ben Levi Yehuda Naftali</h2>
+                <p>12 Teveta 5612<br>23 December 1882</p>
+                <p>9 Av 5732<br>17 July 2002</p>
+            </div>
+        </li>
+    </ul>
+</div>
 
-                        <ul class="plaques" id="plaques-placeholder">
-                            <li class="plaque">
-                                <div class="plaque-content">
-                                    <h2>Rabinovich<br>Reuven Shimon<br>ben Levi Yehuda Naftali</h2>
-                                    <p>12 Teveta 5612<br>23 December 1882</p>
-                                    <p>9 Av 5732<br>17 July 2002</p>
-                                </div>
-                            </li>
-                            <li class="plaque">
-                                <div class="plaque-content">
-                                    <h2>Rabinovich<br>Reuven Shimon<br>ben Levi Yehuda Naftali</h2>
-                                    <p>12 Teveta 5612<br>23 December 1882</p>
-                                    <p>9 Av 5732<br>17 July 2002</p>
-                                </div>
-                            </li>
-                        </ul>
                     </div>
 
                 </div>
@@ -466,7 +468,32 @@
         .field-wr.switch-cal {width: 15%; text-align: right;}
     }
 
-    @media (max-width: 660px) {#intro {height: 1900px;}
+    @media (max-width: 660px) {
+        #intro {
+            height: 1600px;
+        }
+
+        .field-wr.divider .I, .field-wr.dname .I, .field-wr.cmail .I {
+            border-right: 0px;
+        }
+
+        .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I {
+            border: 1px solid #666;
+        }
+
+        .row {
+            display: -ms-flexbox;
+            display: block;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+        .plaque {display: inline-block; background-color: #000; width: 30%; height: 190px; position: relative; margin: 0; padding: 0; text-align: center; vertical-align: middle;}
+        .plaque-content h2 {font-size: 100%; margin: 0; padding: 0; font-weight: 600;}
+        .plaque-content p {font-size: 90%; margin: 1em 0 0; padding: 0; color: #fc6; text-align: center !important;}
+    }
+        @media (max-width: 405px) {#intro {height: 1900px;}
         .field-wr.divider .I, .field-wr.dname .I, .field-wr.cmail .I {border-right: 0px;}
         .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I {border: 1px solid #666;}
         .row {
@@ -491,6 +518,9 @@
         .mw[data-v-754b2df6] {max-width: 100%;}
         .field-wr.dsuns {width: 72%;}
         .field-wr.switch-cal {width: 26%; text-align: right;}
+            .plaque {display: inline-block; background-color: #000; width: 30%; height: 190px; position: relative; margin: 0; padding: 0; text-align: center; vertical-align: middle;}
+            .plaque-content h2 {font-size: 100%; margin: 0; padding: 0; font-weight: 600;}
+            .plaque-content p {font-size: 90%; margin: 1em 0 0; padding: 0; color: #fc6; text-align: center !important;}
     }
     @media (max-width: 350px) {#intro {height: 2000px;}
         .field-wr.divider .I, .field-wr.dname .I, .field-wr.cmail .I {border-right: 0px;}
@@ -512,10 +542,14 @@
             color: #fff;
             border: none;
             outline: none;
+
         }
         .field-wr.ddate, .field-wr.dmnth, .field-wr.dyear {width: 100%;max-width: 100%;}
         .mw[data-v-754b2df6] {max-width: 100%;}
         .field-wr.dsuns {width: 72%;}
         .field-wr.switch-cal {width: 26%; text-align: right;}
+    .plaque {display: inline-block; background-color: #000; width: 30%; height: 190px; position: relative; margin: 0; padding: 0; text-align: center; vertical-align: middle;}
+    .plaque-content h2 {font-size: 100%; margin: 0; padding: 0; font-weight: 600;}
+    .plaque-content p {font-size: 90%; margin: 1em 0 0; padding: 0; color: #fc6; text-align: center !important;}
     }
 </style>

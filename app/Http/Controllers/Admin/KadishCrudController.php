@@ -99,44 +99,44 @@ class KadishCrudController extends CrudController
 //        ]);
     }
 
-    protected function setupCreateOperation()
-    {
-        $this->crud->setValidation(KadishRequest::class);
-
-        $this->crud->with('client');
-        // TODO: remove setFromDb() and manually define Fields
-        $this->crud->setFromDb();
-//        $this->crud->addField([
-//            'tab' => 'Client',
-//            'label' => "Email",
-//            'type' => 'text',
-//            // имя отношения в модели
-//            'name' => 'client_id',
-//            // имя отношения в модели
-//            'entity' => 'client',
-//            // атрибут Article, который будет показан пользователю
-//            'attribute' => 'Email',
-//            // при создании и обновлении вам нужно добавлять/удалять записи сводной таблицы?
-////            'pivot' => true,
-//            'model' => "App\Client", // foreign key model
-//        ]);
-//        $this->crud->addField([
+//    protected function setupCreateOperation()
+//    {
+//        $this->crud->setValidation(KadishRequest::class);
 //
-//                'tab' => 'Client',
-//                'label' => "Phone_number",
-//                'type' => 'text',
-//                // имя отношения в модели
-//                'name' => 'client_id',
-//                // имя отношения в модели
-//                'entity' => 'client',
-//                // атрибут Article, который будет показан пользователю
-//                'attribute' => 'Phone_number',
-//                // при создании и обновлении вам нужно добавлять/удалять записи сводной таблицы?
-////                'pivot' => true,
-//                'model' => "App\Client", // foreign key model
-//        ]
-//            );
-    }
+//        $this->crud->with('client');
+//        // TODO: remove setFromDb() and manually define Fields
+//        $this->crud->setFromDb();
+////        $this->crud->addField([
+////            'tab' => 'Client',
+////            'label' => "Email",
+////            'type' => 'text',
+////            // имя отношения в модели
+////            'name' => 'client_id',
+////            // имя отношения в модели
+////            'entity' => 'client',
+////            // атрибут Article, который будет показан пользователю
+////            'attribute' => 'Email',
+////            // при создании и обновлении вам нужно добавлять/удалять записи сводной таблицы?
+//////            'pivot' => true,
+////            'model' => "App\Client", // foreign key model
+////        ]);
+////        $this->crud->addField([
+////
+////                'tab' => 'Client',
+////                'label' => "Phone_number",
+////                'type' => 'text',
+////                // имя отношения в модели
+////                'name' => 'client_id',
+////                // имя отношения в модели
+////                'entity' => 'client',
+////                // атрибут Article, который будет показан пользователю
+////                'attribute' => 'Phone_number',
+////                // при создании и обновлении вам нужно добавлять/удалять записи сводной таблицы?
+//////                'pivot' => true,
+////                'model' => "App\Client", // foreign key model
+////        ]
+////            );
+//    }
 
     protected function setupUpdateOperation()
     {

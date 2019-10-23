@@ -49,12 +49,13 @@
 
         methods: {
             payment_completed_cb(res){
+                this.$router.push({name: 'Thank'})
                 // axios.put('api/kadish/'+ this.$route.params.id ,  {
                 //     params: {
                 //         Name: res.payer.payer_info.first_name,
                 //         Last_Name: res.payer.payer_info.last_name,
                 //     }});
-                // console.log(res.payer.payer_info);
+                console.log(res.payer.payer_info);
             },
             },
     mounted() {console.log(this.$route.params.id);
