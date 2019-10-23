@@ -1,8 +1,8 @@
 <template>
     <div id="intro" class="view">
         <div class="mask rgba-black-strong">
-            <div class="container-fluid d-flex align-items-center justify-content-center h-100">
-                <div class="row d-flex justify-content-center text-center">
+            <div class="container-fluid d-flex align-items-center justify-content-center mt-5 h-100">
+                <div class="row d-flex justify-content-center text-center mt-5 pt-5">
                     <div class="col-md-8 ">
                         <!-- Heading -->
 <!--                        <h2 class="display-4 font-weight-bold white-text pt-5 mb-2 "  >{{$t('Pages.About.Title')}}</h2>-->
@@ -50,4 +50,9 @@
     .h1, h1 {
         font-size: 1rem;
     }
+    @media (max-width: 1200px) {  #intro {height: 777px;}  }
+    @media (min-width: 800px) and (max-width: 850px) {  #intro {height: 777px;}  }
+    @media (max-width: 768px) {  #intro {height: 777px;}  }
+    @media (max-width: 660px) {  #intro {height: 777px;}  }
+    @media (max-width: 500px) {  #intro {height: 1007px;}  }
 </style>

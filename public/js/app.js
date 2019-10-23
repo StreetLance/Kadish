@@ -2240,7 +2240,7 @@ var touchMap = new WeakMap();
           this.Param.DataSet = "G";
         }
 
-        axios.get('http://kadish/api/' + $date + '/' + this.Param.Day + '/' + month + '/' + this.Param.Year).then(function (response) {
+        axios.get('http://149.28.51.36/api/' + $date + '/' + this.Param.Day + '/' + month + '/' + this.Param.Year).then(function (response) {
           _this.Param.Month = "";
           _this.Param.Day = response.data.day;
           _this.Param.Month = response.data.month;
@@ -10712,7 +10712,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\np[data-v-5049bb1b]{font-size: 16px;}\n/*@media (max-width: 1300px) {  p{font-size: 14px;}  }*/\n@media (max-width: 1200px) {\n#intro[data-v-5049bb1b] {height: 1230px;}\n}\n@media (min-width: 800px) and (max-width: 850px) {\n#intro[data-v-5049bb1b] {height: 1359px;}\n}\n@media (max-width: 768px) {\n#intro[data-v-5049bb1b] {height: 1180px;}\n}\n@media (max-width: 660px) {\n#intro[data-v-5049bb1b] {height: 1381px;}\n}\n@media (max-width: 500px) {\n#intro[data-v-5049bb1b] {height: 1968px;}\n}\n/*@media (max-height: 970px) {  #intro {height: 1681px;}  }*/\n", ""]);
+exports.push([module.i, "\np[data-v-5049bb1b]{font-size: 16px;}\n/*@media (max-width: 1300px) {  p{font-size: 14px;}  }*/\n@media (max-width: 1200px) {\n#intro[data-v-5049bb1b] {height: 1230px;}\n}\n@media (min-width: 800px) and (max-width: 850px) {\n#intro[data-v-5049bb1b] {height: 1359px;}\n}\n@media (max-width: 768px) {\n#intro[data-v-5049bb1b] {height: 1180px;}\n}\n@media (max-width: 660px) {\n#intro[data-v-5049bb1b] {height: 1381px;}\n}\n@media (max-width: 500px) {\n#intro[data-v-5049bb1b] {height: 1850px;}\n}\n/*@media (max-height: 970px) {  #intro {height: 1681px;}  }*/\n", ""]);
 
 // exports
 
@@ -10807,7 +10807,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.h1[data-v-ee76c040], h1[data-v-ee76c040] {\n    font-size: 1rem;\n}\n", ""]);
+exports.push([module.i, "\n.h1[data-v-ee76c040], h1[data-v-ee76c040] {\n    font-size: 1rem;\n}\n@media (max-width: 1200px) {\n#intro[data-v-ee76c040] {height: 777px;}\n}\n@media (min-width: 800px) and (max-width: 850px) {\n#intro[data-v-ee76c040] {height: 777px;}\n}\n@media (max-width: 768px) {\n#intro[data-v-ee76c040] {height: 777px;}\n}\n@media (max-width: 660px) {\n#intro[data-v-ee76c040] {height: 777px;}\n}\n@media (max-width: 500px) {\n#intro[data-v-ee76c040] {height: 1007px;}\n}\n", ""]);
 
 // exports
 
@@ -85413,12 +85413,15 @@ var render = function() {
         "div",
         {
           staticClass:
-            "container-fluid d-flex align-items-center justify-content-center h-100"
+            "container-fluid d-flex align-items-center justify-content-center mt-5 h-100"
         },
         [
           _c(
             "div",
-            { staticClass: "row d-flex justify-content-center text-center" },
+            {
+              staticClass:
+                "row d-flex justify-content-center text-center mt-5 pt-5"
+            },
             [
               _c("div", { staticClass: "col-md-8 " }, [
                 _c("div", { staticClass: "cont" }, [
