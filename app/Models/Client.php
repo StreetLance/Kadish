@@ -19,7 +19,11 @@ class Client extends Model
      protected $primaryKey = 'id';
      public $timestamps = true;
     // protected $guarded = ['id'];
-    protected $fillable = [  'Email',
+    protected $fillable = [
+        'Email',
+        'Name',
+        'Last_Name',
+        'Social_relations',
         'Phone_number'];
     // protected $hidden = [];
     // protected $dates = [];

@@ -230,6 +230,24 @@
                 </div>
             </div>
         </div>
+        <footer class="page-footer font-small unique-color-dark mt-5">
+            <!-- Social buttons -->
+            <div class="unique-color-dark">
+                <div class="container">
+                    <!--Grid row-->
+                    <div class="row py-4 d-flex align-items-center">
+                        <!--Grid column-->
+                        <div class="col-md-6 col-lg-7 text-center text-md-right">
+                            <h6 class="mb-0 white-text">© All rights reserved. Contact us: info@kaddish-prayer.com | Refund policy</h6>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </div>
+            </div>
+            <!-- Social buttons -->
+            <!-- Copyright -->
+        </footer>
     </div>
 </template>
 <script>
@@ -400,7 +418,7 @@
     }
     @media (max-width: 1200px) {  #intro {height: 1200px;}}
     @media (max-height: 800px){ #intro {height: 950px;}}
-    @media (max-width: 850px) {  #intro {height: 1162px;}
+    @media (max-width: 850px) {  #intro {height: 1462px;}
         .field-wr.divider .I, .field-wr.dname .I, .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I, .field-wr.cmail .I {border-right: 0px;}
         .row {
             display: -ms-flexbox;
@@ -448,7 +466,7 @@
         .field-wr.switch-cal {width: 15%; text-align: right;}
     }
 
-    @media (max-width: 660px) {#intro {height: 1800px;}
+    @media (max-width: 660px) {#intro {height: 1900px;}
         .field-wr.divider .I, .field-wr.dname .I, .field-wr.cmail .I {border-right: 0px;}
         .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I {border: 1px solid #666;}
         .row {

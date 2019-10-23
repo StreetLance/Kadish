@@ -23,6 +23,8 @@ class Kadish extends Model
         'Name_of_Deceased',
         'Fathers_Name',
         'G_Date',
+        'J_Date',
+        'Lang',
         'After_sunset',
         'Order',
         'Difference_Year'];
