@@ -237,28 +237,28 @@
             width: 480px;
         }
     }
-    @media (max-width: 770px) {  #intro2 {height: 101%;}
+    @media (max-width: 770px) {  #intro2 {height: 1000px;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
             width: 100%;
         }
     }
-    @media (max-width: 660px) {  #intro2 {height: 101%;}
+    @media (max-width: 660px) {  #intro2 {height: 1000px;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
             width: 100%;
         }
     }
-    @media (max-width: 530px) {  #intro2 {height: 101%;}
+    @media (max-width: 530px) {  #intro2 {height: 1000px;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
             width: 100%;
         }
     }
-    @media (max-width: 470px) {  #intro2 {height: 1200px;}
+    @media (max-width: 470px) {  #intro2 {height: 142%;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
