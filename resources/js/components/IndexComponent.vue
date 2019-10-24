@@ -207,7 +207,6 @@
                             </li>
                         </ul>
 
-                        //-------------------plaques
 <div class="row mt-5">
     <ul class="plaques" id="plaques-placeholder col-md-12">
         <li class="plaque ">
