@@ -24,7 +24,24 @@
                 </div>
             </div>
         </div>
-
+        <footer class="page-footer font-small unique-color-dark mt-5">
+            <!-- Social buttons -->
+            <div class="unique-color-dark">
+                <div class="container">
+                    <!--Grid row-->
+                    <div class="row py-4 d-flex align-items-center">
+                        <!--Grid column-->
+                        <div class="col-md-6 col-lg-7 text-center text-md-right">
+                            <h6 class="mb-0 white-text">© All rights reserved. Contact us: info@kaddish-prayer.com | Refund policy</h6>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </div>
+            </div>
+            <!-- Social buttons -->
+            <!-- Copyright -->
+        </footer>
     </div>
 <!--    <h1 class="text-white">Pay ID:{{ $route.params.id}}</h1>-->
 

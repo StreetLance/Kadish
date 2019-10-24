@@ -416,7 +416,7 @@
         border: none;
     }
     #intro{
-        height: 1162px;
+        height: 1200px;
     }
     @media (max-width: 1200px) {  #intro {height: 1200px;}}
     @media (max-height: 800px){ #intro {height: 950px;}}

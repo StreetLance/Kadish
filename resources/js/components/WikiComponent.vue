@@ -105,6 +105,24 @@
                 </div>
             </div>
         </div>
+        <footer class="page-footer font-small unique-color-dark mt-5">
+            <!-- Social buttons -->
+            <div class="unique-color-dark">
+                <div class="container">
+                    <!--Grid row-->
+                    <div class="row py-4 d-flex align-items-center">
+                        <!--Grid column-->
+                        <div class="col-md-6 col-lg-7 text-center text-md-right">
+                            <h6 class="mb-0 white-text">© All rights reserved. Contact us: info@kaddish-prayer.com | Refund policy</h6>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </div>
+            </div>
+            <!-- Social buttons -->
+            <!-- Copyright -->
+        </footer>
     </div>
 </template>
 
@@ -182,28 +200,29 @@
             opacity: 0.8;
             width: 100%;
         }
-    }@media (max-width: 354px) {  #intro {height: 2493px;}
+    }
+        @media (max-width: 390px) {  #intro {height: 2252px;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
-            width: 100%;
+            width: 3000px;
         }
-    }
-    @media (max-width: 1380px) {  #intro2 {height: 1065px;}
+        }
+    @media (max-width: 1380px) {  #intro2 {height: 101%;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
             width: 758px;
         }
     }
-    @media (max-width: 1200px) {  #intro2 {height: 900px;}
+    @media (max-width: 1200px) {  #intro2 {height: 101%;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
             width: 698px;
         }
     }
-    @media (max-width: 1000px) {  #intro2 {height: 900px;}
+    @media (max-width: 1000px) {  #intro2 {height: 101%;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
@@ -211,56 +230,56 @@
         }
     }
 
-    @media   (max-width: 850px) {  #intro2 {height: 900px;}
+    @media   (max-width: 850px) {  #intro2 {height: 101%;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
             width: 480px;
         }
     }
-    @media (max-width: 770px) {  #intro2 {height: 900px;}
+    @media (max-width: 770px) {  #intro2 {height: 101%;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
             width: 100%;
         }
     }
-    @media (max-width: 660px) {  #intro2 {height: 900px;}
+    @media (max-width: 660px) {  #intro2 {height: 101%;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
             width: 100%;
         }
     }
-    @media (max-width: 530px) {  #intro2 {height: 900px;}
+    @media (max-width: 530px) {  #intro2 {height: 101%;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
             width: 100%;
         }
     }
-    @media (max-width: 470px) {  #intro2 {height: 900px;}
+    @media (max-width: 470px) {  #intro2 {height: 142%;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
             width: 100%;
         }
     }
-    @media (max-width: 1380px) {  #intro3 {height: 900px;}
+    @media (max-width: 1380px) {  #intro3 {height: 101%;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
             width: 758px;
         }
     }
-    @media (max-width: 1200px) {  #intro3 {height: 900px;}
+    @media (max-width: 1200px) {  #intro3 {height: 101%;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
             width: 698px;
         }
     }
-    @media (max-width: 1000px) {  #intro3 {height: 900px;}
+    @media (max-width: 1000px) {  #intro3 {height: 101%;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
@@ -268,14 +287,14 @@
         }
     }
 
-    @media   (max-width: 850px) {  #intro3 {height: 900px;}
+    @media   (max-width: 850px) {  #intro3 {height: 101%;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
             width: 480px;
         }
     }
-    @media (max-width: 770px) {  #intro3 {height: 400px;}
+    @media (max-width: 770px) {  #intro3 {height: 101%px;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
@@ -296,7 +315,7 @@
             width: 100%;
         }
     }
-    @media (max-width: 470px) {  #intro3 {height: 1506px;}
+    @media (max-width: 470px) {  #intro3 {height: 1688px;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
