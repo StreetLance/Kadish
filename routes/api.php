@@ -21,3 +21,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     Route::get('/G/{D}/{M}/{Y}','CallController@getGregorianDate');
 //    Route::get('/paypal-transaction-complete','PayCheckout@getOrder');
     Route::resource('/kadish','KaddishController')->only('index','show','create','update');
+    Route::get('/plaques','PlaquasController@getPlaquas');

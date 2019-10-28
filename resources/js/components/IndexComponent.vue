@@ -189,11 +189,14 @@
                         <div class="row d-flex justify-content-center form-but-wr ">
                             <div class="col-md-4 field-wr halfwidth rmnd ml-3">
                                 <button type="button" class="field-wr" @click="Kaddish(0)">
+                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" v-if="YortchatLoader"></span>
                                     {{$t('Button.Button1')}}<b class="free">Free</b></button>
                             </div>
                             <div class="col-md-2"></div>
                             <div class="col-md-4 field-wr halfwidth arra ml-4">
-                                <button type="button" class="field-wr " @click="Kaddish(1)">{{$t('Button.Button2')}}<i
+                                <button type="button" class="field-wr " @click="Kaddish(1)">
+                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" v-if="kadishLoader"></span>
+                                    {{$t('Button.Button2')}}<i
                                     class="fab fa-amazon-pay" fa-2x></i></button>
                             </div>
                         </div>
@@ -207,24 +210,7 @@
                             </li>
                         </ul>
 
-<div class="row mt-5">
-    <ul class="plaques" id="plaques-placeholder col-md-12">
-        <li class="plaque ">
-            <div class="plaque-content">
-                <h2>Rabinovich<br>Reuven Shimon<br>ben Levi Yehuda Naftali</h2>
-                <p>12 Teveta 5612<br>23 December 1882</p>
-                <p>9 Av 5732<br>17 July 2002</p>
-            </div>
-        </li>
-        <li class="plaque">
-            <div class="plaque-content">
-                <h2>Rabinovich<br>Reuven Shimon<br>ben Levi Yehuda Naftali</h2>
-                <p>12 Teveta 5612<br>23 December 1882</p>
-                <p>9 Av 5732<br>17 July 2002</p>
-            </div>
-        </li>
-    </ul>
-</div>
+
 
                     </div>
 
@@ -249,6 +235,26 @@
             <!-- Social buttons -->
             <!-- Copyright -->
         </footer>
+
+    </div>
+
+    <div class="row mt-5">
+        <ul class="plaques" id="plaques-placeholder col-md-12">
+            <li class="plaque " v-for="(plaques, index) in plaques">
+                <div class="plaque-content" >
+                    <h2>{{plaques.Name_of_Deceased}}</br> ben(bat)</br> {{plaques.Fathers_Name}}</br></h2>
+                    </br></br>
+                    <p>{{plaques.J_Date.day}} {{plaques.J_Date.monthname}}  {{plaques.J_Date.year}} </br>{{plaques.G_Date.day}} {{plaques.G_Date.monthname}}  {{plaques.G_Date.year}}</p>
+                </div>
+            </li>
+            <!--        <li class="plaque">-->
+            <!--            <div class="plaque-content">-->
+            <!--                <h2>Rabinovich<br>Reuven Shimon<br>ben Levi Yehuda Naftali</h2>-->
+            <!--                <p>12 Teveta 5612<br>23 December 1882</p>-->
+            <!--                <p>9 Av 5732<br>17 July 2002</p>-->
+            <!--            </div>-->
+            <!--        </li>-->
+        </ul>
     </div>
 </template>
 <script>
@@ -258,7 +264,7 @@
 
         data: function () {
             return {
-                Item: [], choice: false, show: true, showJ: true, spiner: false,
+                Item: [],plaques:[], choice: false, show: true, showJ: true, spiner: false, YortchatLoader: false, kadishLoader: false,
                 Form: {Name_of_Deceased: "", Name_Father_Deceased: "", Email:"", Phone: "", Sunset: false},
                 Param: {Day: "", Month:"", Year: "", DataSet: "G"},
             }
@@ -308,6 +314,9 @@
             this.Param.Day = date.getDate();
             this.Param.Month = String(date.getMonth() + 1);
             this.Param.Year = date.getFullYear();
+            axios.get('api/plaques').then((response) => {
+                this.plaques = response.data;
+            });
         },
         methods: {
             delayTouch($v) {
@@ -334,8 +343,10 @@
                 } else {this.$v.Param.$touch();}
             },
             async Kaddish($order) {
+
                 if (!this.$v.Form.$invalid && !this.$v.Param.$invalid) {
                     let Sunset;
+                    $order === 0 ? this.YortchatLoader = true :  this.kadishLoader = true;
                     (this.Form.Sunset === false) ? Sunset = 0 : Sunset = 1;
                     await axios.get('api/kadish/create', {
                         params: {
@@ -352,6 +363,8 @@
                             Order: $order,
                         }
                     }).then((response) => {
+                        this.YortchatLoader = false;
+                        this.kadishLoader = false;
                         if (response){
                         }
                         if (response.data.order === "0") {
@@ -417,81 +430,81 @@
     #intro{
         height: 1200px;
     }
-    @media (max-width: 1200px) {  #intro {height: 1200px;}}
-    @media (max-height: 800px){ #intro {height: 950px;}}
-    @media (max-width: 850px) {  #intro {height: 1462px;}
-        .field-wr.divider .I, .field-wr.dname .I, .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I, .field-wr.cmail .I {border-right: 0px;}
-        .row {
-            display: -ms-flexbox;
-            display: block;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-            margin-right: -15px;
-            margin-left: -15px;
-        }
-        hr {margin-top: 10px;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}
-        .field-wr input[type=text], .field-wr label, .field-wr textarea {
-            font: normal 300 15px/29px 'Roboto', sans-serif;
-            width: 100%;
-            background: none;
-            /*padding: 0 2px;*/
-            color: #fff;
-            border: none;
-            outline: none;
-        }
-        .field-wr.dsuns {width: 30%;}
-        .field-wr.switch-cal {width: 15%; text-align: right;}
-    }
+    @media (max-width: 1200px) {  #intro {min-height: 1200px;}}
+    /*@media (max-height: 800px){ #intro {height: 950px;}}*/
+    /*@media (max-width: 850px) {  #intro {height: 1462px;}*/
+    /*    .field-wr.divider .I, .field-wr.dname .I, .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I, .field-wr.cmail .I {border-right: 0px;}*/
+    /*    .row {*/
+    /*        display: -ms-flexbox;*/
+    /*        display: block;*/
+    /*        -ms-flex-wrap: wrap;*/
+    /*        flex-wrap: wrap;*/
+    /*        margin-right: -15px;*/
+    /*        margin-left: -15px;*/
+    /*    }*/
+    /*    hr {margin-top: 10px;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}*/
+    /*    .field-wr input[type=text], .field-wr label, .field-wr textarea {*/
+    /*        font: normal 300 15px/29px 'Roboto', sans-serif;*/
+    /*        width: 100%;*/
+    /*        background: none;*/
+    /*        !*padding: 0 2px;*!*/
+    /*        color: #fff;*/
+    /*        border: none;*/
+    /*        outline: none;*/
+    /*    }*/
+    /*    .field-wr.dsuns {width: 30%;}*/
+    /*    .field-wr.switch-cal {width: 15%; text-align: right;}*/
+    /*}*/
 
-    @media (max-width: 760px) {  #intro {height: 1460px;}
-        .field-wr.divider .I, .field-wr.dname .I, .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I, .field-wr.cmail .I {border-right: 0px;}
-        .row {
-            display: -ms-flexbox;
-            display: block;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-            margin-right: -15px;
-            margin-left: -15px;
-        }
-        hr {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}
-        .field-wr input[type=text], .field-wr label, .field-wr textarea {
-            font: normal 300 15px/29px 'Roboto', sans-serif;
-            width: 100%;
-            background: none;
-            /*padding: 0 2px;*/
-            color: #fff;
-            border: none;
-            outline: none;
-        }
-        .field-wr.dsuns {width: 30%;}
-        .field-wr.switch-cal {width: 15%; text-align: right;}
-    }
+    /*@media (max-width: 760px) {  #intro {height: 1460px;}*/
+    /*    .field-wr.divider .I, .field-wr.dname .I, .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I, .field-wr.cmail .I {border-right: 0px;}*/
+    /*    .row {*/
+    /*        display: -ms-flexbox;*/
+    /*        display: block;*/
+    /*        -ms-flex-wrap: wrap;*/
+    /*        flex-wrap: wrap;*/
+    /*        margin-right: -15px;*/
+    /*        margin-left: -15px;*/
+    /*    }*/
+    /*    hr {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}*/
+    /*    .field-wr input[type=text], .field-wr label, .field-wr textarea {*/
+    /*        font: normal 300 15px/29px 'Roboto', sans-serif;*/
+    /*        width: 100%;*/
+    /*        background: none;*/
+    /*        !*padding: 0 2px;*!*/
+    /*        color: #fff;*/
+    /*        border: none;*/
+    /*        outline: none;*/
+    /*    }*/
+    /*    .field-wr.dsuns {width: 30%;}*/
+    /*    .field-wr.switch-cal {width: 15%; text-align: right;}*/
+    /*}*/
 
-    @media (max-width: 660px) {
-        #intro {
-            height: 1600px;
-        }
+    /*@media (max-width: 660px) {*/
+    /*    #intro {*/
+    /*        height: 1600px;*/
+    /*    }*/
 
-        .field-wr.divider .I, .field-wr.dname .I, .field-wr.cmail .I {
-            border-right: 0px;
-        }
+    /*    .field-wr.divider .I, .field-wr.dname .I, .field-wr.cmail .I {*/
+    /*        border-right: 0px;*/
+    /*    }*/
 
-        .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I {
-            border: 1px solid #666;
-        }
+    /*    .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I {*/
+    /*        border: 1px solid #666;*/
+    /*    }*/
 
-        .row {
-            display: -ms-flexbox;
-            display: block;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-            margin-right: -15px;
-            margin-left: -15px;
-        }
-        .plaque {display: inline-block; background-color: #000; width: 30%; height: 190px; position: relative; margin: 0; padding: 0; text-align: center; vertical-align: middle;}
-        .plaque-content h2 {font-size: 100%; margin: 0; padding: 0; font-weight: 600;}
-        .plaque-content p {font-size: 90%; margin: 1em 0 0; padding: 0; color: #fc6; text-align: center !important;}
-    }
+    /*    .row {*/
+    /*        display: -ms-flexbox;*/
+    /*        display: block;*/
+    /*        -ms-flex-wrap: wrap;*/
+    /*        flex-wrap: wrap;*/
+    /*        margin-right: -15px;*/
+    /*        margin-left: -15px;*/
+    /*    }*/
+    /*    .plaque {display: inline-block; background-color: #000; width: 30%; height: 190px; position: relative; margin: 0; padding: 0; text-align: center; vertical-align: middle;}*/
+    /*    .plaque-content h2 {font-size: 100%; margin: 0; padding: 0; font-weight: 600;}*/
+    /*    .plaque-content p {font-size: 90%; margin: 1em 0 0; padding: 0; color: #fc6; text-align: center !important;}*/
+    /*}*/
         @media (max-width: 405px) {#intro {height: 1900px;}
         .field-wr.divider .I, .field-wr.dname .I, .field-wr.cmail .I {border-right: 0px;}
         .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I {border: 1px solid #666;}
