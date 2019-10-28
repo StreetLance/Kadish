@@ -2184,7 +2184,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
 
 var touchMap = new WeakMap();
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -10878,7 +10877,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.field-wr input[type=email][type=tel][data-v-754b2df6] {text-overflow: ellipsis;}\n.field-wr input[type=tel][data-v-754b2df6] {\n    font: normal 300 18px/26px 'Roboto', sans-serif;\n    width: 100%;\n    background: none;\n    padding: 0 2px;\n    color: #fff;\n    border: none;\n    outline: none;\n}\nlabel[data-v-754b2df6] {display: inline-block;margin-bottom: 0rem;}\n.mw[data-v-754b2df6] {max-width: 75%}\n.np[data-v-754b2df6] {padding: 0px;}\n.top-np[data-v-754b2df6] {padding: 0px 0px 14px 0px;}\n.bot-np[data-v-754b2df6] {padding: 14px 0px 0px 0px;}\nform[data-v-754b2df6] {\n    font-size: 0;\n    font-family: 'Roboto', sans-serif;\n    transition: all 0.4s ease;\n}\n.mv2[data-v-754b2df6] {max-width: 955px;}\n.pp[data-v-754b2df6] {padding: 0 2px;}\n.fs[data-v-754b2df6] {font: normal 300 16px/26px 'Roboto', sans-serif;}\nhr[data-v-754b2df6] {margin-top: 10px;;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.custom-select[data-v-754b2df6] {\n    display: inline-block;\n    width: 100%;\n    height: calc(1.5em + .75rem + 2px);\n    padding: .375rem 1.75rem .375rem .75rem;\n    font: normal 300 18px/26px 'Roboto', sans-serif;\n    line-height: 1.5;\n    color: #495057;\n    vertical-align: middle;\n    background: url(data:image/svg+xml,%3csvg xmlns= 'http://www.w3.org/2000/svg' viewBox= '0 0 4 5' %3e%3cpath fill= '%23343a40' d= 'M2 0L0 2h4zm0 5L0 3h4z' /%3e%3c/svg%3e) no-repeat right .75 rem center / 8 px 10 px;\n    background-color: #000000;\n    /*border: 1px solid #423d3d;*/\n    border-radius: .25rem;\n    -webkit-appearance: none;\n    -moz-appearance: none;\n    appearance: none;\n    border: none;\n}\n#intro[data-v-754b2df6]{\n    height: 1200px;\n}\n@media (max-width: 1200px) {\n#intro[data-v-754b2df6] {min-height: 1200px;}}\n/*@media (max-height: 800px){ #intro {height: 950px;}}*/\n/*@media (max-width: 850px) {  #intro {height: 1462px;}*/\n/*    .field-wr.divider .I, .field-wr.dname .I, .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I, .field-wr.cmail .I {border-right: 0px;}*/\n/*    .row {*/\n/*        display: -ms-flexbox;*/\n/*        display: block;*/\n/*        -ms-flex-wrap: wrap;*/\n/*        flex-wrap: wrap;*/\n/*        margin-right: -15px;*/\n/*        margin-left: -15px;*/\n/*    }*/\n/*    hr {margin-top: 10px;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}*/\n/*    .field-wr input[type=text], .field-wr label, .field-wr textarea {*/\n/*        font: normal 300 15px/29px 'Roboto', sans-serif;*/\n/*        width: 100%;*/\n/*        background: none;*/\n/*        !*padding: 0 2px;*!*/\n/*        color: #fff;*/\n/*        border: none;*/\n/*        outline: none;*/\n/*    }*/\n/*    .field-wr.dsuns {width: 30%;}*/\n/*    .field-wr.switch-cal {width: 15%; text-align: right;}*/\n/*}*/\n\n/*@media (max-width: 760px) {  #intro {height: 1460px;}*/\n/*    .field-wr.divider .I, .field-wr.dname .I, .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I, .field-wr.cmail .I {border-right: 0px;}*/\n/*    .row {*/\n/*        display: -ms-flexbox;*/\n/*        display: block;*/\n/*        -ms-flex-wrap: wrap;*/\n/*        flex-wrap: wrap;*/\n/*        margin-right: -15px;*/\n/*        margin-left: -15px;*/\n/*    }*/\n/*    hr {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}*/\n/*    .field-wr input[type=text], .field-wr label, .field-wr textarea {*/\n/*        font: normal 300 15px/29px 'Roboto', sans-serif;*/\n/*        width: 100%;*/\n/*        background: none;*/\n/*        !*padding: 0 2px;*!*/\n/*        color: #fff;*/\n/*        border: none;*/\n/*        outline: none;*/\n/*    }*/\n/*    .field-wr.dsuns {width: 30%;}*/\n/*    .field-wr.switch-cal {width: 15%; text-align: right;}*/\n/*}*/\n\n/*@media (max-width: 660px) {*/\n/*    #intro {*/\n/*        height: 1600px;*/\n/*    }*/\n\n/*    .field-wr.divider .I, .field-wr.dname .I, .field-wr.cmail .I {*/\n/*        border-right: 0px;*/\n/*    }*/\n\n/*    .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I {*/\n/*        border: 1px solid #666;*/\n/*    }*/\n\n/*    .row {*/\n/*        display: -ms-flexbox;*/\n/*        display: block;*/\n/*        -ms-flex-wrap: wrap;*/\n/*        flex-wrap: wrap;*/\n/*        margin-right: -15px;*/\n/*        margin-left: -15px;*/\n/*    }*/\n/*    .plaque {display: inline-block; background-color: #000; width: 30%; height: 190px; position: relative; margin: 0; padding: 0; text-align: center; vertical-align: middle;}*/\n/*    .plaque-content h2 {font-size: 100%; margin: 0; padding: 0; font-weight: 600;}*/\n/*    .plaque-content p {font-size: 90%; margin: 1em 0 0; padding: 0; color: #fc6; text-align: center !important;}*/\n/*}*/\n@media (max-width: 405px) {#intro[data-v-754b2df6] {height: 1900px;}\n.field-wr.divider .I[data-v-754b2df6], .field-wr.dname .I[data-v-754b2df6], .field-wr.cmail .I[data-v-754b2df6] {border-right: 0px;}\n.field-wr.ddate .I[data-v-754b2df6], .field-wr.dmnth .I[data-v-754b2df6], .field-wr.dyear .I[data-v-754b2df6] {border: 1px solid #666;}\n.row[data-v-754b2df6] {\n        display: -ms-flexbox;\n        display: block;\n        flex-wrap: wrap;\n        margin-right: -15px;\n        margin-left: -15px;\n}\nhr[data-v-754b2df6] {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.field-wr input[type=text][data-v-754b2df6], .field-wr label[data-v-754b2df6], .field-wr textarea[data-v-754b2df6] {\n        font: normal 300 15px/29px 'Roboto', sans-serif;\n        width: 100%;\n        background: none;\n        /*padding: 0 2px;*/\n        color: #fff;\n        border: none;\n        outline: none;\n}\n.field-wr.ddate[data-v-754b2df6], .field-wr.dmnth[data-v-754b2df6], .field-wr.dyear[data-v-754b2df6] {width: 100%;max-width: 100%;}\n.mw[data-v-754b2df6][data-v-754b2df6] {max-width: 100%;}\n.field-wr.dsuns[data-v-754b2df6] {width: 72%;}\n.field-wr.switch-cal[data-v-754b2df6] {width: 26%; text-align: right;}\n.plaque[data-v-754b2df6] {display: inline-block; background-color: #000; width: 30%; height: 190px; position: relative; margin: 0; padding: 0; text-align: center; vertical-align: middle;}\n.plaque-content h2[data-v-754b2df6] {font-size: 100%; margin: 0; padding: 0; font-weight: 600;}\n.plaque-content p[data-v-754b2df6] {font-size: 90%; margin: 1em 0 0; padding: 0; color: #fc6; text-align: center !important;}\n}\n@media (max-width: 350px) {#intro[data-v-754b2df6] {height: 2000px;}\n.field-wr.divider .I[data-v-754b2df6], .field-wr.dname .I[data-v-754b2df6], .field-wr.cmail .I[data-v-754b2df6] {border-right: 0px;}\n.field-wr.ddate .I[data-v-754b2df6], .field-wr.dmnth .I[data-v-754b2df6], .field-wr.dyear .I[data-v-754b2df6] {border: 1px solid #666;}\n.row[data-v-754b2df6] {\n        display: -ms-flexbox;\n        display: block;\n        flex-wrap: wrap;\n        margin-right: -15px;\n        margin-left: -15px;\n}\nhr[data-v-754b2df6] {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.field-wr input[type=text][data-v-754b2df6], .field-wr label[data-v-754b2df6], .field-wr textarea[data-v-754b2df6] {\n        font: normal 300 15px/29px 'Roboto', sans-serif;\n        width: 100%;\n        background: none;\n        /*padding: 0 2px;*/\n        color: #fff;\n        border: none;\n        outline: none;\n}\n.field-wr.ddate[data-v-754b2df6], .field-wr.dmnth[data-v-754b2df6], .field-wr.dyear[data-v-754b2df6] {width: 100%;max-width: 100%;}\n.mw[data-v-754b2df6][data-v-754b2df6] {max-width: 100%;}\n.field-wr.dsuns[data-v-754b2df6] {width: 72%;}\n.field-wr.switch-cal[data-v-754b2df6] {width: 26%; text-align: right;}\n.plaque[data-v-754b2df6] {display: inline-block; background-color: #000; width: 30%; height: 190px; position: relative; margin: 0; padding: 0; text-align: center; vertical-align: middle;}\n.plaque-content h2[data-v-754b2df6] {font-size: 100%; margin: 0; padding: 0; font-weight: 600;}\n.plaque-content p[data-v-754b2df6] {font-size: 90%; margin: 1em 0 0; padding: 0; color: #fc6; text-align: center !important;}\n}\n", ""]);
+exports.push([module.i, "\n.view .mask[data-v-754b2df6] {\n     position: relative;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    overflow: hidden;\n    width: 100%;\n    height: 100%;\n    background-attachment: fixed;\n}\n.field-wr input[type=email][type=tel][data-v-754b2df6] {text-overflow: ellipsis;}\n.field-wr input[type=tel][data-v-754b2df6] {\n    font: normal 300 18px/26px 'Roboto', sans-serif;\n    width: 100%;\n    background: none;\n    padding: 0 2px;\n    color: #fff;\n    border: none;\n    outline: none;\n}\nlabel[data-v-754b2df6] {display: inline-block;margin-bottom: 0rem;}\n.mw[data-v-754b2df6] {max-width: 75%}\n.np[data-v-754b2df6] {padding: 0px;}\n.top-np[data-v-754b2df6] {padding: 0px 0px 14px 0px;}\n.bot-np[data-v-754b2df6] {padding: 14px 0px 0px 0px;}\nform[data-v-754b2df6] {\n    font-size: 0;\n    font-family: 'Roboto', sans-serif;\n    transition: all 0.4s ease;\n}\n.mv2[data-v-754b2df6] {max-width: 955px;}\n.pp[data-v-754b2df6] {padding: 0 2px;}\n.fs[data-v-754b2df6] {font: normal 300 16px/26px 'Roboto', sans-serif;}\nhr[data-v-754b2df6] {margin-top: 10px;;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.custom-select[data-v-754b2df6] {\n    display: inline-block;\n    width: 100%;\n    height: calc(1.5em + .75rem + 2px);\n    padding: .375rem 1.75rem .375rem .75rem;\n    font: normal 300 18px/26px 'Roboto', sans-serif;\n    line-height: 1.5;\n    color: #495057;\n    vertical-align: middle;\n    background: url(data:image/svg+xml,%3csvg xmlns= 'http://www.w3.org/2000/svg' viewBox= '0 0 4 5' %3e%3cpath fill= '%23343a40' d= 'M2 0L0 2h4zm0 5L0 3h4z' /%3e%3c/svg%3e) no-repeat right .75 rem center / 8 px 10 px;\n    background-color: #000000;\n    /*border: 1px solid #423d3d;*/\n    border-radius: .25rem;\n    -webkit-appearance: none;\n    -moz-appearance: none;\n    appearance: none;\n    border: none;\n}\n/*#intro{*/\n/*    height: 1200px;*/\n/*}*/\n/*@media (max-width: 1200px) {  #intro {min-height: 1200px;}}*/\n/*@media (max-height: 800px){ #intro {height: 950px;}}*/\n/*@media (max-width: 850px) {  #intro {height: 1462px;}*/\n/*    .field-wr.divider .I, .field-wr.dname .I, .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I, .field-wr.cmail .I {border-right: 0px;}*/\n/*    .row {*/\n/*        display: -ms-flexbox;*/\n/*        display: block;*/\n/*        -ms-flex-wrap: wrap;*/\n/*        flex-wrap: wrap;*/\n/*        margin-right: -15px;*/\n/*        margin-left: -15px;*/\n/*    }*/\n/*    hr {margin-top: 10px;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}*/\n/*    .field-wr input[type=text], .field-wr label, .field-wr textarea {*/\n/*        font: normal 300 15px/29px 'Roboto', sans-serif;*/\n/*        width: 100%;*/\n/*        background: none;*/\n/*        !*padding: 0 2px;*!*/\n/*        color: #fff;*/\n/*        border: none;*/\n/*        outline: none;*/\n/*    }*/\n/*    .field-wr.dsuns {width: 30%;}*/\n/*    .field-wr.switch-cal {width: 15%; text-align: right;}*/\n/*}*/\n\n/*@media (max-width: 760px) {  #intro {height: 1460px;}*/\n/*    .field-wr.divider .I, .field-wr.dname .I, .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I, .field-wr.cmail .I {border-right: 0px;}*/\n/*    .row {*/\n/*        display: -ms-flexbox;*/\n/*        display: block;*/\n/*        -ms-flex-wrap: wrap;*/\n/*        flex-wrap: wrap;*/\n/*        margin-right: -15px;*/\n/*        margin-left: -15px;*/\n/*    }*/\n/*    hr {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}*/\n/*    .field-wr input[type=text], .field-wr label, .field-wr textarea {*/\n/*        font: normal 300 15px/29px 'Roboto', sans-serif;*/\n/*        width: 100%;*/\n/*        background: none;*/\n/*        !*padding: 0 2px;*!*/\n/*        color: #fff;*/\n/*        border: none;*/\n/*        outline: none;*/\n/*    }*/\n/*    .field-wr.dsuns {width: 30%;}*/\n/*    .field-wr.switch-cal {width: 15%; text-align: right;}*/\n/*}*/\n\n/*@media (max-width: 660px) {*/\n/*    #intro {*/\n/*        height: 1600px;*/\n/*    }*/\n\n/*    .field-wr.divider .I, .field-wr.dname .I, .field-wr.cmail .I {*/\n/*        border-right: 0px;*/\n/*    }*/\n\n/*    .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I {*/\n/*        border: 1px solid #666;*/\n/*    }*/\n\n/*    .row {*/\n/*        display: -ms-flexbox;*/\n/*        display: block;*/\n/*        -ms-flex-wrap: wrap;*/\n/*        flex-wrap: wrap;*/\n/*        margin-right: -15px;*/\n/*        margin-left: -15px;*/\n/*    }*/\n/*    .plaque {display: inline-block; background-color: #000; width: 30%; height: 190px; position: relative; margin: 0; padding: 0; text-align: center; vertical-align: middle;}*/\n/*    .plaque-content h2 {font-size: 100%; margin: 0; padding: 0; font-weight: 600;}*/\n/*    .plaque-content p {font-size: 90%; margin: 1em 0 0; padding: 0; color: #fc6; text-align: center !important;}*/\n/*}*/\n@media (max-width: 405px) {\n        /*#intro {height: 1900px;*/\n.field-wr.divider .I[data-v-754b2df6], .field-wr.dname .I[data-v-754b2df6], .field-wr.cmail .I[data-v-754b2df6] {border-right: 0px;}\n.field-wr.ddate .I[data-v-754b2df6], .field-wr.dmnth .I[data-v-754b2df6], .field-wr.dyear .I[data-v-754b2df6] {border: 1px solid #666;}\n.row[data-v-754b2df6] {\n        display: -ms-flexbox;\n        display: block;\n        flex-wrap: wrap;\n        margin-right: -15px;\n        margin-left: -15px;\n}\nhr[data-v-754b2df6] {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.field-wr input[type=text][data-v-754b2df6], .field-wr label[data-v-754b2df6], .field-wr textarea[data-v-754b2df6] {\n        font: normal 300 15px/29px 'Roboto', sans-serif;\n        width: 100%;\n        background: none;\n        /*padding: 0 2px;*/\n        color: #fff;\n        border: none;\n        outline: none;\n}\n.field-wr.ddate[data-v-754b2df6], .field-wr.dmnth[data-v-754b2df6], .field-wr.dyear[data-v-754b2df6] {width: 100%;max-width: 100%;}\n.mw[data-v-754b2df6][data-v-754b2df6] {max-width: 100%;}\n.field-wr.dsuns[data-v-754b2df6] {width: 72%;}\n.field-wr.switch-cal[data-v-754b2df6] {width: 26%; text-align: right;}\n.plaque[data-v-754b2df6] {display: inline-block; background-color: #000; width: 30%; height: 190px; position: relative; margin: 0; padding: 0; text-align: center; vertical-align: middle;}\n.plaque-content h2[data-v-754b2df6] {font-size: 100%; margin: 0; padding: 0; font-weight: 600;}\n.plaque-content p[data-v-754b2df6] {font-size: 90%; margin: 1em 0 0; padding: 0; color: #fc6; text-align: center !important;}\n}\n@media (max-width: 350px) {\n#intro[data-v-754b2df6]\n{height: 2000px;}\n.field-wr.divider .I[data-v-754b2df6], .field-wr.dname .I[data-v-754b2df6], .field-wr.cmail .I[data-v-754b2df6] {border-right: 0px;}\n.field-wr.ddate .I[data-v-754b2df6], .field-wr.dmnth .I[data-v-754b2df6], .field-wr.dyear .I[data-v-754b2df6] {border: 1px solid #666;}\n.row[data-v-754b2df6] {\n        display: -ms-flexbox;\n        display: block;\n        flex-wrap: wrap;\n        margin-right: -15px;\n        margin-left: -15px;\n}\nhr[data-v-754b2df6] {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.field-wr input[type=text][data-v-754b2df6], .field-wr label[data-v-754b2df6], .field-wr textarea[data-v-754b2df6] {\n        font: normal 300 15px/29px 'Roboto', sans-serif;\n        width: 100%;\n        background: none;\n        /*padding: 0 2px;*/\n        color: #fff;\n        border: none;\n        outline: none;\n}\n.field-wr.ddate[data-v-754b2df6], .field-wr.dmnth[data-v-754b2df6], .field-wr.dyear[data-v-754b2df6] {width: 100%;max-width: 100%;}\n.mw[data-v-754b2df6][data-v-754b2df6] {max-width: 100%;}\n.field-wr.dsuns[data-v-754b2df6] {width: 72%;}\n.field-wr.switch-cal[data-v-754b2df6] {width: 26%; text-align: right;}\n.plaque[data-v-754b2df6] {display: inline-block; background-color: #000; width: 30%; height: 190px; position: relative; margin: 0; padding: 0; text-align: center; vertical-align: middle;}\n.plaque-content h2[data-v-754b2df6] {font-size: 100%; margin: 0; padding: 0; font-weight: 600;}\n.plaque-content p[data-v-754b2df6] {font-size: 90%; margin: 1em 0 0; padding: 0; color: #fc6; text-align: center !important;}\n}\n", ""]);
 
 // exports
 
@@ -83511,8 +83510,1901 @@ render._withStripped = true
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {}
-var staticRenderFns = []
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "view", attrs: { id: "intro" } }, [
+    _c("div", { staticClass: "mask rgba-black-strong" }, [
+      _c(
+        "div",
+        {
+          staticClass:
+            "container-fluid d-flex align-items-top justify-content-center mt-5 h-100"
+        },
+        [
+          _c(
+            "div",
+            {
+              staticClass:
+                "row d-flex justify-content-center text-center mt-5 pt-5"
+            },
+            [
+              _c("div", { staticClass: "col-md-10" }, [
+                _c("span", {
+                  staticClass: "logo-separate white-text ",
+                  class: "fa-1x"
+                }),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "row justify-content-center text-center" },
+                  [
+                    _c("div", { staticClass: "col-md-12 mv2" }, [
+                      _c("h4", { staticClass: "white-text my-4 " }, [
+                        _vm._v(_vm._s(_vm.$t("Pages.Index.Title")))
+                      ]),
+                      _vm._v(" "),
+                      _c("h5", { staticClass: "white-text my-4 " }, [
+                        _vm._v(_vm._s(_vm.$t("Pages.Index.Body")))
+                      ])
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c("section", { staticClass: "mb-4 white-text " }, [
+                  _c(
+                    "div",
+                    { staticClass: "row d-flex justify-content-center" },
+                    [
+                      _c(
+                        "div",
+                        { staticClass: "col-lg-12 mb-md-0 mb-5 border-light" },
+                        [
+                          _c("div", { staticClass: "form-content" }, [
+                            _c(
+                              "form",
+                              {
+                                attrs: {
+                                  method: "post",
+                                  action: "_frame_handler.php"
+                                }
+                              },
+                              [
+                                _c("div", { staticClass: "fields-wr row" }, [
+                                  _c(
+                                    "div",
+                                    {
+                                      staticClass:
+                                        "field-wr halfwidth divider col-md-6"
+                                    },
+                                    [
+                                      _c(
+                                        "div",
+                                        {
+                                          staticClass: "I ",
+                                          class: {
+                                            "form-group--error":
+                                              _vm.$v.Form.Name_of_Deceased
+                                                .$error
+                                          }
+                                        },
+                                        [
+                                          _c("input", {
+                                            directives: [
+                                              {
+                                                name: "model",
+                                                rawName: "v-model.trim",
+                                                value:
+                                                  _vm.Form.Name_of_Deceased,
+                                                expression:
+                                                  "Form.Name_of_Deceased",
+                                                modifiers: { trim: true }
+                                              }
+                                            ],
+                                            attrs: {
+                                              type: "text",
+                                              name: "nameOfPassing",
+                                              placeholder: _vm.$t(
+                                                "Button.NameD"
+                                              )
+                                            },
+                                            domProps: {
+                                              value: _vm.Form.Name_of_Deceased
+                                            },
+                                            on: {
+                                              input: [
+                                                function($event) {
+                                                  if ($event.target.composing) {
+                                                    return
+                                                  }
+                                                  _vm.$set(
+                                                    _vm.Form,
+                                                    "Name_of_Deceased",
+                                                    $event.target.value.trim()
+                                                  )
+                                                },
+                                                function($event) {
+                                                  return _vm.delayTouch(
+                                                    _vm.$v.Form.Name_of_Deceased
+                                                  )
+                                                }
+                                              ],
+                                              blur: function($event) {
+                                                return _vm.$forceUpdate()
+                                              }
+                                            }
+                                          }),
+                                          _vm._v(" "),
+                                          !_vm.$v.Form.Name_of_Deceased.required
+                                            ? _c(
+                                                "div",
+                                                { staticClass: "error-mess " },
+                                                [
+                                                  _vm._v(
+                                                    _vm._s(
+                                                      _vm.$t("Form.required")
+                                                    )
+                                                  )
+                                                ]
+                                              )
+                                            : _vm._e(),
+                                          _vm._v(
+                                            "-->\n                                                        "
+                                          ),
+                                          !_vm.$v.Form.Name_of_Deceased
+                                            .minLength
+                                            ? _c(
+                                                "div",
+                                                { staticClass: "error-mess" },
+                                                [
+                                                  _vm._v(
+                                                    " " +
+                                                      _vm._s(
+                                                        _vm.$t("Form.minLength")
+                                                      ) +
+                                                      " 2"
+                                                  )
+                                                ]
+                                              )
+                                            : _vm._e(),
+                                          _vm._v(" "),
+                                          !_vm.$v.Form.Name_of_Deceased
+                                            .maxLength
+                                            ? _c(
+                                                "div",
+                                                { staticClass: "error-mess" },
+                                                [
+                                                  _vm._v(
+                                                    " " +
+                                                      _vm._s(
+                                                        _vm.$t("Form.maxLength")
+                                                      ) +
+                                                      " 15"
+                                                  )
+                                                ]
+                                              )
+                                            : _vm._e()
+                                        ]
+                                      )
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _c("hr", { staticClass: "mobile" }),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    {
+                                      staticClass: "field-wr halfwidth col-md-6"
+                                    },
+                                    [
+                                      _c(
+                                        "div",
+                                        {
+                                          staticClass: "I",
+                                          class: {
+                                            "form-group--error":
+                                              _vm.$v.Form.Name_Father_Deceased
+                                                .$error
+                                          }
+                                        },
+                                        [
+                                          _c("input", {
+                                            directives: [
+                                              {
+                                                name: "model",
+                                                rawName: "v-model.trim",
+                                                value:
+                                                  _vm.Form.Name_Father_Deceased,
+                                                expression:
+                                                  "Form.Name_Father_Deceased",
+                                                modifiers: { trim: true }
+                                              }
+                                            ],
+                                            attrs: {
+                                              type: "text",
+                                              name: "nameOfFather",
+                                              placeholder: _vm.$t(
+                                                "Button.NameFD"
+                                              ),
+                                              valid: "com"
+                                            },
+                                            domProps: {
+                                              value:
+                                                _vm.Form.Name_Father_Deceased
+                                            },
+                                            on: {
+                                              input: [
+                                                function($event) {
+                                                  if ($event.target.composing) {
+                                                    return
+                                                  }
+                                                  _vm.$set(
+                                                    _vm.Form,
+                                                    "Name_Father_Deceased",
+                                                    $event.target.value.trim()
+                                                  )
+                                                },
+                                                function($event) {
+                                                  return _vm.delayTouch(
+                                                    _vm.$v.Form
+                                                      .Name_Father_Deceased
+                                                  )
+                                                }
+                                              ],
+                                              blur: function($event) {
+                                                return _vm.$forceUpdate()
+                                              }
+                                            }
+                                          }),
+                                          _vm._v(" "),
+                                          !_vm.$v.Form.Name_Father_Deceased
+                                            .required
+                                            ? _c(
+                                                "div",
+                                                { staticClass: "error-mess" },
+                                                [
+                                                  _vm._v(
+                                                    _vm._s(
+                                                      _vm.$t("Form.required")
+                                                    )
+                                                  )
+                                                ]
+                                              )
+                                            : _vm._e(),
+                                          _vm._v(" "),
+                                          !_vm.$v.Form.Name_Father_Deceased
+                                            .minLength
+                                            ? _c(
+                                                "div",
+                                                { staticClass: "error-mess" },
+                                                [
+                                                  _vm._v(
+                                                    " " +
+                                                      _vm._s(
+                                                        _vm.$t("Form.minLength")
+                                                      ) +
+                                                      " 2"
+                                                  )
+                                                ]
+                                              )
+                                            : _vm._e(),
+                                          _vm._v(" "),
+                                          !_vm.$v.Form.Name_Father_Deceased
+                                            .maxLength
+                                            ? _c(
+                                                "div",
+                                                { staticClass: "error-mess" },
+                                                [
+                                                  _vm._v(
+                                                    " " +
+                                                      _vm._s(
+                                                        _vm.$t("Form.maxLength")
+                                                      ) +
+                                                      " 15"
+                                                  )
+                                                ]
+                                              )
+                                            : _vm._e()
+                                        ]
+                                      )
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    { staticClass: "label col-md-12" },
+                                    [_vm._v(_vm._s(_vm.$t("Button.TitleDP")))]
+                                  ),
+                                  _vm._v(" "),
+                                  _c("div", { staticClass: "loading " }, [
+                                    _c("div", { attrs: { id: "ddate" } }, [
+                                      _c(
+                                        "div",
+                                        {
+                                          staticClass:
+                                            "field-wr ddate col-md-3 bot-np"
+                                        },
+                                        [
+                                          _c(
+                                            "div",
+                                            {
+                                              staticClass: "I",
+                                              class: {
+                                                "form-group--error":
+                                                  _vm.$v.Param.Day.$error
+                                              }
+                                            },
+                                            [
+                                              _c("input", {
+                                                directives: [
+                                                  {
+                                                    name: "model",
+                                                    rawName: "v-model.trim",
+                                                    value: _vm.Param.Day,
+                                                    expression: "Param.Day",
+                                                    modifiers: { trim: true }
+                                                  }
+                                                ],
+                                                attrs: {
+                                                  type: "text",
+                                                  name: "ddate_date",
+                                                  placeholder: "Date...",
+                                                  id: "ddate_date"
+                                                },
+                                                domProps: {
+                                                  value: _vm.Param.Day
+                                                },
+                                                on: {
+                                                  input: [
+                                                    function($event) {
+                                                      if (
+                                                        $event.target.composing
+                                                      ) {
+                                                        return
+                                                      }
+                                                      _vm.$set(
+                                                        _vm.Param,
+                                                        "Day",
+                                                        $event.target.value.trim()
+                                                      )
+                                                    },
+                                                    function($event) {
+                                                      return _vm.delayTouch(
+                                                        _vm.$v.Param.Day
+                                                      )
+                                                    }
+                                                  ],
+                                                  blur: function($event) {
+                                                    return _vm.$forceUpdate()
+                                                  }
+                                                }
+                                              }),
+                                              _vm._v(" "),
+                                              !_vm.$v.Param.Day.required
+                                                ? _c(
+                                                    "div",
+                                                    {
+                                                      staticClass: "error-mess"
+                                                    },
+                                                    [
+                                                      _vm._v(
+                                                        _vm._s(
+                                                          _vm.$t(
+                                                            "Form.required"
+                                                          )
+                                                        )
+                                                      )
+                                                    ]
+                                                  )
+                                                : _vm._e(),
+                                              _vm._v(" "),
+                                              !_vm.$v.Param.Day.minLength
+                                                ? _c(
+                                                    "div",
+                                                    {
+                                                      staticClass: "error-mess"
+                                                    },
+                                                    [
+                                                      _vm._v(
+                                                        " " +
+                                                          _vm._s(
+                                                            _vm.$t(
+                                                              "Form.minLength"
+                                                            )
+                                                          ) +
+                                                          " 2"
+                                                      )
+                                                    ]
+                                                  )
+                                                : _vm._e(),
+                                              _vm._v(" "),
+                                              !_vm.$v.Param.Day.maxLength
+                                                ? _c(
+                                                    "div",
+                                                    {
+                                                      staticClass: "error-mess"
+                                                    },
+                                                    [
+                                                      _vm._v(
+                                                        " " +
+                                                          _vm._s(
+                                                            _vm.$t(
+                                                              "Form.maxLength"
+                                                            )
+                                                          ) +
+                                                          " 15"
+                                                      )
+                                                    ]
+                                                  )
+                                                : _vm._e(),
+                                              _vm._v(" "),
+                                              !_vm.$v.Param.Day.numeric
+                                                ? _c(
+                                                    "div",
+                                                    {
+                                                      staticClass: "error-mess"
+                                                    },
+                                                    [
+                                                      _vm._v(
+                                                        " " +
+                                                          _vm._s(
+                                                            _vm.$t(
+                                                              "Form.numeric"
+                                                            )
+                                                          ) +
+                                                          "."
+                                                      )
+                                                    ]
+                                                  )
+                                                : _vm._e()
+                                            ]
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "div",
+                                        {
+                                          staticClass:
+                                            "field-wr dmnth col-md-3 bot-np"
+                                        },
+                                        [
+                                          _c(
+                                            "div",
+                                            {
+                                              staticClass: "I",
+                                              class: {
+                                                "form-group--error":
+                                                  _vm.$v.Param.Month.$error
+                                              }
+                                            },
+                                            [
+                                              _vm.showJ
+                                                ? _c(
+                                                    "select",
+                                                    {
+                                                      directives: [
+                                                        {
+                                                          name: "model",
+                                                          rawName:
+                                                            "v-model.trim",
+                                                          value:
+                                                            _vm.Param.Month,
+                                                          expression:
+                                                            "Param.Month",
+                                                          modifiers: {
+                                                            trim: true
+                                                          }
+                                                        }
+                                                      ],
+                                                      staticClass:
+                                                        "custom-select custom-select-sm text-white",
+                                                      on: {
+                                                        change: function(
+                                                          $event
+                                                        ) {
+                                                          var $$selectedVal = Array.prototype.filter
+                                                            .call(
+                                                              $event.target
+                                                                .options,
+                                                              function(o) {
+                                                                return o.selected
+                                                              }
+                                                            )
+                                                            .map(function(o) {
+                                                              var val =
+                                                                "_value" in o
+                                                                  ? o._value
+                                                                  : o.value
+                                                              return val
+                                                            })
+                                                          _vm.$set(
+                                                            _vm.Param,
+                                                            "Month",
+                                                            $event.target
+                                                              .multiple
+                                                              ? $$selectedVal
+                                                              : $$selectedVal[0]
+                                                          )
+                                                        }
+                                                      }
+                                                    },
+                                                    [
+                                                      _c(
+                                                        "option",
+                                                        {
+                                                          attrs: {
+                                                            value: "1",
+                                                            selected: ""
+                                                          }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            _vm._s(
+                                                              _vm.$t(
+                                                                "Month.January"
+                                                              )
+                                                            )
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "option",
+                                                        {
+                                                          attrs: { value: "2" }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            _vm._s(
+                                                              _vm.$t(
+                                                                "Month.February"
+                                                              )
+                                                            )
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "option",
+                                                        {
+                                                          attrs: { value: "3" }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            _vm._s(
+                                                              _vm.$t(
+                                                                "Month.March"
+                                                              )
+                                                            )
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "option",
+                                                        {
+                                                          attrs: { value: "4" }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            _vm._s(
+                                                              _vm.$t(
+                                                                "Month.April"
+                                                              )
+                                                            )
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "option",
+                                                        {
+                                                          attrs: { value: "5" }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            _vm._s(
+                                                              _vm.$t(
+                                                                "Month.May"
+                                                              )
+                                                            )
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "option",
+                                                        {
+                                                          attrs: { value: "6" }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            _vm._s(
+                                                              _vm.$t(
+                                                                "Month.June"
+                                                              )
+                                                            )
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "option",
+                                                        {
+                                                          attrs: { value: "7" }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            _vm._s(
+                                                              _vm.$t(
+                                                                "Month.July"
+                                                              )
+                                                            )
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "option",
+                                                        {
+                                                          attrs: { value: "8" }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            _vm._s(
+                                                              _vm.$t(
+                                                                "Month.August"
+                                                              )
+                                                            )
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "option",
+                                                        {
+                                                          attrs: { value: "9" }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            _vm._s(
+                                                              _vm.$t(
+                                                                "Month.September"
+                                                              )
+                                                            )
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "option",
+                                                        {
+                                                          attrs: { value: "10" }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            _vm._s(
+                                                              _vm.$t(
+                                                                "Month.October"
+                                                              )
+                                                            )
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "option",
+                                                        {
+                                                          attrs: { value: "11" }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            _vm._s(
+                                                              _vm.$t(
+                                                                "Month.November"
+                                                              )
+                                                            )
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "option",
+                                                        {
+                                                          attrs: { value: "12" }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            _vm._s(
+                                                              _vm.$t(
+                                                                "Month.December"
+                                                              )
+                                                            )
+                                                          )
+                                                        ]
+                                                      )
+                                                    ]
+                                                  )
+                                                : _c(
+                                                    "select",
+                                                    {
+                                                      directives: [
+                                                        {
+                                                          name: "model",
+                                                          rawName:
+                                                            "v-model.trim",
+                                                          value:
+                                                            _vm.Param.Month,
+                                                          expression:
+                                                            "Param.Month",
+                                                          modifiers: {
+                                                            trim: true
+                                                          }
+                                                        }
+                                                      ],
+                                                      staticClass:
+                                                        "custom-select custom-select-sm text-white",
+                                                      on: {
+                                                        change: function(
+                                                          $event
+                                                        ) {
+                                                          var $$selectedVal = Array.prototype.filter
+                                                            .call(
+                                                              $event.target
+                                                                .options,
+                                                              function(o) {
+                                                                return o.selected
+                                                              }
+                                                            )
+                                                            .map(function(o) {
+                                                              var val =
+                                                                "_value" in o
+                                                                  ? o._value
+                                                                  : o.value
+                                                              return val
+                                                            })
+                                                          _vm.$set(
+                                                            _vm.Param,
+                                                            "Month",
+                                                            $event.target
+                                                              .multiple
+                                                              ? $$selectedVal
+                                                              : $$selectedVal[0]
+                                                          )
+                                                        }
+                                                      }
+                                                    },
+                                                    [
+                                                      _c(
+                                                        "option",
+                                                        {
+                                                          attrs: {
+                                                            value: "1",
+                                                            selected: ""
+                                                          }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            _vm._s(
+                                                              _vm.$t(
+                                                                "JewishMonth.Tishry"
+                                                              )
+                                                            )
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "option",
+                                                        {
+                                                          attrs: { value: "2" }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            _vm._s(
+                                                              _vm.$t(
+                                                                "JewishMonth.Heshvan"
+                                                              )
+                                                            )
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "option",
+                                                        {
+                                                          attrs: { value: "3" }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            _vm._s(
+                                                              _vm.$t(
+                                                                "JewishMonth.Kislev"
+                                                              )
+                                                            )
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "option",
+                                                        {
+                                                          attrs: { value: "4" }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            _vm._s(
+                                                              _vm.$t(
+                                                                "JewishMonth.Tevet"
+                                                              )
+                                                            )
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "option",
+                                                        {
+                                                          attrs: { value: "5" }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            _vm._s(
+                                                              _vm.$t(
+                                                                "JewishMonth.Shevat"
+                                                              )
+                                                            )
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "option",
+                                                        {
+                                                          attrs: { value: "6" }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            _vm._s(
+                                                              _vm.$t(
+                                                                "JewishMonth.Adar"
+                                                              )
+                                                            )
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "option",
+                                                        {
+                                                          attrs: { value: "7" }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            _vm._s(
+                                                              _vm.$t(
+                                                                "JewishMonth.Adar II"
+                                                              )
+                                                            )
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "option",
+                                                        {
+                                                          attrs: { value: "8" }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            _vm._s(
+                                                              _vm.$t(
+                                                                "JewishMonth.Nissan"
+                                                              )
+                                                            )
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "option",
+                                                        {
+                                                          attrs: { value: "9" }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            _vm._s(
+                                                              _vm.$t(
+                                                                "JewishMonth.Iyar"
+                                                              )
+                                                            )
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "option",
+                                                        {
+                                                          attrs: { value: "10" }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            _vm._s(
+                                                              _vm.$t(
+                                                                "JewishMonth.Sevan"
+                                                              )
+                                                            )
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "option",
+                                                        {
+                                                          attrs: { value: "11" }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            _vm._s(
+                                                              _vm.$t(
+                                                                "JewishMonth.Tammuz"
+                                                              )
+                                                            )
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "option",
+                                                        {
+                                                          attrs: { value: "12" }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            _vm._s(
+                                                              _vm.$t(
+                                                                "JewishMonth.Av"
+                                                              )
+                                                            )
+                                                          )
+                                                        ]
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "option",
+                                                        {
+                                                          attrs: { value: "13" }
+                                                        },
+                                                        [
+                                                          _vm._v(
+                                                            _vm._s(
+                                                              _vm.$t(
+                                                                "JewishMonth.Elul"
+                                                              )
+                                                            ) +
+                                                              "\n                                                                    "
+                                                          )
+                                                        ]
+                                                      )
+                                                    ]
+                                                  )
+                                            ]
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "div",
+                                        {
+                                          staticClass:
+                                            "field-wr dyear col-md-2 bot-np"
+                                        },
+                                        [
+                                          _c(
+                                            "div",
+                                            {
+                                              staticClass: "I",
+                                              class: {
+                                                "form-group--error":
+                                                  _vm.$v.Param.Year.$error
+                                              }
+                                            },
+                                            [
+                                              _c("input", {
+                                                directives: [
+                                                  {
+                                                    name: "model",
+                                                    rawName: "v-model.trim",
+                                                    value: _vm.Param.Year,
+                                                    expression: "Param.Year",
+                                                    modifiers: { trim: true }
+                                                  }
+                                                ],
+                                                staticClass: "pp",
+                                                attrs: {
+                                                  type: "text",
+                                                  name: "ddate_year",
+                                                  placeholder: "Year...",
+                                                  value: "2019",
+                                                  min: "1869",
+                                                  max: "2019",
+                                                  id: "ddate_year"
+                                                },
+                                                domProps: {
+                                                  value: _vm.Param.Year
+                                                },
+                                                on: {
+                                                  input: [
+                                                    function($event) {
+                                                      if (
+                                                        $event.target.composing
+                                                      ) {
+                                                        return
+                                                      }
+                                                      _vm.$set(
+                                                        _vm.Param,
+                                                        "Year",
+                                                        $event.target.value.trim()
+                                                      )
+                                                    },
+                                                    function($event) {
+                                                      return _vm.delayTouch(
+                                                        _vm.$v.Param.Year
+                                                      )
+                                                    }
+                                                  ],
+                                                  blur: function($event) {
+                                                    return _vm.$forceUpdate()
+                                                  }
+                                                }
+                                              }),
+                                              _vm._v(" "),
+                                              !_vm.$v.Param.Year.required
+                                                ? _c(
+                                                    "div",
+                                                    {
+                                                      staticClass: "error-mess"
+                                                    },
+                                                    [
+                                                      _vm._v(
+                                                        _vm._s(
+                                                          _vm.$t(
+                                                            "Form.required"
+                                                          )
+                                                        )
+                                                      )
+                                                    ]
+                                                  )
+                                                : _vm._e(),
+                                              _vm._v(" "),
+                                              !_vm.$v.Param.Year.numeric
+                                                ? _c(
+                                                    "div",
+                                                    {
+                                                      staticClass: "error-mess"
+                                                    },
+                                                    [
+                                                      _vm._v(
+                                                        " " +
+                                                          _vm._s(
+                                                            _vm.$t(
+                                                              "Form.numeric"
+                                                            )
+                                                          ) +
+                                                          "."
+                                                      )
+                                                    ]
+                                                  )
+                                                : _vm._e()
+                                            ]
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "div",
+                                        {
+                                          staticClass:
+                                            "field-wr dsuns col-md-4 bot-np"
+                                        },
+                                        [
+                                          _c(
+                                            "div",
+                                            {
+                                              directives: [
+                                                {
+                                                  name: "show",
+                                                  rawName: "v-show",
+                                                  value: _vm.show,
+                                                  expression: "show"
+                                                }
+                                              ],
+                                              staticClass: "row pl-4"
+                                            },
+                                            [
+                                              _c(
+                                                "div",
+                                                {
+                                                  staticClass: "col-md-9 mw np"
+                                                },
+                                                [
+                                                  _c(
+                                                    "label",
+                                                    {
+                                                      staticClass: "checkbox fs"
+                                                    },
+                                                    [
+                                                      _c("input", {
+                                                        directives: [
+                                                          {
+                                                            name: "model",
+                                                            rawName:
+                                                              "v-model.trim",
+                                                            value:
+                                                              _vm.Form.Sunset,
+                                                            expression:
+                                                              "Form.Sunset",
+                                                            modifiers: {
+                                                              trim: true
+                                                            }
+                                                          }
+                                                        ],
+                                                        attrs: {
+                                                          type: "checkbox",
+                                                          name: "ddate_dsuns",
+                                                          id: "ddate_dsuns"
+                                                        },
+                                                        domProps: {
+                                                          checked: Array.isArray(
+                                                            _vm.Form.Sunset
+                                                          )
+                                                            ? _vm._i(
+                                                                _vm.Form.Sunset,
+                                                                null
+                                                              ) > -1
+                                                            : _vm.Form.Sunset
+                                                        },
+                                                        on: {
+                                                          change: function(
+                                                            $event
+                                                          ) {
+                                                            var $$a =
+                                                                _vm.Form.Sunset,
+                                                              $$el =
+                                                                $event.target,
+                                                              $$c = $$el.checked
+                                                                ? true
+                                                                : false
+                                                            if (
+                                                              Array.isArray($$a)
+                                                            ) {
+                                                              var $$v = null,
+                                                                $$i = _vm._i(
+                                                                  $$a,
+                                                                  $$v
+                                                                )
+                                                              if (
+                                                                $$el.checked
+                                                              ) {
+                                                                $$i < 0 &&
+                                                                  _vm.$set(
+                                                                    _vm.Form,
+                                                                    "Sunset",
+                                                                    $$a.concat([
+                                                                      $$v
+                                                                    ])
+                                                                  )
+                                                              } else {
+                                                                $$i > -1 &&
+                                                                  _vm.$set(
+                                                                    _vm.Form,
+                                                                    "Sunset",
+                                                                    $$a
+                                                                      .slice(
+                                                                        0,
+                                                                        $$i
+                                                                      )
+                                                                      .concat(
+                                                                        $$a.slice(
+                                                                          $$i +
+                                                                            1
+                                                                        )
+                                                                      )
+                                                                  )
+                                                              }
+                                                            } else {
+                                                              _vm.$set(
+                                                                _vm.Form,
+                                                                "Sunset",
+                                                                $$c
+                                                              )
+                                                            }
+                                                          }
+                                                        }
+                                                      }),
+                                                      _c("i"),
+                                                      _vm._v(
+                                                        _vm._s(
+                                                          _vm.$t(
+                                                            "Button.Sunset"
+                                                          )
+                                                        ) +
+                                                          "\n                                                                    "
+                                                      ),
+                                                      _c(
+                                                        "div",
+                                                        { staticClass: "hint" },
+                                                        [
+                                                          _c("i", [
+                                                            _vm._v(
+                                                              _vm._s(
+                                                                _vm.$t(
+                                                                  "Button.TitleSunset"
+                                                                )
+                                                              )
+                                                            )
+                                                          ])
+                                                        ]
+                                                      )
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          )
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "div",
+                                        {
+                                          staticClass:
+                                            "field-wr switch-cal col-md-2 bot-np"
+                                        },
+                                        [
+                                          _c("div", { staticClass: "I" }, [
+                                            _c("div", { staticClass: "row" }, [
+                                              _c(
+                                                "div",
+                                                {
+                                                  staticClass: "col-md-12 pr-4"
+                                                },
+                                                [
+                                                  _vm.showJ
+                                                    ? _c(
+                                                        "a",
+                                                        {
+                                                          staticClass:
+                                                            "jdate orange-text np",
+                                                          on: {
+                                                            click: function(
+                                                              $event
+                                                            ) {
+                                                              return _vm.HebrewCal(
+                                                                "J"
+                                                              )
+                                                            }
+                                                          }
+                                                        },
+                                                        [
+                                                          _c(
+                                                            "div",
+                                                            {
+                                                              directives: [
+                                                                {
+                                                                  name: "show",
+                                                                  rawName:
+                                                                    "v-show",
+                                                                  value:
+                                                                    _vm.spiner,
+                                                                  expression:
+                                                                    "spiner"
+                                                                }
+                                                              ],
+                                                              staticClass:
+                                                                "spinner-grow text-warning pl-5",
+                                                              attrs: {
+                                                                role: "status"
+                                                              }
+                                                            },
+                                                            [
+                                                              _c(
+                                                                "span",
+                                                                {
+                                                                  staticClass:
+                                                                    "sr-only"
+                                                                },
+                                                                [
+                                                                  _vm._v(
+                                                                    "Loading..."
+                                                                  )
+                                                                ]
+                                                              )
+                                                            ]
+                                                          ),
+                                                          _vm._v(" "),
+                                                          _c("span", {
+                                                            domProps: {
+                                                              innerHTML: _vm._s(
+                                                                _vm.$t(
+                                                                  "Button.JewishCal"
+                                                                )
+                                                              )
+                                                            }
+                                                          }),
+                                                          _vm._v(" "),
+                                                          _c(
+                                                            "div",
+                                                            {
+                                                              staticClass:
+                                                                "hint right pr-2"
+                                                            },
+                                                            [
+                                                              _c("i", {
+                                                                domProps: {
+                                                                  innerHTML: _vm._s(
+                                                                    _vm.$t(
+                                                                      "Button.JewishTitle"
+                                                                    )
+                                                                  )
+                                                                }
+                                                              })
+                                                            ]
+                                                          )
+                                                        ]
+                                                      )
+                                                    : _c(
+                                                        "a",
+                                                        {
+                                                          staticClass:
+                                                            "jdate  orange-text np",
+                                                          on: {
+                                                            click: function(
+                                                              $event
+                                                            ) {
+                                                              return _vm.HebrewCal(
+                                                                "G"
+                                                              )
+                                                            }
+                                                          }
+                                                        },
+                                                        [
+                                                          _c(
+                                                            "div",
+                                                            {
+                                                              directives: [
+                                                                {
+                                                                  name: "show",
+                                                                  rawName:
+                                                                    "v-show",
+                                                                  value:
+                                                                    _vm.spiner,
+                                                                  expression:
+                                                                    "spiner"
+                                                                }
+                                                              ],
+                                                              staticClass:
+                                                                "spinner-grow text-warning pl-5",
+                                                              attrs: {
+                                                                role: "status"
+                                                              }
+                                                            },
+                                                            [
+                                                              _c(
+                                                                "span",
+                                                                {
+                                                                  staticClass:
+                                                                    "sr-only"
+                                                                },
+                                                                [
+                                                                  _vm._v(
+                                                                    "Loading..."
+                                                                  )
+                                                                ]
+                                                              )
+                                                            ]
+                                                          ),
+                                                          _vm._v(" "),
+                                                          _c("span", {
+                                                            domProps: {
+                                                              innerHTML: _vm._s(
+                                                                _vm.$t(
+                                                                  "Button.JewishCal2"
+                                                                )
+                                                              )
+                                                            }
+                                                          }),
+                                                          _vm._v(" "),
+                                                          _c(
+                                                            "div",
+                                                            {
+                                                              staticClass:
+                                                                "hint right pr-2"
+                                                            },
+                                                            [
+                                                              _c("i", [
+                                                                _vm._v(
+                                                                  _vm._s(
+                                                                    _vm.$t(
+                                                                      "Button.JewishTitle2"
+                                                                    )
+                                                                  )
+                                                                )
+                                                              ])
+                                                            ]
+                                                          )
+                                                        ]
+                                                      )
+                                                ]
+                                              )
+                                            ])
+                                          ])
+                                        ]
+                                      )
+                                    ]),
+                                    _vm._v(" "),
+                                    _c("hr")
+                                  ]),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    {
+                                      staticClass:
+                                        "field-wr top-np halfwidth divider lastline"
+                                    },
+                                    [
+                                      _c(
+                                        "div",
+                                        {
+                                          staticClass: "I",
+                                          class: {
+                                            "form-group--error":
+                                              _vm.$v.Form.Email.$error
+                                          }
+                                        },
+                                        [
+                                          _c("input", {
+                                            directives: [
+                                              {
+                                                name: "model",
+                                                rawName: "v-model.trim",
+                                                value: _vm.Form.Email,
+                                                expression: "Form.Email",
+                                                modifiers: { trim: true }
+                                              }
+                                            ],
+                                            attrs: {
+                                              type: "text",
+                                              name: "email",
+                                              placeholder: _vm.$t("Button.Mail")
+                                            },
+                                            domProps: { value: _vm.Form.Email },
+                                            on: {
+                                              input: [
+                                                function($event) {
+                                                  if ($event.target.composing) {
+                                                    return
+                                                  }
+                                                  _vm.$set(
+                                                    _vm.Form,
+                                                    "Email",
+                                                    $event.target.value.trim()
+                                                  )
+                                                },
+                                                function($event) {
+                                                  return _vm.delayTouch(
+                                                    _vm.$v.Form.Email
+                                                  )
+                                                }
+                                              ],
+                                              blur: function($event) {
+                                                return _vm.$forceUpdate()
+                                              }
+                                            }
+                                          }),
+                                          _vm._v(" "),
+                                          !_vm.$v.Form.Email.required
+                                            ? _c(
+                                                "div",
+                                                { staticClass: "error-mess" },
+                                                [
+                                                  _vm._v(
+                                                    _vm._s(
+                                                      _vm.$t("Form.required")
+                                                    )
+                                                  )
+                                                ]
+                                              )
+                                            : _vm._e(),
+                                          _vm._v(" "),
+                                          !_vm.$v.Form.Email.minLength
+                                            ? _c(
+                                                "div",
+                                                { staticClass: "error-mess" },
+                                                [
+                                                  _vm._v(
+                                                    " " +
+                                                      _vm._s(
+                                                        _vm.$t("Form.minLength")
+                                                      ) +
+                                                      " 2"
+                                                  )
+                                                ]
+                                              )
+                                            : _vm._e(),
+                                          _vm._v(" "),
+                                          !_vm.$v.Form.Email.maxLength
+                                            ? _c(
+                                                "div",
+                                                { staticClass: "error-mess" },
+                                                [
+                                                  _vm._v(
+                                                    " " +
+                                                      _vm._s(
+                                                        _vm.$t("Form.maxLength")
+                                                      ) +
+                                                      " 15"
+                                                  )
+                                                ]
+                                              )
+                                            : _vm._e(),
+                                          _vm._v(" "),
+                                          !_vm.$v.Form.Email.email
+                                            ? _c(
+                                                "div",
+                                                { staticClass: "error-mess" },
+                                                [
+                                                  _vm._v(
+                                                    " " +
+                                                      _vm._s(
+                                                        _vm.$t("Form.email")
+                                                      )
+                                                  )
+                                                ]
+                                              )
+                                            : _vm._e()
+                                        ]
+                                      )
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _c("hr", { staticClass: "mobile" }),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    {
+                                      staticClass:
+                                        "field-wr top-np halfwidth lastline"
+                                    },
+                                    [
+                                      _c(
+                                        "div",
+                                        {
+                                          staticClass: "I phone",
+                                          class: {
+                                            "form-group--error":
+                                              _vm.$v.Form.Phone.$error
+                                          }
+                                        },
+                                        [
+                                          _c("input", {
+                                            directives: [
+                                              {
+                                                name: "model",
+                                                rawName: "v-model.trim",
+                                                value: _vm.Form.Phone,
+                                                expression: "Form.Phone",
+                                                modifiers: { trim: true }
+                                              }
+                                            ],
+                                            attrs: {
+                                              type: "text",
+                                              name: "phone",
+                                              placeholder: _vm.$t(
+                                                "Button.Phone"
+                                              ),
+                                              valid: "com"
+                                            },
+                                            domProps: { value: _vm.Form.Phone },
+                                            on: {
+                                              input: [
+                                                function($event) {
+                                                  if ($event.target.composing) {
+                                                    return
+                                                  }
+                                                  _vm.$set(
+                                                    _vm.Form,
+                                                    "Phone",
+                                                    $event.target.value.trim()
+                                                  )
+                                                },
+                                                function($event) {
+                                                  return _vm.delayTouch(
+                                                    _vm.$v.Form.Phone
+                                                  )
+                                                }
+                                              ],
+                                              blur: function($event) {
+                                                return _vm.$forceUpdate()
+                                              }
+                                            }
+                                          }),
+                                          _vm._v(" "),
+                                          !_vm.$v.Form.Phone.required
+                                            ? _c(
+                                                "div",
+                                                { staticClass: "error-mess" },
+                                                [
+                                                  _vm._v(
+                                                    _vm._s(
+                                                      _vm.$t("Form.required")
+                                                    )
+                                                  )
+                                                ]
+                                              )
+                                            : _vm._e(),
+                                          _vm._v(" "),
+                                          !_vm.$v.Form.Phone.minLength
+                                            ? _c(
+                                                "div",
+                                                { staticClass: "error-mess" },
+                                                [
+                                                  _vm._v(
+                                                    " " +
+                                                      _vm._s(
+                                                        _vm.$t("Form.minLength")
+                                                      ) +
+                                                      " 2"
+                                                  )
+                                                ]
+                                              )
+                                            : _vm._e(),
+                                          _vm._v(" "),
+                                          !_vm.$v.Form.Phone.maxLength
+                                            ? _c(
+                                                "div",
+                                                { staticClass: "error-mess" },
+                                                [
+                                                  _vm._v(
+                                                    " " +
+                                                      _vm._s(
+                                                        _vm.$t("Form.maxLength")
+                                                      ) +
+                                                      " 15"
+                                                  )
+                                                ]
+                                              )
+                                            : _vm._e(),
+                                          _vm._v(" "),
+                                          !_vm.$v.Form.Phone.numeric
+                                            ? _c(
+                                                "div",
+                                                { staticClass: "error-mess" },
+                                                [
+                                                  _vm._v(
+                                                    " " +
+                                                      _vm._s(
+                                                        _vm.$t("Form.numeric")
+                                                      ) +
+                                                      "."
+                                                  )
+                                                ]
+                                              )
+                                            : _vm._e()
+                                        ]
+                                      )
+                                    ]
+                                  )
+                                ])
+                              ]
+                            )
+                          ])
+                        ]
+                      )
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "row d-flex justify-content-center form-but-wr "
+                  },
+                  [
+                    _c(
+                      "div",
+                      { staticClass: "col-md-4 field-wr halfwidth rmnd ml-3" },
+                      [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "field-wr",
+                            attrs: { type: "button" },
+                            on: {
+                              click: function($event) {
+                                return _vm.Kaddish(0)
+                              }
+                            }
+                          },
+                          [
+                            _vm.YortchatLoader
+                              ? _c("span", {
+                                  staticClass:
+                                    "spinner-border spinner-border-sm",
+                                  attrs: {
+                                    role: "status",
+                                    "aria-hidden": "true"
+                                  }
+                                })
+                              : _vm._e(),
+                            _vm._v(
+                              "\n                                    " +
+                                _vm._s(_vm.$t("Button.Button1"))
+                            ),
+                            _c("b", { staticClass: "free" }, [_vm._v("Free")])
+                          ]
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-md-2" }),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "col-md-4 field-wr halfwidth arra ml-4" },
+                      [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "field-wr ",
+                            attrs: { type: "button" },
+                            on: {
+                              click: function($event) {
+                                return _vm.Kaddish(1)
+                              }
+                            }
+                          },
+                          [
+                            _vm.kadishLoader
+                              ? _c("span", {
+                                  staticClass:
+                                    "spinner-border spinner-border-sm",
+                                  attrs: {
+                                    role: "status",
+                                    "aria-hidden": "true"
+                                  }
+                                })
+                              : _vm._e(),
+                            _vm._v(
+                              "\n                                    " +
+                                _vm._s(_vm.$t("Button.Button2"))
+                            ),
+                            _c("i", {
+                              staticClass: "fab fa-amazon-pay",
+                              attrs: { "fa-2x": "" }
+                            })
+                          ]
+                        )
+                      ]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _vm._m(0),
+                _vm._v(" "),
+                _c("div", { staticClass: "row mt-5 mb-5 pb-5" }, [
+                  _c(
+                    "ul",
+                    {
+                      staticClass: "plaques",
+                      attrs: { id: "plaques-placeholder col-md-12" }
+                    },
+                    _vm._l(_vm.plaques, function(plaques, index) {
+                      return _c("li", { staticClass: "plaque " }, [
+                        _c("div", { staticClass: "plaque-content" }, [
+                          _c("h2", [
+                            _vm._v(_vm._s(plaques.Name_of_Deceased)),
+                            _c("br"),
+                            _vm._v(" ben(bat)"),
+                            _c("br"),
+                            _vm._v(" " + _vm._s(plaques.Fathers_Name)),
+                            _c("br")
+                          ]),
+                          _vm._v(" "),
+                          _c("br"),
+                          _c("br"),
+                          _vm._v(" "),
+                          _c("p", [
+                            _vm._v(
+                              _vm._s(plaques.J_Date.day) +
+                                " " +
+                                _vm._s(plaques.J_Date.monthname) +
+                                "  " +
+                                _vm._s(plaques.J_Date.year) +
+                                " "
+                            ),
+                            _c("br"),
+                            _vm._v(
+                              _vm._s(plaques.G_Date.day) +
+                                " " +
+                                _vm._s(plaques.G_Date.monthname) +
+                                "  " +
+                                _vm._s(plaques.G_Date.year)
+                            )
+                          ])
+                        ])
+                      ])
+                    }),
+                    0
+                  )
+                ])
+              ])
+            ]
+          )
+        ]
+      )
+    ]),
+    _vm._v(" "),
+    _vm._m(1)
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("ul", { staticClass: "stars" }, [
+      _c("li", { staticClass: "visa" }),
+      _vm._v(" "),
+      _c("li", { staticClass: "mastercard" }),
+      _vm._v(" "),
+      _c("li", { staticClass: "mcafee" }, [
+        _c("a", {
+          attrs: {
+            href: "https://www.mcafeesecure.com/verify?host=kaddish-prayer.com",
+            target: "_blank"
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("li", { staticClass: "godaddy" }, [
+        _c("span", { attrs: { id: "siteseal" } })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "footer",
+      { staticClass: "page-footer font-small unique-color-dark mt-5" },
+      [
+        _c("div", { staticClass: "unique-color-dark" }, [
+          _c("div", { staticClass: "container" }, [
+            _c("div", { staticClass: "row py-4 d-flex align-items-center" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6 col-lg-7 text-center text-md-right" },
+                [
+                  _c("h6", { staticClass: "mb-0 white-text" }, [
+                    _vm._v(
+                      "© All rights reserved. Contact us: info@kaddish-prayer.com | Refund policy"
+                    )
+                  ])
+                ]
+              )
+            ])
+          ])
+        ])
+      ]
+    )
+  }
+]
+render._withStripped = true
 
 
 

@@ -210,7 +210,24 @@
                             </li>
                         </ul>
 
-
+                        <div class="row mt-5 mb-5 pb-5">
+                            <ul class="plaques" id="plaques-placeholder col-md-12">
+                                <li class="plaque " v-for="(plaques, index) in plaques">
+                                    <div class="plaque-content" >
+                                        <h2>{{plaques.Name_of_Deceased}}</br> ben(bat)</br> {{plaques.Fathers_Name}}</br></h2>
+                                        </br></br>
+                                        <p>{{plaques.J_Date.day}} {{plaques.J_Date.monthname}}  {{plaques.J_Date.year}} </br>{{plaques.G_Date.day}} {{plaques.G_Date.monthname}}  {{plaques.G_Date.year}}</p>
+                                    </div>
+                                </li>
+                                <!--        <li class="plaque">-->
+                                <!--            <div class="plaque-content">-->
+                                <!--                <h2>Rabinovich<br>Reuven Shimon<br>ben Levi Yehuda Naftali</h2>-->
+                                <!--                <p>12 Teveta 5612<br>23 December 1882</p>-->
+                                <!--                <p>9 Av 5732<br>17 July 2002</p>-->
+                                <!--            </div>-->
+                                <!--        </li>-->
+                            </ul>
+                        </div>
 
                     </div>
 
@@ -238,24 +255,6 @@
 
     </div>
 
-    <div class="row mt-5">
-        <ul class="plaques" id="plaques-placeholder col-md-12">
-            <li class="plaque " v-for="(plaques, index) in plaques">
-                <div class="plaque-content" >
-                    <h2>{{plaques.Name_of_Deceased}}</br> ben(bat)</br> {{plaques.Fathers_Name}}</br></h2>
-                    </br></br>
-                    <p>{{plaques.J_Date.day}} {{plaques.J_Date.monthname}}  {{plaques.J_Date.year}} </br>{{plaques.G_Date.day}} {{plaques.G_Date.monthname}}  {{plaques.G_Date.year}}</p>
-                </div>
-            </li>
-            <!--        <li class="plaque">-->
-            <!--            <div class="plaque-content">-->
-            <!--                <h2>Rabinovich<br>Reuven Shimon<br>ben Levi Yehuda Naftali</h2>-->
-            <!--                <p>12 Teveta 5612<br>23 December 1882</p>-->
-            <!--                <p>9 Av 5732<br>17 July 2002</p>-->
-            <!--            </div>-->
-            <!--        </li>-->
-        </ul>
-    </div>
 </template>
 <script>
     import { required, minLength,email,numeric,maxLength,between } from 'vuelidate/lib/validators';
@@ -384,6 +383,17 @@
 </script>
 
 <style scoped>
+    .view .mask {
+         position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background-attachment: fixed;
+    }
     .field-wr input[type=email][type=tel] {text-overflow: ellipsis;}
     .field-wr input[type=tel] {
         font: normal 300 18px/26px 'Roboto', sans-serif;
@@ -427,10 +437,10 @@
         appearance: none;
         border: none;
     }
-    #intro{
-        height: 1200px;
-    }
-    @media (max-width: 1200px) {  #intro {min-height: 1200px;}}
+    /*#intro{*/
+    /*    height: 1200px;*/
+    /*}*/
+    /*@media (max-width: 1200px) {  #intro {min-height: 1200px;}}*/
     /*@media (max-height: 800px){ #intro {height: 950px;}}*/
     /*@media (max-width: 850px) {  #intro {height: 1462px;}*/
     /*    .field-wr.divider .I, .field-wr.dname .I, .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I, .field-wr.cmail .I {border-right: 0px;}*/
@@ -505,7 +515,9 @@
     /*    .plaque-content h2 {font-size: 100%; margin: 0; padding: 0; font-weight: 600;}*/
     /*    .plaque-content p {font-size: 90%; margin: 1em 0 0; padding: 0; color: #fc6; text-align: center !important;}*/
     /*}*/
-        @media (max-width: 405px) {#intro {height: 1900px;}
+        @media (max-width: 405px) {
+            /*#intro {height: 1900px;*/
+
         .field-wr.divider .I, .field-wr.dname .I, .field-wr.cmail .I {border-right: 0px;}
         .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I {border: 1px solid #666;}
         .row {
@@ -534,7 +546,9 @@
             .plaque-content h2 {font-size: 100%; margin: 0; padding: 0; font-weight: 600;}
             .plaque-content p {font-size: 90%; margin: 1em 0 0; padding: 0; color: #fc6; text-align: center !important;}
     }
-    @media (max-width: 350px) {#intro {height: 2000px;}
+    @media (max-width: 350px) {
+        #intro
+    {height: 2000px;}
         .field-wr.divider .I, .field-wr.dname .I, .field-wr.cmail .I {border-right: 0px;}
         .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I {border: 1px solid #666;}
         .row {

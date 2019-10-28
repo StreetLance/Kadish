@@ -19,10 +19,10 @@ footer {
 
 html,
 body,
-header,
-#intro,
-#intro2,
-#intro3
+header
+/*#intro,*/
+/*#intro2,*/
+/*#intro3*/
 {
     height: 101%;
 }
@@ -222,7 +222,7 @@ header,
 .form-content {margin: 0 auto; padding: 0 20px; max-width: 900px; width: 100%; overflow: visible; position: relative; text-align: left;}
 .form-content {max-width: 640px;}
 
-header {background-color: #000; margin: 0 0 10px 0; font-size: 14px;}
+/*header {background-color: #000; margin: 0 0 10px 0; font-size: 14px;}*/
 header:after {content: ''; display: block; font-size: 0; height: 0; clear: both;}
 
 .logo-wr {float: left; line-height: 50px; font-weight: 600; padding-right: 12px; margin-right: 12px; position: relative;}
