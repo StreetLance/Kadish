@@ -328,7 +328,8 @@ hr {border: none; color: #666; background-color: #666; height: 1px;}
 .field-wr.dfame {width: 50%;}
 
 .field-wr.fullwidth {width: 100%;}
-.field-wr.halfwidth {width: 50%;
+.field-wr.halfwidth {
+    /*width: 50%;*/
     max-width: 300px;}
 
 .field-wr.ddate {width: 9%;}
