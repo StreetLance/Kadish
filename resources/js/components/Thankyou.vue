@@ -67,7 +67,7 @@
     .h1, h1 {
         font-size: 1rem;
     }
-    #intro {height: 1000%;}
+    #intro {height: 100%;}
     @media (max-width: 1200px) {  #intro {height: 1000px;}  }
     @media (min-width: 800px) and (max-width: 850px) {  #intro {height: 1000px;}  }
     @media (max-width: 768px) {  #intro {height: 1000px;}  }
