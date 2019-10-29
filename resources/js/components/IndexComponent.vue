@@ -369,14 +369,16 @@
                         DataSet: this.Param.DataSet,
                         Lang: this.$route.params.lang,
                         Order: 1,
+                        First_Name : res.payer.payer_info.first_name,
+                        Last_Name : res.payer.payer_info.last_name,
                     }
                 }).then((response) => {
                     this.YortchatLoader = false;
                     this.kadishLoader = false;
                     if (response){
                     }
-
-                        this.$router.push({name: 'Thank'})
+                     $('#exampleModalCenter').modal('hide');
+                        this.$router.push({name: 'Thank'});
 
 
                 });

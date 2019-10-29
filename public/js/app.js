@@ -2314,13 +2314,17 @@ var touchMap = new WeakMap();
           Year: this.Param.Year,
           DataSet: this.Param.DataSet,
           Lang: this.$route.params.lang,
-          Order: 1
+          Order: 1,
+          First_Name: res.payer.payer_info.first_name,
+          Last_Name: res.payer.payer_info.last_name
         }
       }).then(function (response) {
         _this2.YortchatLoader = false;
         _this2.kadishLoader = false;
 
         if (response) {}
+
+        $('#exampleModalCenter').modal('hide');
 
         _this2.$router.push({
           name: 'Thank'

@@ -329,7 +329,7 @@ hr {border: none; color: #666; background-color: #666; height: 1px;}
 
 .field-wr.fullwidth {width: 100%;}
 .field-wr.halfwidth {
-    /*width: 50%;*/
+    width: 100%;
     max-width: 300px;}
 
 .field-wr.ddate {width: 9%;}

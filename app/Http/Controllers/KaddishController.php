@@ -74,8 +74,15 @@ class KaddishController extends Controller
             'Order' => (bool)$request->Order,
             'Difference_Year' => $Difirence_Year,
         ];
+        if (isset($request->First_Name) && isset($request->Last_Name)){
+            $Client['Name'] = $request->First_Name;
+            $Client['Last_name'] = $request->Last_Name;
+        } else {
+            $Client['Name'] = ' ';
+            $Client['Last_name'] = ' ';
+        }
 //Заполнение базы клиентов в случе отсутсвия почты и эмейла
-        $client = Clients::firstOrCreate( [ "Email" => $request->Email, "Phone_number" => $request->Phone ] );
+        $client = Clients::firstOrCreate( [ 'Name'=>$Client['Name'],'Last_Name'=>$Client['Last_name'], "Email" => $request->Email, "Phone_number" => $request->Phone ] );
         $kadish = new Kaddish( $param );
         $kadish->client()->associate( $client ); // присвоение Client_id при помощи встреоной функции Laravel Relations
         $kadish->save();
