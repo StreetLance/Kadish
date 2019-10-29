@@ -330,7 +330,7 @@ hr {border: none; color: #666; background-color: #666; height: 1px;}
 .field-wr.fullwidth {width: 100%;}
 .field-wr.halfwidth {
     width: 100%;
-    max-width: 300px;}
+    max-width: 250px;}
 
 .field-wr.ddate {width: 9%;}
 .field-wr.dmnth {width: 27%; max-width: 27%;}

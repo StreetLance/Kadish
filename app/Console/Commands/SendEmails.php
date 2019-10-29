@@ -42,11 +42,11 @@ class SendEmails extends Command
      */
     public function handle()
     {
-        $Data_J1 = cal_from_jd( unixtojd( time() + 1 ), CAL_JEWISH );
+        $Data_J1 = cal_from_jd( unixtojd( time() )+1, CAL_JEWISH );
         $Data_J1 = $Data_J1[ 'day' ] . '.' . $Data_J1[ 'month' ].'.'.'%';
-        $Data_J7 = cal_from_jd( unixtojd( time() + 7 ), CAL_JEWISH );
+        $Data_J7 = cal_from_jd( unixtojd( time() )+ 7, CAL_JEWISH );
         $Data_J7 = $Data_J7[ 'day' ] . '.' . $Data_J7[ 'month' ].'.'.'%';
-        $Data_J14 = cal_from_jd( unixtojd( time() + 14 ), CAL_JEWISH );
+        $Data_J14 = cal_from_jd( unixtojd( time() )+ 14, CAL_JEWISH );
         $Data_J14 = $Data_J14[ 'day' ] . '.' . $Data_J14[ 'month' ].'.'.'%';
 
         $kadish[ '1'] = Client::whereHas( 'kaddish', function ( Builder $query ) use ( $Data_J1 ) {
