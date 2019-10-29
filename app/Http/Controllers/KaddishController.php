@@ -18,7 +18,7 @@ class KaddishController extends Controller
     public function index()
 
     {
-        $jd = unixtojd(time());
+        $jd = unixtojd(time())-1;
         $Date_Now = cal_from_jd( $jd,CAL_JEWISH);
         $Date_Now = $Date_Now[ 'day' ].'.'.$Date_Now[ 'month' ].'.'.'%' ;
         $item = DB::table('kaddishes')
@@ -27,7 +27,6 @@ class KaddishController extends Controller
             ->where('J_Date', 'like', $Date_Now)
             ->get();
         $item = collect( $item )->toJson();
-//        dd($item);
         return $item;
     }
     /**
