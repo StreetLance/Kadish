@@ -2301,7 +2301,6 @@ var touchMap = new WeakMap();
       var _this2 = this;
 
       var Sunset;
-      $order === 0 ? this.YortchatLoader = true : this.kadishLoader = true;
       this.Form.Sunset === false ? Sunset = 0 : Sunset = 1;
       axios.get('api/kadish/create', {
         params: {
@@ -2314,8 +2313,7 @@ var touchMap = new WeakMap();
           Month: this.Param.Month,
           Year: this.Param.Year,
           DataSet: this.Param.DataSet,
-          Lang: this.$route.params.lang,
-          Order: $order
+          Lang: this.$route.params.lang
         }
       }).then(function (response) {
         _this2.YortchatLoader = false;

@@ -354,7 +354,6 @@
             },
             payment_completed_cb(res){
                 let Sunset;
-                $order === 0 ? this.YortchatLoader = true :  this.kadishLoader = true;
                 (this.Form.Sunset === false) ? Sunset = 0 : Sunset = 1;
                  axios.get('api/kadish/create', {
                     params: {
@@ -368,7 +367,6 @@
                         Year: this.Param.Year,
                         DataSet: this.Param.DataSet,
                         Lang: this.$route.params.lang,
-                        Order: $order,
                     }
                 }).then((response) => {
                     this.YortchatLoader = false;
