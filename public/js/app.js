@@ -2184,6 +2184,24 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 var touchMap = new WeakMap();
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2209,6 +2227,18 @@ var touchMap = new WeakMap();
         Month: "",
         Year: "",
         DataSet: "G"
+      },
+      showModal: false,
+      credentials: {
+        sandbox: 'AamvJHqtBfrIM4oNPDknTMJmyC5kN-btQRU5baqABM-YEFktx28e_DDpB4nmXQeHUBJnJufE4hYjVxnB',
+        production: 'AUeEKuSGuBKf1ZVVaSLdXObkXK3-5U-DiXABpfnqXj26am4KABZqO_oSUg_liTQ1iQwDcMqN0R1ZzxpC'
+      },
+      braintreeSdk: window.braintree,
+      myStyle: {
+        label: 'pay',
+        size: 'medium',
+        shape: 'pill',
+        color: 'blue'
       }
     };
   },
@@ -2266,14 +2296,50 @@ var touchMap = new WeakMap();
     });
   },
   methods: {
-    delayTouch: function delayTouch($v) {// $v.$touch();
-      // if (touchMap.has($v)) {
-      //     clearTimeout(touchMap.get($v))
-      // }
-      // touchMap.set($v, setTimeout($v.$touch, 1000))
+    payment_completed_cb: function payment_completed_cb(res) {
+      var _this2 = this;
+
+      this.$router.push({
+        name: 'Thank'
+      });
+      var Sunset;
+      $order === 0 ? this.YortchatLoader = true : this.kadishLoader = true;
+      this.Form.Sunset === false ? Sunset = 0 : Sunset = 1;
+      axios.get('api/kadish/create', {
+        params: {
+          Name_of_Deceased: this.Form.Name_of_Deceased,
+          Name_Father_Deceased: this.Form.Name_Father_Deceased,
+          Email: this.Form.Email,
+          Phone: this.Form.Phone,
+          Sunset: Sunset,
+          Day: this.Param.Day,
+          Month: this.Param.Month,
+          Year: this.Param.Year,
+          DataSet: this.Param.DataSet,
+          Lang: this.$route.params.lang,
+          Order: $order
+        }
+      }).then(function (response) {
+        _this2.YortchatLoader = false;
+        _this2.kadishLoader = false;
+
+        if (response) {}
+
+        _this2.$router.push({
+          name: 'Thank'
+        });
+      });
+      console.log(res.payer.payer_info);
+    },
+    valid: function valid() {
+      if (!this.$v.Form.$invalid && !this.$v.Param.$invalid) {
+        $('#exampleModalCenter').modal();
+      } else {
+        this.$v.$touch();
+      }
     },
     HebrewCal: function HebrewCal($date) {
-      var _this2 = this;
+      var _this3 = this;
 
       if (!this.$v.Param.$invalid) {
         var month = this.Param.Month;
@@ -2291,11 +2357,11 @@ var touchMap = new WeakMap();
         }
 
         axios.get('http://149.28.51.36/api/' + $date + '/' + this.Param.Day + '/' + month + '/' + this.Param.Year).then(function (response) {
-          _this2.Param.Month = "";
-          _this2.Param.Day = response.data.day;
-          _this2.Param.Month = response.data.month;
-          _this2.Param.Year = response.data.year;
-          _this2.spiner = false;
+          _this3.Param.Month = "";
+          _this3.Param.Day = response.data.day;
+          _this3.Param.Month = response.data.month;
+          _this3.Param.Year = response.data.year;
+          _this3.spiner = false;
         });
       } else {
         this.$v.Param.$touch();
@@ -2305,7 +2371,7 @@ var touchMap = new WeakMap();
       var _Kaddish = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee($order) {
-        var _this3 = this;
+        var _this4 = this;
 
         var Sunset;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
@@ -2335,21 +2401,14 @@ var touchMap = new WeakMap();
                     Order: $order
                   }
                 }).then(function (response) {
-                  _this3.YortchatLoader = false;
-                  _this3.kadishLoader = false;
+                  _this4.YortchatLoader = false;
+                  _this4.kadishLoader = false;
 
                   if (response) {}
 
-                  if (response.data.order === "0") {
-                    _this3.$router.push({
-                      name: 'Thank'
-                    });
-                  } else {
-                    // this.$router.push({name: 'Pay', params: {id: response.data}})
-                    _this3.$router.push({
-                      name: 'Pay'
-                    });
-                  }
+                  _this4.$router.push({
+                    name: 'Thank'
+                  });
                 });
 
               case 5:
@@ -85261,11 +85320,7 @@ var render = function() {
                           {
                             staticClass: "field-wr ",
                             attrs: { type: "button" },
-                            on: {
-                              click: function($event) {
-                                return _vm.Kaddish(1)
-                              }
-                            }
+                            on: { click: _vm.valid }
                           },
                           [
                             _vm.kadishLoader
@@ -85289,11 +85344,65 @@ var render = function() {
                           ]
                         )
                       ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "modal fade",
+                        attrs: {
+                          id: "exampleModalCenter",
+                          tabindex: "-1",
+                          role: "dialog",
+                          "aria-labelledby": "exampleModalCenterTitle",
+                          "aria-hidden": "true"
+                        }
+                      },
+                      [
+                        _c(
+                          "div",
+                          {
+                            staticClass: "modal-dialog modal-dialog-centered",
+                            attrs: { role: "document" }
+                          },
+                          [
+                            _c(
+                              "div",
+                              { staticClass: "modal-content bg-dark" },
+                              [
+                                _c(
+                                  "div",
+                                  { staticClass: "modal-body" },
+                                  [
+                                    _c("paypal-checkout", {
+                                      attrs: {
+                                        amount: "10.00",
+                                        currency: "USD",
+                                        client: _vm.credentials,
+                                        braintree: _vm.braintreeSdk,
+                                        "button-style": _vm.myStyle,
+                                        env: "sandbox"
+                                      },
+                                      on: {
+                                        "payment-completed":
+                                          _vm.payment_completed_cb
+                                      }
+                                    })
+                                  ],
+                                  1
+                                ),
+                                _vm._v(" "),
+                                _vm._m(0)
+                              ]
+                            )
+                          ]
+                        )
+                      ]
                     )
                   ]
                 ),
                 _vm._v(" "),
-                _vm._m(0),
+                _vm._m(1),
                 _vm._v(" "),
                 _c("div", { staticClass: "row mt-5 mb-5 pb-5" }, [
                   _c(
@@ -85313,9 +85422,6 @@ var render = function() {
                             _vm._v(" " + _vm._s(plaques.Fathers_Name)),
                             _c("br")
                           ]),
-                          _vm._v(" "),
-                          _c("br"),
-                          _c("br"),
                           _vm._v(" "),
                           _c("p", [
                             _vm._v(
@@ -85348,10 +85454,25 @@ var render = function() {
       )
     ]),
     _vm._v(" "),
-    _vm._m(1)
+    _vm._m(2)
   ])
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "modal-footer" }, [
+      _c(
+        "button",
+        {
+          staticClass: "btn",
+          attrs: { type: "button", "data-dismiss": "modal" }
+        },
+        [_vm._v("back")]
+      )
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement

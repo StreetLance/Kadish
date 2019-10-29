@@ -194,11 +194,31 @@
                             </div>
                             <div class="col-md-2"></div>
                             <div class="col-md-4 field-wr halfwidth arra ml-4">
-                                <button type="button" class="field-wr " @click="Kaddish(1)">
+                                <button type="button" class="field-wr " @click="valid"  >
                                     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" v-if="kadishLoader"></span>
-                                    {{$t('Button.Button2')}}<i
-                                    class="fab fa-amazon-pay" fa-2x></i></button>
+                                    {{$t('Button.Button2')}}<i class="fab fa-amazon-pay" fa-2x></i></button>
                             </div>
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-body">
+                                            <paypal-checkout
+                                                amount="10.00"
+                                                currency="USD"
+                                                :client="credentials"
+                                                :braintree="braintreeSdk"
+                                                :button-style="myStyle"
+                                                env="sandbox"
+                                                @payment-completed="payment_completed_cb"
+                                            ></paypal-checkout>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn" data-dismiss="modal">back</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                         <ul class="stars">
                             <li class="visa"></li>
@@ -215,7 +235,6 @@
                                 <li class="plaque " v-for="(plaques, index) in plaques">
                                     <div class="plaque-content" >
                                         <h2>{{plaques.Name_of_Deceased}}</br> ben(bat)</br> {{plaques.Fathers_Name}}</br></h2>
-                                        </br></br>
                                         <p>{{plaques.J_Date.day}} {{plaques.J_Date.monthname}}  {{plaques.J_Date.year}} </br>{{plaques.G_Date.day}} {{plaques.G_Date.monthname}}  {{plaques.G_Date.year}}</p>
                                     </div>
                                 </li>
@@ -252,7 +271,6 @@
             <!-- Social buttons -->
             <!-- Copyright -->
         </footer>
-
     </div>
 
 </template>
@@ -266,8 +284,21 @@
                 Item: [],plaques:[], choice: false, show: true, showJ: true, spiner: false, YortchatLoader: false, kadishLoader: false,
                 Form: {Name_of_Deceased: "", Name_Father_Deceased: "", Email:"", Phone: "", Sunset: false},
                 Param: {Day: "", Month:"", Year: "", DataSet: "G"},
+                showModal: false,
+                credentials: {
+                    sandbox: 'AamvJHqtBfrIM4oNPDknTMJmyC5kN-btQRU5baqABM-YEFktx28e_DDpB4nmXQeHUBJnJufE4hYjVxnB',
+                    production: 'AUeEKuSGuBKf1ZVVaSLdXObkXK3-5U-DiXABpfnqXj26am4KABZqO_oSUg_liTQ1iQwDcMqN0R1ZzxpC'
+                },
+                braintreeSdk: window.braintree,
+                myStyle: {
+                    label:  'pay',
+                    size:  'medium',
+                    shape: 'pill',
+                    color: 'blue'
+                }
             }
         },
+
         validations: {
             Form: {
                 Name_of_Deceased: {
@@ -318,12 +349,42 @@
             });
         },
         methods: {
-            delayTouch($v) {
-                // $v.$touch();
-                // if (touchMap.has($v)) {
-                //     clearTimeout(touchMap.get($v))
-                // }
-                // touchMap.set($v, setTimeout($v.$touch, 1000))
+            payment_completed_cb(res){
+                this.$router.push({name: 'Thank'})
+                let Sunset;
+                $order === 0 ? this.YortchatLoader = true :  this.kadishLoader = true;
+                (this.Form.Sunset === false) ? Sunset = 0 : Sunset = 1;
+                 axios.get('api/kadish/create', {
+                    params: {
+                        Name_of_Deceased: this.Form.Name_of_Deceased,
+                        Name_Father_Deceased: this.Form.Name_Father_Deceased,
+                        Email: this.Form.Email,
+                        Phone: this.Form.Phone,
+                        Sunset: Sunset,
+                        Day: this.Param.Day,
+                        Month: this.Param.Month,
+                        Year: this.Param.Year,
+                        DataSet: this.Param.DataSet,
+                        Lang: this.$route.params.lang,
+                        Order: $order,
+                    }
+                }).then((response) => {
+                    this.YortchatLoader = false;
+                    this.kadishLoader = false;
+                    if (response){
+                    }
+                        this.$router.push({name: 'Thank'})
+
+
+                });
+                console.log(res.payer.payer_info);
+            },
+            valid() {
+                if (!this.$v.Form.$invalid && !this.$v.Param.$invalid) {
+                    $('#exampleModalCenter').modal();
+                }else {
+                    this.$v.$touch();
+                }
             },
             HebrewCal($date) {
                 if (!this.$v.Param.$invalid){
@@ -366,12 +427,8 @@
                         this.kadishLoader = false;
                         if (response){
                         }
-                        if (response.data.order === "0") {
                             this.$router.push({name: 'Thank'})
-                        }else{
-                            // this.$router.push({name: 'Pay', params: {id: response.data}})
-                            this.$router.push({name: 'Pay'})
-                        }
+
 
                     });
                 }else {

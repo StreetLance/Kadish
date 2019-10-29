@@ -6,6 +6,7 @@ import Locale from './vue-i18n-locales.generated';
 import Vuelidate from 'vuelidate'
 import PayPal from 'vue-paypal-checkout'
 
+
 require('./bootstrap');
 // import Storedata from './store/store';
 // import IndexModul from "./store/modules/IModul";
