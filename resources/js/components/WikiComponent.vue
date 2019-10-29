@@ -206,7 +206,7 @@
             width: 100%;
         }
     }
-        @media (max-width: 390px) {  #intro {height: 3775px;}
+        @media (max-width: 390px) {  #intro {height: 3075px;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
@@ -270,7 +270,7 @@
             width: 100%;
         }
     }
-    @media (max-width: 390px) {  #intro1 {height: 3000px;}
+    @media (max-width: 390px) {  #intro1 {height: 2500px;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
@@ -384,7 +384,7 @@
             width: 100%;
         }
     }
-    @media (max-width: 470px) {  #intro3 {height: 2088px;}
+    @media (max-width: 470px) {  #intro3 {height: 1788px;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
