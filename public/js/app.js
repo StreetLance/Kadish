@@ -2296,6 +2296,7 @@ var touchMap = new WeakMap();
     });
   },
   methods: {
+    delayTouch: function delayTouch() {},
     payment_completed_cb: function payment_completed_cb(res) {
       var _this2 = this;
 

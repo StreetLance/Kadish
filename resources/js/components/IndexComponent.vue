@@ -349,6 +349,9 @@
             });
         },
         methods: {
+            delayTouch(){
+
+            },
             payment_completed_cb(res){
                 this.$router.push({name: 'Thank'})
                 let Sunset;
