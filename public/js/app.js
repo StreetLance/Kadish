@@ -2313,7 +2313,8 @@ var touchMap = new WeakMap();
           Month: this.Param.Month,
           Year: this.Param.Year,
           DataSet: this.Param.DataSet,
-          Lang: this.$route.params.lang
+          Lang: this.$route.params.lang,
+          Order: 1
         }
       }).then(function (response) {
         _this2.YortchatLoader = false;
