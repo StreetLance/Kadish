@@ -2300,9 +2300,6 @@ var touchMap = new WeakMap();
     payment_completed_cb: function payment_completed_cb(res) {
       var _this2 = this;
 
-      this.$router.push({
-        name: 'Thank'
-      });
       var Sunset;
       $order === 0 ? this.YortchatLoader = true : this.kadishLoader = true;
       this.Form.Sunset === false ? Sunset = 0 : Sunset = 1;

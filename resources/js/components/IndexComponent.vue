@@ -353,7 +353,6 @@
 
             },
             payment_completed_cb(res){
-                this.$router.push({name: 'Thank'})
                 let Sunset;
                 $order === 0 ? this.YortchatLoader = true :  this.kadishLoader = true;
                 (this.Form.Sunset === false) ? Sunset = 0 : Sunset = 1;
