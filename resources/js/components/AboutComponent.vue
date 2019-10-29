@@ -58,11 +58,23 @@
 </script>
 <style scoped>
     p{font-size: 16px;}
-    /*@media (max-width: 1300px) {  p{font-size: 14px;}  }*/
+    #intro {height: 100%;}
+    .view .mask {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background-attachment: fixed;
+    }
+    @media (max-width: 1300px) {  p{font-size: 14px;}  }
     @media (max-width: 1200px) {  #intro {height: 1230px;}  }
     @media (min-width: 800px) and (max-width: 850px) {  #intro {height: 1359px;}  }
     @media (max-width: 768px) {  #intro {height: 1180px;}  }
     @media (max-width: 660px) {  #intro {height: 1381px;}  }
     @media (max-width: 500px) {  #intro {height: 1850px;}  }
-    /*@media (max-height: 970px) {  #intro {height: 1681px;}  }*/
+    @media (max-height: 970px) {  #intro {height: 1471px;}  }
 </style>

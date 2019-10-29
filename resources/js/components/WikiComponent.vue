@@ -1,5 +1,5 @@
 <template>
-    <div  id="intro" class="view">
+    <div  id="intro1" class="view">
         <div class="mask rgba-black-strong">
             <div class="container-fluid d-flex align-items-top justify-content-center h-100">
                 <div class="row d-flex justify-content-center text-center mt-5 pt-5">
@@ -144,6 +144,11 @@
         opacity: 0.8;
         width: 860px;
     }
+    #intro {height: 100%;}
+    #intro1 {height: 100%;}
+    #intro2 {height: 100%;}
+    #intro3 {height: 100%;}
+
     @media (max-width: 1380px) {  #intro {height: 1065px;}
         .cont {
             background-color: #1d2124;
@@ -151,14 +156,14 @@
             width: 758px;
         }
     }
-    @media (max-width: 1200px) {  #intro {height: 1065px;}
+    @media (max-width: 1200px) {  #intro {height: 1110px;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
             width: 698px;
         }
     }
-    @media (max-width: 1000px) {  #intro {height: 1165px;}
+    @media (max-width: 1000px) {  #intro {height: 1410px;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
@@ -166,48 +171,112 @@
         }
     }
 
-    @media   (max-width: 850px) {  #intro {height: 1330px;}
+    @media   (max-width: 850px) {  #intro {height: 1630px;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
             width: 480px;
         }
     }
-    @media (max-width: 770px) {  #intro {height: 1452px;}
+    @media (max-width: 770px) {  #intro {height: 1618px;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
             width: 100%;
         }
     }
-    @media (max-width: 660px) {  #intro {height: 1652px;}
+    @media (max-width: 660px) {  #intro {height: 1921px;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
             width: 100%;
         }
     }
-    @media (max-width: 530px) {  #intro {height: 1852px;}
+    @media (max-width: 530px) {  #intro {height: 2125px;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
             width: 100%;
         }
     }
-    @media (max-width: 470px) {  #intro {height: 2252px;}
+    @media (max-width: 470px) {  #intro {height: 2652px;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
             width: 100%;
         }
     }
-        @media (max-width: 390px) {  #intro {height: 2352px;}
+        @media (max-width: 390px) {  #intro {height: 3775px;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
             width: 3000px;
         }
         }
+    @media (max-width: 1380px) {  #intro1 {height: 1065px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 758px;
+        }
+    }
+    @media (max-width: 1200px) {  #intro1 {height: 1110px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 698px;
+        }
+    }
+    @media (max-width: 1000px) {  #intro1 {height: 1410px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 560px;
+        }
+    }
+
+    @media   (max-width: 850px) {  #intro1 {height: 1630px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 480px;
+        }
+    }
+    @media (max-width: 770px) {  #intro1 {height: 1618px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 100%;
+        }
+    }
+    @media (max-width: 660px) {  #intro1 {height: 1715px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 100%;
+        }
+    }
+    @media (max-width: 530px) {  #intro1 {height: 1815px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 100%;
+        }
+    }
+    @media (max-width: 470px) {  #intro1 {height: 2252px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 100%;
+        }
+    }
+    @media (max-width: 390px) {  #intro1 {height: 3000px;}
+        .cont {
+            background-color: #1d2124;
+            opacity: 0.8;
+            width: 3000px;
+        }
+    }
     @media (max-width: 1380px) {  #intro2 {height: 1000px;}
         .cont {
             background-color: #1d2124;
@@ -315,7 +384,7 @@
             width: 100%;
         }
     }
-    @media (max-width: 470px) {  #intro3 {height: 1688px;}
+    @media (max-width: 470px) {  #intro3 {height: 2088px;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
