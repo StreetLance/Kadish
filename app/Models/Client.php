@@ -40,7 +40,7 @@ class Client extends Model
     |--------------------------------------------------------------------------
     */
     public function kaddish(){
-        return $this->hasOne('App\Kaddish', 'Client_id');
+        return $this->hasOne('App\Kaddish',  'client_id');
     }
     /*
     |--------------------------------------------------------------------------

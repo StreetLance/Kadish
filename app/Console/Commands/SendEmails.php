@@ -7,6 +7,7 @@ use App\Mail\KaddishSendMail1;
 use App\Mail\KaddishSendMail7;
 use Illuminate\Console\Command;
 use App\Kadish;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Mail;
 use App\Models\Client;
 class SendEmails extends Command
@@ -49,33 +50,41 @@ class SendEmails extends Command
         $Data_J14 = cal_from_jd( unixtojd( time() )+ 14, CAL_JEWISH );
         $Data_J14 = $Data_J14[ 'day' ] . '.' . $Data_J14[ 'month' ].'.'.'%';
 
-        $kadish[ '1'] = Client::whereHas( 'kaddish', function ( Builder $query ) use ( $Data_J1 ) {
+        $kadish['1'] = Client::whereHas( 'kaddish', function ( Builder $query ) use ( $Data_J1 ) {
             $query->where( 'J_Date','like', $Data_J1 );
-        } )->get( [ 'Email', 'Name' ] );
+        } )->get(['Name','Email']);
+        $kadish['1']= collect($kadish['1']);
+
         $kadish[ '7' ] = Client::whereHas( 'kaddish', function ( Builder $query ) use ( $Data_J7 ) {
             $query->where( 'J_Date',  'like', $Data_J7 );
         } )->get( [ 'Email', 'Name' ] );
+        $kadish['7']= collect($kadish['7']);
 
         $kadish[ '14' ] = Client::whereHas( 'kaddish', function ( Builder $query ) use ( $Data_J14 ) {
             $query->where( 'J_Date', 'like', $Data_J14);
         } )->get( [ 'Email', 'Name' ] );
+        $kadish['14']= collect($kadish['14']);
 
-        foreach ( $kadish[ '1' ] as $getKadish ) {
+        info($kadish['14']);
+        foreach ( $kadish['1'] as $getKadish ) {
+            $when = now()->addSecond(1);
             $mail = $getKadish->Email;
             $name = $getKadish->Name;
-            Mail::to( $mail )->send( new KaddishSendMail1( $name ) );
+            Mail::to( $mail )->later($when, new KaddishSendMail1( $name ) );
         }
 
         foreach ( $kadish[ '7' ] as $getKadish ) {
+            $when = now()->addSecond(11);
             $mail = $getKadish->Email;
             $name = $getKadish->Name;
-            Mail::to( $mail )->send( new KaddishSendMail7( $name ) );
+            Mail::to( $mail )->later($when, new KaddishSendMail7( $name ) );
         }
 
         foreach ( $kadish[ '14' ] as $getKadish ) {
+            $when = now()->addSecond(20);
             $mail = $getKadish->Email;
             $name = $getKadish->Name;
-            Mail::to( $mail )->send( new KaddishSendMail14( $name ) );
+            Mail::to( $mail )->later($when, new KaddishSendMail14( $name ) );
         }
 
 
