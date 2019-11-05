@@ -65,7 +65,7 @@ class SendEmails extends Command
         } )->get( [ 'Email', 'Name' ] );
         $kadish['14']= collect($kadish['14']);
 
-        info($kadish['14']);
+//        info($kadish['14']);
         foreach ( $kadish['1'] as $getKadish ) {
             $when = now()->addSecond(1);
             $mail = $getKadish->Email;
