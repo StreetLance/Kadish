@@ -8,16 +8,18 @@
             'Body' => 'Please fill in the fields below for ordering kaddish or notify about the upcoming yahrzeit'
         ],
         'About' => [
-            'Title' => 'About Kaddish Prayer',
-            'Body' => 'Our team more than 7 years is engaged in the organization of reciting kaddish and mourning events. We have helped more than 700 people in 6 countries.</br></br>
-While doing this holy work, we encountered 2 main issues:</br></br>
-1.The first one is that most people live by Gregorian calendar and skip yahrzeit of their beloved ones very often, since we observe an anniversary of passing according to Hebrew calendar.</br>
+            'Title' => 'About Us',
+            'Body' => 'Rabbi Zeev and Esther Kushnirsky moved to Staten Island with the guidance of Rabbi Eli Kogan in December of 2011 to fill a much needed gap. Staten Island has 28,000 Jews and the closest synagogue to the South Beach area is a 2 hours walking. We opened the Jewish Russian Learning Center of South Beach to provide a Jewish community for the Jews in this area.
 
-2.The second issue is that people don’t know how and whom to order a kaddish from.</br></br>
-That’s why we created that service kaddish-prayer.com where you can order kaddish and other mourning services in a convenient for you way. You should only register at our site. We constructed a very smart system which determines the most optimal plan based on the date of passing. After you register at our website, we will help you not to miss these important dates of yahrzeit. We will also help to observe yahrzeit, buy a candle, organize memorial meal, etc.</br></br>
-We will make sure all your problems will be resolved in the best manner. You should only register at our website and enter information about you and your passed relative and we will take care about everything else afterwards.</br></br>
-We worked long and hard to make this program and we want to offer it to various Jewish communities throughout the world so a jew could do these mizvos no matter where he lives.</br>
-We wish everyone to fulfill the words of prophet Isaiah (25:8): He has concealed death forever, and the Lord God shall wipe the tears off every face, and the shame of His people He shall remove from upon the entire earth, for the Lord has spoken.'
+We offer a wide range of activities like Shabbos services, Shabbos meals, Adult Education, Sunday School, Holiday services, Tefilin and mezuzah campaign, events, life cycle services (bris, bar/bat mitzvah, funeral, weddings…) .There is something for every age and level of Jewish observance.
+
+This variety of programs and support for children and adults alike helps each one in their journey that begins with a step by step process to awaken the spark within each one. The path includes emotional, spiritual, educational and practical steps in personal spiritual growth. Through the steps Jewish practices become deeply relevant, meaningful and personal as well as useful and accessible being easily incorporated into daily life.
+
+To support the personal awakening of the spark, as well as the growth of our community, the center provides an assortment of programs for member involvement.
+
+We are a branch of JRLC and thanks to the help of Rabbi Eli Kogan we are able to continue building a Russian community in Staten Island.
+
+This is a project of Chabad of Sheepshead Bay'
         ],
         'Price' => [
             'Title' => 'This is Price',
@@ -90,8 +92,9 @@ Yahrzeit is a special time for the soul of the deceased. It has a particularly s
         ],
         'wiki5' => [
             'Title' => 'Mourner’s kaddish audio',
-            'Aydio1' => 'Kaddish Yatom Sfaradic',
+            'Aydio1' => 'Kaddish audio',
             'Aydio2' => 'Kaddish Yatom Ashkenaz',
         ],
         "Footer"=>"© All rights reserved. Contact us: info@kaddish-prayer.com | Refund policy"
     ];
+

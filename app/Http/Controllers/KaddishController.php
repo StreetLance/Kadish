@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 use App\Mail\KaddishSendMailThank_Reg;
 use Illuminate\Support\Facades\DB;
+use Newsletter;
+
 class KaddishController extends Controller
 {
     /**
@@ -49,7 +51,7 @@ class KaddishController extends Controller
             $data_J = $Data_J[ 'day' ] . '.' . $Data_J[ 'month' ] . '.' . $Data_J[ 'year' ];
             $data_G = $request->Day . '.' . $request->Month . '.' . $request->Year;
         }
-//Поиск зазницы с текущей датой в 11 месяцев
+//Поиск разницы с текущей датой в 11 месяцев
         $Date_Now = date( "d.m.y" );
         $diff = abs( strtotime( $Date_Now ) - strtotime( $data_G ) );
 
@@ -74,21 +76,43 @@ class KaddishController extends Controller
             'Order' => (bool)$request->Order,
             'Difference_Year' => $Difirence_Year,
         ];
-        if (isset($request->First_Name) && isset($request->Last_Name)){
-            $Client['Name'] = $request->First_Name;
-            $Client['Last_name'] = $request->Last_Name;
-        } else {
-            $Client['Name'] = ' ';
-            $Client['Last_name'] = ' ';
-        }
+
 //Заполнение базы клиентов в случе отсутсвия почты и эмейла
-        $client = Clients::firstOrCreate( [ 'Name'=>$Client['Name'],'Last_Name'=>$Client['Last_name'], "Email" => $request->Email, "Phone_number" => $request->Phone ] );
+        $client = Clients::firstOrCreate( ["Email" => $request->Email, "Phone_number" => $request->Phone ] );
+        if (isset($request->First_Name) && isset($request->Last_Name)){
+            $client->update([ 'Name'=>$request->First_Name,'Last_Name'=>$request->Last_Name]);
+        }
+
         $kadish = new Kaddish( $param );
         $kadish->client()->associate( $client ); // присвоение Client_id при помощи встреоной функции Laravel Relations
         $kadish->save();
         $item['id'] = $kadish->id;
         $item['order'] = $request->Order;
-        Mail::to($request->Email)->send(new KaddishSendMailThank_Reg());
+        //send email
+
+        Newsletter::subscribe($request->Email);
+      $listId= Newsletter::getMember($request->Email);
+        $mailchimp = new \Mailchimp(config('newsletter.apiKey'));
+        //Create a Campaign $mailchimp->campaigns->create($type, $options, $content)
+        $options=[
+            'list_id' => $listId['list_id'],
+            'subject' => 'Hello',
+            'from_email' => 'abezkrovnyi@mail.ru',
+            'from_name' => 'Scotch Pub',
+            'to_name' => 'Scotch Subscriber'
+
+        ];
+        $content=  [
+            'html' => 'HI',
+            'text' => 'HI',
+        ];
+        $campaign = $mailchimp->campaigns->create('regular', $options ,$content);
+//        dd($campaign);
+
+        //Send campaign
+        $mailchimp->campaigns->send($campaign['id']);
+//        Mail::to($request->Email)->send(new KaddishSendMailThank_Reg());
+
         return $item;
     }
 

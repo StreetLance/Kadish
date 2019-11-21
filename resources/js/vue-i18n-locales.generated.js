@@ -60,8 +60,8 @@ export default {
         "Nav": {
             "Index": "Home",
             "About": "About",
-            "Price": "Price",
-            "Wiki": "Wiki"
+            "Price": "Donation",
+            "Wiki": "Customs & Traditions"
         },
         "Pages": {
             "Index": {
@@ -70,8 +70,8 @@ export default {
                 "Body": "Please fill in the fields below for ordering kaddish or notify about the upcoming yahrzeit"
             },
             "About": {
-                "Title": "About Kaddish Prayer",
-                "Body": "Our team more than 7 years is engaged in the organization of reciting kaddish and mourning events. We have helped more than 700 people in 6 countries.</br></br>\nWhile doing this holy work, we encountered 2 main issues:</br></br>\n1.The first one is that most people live by Gregorian calendar and skip yahrzeit of their beloved ones very often, since we observe an anniversary of passing according to Hebrew calendar.</br>\n\n2.The second issue is that people don’t know how and whom to order a kaddish from.</br></br>\nThat’s why we created that service kaddish-prayer.com where you can order kaddish and other mourning services in a convenient for you way. You should only register at our site. We constructed a very smart system which determines the most optimal plan based on the date of passing. After you register at our website, we will help you not to miss these important dates of yahrzeit. We will also help to observe yahrzeit, buy a candle, organize memorial meal, etc.</br></br>\nWe will make sure all your problems will be resolved in the best manner. You should only register at our website and enter information about you and your passed relative and we will take care about everything else afterwards.</br></br>\nWe worked long and hard to make this program and we want to offer it to various Jewish communities throughout the world so a jew could do these mizvos no matter where he lives.</br>\nWe wish everyone to fulfill the words of prophet Isaiah (25{8}): He has concealed death forever, and the Lord God shall wipe the tears off every face, and the shame of His people He shall remove from upon the entire earth, for the Lord has spoken."
+                "Title": "About Us",
+                "Body": "Rabbi Zeev and Esther Kushnirsky moved to Staten Island with the guidance of Rabbi Eli Kogan in December of 2011 to fill a much needed gap. Staten Island has 28,000 Jews and the closest synagogue to the South Beach area is a 2 hours walking. We opened the Jewish Russian Learning Center of South Beach to provide a Jewish community for the Jews in this area.\n\nWe offer a wide range of activities like Shabbos services, Shabbos meals, Adult Education, Sunday School, Holiday services, Tefilin and mezuzah campaign, events, life cycle services (bris, bar/bat mitzvah, funeral, weddings…) .There is something for every age and level of Jewish observance.\n\nThis variety of programs and support for children and adults alike helps each one in their journey that begins with a step by step process to awaken the spark within each one. The path includes emotional, spiritual, educational and practical steps in personal spiritual growth. Through the steps Jewish practices become deeply relevant, meaningful and personal as well as useful and accessible being easily incorporated into daily life.\n\nTo support the personal awakening of the spark, as well as the growth of our community, the center provides an assortment of programs for member involvement.\n\nWe are a branch of JRLC and thanks to the help of Rabbi Eli Kogan we are able to continue building a Russian community in Staten Island.\n\nThis is a project of Chabad of Sheepshead Bay"
             },
             "Price": {
                 "Title": "This is Price",
@@ -95,7 +95,7 @@ export default {
             },
             "wiki5": {
                 "Title": "Mourner’s kaddish audio",
-                "Aydio1": "Kaddish Yatom Sfaradic",
+                "Aydio1": "Kaddish audio",
                 "Aydio2": "Kaddish Yatom Ashkenaz"
             },
             "Footer": "© All rights reserved. Contact us: info@kaddish-prayer.com | Refund policy"
@@ -232,10 +232,10 @@ export default {
         "WikiNav": {
             "Izkor": "Yizkor",
             "Yorzhat": "What is Yahrzeit",
-            "Text": "Kaddish text in Hebrew",
-            "Kadish": "Meaning of Purpose of the Kaddish Prayer",
+            "Text": "Kaddish text",
+            "Kadish": "Meaning of Purpose of the Kaddish",
             "KadishYS": "Kaddish Yatom Sfaradic",
-            "KadishBy": "<b><u>Заказать<br>Кадиш</u></b><i>или напомнить о&nbsp;йорцайт</i>"
+            "KadishBy": "<b><u>Order<br>Kadish</u></b><i>or remind about&nbsp;yorzite</i>"
         }
     },
     "ru": {
@@ -295,7 +295,7 @@ export default {
         "Nav": {
             "Index": "Заказать кадиш",
             "About": "О проекте",
-            "Price": "Стоимость",
+            "Price": "Благотворительный взнос",
             "Wiki": "Энциклопедия"
         },
         "Pages": {
@@ -333,7 +333,7 @@ export default {
                 "Aydio1": "Сефардский кадиш ятом",
                 "Aydio2": "Ашкеназский кадиш ятом"
             },
-            "Footer": "© Все права защищены. Связатся с нами: "
+            "Footer": "© Все права защищены. Связатся с нами: info@kaddish-prayer.com"
         },
         "Thankyou": {
             "Thankyou": "Спасибо, ваш заказ успешно сохранен.",
@@ -346,7 +346,7 @@ export default {
         "WikiNav": {
             "Izkor": "Изкор",
             "Yorzhat": "Что такое йорцайт",
-            "Text": "Текст молитвы кадиш на иврите",
+            "Text": "Текст молитвы кадиш",
             "Kadish": "Значение и смысл молитвы кадиш",
             "KadishYS": "Кадиш скорбящего аудио",
             "KadishBy": "<b><u>Заказать<br>Кадиш</u></b><i>или напомнить о&nbsp;йорцайт</i>"

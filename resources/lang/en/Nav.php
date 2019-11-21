@@ -3,7 +3,7 @@
     return [
         'Index' => 'Home',
         'About' => 'About',
-        'Price' => 'Price',
-        'Wiki' => 'Wiki',
+        'Price' => 'Donation',
+        'Wiki' => 'Customs & Traditions',
 
     ];

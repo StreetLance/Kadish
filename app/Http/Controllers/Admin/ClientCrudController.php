@@ -35,8 +35,8 @@ class ClientCrudController extends CrudController
             'Name',
             'Last_Name',
             'Email',
-            'Phone_number',
-            'Social_relations']);
+            'Phone_number']);
+        $this->crud->setColumnDetails('Name', ['label' => "Firs Name"]); // adjusts the properties of the passed in column (by name)
     }
 
     protected function setupCreateOperation()

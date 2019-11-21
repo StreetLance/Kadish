@@ -43,7 +43,7 @@
                     <div class="row py-4 d-flex align-items-center">
                         <!--Grid column-->
                         <div class="col-md-6 col-lg-7 text-center text-md-right">
-                            <h6 class="mb-0 white-text">© All rights reserved. Contact us: info@kaddish-prayer.com | Refund policy</h6>
+                            <h6 class="mb-0 white-text">{{$t('Pages.Footer')}}</h6>
                         </div>
                         <!--Grid column-->
                     </div>

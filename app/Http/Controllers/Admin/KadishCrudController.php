@@ -7,6 +7,10 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Requests\KadishRequest;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
+use Backpack\CRUD\app\Library\CrudPanel\Traits\Columns;
+use Barryvdh\Debugbar\Twig\Extension\Debug;
+use DebugBar\DebugBar;
+use function MongoDB\BSON\toJSON;
 
 /**
  * Class KadishCrudController
@@ -15,6 +19,7 @@ use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
  */
 class KadishCrudController extends CrudController
 {
+
     use \Backpack\CRUD\app\Http\Controllers\Operations\ListOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\CreateOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\UpdateOperation;
@@ -26,19 +31,16 @@ class KadishCrudController extends CrudController
         $this->crud->setModel('App\Models\Kadish');
         $this->crud->setRoute(config('backpack.base.route_prefix') . '/Kadish');
         $this->crud->setEntityNameStrings('kadish', 'kaddishes');
+        $this->crud->with('client');
+//        dd($this->columns());
         $this->crud->addFilter([ // add a "simple" filter called Draft
             'type' => 'simple',
             'name' => 'Order',
             'label'=> 'Order'
         ],
             false, // the simple filter has no values, just the "Draft" label specified above
-            function() { // if the filter is active (the GET parameter "draft" exits)
+            function() {
                 $this->crud->addClause('where', 'Order', '1');
-                // we've added a clause to the CRUD so that only elements with draft=1 are shown in the table
-                // an alternative syntax to this would have been
-                // $this->crud->query = $this->crud->query->where('draft', '1');
-                // another alternative syntax, in case you had a scopeDraft() on your model:
-                // $this->crud->addClause('draft');
             });
         $this->crud->addFilter([ // add a "simple" filter called Draft
             'type' => 'simple',
@@ -48,11 +50,6 @@ class KadishCrudController extends CrudController
             false, // the simple filter has no values, just the "Draft" label specified above
             function() { // if the filter is active (the GET parameter "draft" exits)
                 $this->crud->addClause('where', 'Difference_Year', '1');
-                // we've added a clause to the CRUD so that only elements with draft=1 are shown in the table
-                // an alternative syntax to this would have been
-                // $this->crud->query = $this->crud->query->where('draft', '1');
-                // another alternative syntax, in case you had a scopeDraft() on your model:
-                // $this->crud->addClause('draft');
             });
         $this->crud->addFilter([ // add a "simple" filter called Draft
             'type' => 'simple',
@@ -62,41 +59,61 @@ class KadishCrudController extends CrudController
             false, // the simple filter has no values, just the "Draft" label specified above
             function() { // if the filter is active (the GET parameter "draft" exits)
                 $this->crud->addClause('where', 'After_sunset', '1');
-                // we've added a clause to the CRUD so that only elements with draft=1 are shown in the table
-                // an alternative syntax to this would have been
-                // $this->crud->query = $this->crud->query->where('draft', '1');
-                // another alternative syntax, in case you had a scopeDraft() on your model:
-                // $this->crud->addClause('draft');
             });
-//
-//        $this->crud->with('client');
+        $this->crud->addFilter([
+            'type' => 'text',
+            'name' => 'J_Date',
+            'label'=> 'J_Date'
+        ],
+            false,
+            function($value) { // if the filter is active
+                $Data_J1 = cal_from_jd( unixtojd( time() )+$value, CAL_JEWISH );
+                $Data_J1 = $Data_J1[ 'day' ] . '.' . $Data_J1[ 'month' ].'.'.'%';
+                 $this->crud->addClause('where', 'J_Date', 'LIKE', $Data_J1);
+            });
+        $this->crud->addFilter([
+            'type' => 'text',
+            'name' => 'Email',
+            'label'=> 'Email',
+        ],
+            false,
+            function($value) {
+                $this->crud->addClause('whereHas', 'client', function($query) use ($value) {
+                    $query->where('Email', '=', $value);
+            });
+        });
+
     }
 
     protected function setupListOperation()
     {
         // TODO: remove setFromDb() and manually define Columns, maybe Filters
 //        $this->crud->setFromDb();
-        $this->crud->setColumns([
+        $this->crud->setColumns(
+            [
             'Name_of_Deceased',
             'Fathers_Name',
             'G_Date',
             'J_Date',
             'Lang',
             'After_sunset',
-            'Order',
-            'Difference_Year','Client_id']);
+                'Order',
+            'Difference_Year','Client_id']
+        );
+//        $items = $this->crud->getEntries()->toArray();
 
-//        $this->crud->addField([
-//            'name' => 'Name_of_Deceased',
-//            'type' => 'text',
-//            'label' => "Name_of_Deceased"
+//        $this->crud->addColumn([
+//            // Select
+//            'name' => 'Order', // the db column for the foreign key
+//            'label' => 'Order',
+//            'type' => 'model_function',
+//            'function_name' => "Order",
+//            'function_parameters' => [$items],
 //        ]);
-//
-//        $this->crud->addField([
-//            'name' => 'Fathers_Name',
-//            'type' => 'text',
-//            'label' => "Fathers_Name"
-//        ]);
+
+        $this->crud->setColumnDetails('Difference_Year', ['label' => " First year"]); // adjusts the properties of the passed in column (by name)
+        $this->crud->orderBy('J_Date','asc');
+
     }
 
     protected function setupCreateOperation()
@@ -141,6 +158,19 @@ class KadishCrudController extends CrudController
     protected function setupUpdateOperation()
     {
         $this->setupCreateOperation();
-
+        $this->crud->addField([
+            'tab' => 'Client',
+            'label' => "J_Date",
+            'type' => 'text',
+            // имя отношения в модели
+            'name' => 'client_id',
+            // имя отношения в модели
+            'entity' => 'client',
+            // атрибут Article, который будет показан пользователю
+            'attribute' => 'Email',
+            // при создании и обновлении вам нужно добавлять/удалять записи сводной таблицы?
+//            'pivot' => true,
+            'model' => "App\Client", // foreign key model
+        ]);
     }
 }

@@ -238,13 +238,6 @@
                                         <p>{{plaques.J_Date.day}} {{plaques.J_Date.monthname}}  {{plaques.J_Date.year}} </br>{{plaques.G_Date.day}} {{plaques.G_Date.monthname}}  {{plaques.G_Date.year}}</p>
                                     </div>
                                 </li>
-                                <!--        <li class="plaque">-->
-                                <!--            <div class="plaque-content">-->
-                                <!--                <h2>Rabinovich<br>Reuven Shimon<br>ben Levi Yehuda Naftali</h2>-->
-                                <!--                <p>12 Teveta 5612<br>23 December 1882</p>-->
-                                <!--                <p>9 Av 5732<br>17 July 2002</p>-->
-                                <!--            </div>-->
-                                <!--        </li>-->
                             </ul>
                         </div>
 
@@ -261,7 +254,7 @@
                     <div class="row py-4 d-flex align-items-center">
                         <!--Grid column-->
                         <div class="col-md-6 col-lg-7 text-center text-md-right">
-                            <h6 class="mb-0 white-text">© All rights reserved. Contact us: info@kaddish-prayer.com | Refund policy</h6>
+                            <h6 class="mb-0 white-text">{{$t('Pages.Footer')}}</h6>
                         </div>
                         <!--Grid column-->
                     </div>
@@ -445,6 +438,10 @@
 </script>
 
 <style scoped>
+    .orange-text {
+        font-size: 100%;
+        color: #ff9800!important;
+    }
     .view .mask {
          position: relative;
         top: 0;
@@ -498,6 +495,9 @@
         -moz-appearance: none;
         appearance: none;
         border: none;
+    }
+    .rgba-black-strong, .rgba-black-strong:after {
+        background-color: rgba(0,0,0,.5);
     }
     /*#intro{*/
     /*    height: 1200px;*/

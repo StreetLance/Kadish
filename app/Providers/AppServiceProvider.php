@@ -5,6 +5,7 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use KgBot\LaravelLocalization\Facades\ExportLocalizations as ExportLocalization;
 use Illuminate\View\View;
+use Illuminate\Support\Facades\Mail;
 class AppServiceProvider extends ServiceProvider
 {
     /**

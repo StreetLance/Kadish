@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
     <div class="container">
         <!-- Navbar brand -->
-         <router-link class="nav-link navbar-brand orange-text" :to="{name: 'H', params: {lang: lang}}"> <span class="logo orange-text "></span> Kaddish Prayer</router-link>
+         <router-link class="nav-link navbar-brand orange-text" :to="{name: 'H', params: {lang: lang}}"> <span class="logo orange-text "></span> Kaddish/Memorial Services</router-link>
         <!-- Collapse button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
                 aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">

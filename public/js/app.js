@@ -2195,13 +2195,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 
 var touchMap = new WeakMap();
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -10952,7 +10945,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.view .mask[data-v-754b2df6] {\n     position: relative;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    overflow: hidden;\n    width: 100%;\n    height: 100%;\n    background-attachment: fixed;\n}\n.field-wr input[type=email][type=tel][data-v-754b2df6] {text-overflow: ellipsis;}\n.field-wr input[type=tel][data-v-754b2df6] {\n    font: normal 300 18px/26px 'Roboto', sans-serif;\n    width: 100%;\n    background: none;\n    padding: 0 2px;\n    color: #fff;\n    border: none;\n    outline: none;\n}\nlabel[data-v-754b2df6] {display: inline-block;margin-bottom: 0rem;}\n.mw[data-v-754b2df6] {max-width: 75%}\n.np[data-v-754b2df6] {padding: 0px;}\n.top-np[data-v-754b2df6] {padding: 0px 0px 14px 0px;}\n.bot-np[data-v-754b2df6] {padding: 14px 0px 0px 0px;}\nform[data-v-754b2df6] {\n    font-size: 0;\n    font-family: 'Roboto', sans-serif;\n    transition: all 0.4s ease;\n}\n.mv2[data-v-754b2df6] {max-width: 955px;}\n.pp[data-v-754b2df6] {padding: 0 2px;}\n.fs[data-v-754b2df6] {font: normal 300 16px/26px 'Roboto', sans-serif;}\nhr[data-v-754b2df6] {margin-top: 10px;;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.custom-select[data-v-754b2df6] {\n    display: inline-block;\n    width: 100%;\n    height: calc(1.5em + .75rem + 2px);\n    padding: .375rem 1.75rem .375rem .75rem;\n    font: normal 300 18px/26px 'Roboto', sans-serif;\n    line-height: 1.5;\n    color: #495057;\n    vertical-align: middle;\n    background: url(data:image/svg+xml,%3csvg xmlns= 'http://www.w3.org/2000/svg' viewBox= '0 0 4 5' %3e%3cpath fill= '%23343a40' d= 'M2 0L0 2h4zm0 5L0 3h4z' /%3e%3c/svg%3e) no-repeat right .75 rem center / 8 px 10 px;\n    background-color: #000000;\n    /*border: 1px solid #423d3d;*/\n    border-radius: .25rem;\n    -webkit-appearance: none;\n    -moz-appearance: none;\n    appearance: none;\n    border: none;\n}\n/*#intro{*/\n/*    height: 1200px;*/\n/*}*/\n/*@media (max-width: 1200px) {  #intro {min-height: 1200px;}}*/\n/*@media (max-height: 800px){ #intro {height: 950px;}}*/\n/*@media (max-width: 850px) {  #intro {height: 1462px;}*/\n/*    .field-wr.divider .I, .field-wr.dname .I, .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I, .field-wr.cmail .I {border-right: 0px;}*/\n/*    .row {*/\n/*        display: -ms-flexbox;*/\n/*        display: block;*/\n/*        -ms-flex-wrap: wrap;*/\n/*        flex-wrap: wrap;*/\n/*        margin-right: -15px;*/\n/*        margin-left: -15px;*/\n/*    }*/\n/*    hr {margin-top: 10px;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}*/\n/*    .field-wr input[type=text], .field-wr label, .field-wr textarea {*/\n/*        font: normal 300 15px/29px 'Roboto', sans-serif;*/\n/*        width: 100%;*/\n/*        background: none;*/\n/*        !*padding: 0 2px;*!*/\n/*        color: #fff;*/\n/*        border: none;*/\n/*        outline: none;*/\n/*    }*/\n/*    .field-wr.dsuns {width: 30%;}*/\n/*    .field-wr.switch-cal {width: 15%; text-align: right;}*/\n/*}*/\n\n/*@media (max-width: 760px) {  #intro {height: 1460px;}*/\n/*    .field-wr.divider .I, .field-wr.dname .I, .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I, .field-wr.cmail .I {border-right: 0px;}*/\n/*    .row {*/\n/*        display: -ms-flexbox;*/\n/*        display: block;*/\n/*        -ms-flex-wrap: wrap;*/\n/*        flex-wrap: wrap;*/\n/*        margin-right: -15px;*/\n/*        margin-left: -15px;*/\n/*    }*/\n/*    hr {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}*/\n/*    .field-wr input[type=text], .field-wr label, .field-wr textarea {*/\n/*        font: normal 300 15px/29px 'Roboto', sans-serif;*/\n/*        width: 100%;*/\n/*        background: none;*/\n/*        !*padding: 0 2px;*!*/\n/*        color: #fff;*/\n/*        border: none;*/\n/*        outline: none;*/\n/*    }*/\n/*    .field-wr.dsuns {width: 30%;}*/\n/*    .field-wr.switch-cal {width: 15%; text-align: right;}*/\n/*}*/\n\n/*@media (max-width: 660px) {*/\n/*    #intro {*/\n/*        height: 1600px;*/\n/*    }*/\n\n/*    .field-wr.divider .I, .field-wr.dname .I, .field-wr.cmail .I {*/\n/*        border-right: 0px;*/\n/*    }*/\n\n/*    .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I {*/\n/*        border: 1px solid #666;*/\n/*    }*/\n\n/*    .row {*/\n/*        display: -ms-flexbox;*/\n/*        display: block;*/\n/*        -ms-flex-wrap: wrap;*/\n/*        flex-wrap: wrap;*/\n/*        margin-right: -15px;*/\n/*        margin-left: -15px;*/\n/*    }*/\n/*    .plaque {display: inline-block; background-color: #000; width: 30%; height: 190px; position: relative; margin: 0; padding: 0; text-align: center; vertical-align: middle;}*/\n/*    .plaque-content h2 {font-size: 100%; margin: 0; padding: 0; font-weight: 600;}*/\n/*    .plaque-content p {font-size: 90%; margin: 1em 0 0; padding: 0; color: #fc6; text-align: center !important;}*/\n/*}*/\n@media (max-width: 405px) {\n        /*#intro {height: 1900px;*/\n.field-wr.divider .I[data-v-754b2df6], .field-wr.dname .I[data-v-754b2df6], .field-wr.cmail .I[data-v-754b2df6] {border-right: 0px;}\n.field-wr.ddate .I[data-v-754b2df6], .field-wr.dmnth .I[data-v-754b2df6], .field-wr.dyear .I[data-v-754b2df6] {border: 1px solid #666;}\n.row[data-v-754b2df6] {\n        display: -ms-flexbox;\n        display: block;\n        flex-wrap: wrap;\n        margin-right: -15px;\n        margin-left: -15px;\n}\nhr[data-v-754b2df6] {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.field-wr input[type=text][data-v-754b2df6], .field-wr label[data-v-754b2df6], .field-wr textarea[data-v-754b2df6] {\n        font: normal 300 15px/29px 'Roboto', sans-serif;\n        width: 100%;\n        background: none;\n        /*padding: 0 2px;*/\n        color: #fff;\n        border: none;\n        outline: none;\n}\n.field-wr.ddate[data-v-754b2df6], .field-wr.dmnth[data-v-754b2df6], .field-wr.dyear[data-v-754b2df6] {width: 100%;max-width: 100%;}\n.mw[data-v-754b2df6][data-v-754b2df6] {max-width: 100%;}\n.field-wr.dsuns[data-v-754b2df6] {width: 72%;}\n.field-wr.switch-cal[data-v-754b2df6] {width: 26%; text-align: right;}\n.plaque[data-v-754b2df6] {display: inline-block; background-color: #000; width: 30%; height: 190px; position: relative; margin: 0; padding: 0; text-align: center; vertical-align: middle;}\n.plaque-content h2[data-v-754b2df6] {font-size: 100%; margin: 0; padding: 0; font-weight: 600;}\n.plaque-content p[data-v-754b2df6] {font-size: 90%; margin: 1em 0 0; padding: 0; color: #fc6; text-align: center !important;}\n}\n@media (max-width: 350px) {\n#intro[data-v-754b2df6]\n{height: 2000px;}\n.field-wr.divider .I[data-v-754b2df6], .field-wr.dname .I[data-v-754b2df6], .field-wr.cmail .I[data-v-754b2df6] {border-right: 0px;}\n.field-wr.ddate .I[data-v-754b2df6], .field-wr.dmnth .I[data-v-754b2df6], .field-wr.dyear .I[data-v-754b2df6] {border: 1px solid #666;}\n.row[data-v-754b2df6] {\n        display: -ms-flexbox;\n        display: block;\n        flex-wrap: wrap;\n        margin-right: -15px;\n        margin-left: -15px;\n}\nhr[data-v-754b2df6] {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.field-wr input[type=text][data-v-754b2df6], .field-wr label[data-v-754b2df6], .field-wr textarea[data-v-754b2df6] {\n        font: normal 300 15px/29px 'Roboto', sans-serif;\n        width: 100%;\n        background: none;\n        /*padding: 0 2px;*/\n        color: #fff;\n        border: none;\n        outline: none;\n}\n.field-wr.ddate[data-v-754b2df6], .field-wr.dmnth[data-v-754b2df6], .field-wr.dyear[data-v-754b2df6] {width: 100%;max-width: 100%;}\n.mw[data-v-754b2df6][data-v-754b2df6] {max-width: 100%;}\n.field-wr.dsuns[data-v-754b2df6] {width: 72%;}\n.field-wr.switch-cal[data-v-754b2df6] {width: 26%; text-align: right;}\n.plaque[data-v-754b2df6] {display: inline-block; background-color: #000; width: 30%; height: 190px; position: relative; margin: 0; padding: 0; text-align: center; vertical-align: middle;}\n.plaque-content h2[data-v-754b2df6] {font-size: 100%; margin: 0; padding: 0; font-weight: 600;}\n.plaque-content p[data-v-754b2df6] {font-size: 90%; margin: 1em 0 0; padding: 0; color: #fc6; text-align: center !important;}\n}\n", ""]);
+exports.push([module.i, "\n.orange-text[data-v-754b2df6] {\n    font-size: 100%;\n    color: #ff9800!important;\n}\n.view .mask[data-v-754b2df6] {\n     position: relative;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    overflow: hidden;\n    width: 100%;\n    height: 100%;\n    background-attachment: fixed;\n}\n.field-wr input[type=email][type=tel][data-v-754b2df6] {text-overflow: ellipsis;}\n.field-wr input[type=tel][data-v-754b2df6] {\n    font: normal 300 18px/26px 'Roboto', sans-serif;\n    width: 100%;\n    background: none;\n    padding: 0 2px;\n    color: #fff;\n    border: none;\n    outline: none;\n}\nlabel[data-v-754b2df6] {display: inline-block;margin-bottom: 0rem;}\n.mw[data-v-754b2df6] {max-width: 75%}\n.np[data-v-754b2df6] {padding: 0px;}\n.top-np[data-v-754b2df6] {padding: 0px 0px 14px 0px;}\n.bot-np[data-v-754b2df6] {padding: 14px 0px 0px 0px;}\nform[data-v-754b2df6] {\n    font-size: 0;\n    font-family: 'Roboto', sans-serif;\n    transition: all 0.4s ease;\n}\n.mv2[data-v-754b2df6] {max-width: 955px;}\n.pp[data-v-754b2df6] {padding: 0 2px;}\n.fs[data-v-754b2df6] {font: normal 300 16px/26px 'Roboto', sans-serif;}\nhr[data-v-754b2df6] {margin-top: 10px;;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.custom-select[data-v-754b2df6] {\n    display: inline-block;\n    width: 100%;\n    height: calc(1.5em + .75rem + 2px);\n    padding: .375rem 1.75rem .375rem .75rem;\n    font: normal 300 18px/26px 'Roboto', sans-serif;\n    line-height: 1.5;\n    color: #495057;\n    vertical-align: middle;\n    background: url(data:image/svg+xml,%3csvg xmlns= 'http://www.w3.org/2000/svg' viewBox= '0 0 4 5' %3e%3cpath fill= '%23343a40' d= 'M2 0L0 2h4zm0 5L0 3h4z' /%3e%3c/svg%3e) no-repeat right .75 rem center / 8 px 10 px;\n    background-color: #000000;\n    /*border: 1px solid #423d3d;*/\n    border-radius: .25rem;\n    -webkit-appearance: none;\n    -moz-appearance: none;\n    appearance: none;\n    border: none;\n}\n.rgba-black-strong[data-v-754b2df6], .rgba-black-strong[data-v-754b2df6]:after {\n    background-color: rgba(0,0,0,.5);\n}\n/*#intro{*/\n/*    height: 1200px;*/\n/*}*/\n/*@media (max-width: 1200px) {  #intro {min-height: 1200px;}}*/\n/*@media (max-height: 800px){ #intro {height: 950px;}}*/\n/*@media (max-width: 850px) {  #intro {height: 1462px;}*/\n/*    .field-wr.divider .I, .field-wr.dname .I, .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I, .field-wr.cmail .I {border-right: 0px;}*/\n/*    .row {*/\n/*        display: -ms-flexbox;*/\n/*        display: block;*/\n/*        -ms-flex-wrap: wrap;*/\n/*        flex-wrap: wrap;*/\n/*        margin-right: -15px;*/\n/*        margin-left: -15px;*/\n/*    }*/\n/*    hr {margin-top: 10px;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}*/\n/*    .field-wr input[type=text], .field-wr label, .field-wr textarea {*/\n/*        font: normal 300 15px/29px 'Roboto', sans-serif;*/\n/*        width: 100%;*/\n/*        background: none;*/\n/*        !*padding: 0 2px;*!*/\n/*        color: #fff;*/\n/*        border: none;*/\n/*        outline: none;*/\n/*    }*/\n/*    .field-wr.dsuns {width: 30%;}*/\n/*    .field-wr.switch-cal {width: 15%; text-align: right;}*/\n/*}*/\n\n/*@media (max-width: 760px) {  #intro {height: 1460px;}*/\n/*    .field-wr.divider .I, .field-wr.dname .I, .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I, .field-wr.cmail .I {border-right: 0px;}*/\n/*    .row {*/\n/*        display: -ms-flexbox;*/\n/*        display: block;*/\n/*        -ms-flex-wrap: wrap;*/\n/*        flex-wrap: wrap;*/\n/*        margin-right: -15px;*/\n/*        margin-left: -15px;*/\n/*    }*/\n/*    hr {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}*/\n/*    .field-wr input[type=text], .field-wr label, .field-wr textarea {*/\n/*        font: normal 300 15px/29px 'Roboto', sans-serif;*/\n/*        width: 100%;*/\n/*        background: none;*/\n/*        !*padding: 0 2px;*!*/\n/*        color: #fff;*/\n/*        border: none;*/\n/*        outline: none;*/\n/*    }*/\n/*    .field-wr.dsuns {width: 30%;}*/\n/*    .field-wr.switch-cal {width: 15%; text-align: right;}*/\n/*}*/\n\n/*@media (max-width: 660px) {*/\n/*    #intro {*/\n/*        height: 1600px;*/\n/*    }*/\n\n/*    .field-wr.divider .I, .field-wr.dname .I, .field-wr.cmail .I {*/\n/*        border-right: 0px;*/\n/*    }*/\n\n/*    .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I {*/\n/*        border: 1px solid #666;*/\n/*    }*/\n\n/*    .row {*/\n/*        display: -ms-flexbox;*/\n/*        display: block;*/\n/*        -ms-flex-wrap: wrap;*/\n/*        flex-wrap: wrap;*/\n/*        margin-right: -15px;*/\n/*        margin-left: -15px;*/\n/*    }*/\n/*    .plaque {display: inline-block; background-color: #000; width: 30%; height: 190px; position: relative; margin: 0; padding: 0; text-align: center; vertical-align: middle;}*/\n/*    .plaque-content h2 {font-size: 100%; margin: 0; padding: 0; font-weight: 600;}*/\n/*    .plaque-content p {font-size: 90%; margin: 1em 0 0; padding: 0; color: #fc6; text-align: center !important;}*/\n/*}*/\n@media (max-width: 405px) {\n        /*#intro {height: 1900px;*/\n.field-wr.divider .I[data-v-754b2df6], .field-wr.dname .I[data-v-754b2df6], .field-wr.cmail .I[data-v-754b2df6] {border-right: 0px;}\n.field-wr.ddate .I[data-v-754b2df6], .field-wr.dmnth .I[data-v-754b2df6], .field-wr.dyear .I[data-v-754b2df6] {border: 1px solid #666;}\n.row[data-v-754b2df6] {\n        display: -ms-flexbox;\n        display: block;\n        flex-wrap: wrap;\n        margin-right: -15px;\n        margin-left: -15px;\n}\nhr[data-v-754b2df6] {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.field-wr input[type=text][data-v-754b2df6], .field-wr label[data-v-754b2df6], .field-wr textarea[data-v-754b2df6] {\n        font: normal 300 15px/29px 'Roboto', sans-serif;\n        width: 100%;\n        background: none;\n        /*padding: 0 2px;*/\n        color: #fff;\n        border: none;\n        outline: none;\n}\n.field-wr.ddate[data-v-754b2df6], .field-wr.dmnth[data-v-754b2df6], .field-wr.dyear[data-v-754b2df6] {width: 100%;max-width: 100%;}\n.mw[data-v-754b2df6][data-v-754b2df6] {max-width: 100%;}\n.field-wr.dsuns[data-v-754b2df6] {width: 72%;}\n.field-wr.switch-cal[data-v-754b2df6] {width: 26%; text-align: right;}\n.plaque[data-v-754b2df6] {display: inline-block; background-color: #000; width: 30%; height: 190px; position: relative; margin: 0; padding: 0; text-align: center; vertical-align: middle;}\n.plaque-content h2[data-v-754b2df6] {font-size: 100%; margin: 0; padding: 0; font-weight: 600;}\n.plaque-content p[data-v-754b2df6] {font-size: 90%; margin: 1em 0 0; padding: 0; color: #fc6; text-align: center !important;}\n}\n@media (max-width: 350px) {\n#intro[data-v-754b2df6]\n{height: 2000px;}\n.field-wr.divider .I[data-v-754b2df6], .field-wr.dname .I[data-v-754b2df6], .field-wr.cmail .I[data-v-754b2df6] {border-right: 0px;}\n.field-wr.ddate .I[data-v-754b2df6], .field-wr.dmnth .I[data-v-754b2df6], .field-wr.dyear .I[data-v-754b2df6] {border: 1px solid #666;}\n.row[data-v-754b2df6] {\n        display: -ms-flexbox;\n        display: block;\n        flex-wrap: wrap;\n        margin-right: -15px;\n        margin-left: -15px;\n}\nhr[data-v-754b2df6] {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.field-wr input[type=text][data-v-754b2df6], .field-wr label[data-v-754b2df6], .field-wr textarea[data-v-754b2df6] {\n        font: normal 300 15px/29px 'Roboto', sans-serif;\n        width: 100%;\n        background: none;\n        /*padding: 0 2px;*/\n        color: #fff;\n        border: none;\n        outline: none;\n}\n.field-wr.ddate[data-v-754b2df6], .field-wr.dmnth[data-v-754b2df6], .field-wr.dyear[data-v-754b2df6] {width: 100%;max-width: 100%;}\n.mw[data-v-754b2df6][data-v-754b2df6] {max-width: 100%;}\n.field-wr.dsuns[data-v-754b2df6] {width: 72%;}\n.field-wr.switch-cal[data-v-754b2df6] {width: 26%; text-align: right;}\n.plaque[data-v-754b2df6] {display: inline-block; background-color: #000; width: 30%; height: 190px; position: relative; margin: 0; padding: 0; text-align: center; vertical-align: middle;}\n.plaque-content h2[data-v-754b2df6] {font-size: 100%; margin: 0; padding: 0; font-weight: 600;}\n.plaque-content p[data-v-754b2df6] {font-size: 90%; margin: 1em 0 0; padding: 0; color: #fc6; text-align: center !important;}\n}\n", ""]);
 
 // exports
 
@@ -83530,7 +83523,36 @@ var render = function() {
                 ])
               ]),
               _vm._v(" "),
-              _vm._m(0)
+              _c(
+                "footer",
+                {
+                  staticClass: "page-footer font-small unique-color-dark mt-5"
+                },
+                [
+                  _c("div", { staticClass: "unique-color-dark" }, [
+                    _c("div", { staticClass: "container" }, [
+                      _c(
+                        "div",
+                        { staticClass: "row py-4 d-flex align-items-center" },
+                        [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "col-md-6 col-lg-7 text-center text-md-right"
+                            },
+                            [
+                              _c("h6", { staticClass: "mb-0 white-text" }, [
+                                _vm._v(_vm._s(_vm.$t("Pages.Footer")))
+                              ])
+                            ]
+                          )
+                        ]
+                      )
+                    ])
+                  ])
+                ]
+              )
             ]
           )
         ]
@@ -83538,36 +83560,7 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "footer",
-      { staticClass: "page-footer font-small unique-color-dark mt-5" },
-      [
-        _c("div", { staticClass: "unique-color-dark" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row py-4 d-flex align-items-center" }, [
-              _c(
-                "div",
-                { staticClass: "col-md-6 col-lg-7 text-center text-md-right" },
-                [
-                  _c("h6", { staticClass: "mb-0 white-text" }, [
-                    _vm._v(
-                      "© All rights reserved. Contact us: info@kaddish-prayer.com | Refund policy"
-                    )
-                  ])
-                ]
-              )
-            ])
-          ])
-        ])
-      ]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -85470,7 +85463,27 @@ var render = function() {
       )
     ]),
     _vm._v(" "),
-    _vm._m(2)
+    _c(
+      "footer",
+      { staticClass: "page-footer font-small unique-color-dark mt-5" },
+      [
+        _c("div", { staticClass: "unique-color-dark" }, [
+          _c("div", { staticClass: "container" }, [
+            _c("div", { staticClass: "row py-4 d-flex align-items-center" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6 col-lg-7 text-center text-md-right" },
+                [
+                  _c("h6", { staticClass: "mb-0 white-text" }, [
+                    _vm._v(_vm._s(_vm.$t("Pages.Footer")))
+                  ])
+                ]
+              )
+            ])
+          ])
+        ])
+      ]
+    )
   ])
 }
 var staticRenderFns = [
@@ -85511,34 +85524,6 @@ var staticRenderFns = [
         _c("span", { attrs: { id: "siteseal" } })
       ])
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "footer",
-      { staticClass: "page-footer font-small unique-color-dark mt-5" },
-      [
-        _c("div", { staticClass: "unique-color-dark" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row py-4 d-flex align-items-center" }, [
-              _c(
-                "div",
-                { staticClass: "col-md-6 col-lg-7 text-center text-md-right" },
-                [
-                  _c("h6", { staticClass: "mb-0 white-text" }, [
-                    _vm._v(
-                      "© All rights reserved. Contact us: info@kaddish-prayer.com | Refund policy"
-                    )
-                  ])
-                ]
-              )
-            ])
-          ])
-        ])
-      ]
-    )
   }
 ]
 render._withStripped = true
@@ -85603,15 +85588,7 @@ var render = function() {
       )
     ]),
     _vm._v(" "),
-    _vm._m(0)
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
+    _c(
       "footer",
       { staticClass: "page-footer font-small unique-color-dark mt-5" },
       [
@@ -85623,9 +85600,7 @@ var staticRenderFns = [
                 { staticClass: "col-md-6 col-lg-7 text-center text-md-right" },
                 [
                   _c("h6", { staticClass: "mb-0 white-text" }, [
-                    _vm._v(
-                      "© All rights reserved. Contact us: info@kaddish-prayer.com | Refund policy"
-                    )
+                    _vm._v(_vm._s(_vm.$t("Pages.Footer")))
                   ])
                 ]
               )
@@ -85634,8 +85609,9 @@ var staticRenderFns = [
         ])
       ]
     )
-  }
-]
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -85709,15 +85685,7 @@ var render = function() {
       )
     ]),
     _vm._v(" "),
-    _vm._m(0)
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
+    _c(
       "footer",
       { staticClass: "page-footer font-small unique-color-dark mt-5" },
       [
@@ -85729,9 +85697,7 @@ var staticRenderFns = [
                 { staticClass: "col-md-6 col-lg-7 text-center text-md-right" },
                 [
                   _c("h6", { staticClass: "mb-0 white-text" }, [
-                    _vm._v(
-                      "© All rights reserved. Contact us: info@kaddish-prayer.com | Refund policy"
-                    )
+                    _vm._v(_vm._s(_vm.$t("Pages.Footer")))
                   ])
                 ]
               )
@@ -85740,8 +85706,9 @@ var staticRenderFns = [
         ])
       ]
     )
-  }
-]
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -85803,42 +85770,40 @@ var render = function() {
             ]
           ),
           _vm._v(" "),
-          _vm._m(0)
+          _c(
+            "footer",
+            { staticClass: "page-footer font-small unique-color-dark mt-5" },
+            [
+              _c("div", { staticClass: "unique-color-dark" }, [
+                _c("div", { staticClass: "container" }, [
+                  _c(
+                    "div",
+                    { staticClass: "row py-4 d-flex align-items-center" },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "col-md-6 col-lg-7 text-center text-md-right"
+                        },
+                        [
+                          _c("h6", { staticClass: "mb-0 white-text" }, [
+                            _vm._v(_vm._s(_vm.$t("Pages.Footer")))
+                          ])
+                        ]
+                      )
+                    ]
+                  )
+                ])
+              ])
+            ]
+          )
         ]
       )
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "footer",
-      { staticClass: "page-footer font-small unique-color-dark mt-5" },
-      [
-        _c("div", { staticClass: "unique-color-dark" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row py-4 d-flex align-items-center" }, [
-              _c(
-                "div",
-                { staticClass: "col-md-6 col-lg-7 text-center text-md-right" },
-                [
-                  _c("h6", { staticClass: "mb-0 white-text" }, [
-                    _vm._v(
-                      "© All rights reserved. Contact us: info@kaddish-prayer.com | Refund policy"
-                    )
-                  ])
-                ]
-              )
-            ])
-          ])
-        ])
-      ]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -85925,15 +85890,7 @@ var render = function() {
       )
     ]),
     _vm._v(" "),
-    _vm._m(0)
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
+    _c(
       "footer",
       { staticClass: "page-footer font-small unique-color-dark mt-5" },
       [
@@ -85945,9 +85902,7 @@ var staticRenderFns = [
                 { staticClass: "col-md-6 col-lg-7 text-center text-md-right" },
                 [
                   _c("h6", { staticClass: "mb-0 white-text" }, [
-                    _vm._v(
-                      "© All rights reserved. Contact us: info@kaddish-prayer.com | Refund policy"
-                    )
+                    _vm._v(_vm._s(_vm.$t("Pages.Footer")))
                   ])
                 ]
               )
@@ -85956,8 +85911,9 @@ var staticRenderFns = [
         ])
       ]
     )
-  }
-]
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -86362,7 +86318,27 @@ var render = function() {
       )
     ]),
     _vm._v(" "),
-    _vm._m(2)
+    _c(
+      "footer",
+      { staticClass: "page-footer font-small unique-color-dark mt-5" },
+      [
+        _c("div", { staticClass: "unique-color-dark" }, [
+          _c("div", { staticClass: "container" }, [
+            _c("div", { staticClass: "row py-4 d-flex align-items-center" }, [
+              _c(
+                "div",
+                { staticClass: "col-md-6 col-lg-7 text-center text-md-right" },
+                [
+                  _c("h6", { staticClass: "mb-0 white-text" }, [
+                    _vm._v(_vm._s(_vm.$t("Pages.Footer")))
+                  ])
+                ]
+              )
+            ])
+          ])
+        ])
+      ]
+    )
   ])
 }
 var staticRenderFns = [
@@ -86475,34 +86451,6 @@ var staticRenderFns = [
         ])
       ])
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "footer",
-      { staticClass: "page-footer font-small unique-color-dark mt-5" },
-      [
-        _c("div", { staticClass: "unique-color-dark" }, [
-          _c("div", { staticClass: "container" }, [
-            _c("div", { staticClass: "row py-4 d-flex align-items-center" }, [
-              _c(
-                "div",
-                { staticClass: "col-md-6 col-lg-7 text-center text-md-right" },
-                [
-                  _c("h6", { staticClass: "mb-0 white-text" }, [
-                    _vm._v(
-                      "© All rights reserved. Contact us: info@kaddish-prayer.com | Refund policy"
-                    )
-                  ])
-                ]
-              )
-            ])
-          ])
-        ])
-      ]
-    )
   }
 ]
 render._withStripped = true
@@ -86545,7 +86493,7 @@ var render = function() {
             },
             [
               _c("span", { staticClass: "logo orange-text " }),
-              _vm._v(" Kaddish Prayer")
+              _vm._v(" Kaddish/Memorial Services")
             ]
           ),
           _vm._v(" "),
@@ -106109,8 +106057,8 @@ __webpack_require__.r(__webpack_exports__);
     "Nav": {
       "Index": "Home",
       "About": "About",
-      "Price": "Price",
-      "Wiki": "Wiki"
+      "Price": "Donation",
+      "Wiki": "Customs & Traditions"
     },
     "Pages": {
       "Index": {
@@ -106119,8 +106067,8 @@ __webpack_require__.r(__webpack_exports__);
         "Body": "Please fill in the fields below for ordering kaddish or notify about the upcoming yahrzeit"
       },
       "About": {
-        "Title": "About Kaddish Prayer",
-        "Body": "Our team more than 7 years is engaged in the organization of reciting kaddish and mourning events. We have helped more than 700 people in 6 countries.</br></br>\nWhile doing this holy work, we encountered 2 main issues:</br></br>\n1.The first one is that most people live by Gregorian calendar and skip yahrzeit of their beloved ones very often, since we observe an anniversary of passing according to Hebrew calendar.</br>\n\n2.The second issue is that people don’t know how and whom to order a kaddish from.</br></br>\nThat’s why we created that service kaddish-prayer.com where you can order kaddish and other mourning services in a convenient for you way. You should only register at our site. We constructed a very smart system which determines the most optimal plan based on the date of passing. After you register at our website, we will help you not to miss these important dates of yahrzeit. We will also help to observe yahrzeit, buy a candle, organize memorial meal, etc.</br></br>\nWe will make sure all your problems will be resolved in the best manner. You should only register at our website and enter information about you and your passed relative and we will take care about everything else afterwards.</br></br>\nWe worked long and hard to make this program and we want to offer it to various Jewish communities throughout the world so a jew could do these mizvos no matter where he lives.</br>\nWe wish everyone to fulfill the words of prophet Isaiah (25{8}): He has concealed death forever, and the Lord God shall wipe the tears off every face, and the shame of His people He shall remove from upon the entire earth, for the Lord has spoken."
+        "Title": "About Us",
+        "Body": "Rabbi Zeev and Esther Kushnirsky moved to Staten Island with the guidance of Rabbi Eli Kogan in December of 2011 to fill a much needed gap. Staten Island has 28,000 Jews and the closest synagogue to the South Beach area is a 2 hours walking. We opened the Jewish Russian Learning Center of South Beach to provide a Jewish community for the Jews in this area.\n\nWe offer a wide range of activities like Shabbos services, Shabbos meals, Adult Education, Sunday School, Holiday services, Tefilin and mezuzah campaign, events, life cycle services (bris, bar/bat mitzvah, funeral, weddings…) .There is something for every age and level of Jewish observance.\n\nThis variety of programs and support for children and adults alike helps each one in their journey that begins with a step by step process to awaken the spark within each one. The path includes emotional, spiritual, educational and practical steps in personal spiritual growth. Through the steps Jewish practices become deeply relevant, meaningful and personal as well as useful and accessible being easily incorporated into daily life.\n\nTo support the personal awakening of the spark, as well as the growth of our community, the center provides an assortment of programs for member involvement.\n\nWe are a branch of JRLC and thanks to the help of Rabbi Eli Kogan we are able to continue building a Russian community in Staten Island.\n\nThis is a project of Chabad of Sheepshead Bay"
       },
       "Price": {
         "Title": "This is Price",
@@ -106144,7 +106092,7 @@ __webpack_require__.r(__webpack_exports__);
       },
       "wiki5": {
         "Title": "Mourner’s kaddish audio",
-        "Aydio1": "Kaddish Yatom Sfaradic",
+        "Aydio1": "Kaddish audio",
         "Aydio2": "Kaddish Yatom Ashkenaz"
       },
       "Footer": "© All rights reserved. Contact us: info@kaddish-prayer.com | Refund policy"
@@ -106281,10 +106229,10 @@ __webpack_require__.r(__webpack_exports__);
     "WikiNav": {
       "Izkor": "Yizkor",
       "Yorzhat": "What is Yahrzeit",
-      "Text": "Kaddish text in Hebrew",
-      "Kadish": "Meaning of Purpose of the Kaddish Prayer",
+      "Text": "Kaddish text",
+      "Kadish": "Meaning of Purpose of the Kaddish",
       "KadishYS": "Kaddish Yatom Sfaradic",
-      "KadishBy": "<b><u>Заказать<br>Кадиш</u></b><i>или напомнить о&nbsp;йорцайт</i>"
+      "KadishBy": "<b><u>Order<br>Kadish</u></b><i>or remind about&nbsp;yorzite</i>"
     }
   },
   "ru": {
@@ -106344,7 +106292,7 @@ __webpack_require__.r(__webpack_exports__);
     "Nav": {
       "Index": "Заказать кадиш",
       "About": "О проекте",
-      "Price": "Стоимость",
+      "Price": "Благотворительный взнос",
       "Wiki": "Энциклопедия"
     },
     "Pages": {
@@ -106382,7 +106330,7 @@ __webpack_require__.r(__webpack_exports__);
         "Aydio1": "Сефардский кадиш ятом",
         "Aydio2": "Ашкеназский кадиш ятом"
       },
-      "Footer": "© Все права защищены. Связатся с нами: "
+      "Footer": "© Все права защищены. Связатся с нами: info@kaddish-prayer.com"
     },
     "Thankyou": {
       "Thankyou": "Спасибо, ваш заказ успешно сохранен.",
@@ -106395,7 +106343,7 @@ __webpack_require__.r(__webpack_exports__);
     "WikiNav": {
       "Izkor": "Изкор",
       "Yorzhat": "Что такое йорцайт",
-      "Text": "Текст молитвы кадиш на иврите",
+      "Text": "Текст молитвы кадиш",
       "Kadish": "Значение и смысл молитвы кадиш",
       "KadishYS": "Кадиш скорбящего аудио",
       "KadishBy": "<b><u>Заказать<br>Кадиш</u></b><i>или напомнить о&nbsp;йорцайт</i>"

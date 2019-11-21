@@ -2,9 +2,9 @@
     return [
         "Izkor" => "Yizkor",
         "Yorzhat" => "What is Yahrzeit",
-        "Text" => "Kaddish text in Hebrew",
-        "Kadish" => "Meaning of Purpose of the Kaddish Prayer",
+        "Text" => "Kaddish text",
+        "Kadish" => "Meaning of Purpose of the Kaddish",
         "KadishYS" => "Kaddish Yatom Sfaradic",
-        "KadishBy" => "<b><u>Заказать<br>Кадиш</u></b><i>или напомнить о&nbsp;йорцайт</i>"
+        "KadishBy" => "<b><u>Order<br>Kadish</u></b><i>or remind about&nbsp;yorzite</i>"
 
     ];
