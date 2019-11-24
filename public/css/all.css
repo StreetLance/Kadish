@@ -77,7 +77,20 @@ header
     /*    height: 1600px;*/
     /*}*/
 }
-
+@media (max-width: 450px) {
+    .navbar:not(.top-nav-collapse) {
+        background-color: #24355C;
+        display: flex;
+        text-align: center;
+    }
+    .orange-text {
+        font-size: 100%;
+        color: #ff9800!important;
+    }
+    /*#intro{*/
+    /*    height: 1600px;*/
+    /*}*/
+}
 .moveInUp-enter-active{
     animation: fadeIn 0.7s ease-in;
 }

@@ -36,7 +36,7 @@ class Kadish extends Model
         'Lang',
         'After_sunset',
         'Order',
-        'Difference_Year'];
+        'Difference_Year','Extras'];
     // protected $hidden = [];
     // protected $dates = [];
 
@@ -68,9 +68,9 @@ class Kadish extends Model
     public function getOrderAttribute($value)
     {
 
-        if ($value == 0){
+        if ($value == 1){
             $values  ='Paid ';
-        }else if ($value == 1){
+        }else if ($value == 0){
             $values  ='Not paid';
         }
 
@@ -99,7 +99,7 @@ class Kadish extends Model
 
         return $data;
     }
-    public function getGDateAttribute($value)
+    public function getGDateAttribute($value )
     {
         $month = [
             1=>"January",
@@ -126,4 +126,90 @@ class Kadish extends Model
     | MUTATORS
     |--------------------------------------------------------------------------
     */
+    public function setOrderAttribute($value)
+    {
+
+        if ($value == 'Paid'){
+            $values  =1;
+        }else if ($value == 'Not paid'){
+            $values  = 0;
+        }
+
+        return $values;
+    }
+
+
+    public function setExtrasAttribute($value)
+    {
+
+        $datam = json_decode($value, true);
+
+    if(!$datam['Month']== '0'){
+    $data=explode('/', $this->attributes['G_Date']);
+    $data[1] = $datam['Month'];
+    $this->attributes['G_Date'] = implode('.',$data);
+}else{
+        $month = [
+            1=>"January",
+            2=>"February",
+            3=>"March",
+            4=>"April",
+            5=>"May",
+            6=>"June",
+            7=>"July",
+            8=>"August",
+            9=>"September",
+            10=>"October",
+            11=>"November",
+            12=>"December",
+        ];
+        $data=explode('/', $this->attributes['G_Date']);
+        $key = array_search($data[1], $month); // $key = 2;
+        $data[1] = $key;
+        $this->attributes['G_Date'] = implode('.',$data);
+    }
+
+        if(!$datam['J_Month']=='0') {
+            $data = explode( '/', $this->attributes[ 'J_Date' ] );
+            $data[ 1 ] = $datam[ 'J_Month' ];
+            $this->attributes[ 'J_Date' ] = implode( '.', $data );
+        }else{
+            $month = [
+                1=>"Tishry",
+                2=>"Heshvan",
+                3=>"Kislev",
+                4=>"Tevet",
+                5=>"Shevat",
+                6=>"Adar",
+                7=>"Adar II",
+                8=>"Nissan",
+                9=>"Iyar",
+                10=>"Sevan",
+                11=>"Tammuz",
+                12=>"Av",
+                13=>"Elul",
+            ];
+
+            $data=explode('/', $this->attributes['J_Date']);
+            $key = array_search($data[1], $month); // $key = 2;
+            $data[1] = $key;
+            $this->attributes['J_Date'] = implode('.',$data);
+        }
+if(!$datam['Month']== '0' &&$datam['J_Month']=='0'){
+    $data=explode('.', $this->attributes['G_Date']);
+    $jd = unixtojd(mktime(0, 0, 0,$data[1], $data[0], $data[2] ));
+
+    $Data_J= cal_from_jd($jd,CAL_JEWISH);
+    $data_J = $Data_J[ 'day' ] . '.' . $Data_J[ 'month' ] . '.' . $Data_J[ 'year' ];
+    $this->attributes['J_Date'] = $data_J;
+}
+        if(!$datam['J_Month']=='0' && $datam['Month']== '0'){
+            $data=explode('.', $this->attributes['J_Date']);
+            $jd = jewishtojd( $data[1], $data[0], $data[2] );
+            $Data_J= cal_from_jd($jd,CAL_GREGORIAN);
+            $data_J = $Data_J[ 'day' ] . '.' . $Data_J[ 'month' ] . '.' . $Data_J[ 'year' ];
+            $this->attributes['G_Date'] = $data_J;
+        }
+
+    }
 }

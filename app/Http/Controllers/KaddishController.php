@@ -90,27 +90,27 @@ class KaddishController extends Controller
         $item['order'] = $request->Order;
         //send email
 
-        Newsletter::subscribe($request->Email);
-      $listId= Newsletter::getMember($request->Email);
-        $mailchimp = new \Mailchimp(config('newsletter.apiKey'));
-        //Create a Campaign $mailchimp->campaigns->create($type, $options, $content)
-        $options=[
-            'list_id' => $listId['list_id'],
-            'subject' => 'Hello',
-            'from_email' => 'abezkrovnyi@mail.ru',
-            'from_name' => 'Scotch Pub',
-            'to_name' => 'Scotch Subscriber'
-
-        ];
-        $content=  [
-            'html' => 'HI',
-            'text' => 'HI',
-        ];
-        $campaign = $mailchimp->campaigns->create('regular', $options ,$content);
-//        dd($campaign);
-
-        //Send campaign
-        $mailchimp->campaigns->send($campaign['id']);
+//        Newsletter::subscribe($request->Email);
+//      $listId= Newsletter::getMember($request->Email);
+//        $mailchimp = new \Mailchimp(config('newsletter.apiKey'));
+//        //Create a Campaign $mailchimp->campaigns->create($type, $options, $content)
+//        $options=[
+//            'list_id' => $listId['list_id'],
+//            'subject' => 'Hello',
+//            'from_email' => 'abezkrovnyi@mail.ru',
+//            'from_name' => 'Scotch Pub',
+//            'to_name' => 'Scotch Subscriber'
+//
+//        ];
+//        $content=  [
+//            'html' => 'HI',
+//            'text' => 'HI',
+//        ];
+//        $campaign = $mailchimp->campaigns->create('regular', $options ,$content);
+////        dd($campaign);
+//
+//        //Send campaign
+//        $mailchimp->campaigns->send($campaign['id']);
 //        Mail::to($request->Email)->send(new KaddishSendMailThank_Reg());
 
         return $item;

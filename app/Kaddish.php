@@ -15,7 +15,7 @@ class Kaddish extends Model
         'Lang',
         'After_sunset',
         'Order',
-        'Difference_Year'];
+        'Difference_Year','Extras'];
     public function client(){
         return $this->belongsTo( 'App\Client' );
     }

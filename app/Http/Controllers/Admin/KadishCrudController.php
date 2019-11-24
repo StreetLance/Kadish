@@ -32,7 +32,11 @@ class KadishCrudController extends CrudController
         $this->crud->setRoute(config('backpack.base.route_prefix') . '/Kadish');
         $this->crud->setEntityNameStrings('kadish', 'kaddishes');
         $this->crud->with('client');
-//        dd($this->columns());
+//        $Data_J1 = cal_from_jd( unixtojd( time() ), CAL_JEWISH );
+//        $Data_J1 = $Data_J1[ 'day' ].'/'.$Data_J1[ 'month' ].'/'.'%';
+//        dd($Data_J1);
+
+
         $this->crud->addFilter([ // add a "simple" filter called Draft
             'type' => 'simple',
             'name' => 'Order',
@@ -63,12 +67,13 @@ class KadishCrudController extends CrudController
         $this->crud->addFilter([
             'type' => 'text',
             'name' => 'J_Date',
-            'label'=> 'J_Date'
+            'label'=> 'J_Date range'
         ],
             false,
             function($value) { // if the filter is active
-                $Data_J1 = cal_from_jd( unixtojd( time() )+$value, CAL_JEWISH );
-                $Data_J1 = $Data_J1[ 'day' ] . '.' . $Data_J1[ 'month' ].'.'.'%';
+
+               @ $Data_J1 = cal_from_jd( unixtojd( time() )+ $value, CAL_JEWISH );
+                $Data_J1 = $Data_J1[ 'day' ].'.'.$Data_J1[ 'month' ].'.'.'%';
                  $this->crud->addClause('where', 'J_Date', 'LIKE', $Data_J1);
             });
         $this->crud->addFilter([
@@ -100,77 +105,109 @@ class KadishCrudController extends CrudController
                 'Order',
             'Difference_Year','Client_id']
         );
-//        $items = $this->crud->getEntries()->toArray();
 
-//        $this->crud->addColumn([
-//            // Select
-//            'name' => 'Order', // the db column for the foreign key
-//            'label' => 'Order',
-//            'type' => 'model_function',
-//            'function_name' => "Order",
-//            'function_parameters' => [$items],
-//        ]);
 
         $this->crud->setColumnDetails('Difference_Year', ['label' => " First year"]); // adjusts the properties of the passed in column (by name)
-        $this->crud->orderBy('J_Date','asc');
+//        $this->crud->orderBy('J_Date','asc');
 
     }
 
-    protected function setupCreateOperation()
-    {
-        $this->crud->setValidation(KadishRequest::class);
-
-        $this->crud->with('client');
-        // TODO: remove setFromDb() and manually define Fields
-        $this->crud->setFromDb();
-//        $this->crud->addField([
-//            'tab' => 'Client',
-//            'label' => "Email",
-//            'type' => 'text',
-//            // имя отношения в модели
-//            'name' => 'client_id',
-//            // имя отношения в модели
-//            'entity' => 'client',
-//            // атрибут Article, который будет показан пользователю
-//            'attribute' => 'Email',
-//            // при создании и обновлении вам нужно добавлять/удалять записи сводной таблицы?
-////            'pivot' => true,
-//            'model' => "App\Client", // foreign key model
-//        ]);
-//        $this->crud->addField([
+//    protected function setupCreateOperation()
+//    {
+//        $this->crud->setValidation(KadishRequest::class);
 //
-//                'tab' => 'Client',
-//                'label' => "Phone_number",
-//                'type' => 'text',
-//                // имя отношения в модели
-//                'name' => 'client_id',
-//                // имя отношения в модели
-//                'entity' => 'client',
-//                // атрибут Article, который будет показан пользователю
-//                'attribute' => 'Phone_number',
-//                // при создании и обновлении вам нужно добавлять/удалять записи сводной таблицы?
-////                'pivot' => true,
-//                'model' => "App\Client", // foreign key model
-//        ]
-//            );
-    }
+//        $this->crud->with('client');
+//        // TODO: remove setFromDb() and manually define Fields
+//        $this->crud->setFromDb();
+////        $this->crud->addField([
+////            'tab' => 'Client',
+////            'label' => "Email",
+////            'type' => 'text',
+////            // имя отношения в модели
+////            'name' => 'client_id',
+////            // имя отношения в модели
+////            'entity' => 'client',
+////            // атрибут Article, который будет показан пользователю
+////            'attribute' => 'Email',
+////            // при создании и обновлении вам нужно добавлять/удалять записи сводной таблицы?
+//////            'pivot' => true,
+////            'model' => "App\Client", // foreign key model
+////        ]);
+////        $this->crud->addField([
+////
+////                'tab' => 'Client',
+////                'label' => "Phone_number",
+////                'type' => 'text',
+////                // имя отношения в модели
+////                'name' => 'client_id',
+////                // имя отношения в модели
+////                'entity' => 'client',
+////                // атрибут Article, который будет показан пользователю
+////                'attribute' => 'Phone_number',
+////                // при создании и обновлении вам нужно добавлять/удалять записи сводной таблицы?
+//////                'pivot' => true,
+////                'model' => "App\Client", // foreign key model
+////        ]
+////            );
+//    }
 
     protected function setupUpdateOperation()
     {
-        $this->setupCreateOperation();
-        $this->crud->addField([
-            'tab' => 'Client',
-            'label' => "J_Date",
-            'type' => 'text',
-            // имя отношения в модели
-            'name' => 'client_id',
-            // имя отношения в модели
-            'entity' => 'client',
-            // атрибут Article, который будет показан пользователю
-            'attribute' => 'Email',
-            // при создании и обновлении вам нужно добавлять/удалять записи сводной таблицы?
-//            'pivot' => true,
-            'model' => "App\Client", // foreign key model
-        ]);
+//        $this->setupCreateOperation();
+        $this->crud->setFromDb();
+        $this->crud->removeField('Extras');
+
+
+        $this->crud->addField([   // select_from_array
+            'name' => 'Month',
+            'label' => "G_Month",
+            'type' => 'select_from_array',
+            'fake' => true,
+            'options' => [
+                '0'=>"-",
+                '1'=>"January",
+                '2'=>"February",
+                '3'=>"March",
+                '4'=>"April",
+                '5'=>"May",
+                '6'=>"June",
+                '7'=>"July",
+                '8'=>"August",
+                '9'=>"September",
+                '10'=>"October",
+                '11'=>"November",
+                '12'=>"December",
+            ],
+            'allows_null' => false,
+            'default' => '0',
+            'store_in' => 'Extras' // [optional]
+            // 'allows_multiple' => true, // OPTIONAL; needs you to cast this to array in your model;
+        ])->afterField('G_Date');
+        $this->crud->addField([   // select_from_array
+            'name' => 'J_Month',
+            'label' => "J_Month",
+            'type' => 'select_from_array',
+            'fake' => true,
+            'options' => [
+                '0'=>"-",
+                '1'=>"Tishry",
+                '2'=>"Heshvan",
+                '3'=>"Kislev",
+                '4'=>"Tevet",
+                '5'=>"Shevat",
+                '6'=>"Adar",
+                '7'=>"Adar II",
+                '8'=>"Nissan",
+                '9'=>"Iyar",
+                '10'=>"Sevan",
+                '11'=>"Tammuz",
+                '12'=>"Av",
+                '13'=>"Elul",
+            ],
+            'allows_null' => false,
+            'default' => '0',
+            'store_in' => 'Extras' // [optional]
+            // 'allows_multiple' => true, // OPTIONAL; needs you to cast this to array in your model;
+        ])->afterField('J_Date');
     }
 }
