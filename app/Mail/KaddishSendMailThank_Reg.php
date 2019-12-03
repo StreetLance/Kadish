@@ -28,6 +28,8 @@ class KaddishSendMailThank_Reg extends Mailable
      */
     public function build()
     {
-        return $this->view('mail.Thank_Reg');
+        return $this
+            ->view('mail.Thank_Reg');
+
     }
 }

@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\RemindKaddish;
 use App\Kaddish as Kaddish;
 use App\Client as Clients;
-use Illuminate\Support\Facades\Mail;
+//use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
-use App\Mail\KaddishSendMailThank_Reg;
 use Illuminate\Support\Facades\DB;
-use Newsletter;
+//use Newsletter;
 
 class KaddishController extends Controller
 {
@@ -89,7 +89,7 @@ class KaddishController extends Controller
         $item['id'] = $kadish->id;
         $item['order'] = $request->Order;
         //send email
-
+            event(new RemindKaddish($request->Email));
 //        Newsletter::subscribe($request->Email);
 //      $listId= Newsletter::getMember($request->Email);
 //        $mailchimp = new \Mailchimp(config('newsletter.apiKey'));
@@ -111,7 +111,7 @@ class KaddishController extends Controller
 //
 //        //Send campaign
 //        $mailchimp->campaigns->send($campaign['id']);
-//        Mail::to($request->Email)->send(new KaddishSendMailThank_Reg());
+
 
         return $item;
     }
