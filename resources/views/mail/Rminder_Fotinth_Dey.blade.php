@@ -28,11 +28,11 @@
                     </td>
                     <table border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100%;"><tbody>
                         <tr><td style="padding:20px;font-size:14px;color:#000;text-align:center;">
-	<span style="font-size:18px;color:#000;">
-		Здравствуйте, Алексей!<br /><br />
-		Через 14 дней состоится йорцайт<br />
-		вашего дедушки Авраам бен Борух<br /><br />
-	</span>
+{{--	<span style="font-size:18px;color:#000;">--}}
+{{--		Здравствуйте, Алексей!<br /><br />--}}
+{{--		Через 14 дней состоится йорцайт<br />--}}
+{{--		вашего дедушки Авраам бен Борух<br /><br />--}}
+{{--	</span>--}}
                             </td></tr>
                         </tbody></table>
                     <table border="0" cellpadding="0" cellspacing="0" width="" style="background-color:#ffcc66" bgcolor="#ffcc66"><tbody>
@@ -42,27 +42,13 @@
                     <br /><br />
                     <table border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100%;background-color:#f3f2ef" bgcolor="#f3f2ef"><tbody>
                         <tr><td style="padding:16px;font-size:14px;color:#000;">
-                                Хотелось бы напомнить про важность отмечания Йорцайт по еврейскому календарю и немного рассказать про обычаи связанные с этим днем.
-                                <br /><br />
-                                <b>Алия (Выход к Торе)</b><br />
-                                В субботу, предшествующую Йорцайт, принято получить Алию (Выход к Торе). И если Йорцайт выпадает на один из дней когда читают Тору то также получают Алию и в этот день.
-                                <br /><br />
-                                <b>Суточная свеча</b><br />
-                                Вечером перед наступлением Йорцайт зажигают суточную свечу. Лучше всего подходит восковая свеча, но если ее нет, то можно воспользоваться любой другой.
-                                <br /><br />
-                                <b>Кадиш</b><br />
-                                Самая главная молитва в йорцайт — Кадиш. Она читается в конце в конце молитв Маарив, Шахарит и Минха. Очень важно чтоб ее читал сын. Если у Вас нет такой возможности, Вы можете заказть чтение молитвы Кадиш на нашем сайте. Для этого перейдите по ссылке http://kaddish-prayer.com/.
-                                <br /><br />
-                                <b>Цдока (благотворительность)</b><br />
-                                В Йорцайт дают больше денег на цдаку, чем в другие дни, так как это приносит огромную пользу душе покойного. Если день Йорцайт суббота, деньги на цдаку дают в пятницу. Дать цдоку Вы можете по этой ссылке
-                                <br /><br />
-                                <b>Кашерная трапеза</b><br />
-                                Накрыть кошерный стол для родственников и друзей за поднятие души покойного. Также можно накрыть стол для прихожан общины
-                                <br /><br />
-                                Чтоб не забыть про этот важный день Вам придет напоминание за неделю и на кануне йорцайт.
-                                Если у вас возникнут вопросы, напишите в ответе на это письмо или на email globalkaddish@gmail.com
-                                <br /><br />
-                                С уважением и наилучшими пожеланиями,
+                                The yorzait of your dear ones will be happening on oct 20th night, it is a special time for the soul of your beloved. The Shabbos prior the elevation of the soul begins .</br>
+                                The customs observed</br>
+                                *The Shabos prior to Yorzait go to your local synagogue to say kadish(there are 3 prayers trough Shabbos : evening ,morning  & afternoon).</br>
+                                *Sponsor a kidush (Dinner ,lunch or a sprits bottle)in honor of the elevation of the soul.</br>
+                                *the actual date of Yorzait gather a minyan(quorum of 10 Jewish men) at the cemetery or synagogue (Kadish should be said in all 3 prayers)</br>
+                                *light a 24/hr candle at the grave or home (home in the evening when Yorzait starts).</br>
+                                * add in charity and Mitzvos/good deeds on the actual date.</br>
                                 <table border="0" cellpadding="0" cellspacing="0" width=""><tbody>
                                     <tr><td width="40px" style="width:40px;">
                                             <img src="http://kaddish-prayer.com/kpw/img/kaddish-prayer_bl.gif" width="40" height="40" border="0" style="display:block" />
