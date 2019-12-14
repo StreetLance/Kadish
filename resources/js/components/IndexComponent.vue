@@ -234,8 +234,8 @@
                             <ul class="plaques" id="plaques-placeholder col-md-12">
                                 <li class="plaque " v-for="(plaques, index) in plaques">
                                     <div class="plaque-content" >
-                                        <h2>{{plaques.Name_of_Deceased}}</br> ben(bat)</br> {{plaques.Fathers_Name}}</br></h2>
-                                        <p>{{plaques.J_Date.day}} {{plaques.J_Date.monthname}}  {{plaques.J_Date.year}} </br>{{plaques.G_Date.day}} {{plaques.G_Date.monthname}}  {{plaques.G_Date.year}}</p>
+                                        <h2>{{plaques.Name_of_Deceased}}<br> ben(bat)<br> {{plaques.Fathers_Name}}<br></h2>
+                                        <p>{{plaques.J_Date.day}} {{plaques.J_Date.monthname}}  {{plaques.J_Date.year}} <br>{{plaques.G_Date.day}} {{plaques.G_Date.monthname}}  {{plaques.G_Date.year}}</p>
                                     </div>
                                 </li>
                             </ul>
@@ -393,7 +393,6 @@
                     if ($date === "J") { this.showJ = !this.showJ; this.show = !this.show; this.Param.DataSet = "J";}
 
                     else if ($date === "G") {this.showJ = true;this.show = true;this.Param.DataSet = "G";}
-
                     axios.get('http://149.28.51.36/api/' + $date + '/' + this.Param.Day + '/' + month + '/' + this.Param.Year).then((response) => {
                         this.Param.Month="";
                         this.Param.Day = response.data.day; this.Param.Month = response.data.month; this.Param.Year = response.data.year; this.spiner = false;
