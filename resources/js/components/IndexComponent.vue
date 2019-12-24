@@ -234,7 +234,7 @@
                             <ul class="plaques" id="plaques-placeholder col-md-12">
                                 <li class="plaque " v-for="(plaques, index) in plaques">
                                     <div class="plaque-content" >
-                                        <h2>{{plaques.Name_of_Deceased}}<br> ben(bat)<br> {{plaques.Fathers_Name}}<br></h2>
+                                        <h2 class="text-white">{{plaques.Name_of_Deceased}}<br> ben(bat)<br> {{plaques.Fathers_Name}}<br></h2>
                                         <p>{{plaques.J_Date.day}} {{plaques.J_Date.monthname}}  {{plaques.J_Date.year}} <br>{{plaques.G_Date.day}} {{plaques.G_Date.monthname}}  {{plaques.G_Date.year}}</p>
                                     </div>
                                 </li>
