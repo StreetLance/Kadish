@@ -62,6 +62,19 @@ When reading Yizkor for more than one person, repeat all the prayer for every pe
 <br>
 עוֹשֶׂה שָׁלוֹם בִּמְרוֹמָיו הוּא יַעֲשֶׂה שָׁלוֹם עָלֵינוּ וְעַל כָּל יִשְׂרָאֵל, וְאִמְרוּ אָמֵן'
         ],
+        'wiki32' => [
+            'Title' => 'Текст молитвы кадиш на иврите',
+            'Body' => 'ЙИСГАДАЛ ВЭЙИСКАДАШ ШМЭЙ РАБО: БЭОЛМО ДИ ВРО ХИРУСЭЙ ВЭЯМЛЙХ МАЛХУСЭЙ ВЭЯЦМАХ ПУРКОНЭЙ ВИКОРЭВ МЭШИХЭЙ.
+<br>
+БЭХАЙЕЙХЭЙН УВЭЙЕЙМЭЙХЭЙН УВЭХАЙЕЙ ДЭХОЛ БЭЙС ЙИСРОЭЙЛ БААГОЛО УВИЗМАН КОРИВ ВЭИМРУ ОМЭЙН. 
+<br>
+ЙЕГЭЙ ШМЭЙ РАБО МЭВОРАХ ЛЭОЛАМ УЛЭОЛМЭЙ ОЛМАЙО: ЙИСБОРЭЙХ ВЭЙИШТАБАХ ВЭЙИСПОЭЙР ВЭЙИСРЭЙМОМ ВЭЙИСНАСЭЙ ВЭЙИСГАДОР ВЭЙИСАЛЭ ВЭЙИСГАЛOЛ ШМЭЙ ДЭКУДШО БРИХ ГУ: 
+<br>
+ЛЭЭЙЛО МИН КОЛ БИРХОСО ВЭШИРОСО ТУШБЭХОСО ВЭНЭХЭМОСО ДААМИРОН БЭОЛМО ВЭИМРУ ОМЭЙН:
+<br>
+ЙЕГЭЙ ШЛОМО РАБО МИН ШМАЙО ВЭХАЙЙМ ТЭЙВЙМ ОЛЭЙНУ ВЭАЛ КОЛ ЙИСРОЭЙЛ ВЭИМРУ ОМЭЙН:
+<br>
+ЭЙСЭ ШОЛЭЙМ БИМРЭЙМОВ ГУ ЯАСЭ ШОЛЭЙМ ОЛЭЙНУ ВЭАЛ КОЛ ЙИСРОЭЙЛ ВЭИМРУ ОМЭЙН:' ],
         'wiki4' => [
             'Title' => 'Meaning of Purpose of the Kaddish Prayer',
             'Body' => 'Kaddish Yatom is a prayer that is read for a diseased person. It means "sanctification" in Aramaic. The primary meaning of this prayer is that a person recognizes, celebrates and blesses the just power of the Almighty, and praise all acts of the Creator despite his (or her) loss of a loved one.</br>

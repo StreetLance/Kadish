@@ -34,7 +34,11 @@
                                         <div class="cont">
                                             <hr class="hr-light">
                                             <p class="text-right ml-5 mr-5 mb-5 mt-5"><span
-                                                v-html="$t('Pages.wiki3.Body')" ></span></p>
+                                                v-html="$t('Pages.wiki3.Body')"></span>
+                                            </p>
+                                            <p class="text-right ml-5 mr-5 mb-5 mt-5"><span
+                                                v-html="$t('Pages.wiki32.Body')"></span>
+                                            </p>
                                             <hr class="hr-light">
                                         </div>
                                     </div>
@@ -356,35 +360,35 @@
         }
     }
 
-    @media   (max-width: 850px) {  #intro3 {height: 101%;}
+    @media   (max-width: 850px) {  #intro3 {height: 113%;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
             width: 480px;
         }
     }
-    @media (max-width: 770px) {  #intro3 {height: 101%px;}
+    @media (max-width: 770px) {  #intro3 {height: 139%;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
             width: 100%;
         }
     }
-    @media (max-width: 660px) {  #intro3 {height: 1252px;}
+    @media (max-width: 660px) {  #intro3 {height: 1352px;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
             width: 100%;
         }
     }
-    @media (max-width: 530px) {  #intro3 {height: 1352px;}
+    @media (max-width: 530px) {  #intro3 {height: 1585px;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
             width: 100%;
         }
     }
-    @media (max-width: 470px) {  #intro3 {height: 1788px;}
+    @media (max-width: 470px) {  #intro3 {height: 2590px;}
         .cont {
             background-color: #1d2124;
             opacity: 0.8;
