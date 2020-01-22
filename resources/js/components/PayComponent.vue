@@ -10,12 +10,12 @@
                             <hr class="hr-light">
 <!--                            <div id="paypal-button-container"></div>-->
                             <paypal-checkout
-                                amount="10.00"
+                                amount="1.00"
                                 currency="USD"
                                 :client="credentials"
                                 :braintree="braintreeSdk"
                                 :button-style="myStyle"
-                                env="sandbox"
+                                env="production"
                                 @payment-completed="payment_completed_cb"
                             ></paypal-checkout>
                             <hr class="hr-light">
@@ -52,7 +52,8 @@
             return {
                 credentials: {
                     sandbox: 'AamvJHqtBfrIM4oNPDknTMJmyC5kN-btQRU5baqABM-YEFktx28e_DDpB4nmXQeHUBJnJufE4hYjVxnB',
-                    production: 'AUeEKuSGuBKf1ZVVaSLdXObkXK3-5U-DiXABpfnqXj26am4KABZqO_oSUg_liTQ1iQwDcMqN0R1ZzxpC'
+                    // production: 'AUeEKuSGuBKf1ZVVaSLdXObkXK3-5U-DiXABpfnqXj26am4KABZqO_oSUg_liTQ1iQwDcMqN0R1ZzxpC'
+                    production: 'Adwxz1ebdstxTBHR5fkZdlQDiq4DuG84fkqg1iov0Dne6nTzxo2uazlOBkqCYIrbXD1YJ7Xq8p2Qz4g9'
                 },
                 braintreeSdk: window.braintree,
                 myStyle: {

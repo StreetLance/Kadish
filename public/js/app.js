@@ -2562,7 +2562,8 @@ __webpack_require__.r(__webpack_exports__);
     return {
       credentials: {
         sandbox: 'AamvJHqtBfrIM4oNPDknTMJmyC5kN-btQRU5baqABM-YEFktx28e_DDpB4nmXQeHUBJnJufE4hYjVxnB',
-        production: 'AUeEKuSGuBKf1ZVVaSLdXObkXK3-5U-DiXABpfnqXj26am4KABZqO_oSUg_liTQ1iQwDcMqN0R1ZzxpC'
+        // production: 'AUeEKuSGuBKf1ZVVaSLdXObkXK3-5U-DiXABpfnqXj26am4KABZqO_oSUg_liTQ1iQwDcMqN0R1ZzxpC'
+        production: 'Adwxz1ebdstxTBHR5fkZdlQDiq4DuG84fkqg1iov0Dne6nTzxo2uazlOBkqCYIrbXD1YJ7Xq8p2Qz4g9'
       },
       braintreeSdk: window.braintree,
       myStyle: {
@@ -2805,6 +2806,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
 //
 //
 //
@@ -7762,7 +7767,7 @@ function fromByteArray (uint8) {
 /* WEBPACK VAR INJECTION */(function(global) {/*!
  * The buffer module from node.js, for the browser.
  *
- * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
+ * @author   Feross Aboukhadijeh <http://feross.org>
  * @license  MIT
  */
 /* eslint-disable no-proto */
@@ -11040,7 +11045,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.cont[data-v-87121f5c] {\n    background-color: #1d2124;\n    opacity: 0.8;\n    width: 860px;\n}\n#intro[data-v-87121f5c] {height: 100%;}\n#intro1[data-v-87121f5c] {height: 100%;}\n#intro2[data-v-87121f5c] {height: 100%;}\n#intro3[data-v-87121f5c] {height: 100%;}\n@media (max-width: 1380px) {\n#intro[data-v-87121f5c] {height: 1065px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 758px;\n}\n}\n@media (max-width: 1200px) {\n#intro[data-v-87121f5c] {height: 1110px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 698px;\n}\n}\n@media (max-width: 1000px) {\n#intro[data-v-87121f5c] {height: 1410px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 560px;\n}\n}\n@media   (max-width: 850px) {\n#intro[data-v-87121f5c] {height: 1630px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 480px;\n}\n}\n@media (max-width: 770px) {\n#intro[data-v-87121f5c] {height: 1618px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 660px) {\n#intro[data-v-87121f5c] {height: 1921px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 530px) {\n#intro[data-v-87121f5c] {height: 2125px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 470px) {\n#intro[data-v-87121f5c] {height: 2652px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 390px) {\n#intro[data-v-87121f5c] {height: 3075px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 3000px;\n}\n}\n@media (max-width: 1380px) {\n#intro1[data-v-87121f5c] {height: 1065px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 758px;\n}\n}\n@media (max-width: 1200px) {\n#intro1[data-v-87121f5c] {height: 1110px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 698px;\n}\n}\n@media (max-width: 1000px) {\n#intro1[data-v-87121f5c] {height: 1410px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 560px;\n}\n}\n@media   (max-width: 850px) {\n#intro1[data-v-87121f5c] {height: 1630px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 480px;\n}\n}\n@media (max-width: 770px) {\n#intro1[data-v-87121f5c] {height: 1618px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 660px) {\n#intro1[data-v-87121f5c] {height: 1715px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 530px) {\n#intro1[data-v-87121f5c] {height: 1815px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 470px) {\n#intro1[data-v-87121f5c] {height: 2252px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 390px) {\n#intro1[data-v-87121f5c] {height: 2500px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 3000px;\n}\n}\n@media (max-width: 1380px) {\n#intro2[data-v-87121f5c] {height: 1000px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 758px;\n}\n}\n@media (max-width: 1200px) {\n#intro2[data-v-87121f5c] {height: 1000px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 698px;\n}\n}\n@media (max-width: 1000px) {\n#intro2[data-v-87121f5c] {height: 1000px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 560px;\n}\n}\n@media   (max-width: 850px) {\n#intro2[data-v-87121f5c] {height:1000px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 480px;\n}\n}\n@media (max-width: 770px) {\n#intro2[data-v-87121f5c] {height: 1000px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 660px) {\n#intro2[data-v-87121f5c] {height: 1000px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 530px) {\n#intro2[data-v-87121f5c] {height: 1000px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 470px) {\n#intro2[data-v-87121f5c] {height:  1300px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 1380px) {\n#intro3[data-v-87121f5c] {height: 101%;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 758px;\n}\n}\n@media (max-width: 1200px) {\n#intro3[data-v-87121f5c] {height: 101%;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 698px;\n}\n}\n@media (max-width: 1000px) {\n#intro3[data-v-87121f5c] {height: 101%;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 560px;\n}\n}\n@media   (max-width: 850px) {\n#intro3[data-v-87121f5c] {height: 101%;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 480px;\n}\n}\n@media (max-width: 770px) {\n#intro3[data-v-87121f5c] {height: 101%px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 660px) {\n#intro3[data-v-87121f5c] {height: 1252px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 530px) {\n#intro3[data-v-87121f5c] {height: 1352px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 470px) {\n#intro3[data-v-87121f5c] {height: 1788px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n", ""]);
+exports.push([module.i, "\n.cont[data-v-87121f5c] {\n    background-color: #1d2124;\n    opacity: 0.8;\n    width: 860px;\n}\n#intro[data-v-87121f5c] {height: 100%;}\n#intro1[data-v-87121f5c] {height: 100%;}\n#intro2[data-v-87121f5c] {height: 100%;}\n#intro3[data-v-87121f5c] {height: 100%;}\n@media (max-width: 1380px) {\n#intro[data-v-87121f5c] {height: 1065px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 758px;\n}\n}\n@media (max-width: 1200px) {\n#intro[data-v-87121f5c] {height: 1110px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 698px;\n}\n}\n@media (max-width: 1000px) {\n#intro[data-v-87121f5c] {height: 1410px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 560px;\n}\n}\n@media   (max-width: 850px) {\n#intro[data-v-87121f5c] {height: 1630px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 480px;\n}\n}\n@media (max-width: 770px) {\n#intro[data-v-87121f5c] {height: 1618px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 660px) {\n#intro[data-v-87121f5c] {height: 1921px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 530px) {\n#intro[data-v-87121f5c] {height: 2125px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 470px) {\n#intro[data-v-87121f5c] {height: 2652px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 390px) {\n#intro[data-v-87121f5c] {height: 3075px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 3000px;\n}\n}\n@media (max-width: 1380px) {\n#intro1[data-v-87121f5c] {height: 1065px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 758px;\n}\n}\n@media (max-width: 1200px) {\n#intro1[data-v-87121f5c] {height: 1110px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 698px;\n}\n}\n@media (max-width: 1000px) {\n#intro1[data-v-87121f5c] {height: 1410px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 560px;\n}\n}\n@media   (max-width: 850px) {\n#intro1[data-v-87121f5c] {height: 1630px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 480px;\n}\n}\n@media (max-width: 770px) {\n#intro1[data-v-87121f5c] {height: 1618px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 660px) {\n#intro1[data-v-87121f5c] {height: 1715px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 530px) {\n#intro1[data-v-87121f5c] {height: 1815px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 470px) {\n#intro1[data-v-87121f5c] {height: 2252px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 390px) {\n#intro1[data-v-87121f5c] {height: 2500px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 3000px;\n}\n}\n@media (max-width: 1380px) {\n#intro2[data-v-87121f5c] {height: 1000px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 758px;\n}\n}\n@media (max-width: 1200px) {\n#intro2[data-v-87121f5c] {height: 1000px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 698px;\n}\n}\n@media (max-width: 1000px) {\n#intro2[data-v-87121f5c] {height: 1000px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 560px;\n}\n}\n@media   (max-width: 850px) {\n#intro2[data-v-87121f5c] {height:1000px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 480px;\n}\n}\n@media (max-width: 770px) {\n#intro2[data-v-87121f5c] {height: 1000px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 660px) {\n#intro2[data-v-87121f5c] {height: 1000px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 530px) {\n#intro2[data-v-87121f5c] {height: 1000px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 470px) {\n#intro2[data-v-87121f5c] {height:  1300px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 1380px) {\n#intro3[data-v-87121f5c] {height: 101%;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 758px;\n}\n}\n@media (max-width: 1200px) {\n#intro3[data-v-87121f5c] {height: 101%;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 698px;\n}\n}\n@media (max-width: 1000px) {\n#intro3[data-v-87121f5c] {height: 101%;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 560px;\n}\n}\n@media   (max-width: 850px) {\n#intro3[data-v-87121f5c] {height: 113%;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 480px;\n}\n}\n@media (max-width: 770px) {\n#intro3[data-v-87121f5c] {height: 139%;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 660px) {\n#intro3[data-v-87121f5c] {height: 1352px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 530px) {\n#intro3[data-v-87121f5c] {height: 1585px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n@media (max-width: 470px) {\n#intro3[data-v-87121f5c] {height: 2590px;}\n.cont[data-v-87121f5c] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 100%;\n}\n}\n", ""]);
 
 // exports
 
@@ -85423,7 +85428,7 @@ var render = function() {
                     _vm._l(_vm.plaques, function(plaques, index) {
                       return _c("li", { staticClass: "plaque " }, [
                         _c("div", { staticClass: "plaque-content" }, [
-                          _c("h2", [
+                          _c("h2", { staticClass: "text-white" }, [
                             _vm._v(_vm._s(plaques.Name_of_Deceased)),
                             _c("br"),
                             _vm._v(" ben(bat)"),
@@ -85664,12 +85669,12 @@ var render = function() {
                     _vm._v(" "),
                     _c("paypal-checkout", {
                       attrs: {
-                        amount: "10.00",
+                        amount: "1.00",
                         currency: "USD",
                         client: _vm.credentials,
                         braintree: _vm.braintreeSdk,
                         "button-style": _vm.myStyle,
-                        env: "sandbox"
+                        env: "production"
                       },
                       on: { "payment-completed": _vm.payment_completed_cb }
                     }),
@@ -85997,7 +86002,7 @@ var render = function() {
               "aria-controls": "v2",
               "aria-selected": "false"
             },
-            on: { click: _vm.change }
+            on: { click: _vm.change3 }
           },
           [_vm._v(" " + _vm._s(_vm.$t("WikiNav.Text")))]
         ),
@@ -86217,6 +86222,23 @@ var render = function() {
                                         domProps: {
                                           innerHTML: _vm._s(
                                             _vm.$t("Pages.wiki3.Body")
+                                          )
+                                        }
+                                      })
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "p",
+                                    {
+                                      staticClass:
+                                        "text-right ml-5 mr-5 mb-5 mt-5"
+                                    },
+                                    [
+                                      _c("span", {
+                                        domProps: {
+                                          innerHTML: _vm._s(
+                                            _vm.$t("Pages.wiki32.Body")
                                           )
                                         }
                                       })
@@ -106082,6 +106104,10 @@ __webpack_require__.r(__webpack_exports__);
         "Title": "Kaddish text in Hebrew",
         "Body": "יִתְגַּדַּל וְיִתְקַדַּשׁ שְׁמֵהּ רַבָּא. אמן\n<br>\nבְּעָלְמָא דִי בְרָא כִרְעוּתֵהּ וְיַמְלִיךְ מַלְכוּתֵהּ וְיַצְמַח פּוּרְקָנֵהּ וִיקָרֵב מְשִׁיחֵהּ. אמן\n<br>\nבְּחַיֵיכוֹן וּבְיוֹמֵיכוֹן וּבְחַיֵי דְּכָל בֵּית יִשְׂרָאֵל, בַּעֲגַלָא וּבִזְמַן קָרִיב וְאִמְרוּ אָמֵן\n<br>\nיְהֵא שְׁמֵהּ רַבָּא מְבָרַךְ לְעָלַם וּלְעָלְמֵי עָלְמַיָא יִתְבָּרַךְ וְיִשְׁתַּבַּח וְיִתְפָּאַר וְיִתְרוֹמַם וְיִתְנַשֵּׂא וְיִתְהַדָּר וְיִתְעַלֶּה וְיִתְהַלָּל , שְׁמֵהּ דְּקוּדְשָׁא בְּרִיךְ הוּא. אמן\n<br>\nלְעֵלָא מִן כָּל בִּרְכָתָא וְשִׁירָתָא, תֻּשְׁבְּחָתָא וְנֶחָמָתָא, דַאֲמִירָן בְּעָלְמָא, וְאִמְרוּ אָמֵן\n<br>\nיְהֵא שְׁלָמָא רַבָּא מִן שְׁמַיָּא וְחַיִּים עָלֵינוּ וְעַל כָּל יִשְׂרָאֵל, וְאִמְרוּ אָמֵן\n<br>\nעוֹשֶׂה שָׁלוֹם בִּמְרוֹמָיו הוּא יַעֲשֶׂה שָׁלוֹם עָלֵינוּ וְעַל כָּל יִשְׂרָאֵל, וְאִמְרוּ אָמֵן"
       },
+      "wiki32": {
+        "Title": "Текст молитвы кадиш на иврите",
+        "Body": "ЙИСГАДАЛ ВЭЙИСКАДАШ ШМЭЙ РАБО: БЭОЛМО ДИ ВРО ХИРУСЭЙ ВЭЯМЛЙХ МАЛХУСЭЙ ВЭЯЦМАХ ПУРКОНЭЙ ВИКОРЭВ МЭШИХЭЙ.\n<br>\nБЭХАЙЕЙХЭЙН УВЭЙЕЙМЭЙХЭЙН УВЭХАЙЕЙ ДЭХОЛ БЭЙС ЙИСРОЭЙЛ БААГОЛО УВИЗМАН КОРИВ ВЭИМРУ ОМЭЙН. \n<br>\nЙЕГЭЙ ШМЭЙ РАБО МЭВОРАХ ЛЭОЛАМ УЛЭОЛМЭЙ ОЛМАЙО: ЙИСБОРЭЙХ ВЭЙИШТАБАХ ВЭЙИСПОЭЙР ВЭЙИСРЭЙМОМ ВЭЙИСНАСЭЙ ВЭЙИСГАДОР ВЭЙИСАЛЭ ВЭЙИСГАЛOЛ ШМЭЙ ДЭКУДШО БРИХ ГУ: \n<br>\nЛЭЭЙЛО МИН КОЛ БИРХОСО ВЭШИРОСО ТУШБЭХОСО ВЭНЭХЭМОСО ДААМИРОН БЭОЛМО ВЭИМРУ ОМЭЙН:\n<br>\nЙЕГЭЙ ШЛОМО РАБО МИН ШМАЙО ВЭХАЙЙМ ТЭЙВЙМ ОЛЭЙНУ ВЭАЛ КОЛ ЙИСРОЭЙЛ ВЭИМРУ ОМЭЙН:\n<br>\nЭЙСЭ ШОЛЭЙМ БИМРЭЙМОВ ГУ ЯАСЭ ШОЛЭЙМ ОЛЭЙНУ ВЭАЛ КОЛ ЙИСРОЭЙЛ ВЭИМРУ ОМЭЙН:"
+      },
       "wiki4": {
         "Title": "Meaning of Purpose of the Kaddish Prayer",
         "Body": "Kaddish Yatom is a prayer that is read for a diseased person. It means \"sanctification\" in Aramaic. The primary meaning of this prayer is that a person recognizes, celebrates and blesses the just power of the Almighty, and praise all acts of the Creator despite his (or her) loss of a loved one.</br>\n</br>\n<h6>Mystical significance of a Kaddish Prayer.</h6></br>\n</br>\nAccording to the Jewish tradition, a soul is being cleansed after death of its body. A soul is lowered into gehinnom to be cleansed off the sins stuck to it throughout the material life. As it is written in our holy books, the maximum period that a soul stays there is 11 months. This is just the very time when we read the Kaddish Prayer for the soul.</br>\nIt is written in the Talmud Shabbat, page 119b that a mystical power of the Kadish Prayer may change the sentence of the heavenly court.</br>\n</br>\nA duty of Kadish prayer reading falls on a son (or a spouse). And according to our traditions it is extremely important for the son to read the Kaddish prayer. But if he can not read the Kaddish during 3 daily prayers, he has to read whenever he can. And in addition, he should order Kadish prayer.</br>\n</br>\nIf no one can read Kaddish Prayer, you can order reading of the Kaddish online.</br>"
@@ -106317,6 +106343,10 @@ __webpack_require__.r(__webpack_exports__);
         "Title": "Текст молитвы кадиш на иврите",
         "Body": "יִתְגַּדַּל וְיִתְקַדַּשׁ שְׁמֵהּ רַבָּא. אמן\n<br>\nבְּעָלְמָא דִי בְרָא כִרְעוּתֵהּ וְיַמְלִיךְ מַלְכוּתֵהּ וְיַצְמַח פּוּרְקָנֵהּ וִיקָרֵב מְשִׁיחֵהּ. אמן\n<br>\nבְּחַיֵיכוֹן וּבְיוֹמֵיכוֹן וּבְחַיֵי דְּכָל בֵּית יִשְׂרָאֵל, בַּעֲגַלָא וּבִזְמַן קָרִיב וְאִמְרוּ אָמֵן\n<br>\nיְהֵא שְׁמֵהּ רַבָּא מְבָרַךְ לְעָלַם וּלְעָלְמֵי עָלְמַיָא יִתְבָּרַךְ וְיִשְׁתַּבַּח וְיִתְפָּאַר וְיִתְרוֹמַם וְיִתְנַשֵּׂא וְיִתְהַדָּר וְיִתְעַלֶּה וְיִתְהַלָּל , שְׁמֵהּ דְּקוּדְשָׁא בְּרִיךְ הוּא. אמן\n<br>\nלְעֵלָא מִן כָּל בִּרְכָתָא וְשִׁירָתָא, תֻּשְׁבְּחָתָא וְנֶחָמָתָא, דַאֲמִירָן בְּעָלְמָא, וְאִמְרוּ אָמֵן\n<br>\nיְהֵא שְׁלָמָא רַבָּא מִן שְׁמַיָּא וְחַיִּים עָלֵינוּ וְעַל כָּל יִשְׂרָאֵל, וְאִמְרוּ אָמֵן\n<br>\nעוֹשֶׂה שָׁלוֹם בִּמְרוֹמָיו הוּא יַעֲשֶׂה שָׁלוֹם עָלֵינוּ וְעַל כָּל יִשְׂרָאֵל, וְאִמְרוּ אָמֵןֵ\n"
       },
+      "wiki32": {
+        "Title": "Текст молитвы кадиш на иврите",
+        "Body": "ЙИСГАДАЛ ВЭЙИСКАДАШ ШМЭЙ РАБО: БЭОЛМО ДИ ВРО ХИРУСЭЙ ВЭЯМЛЙХ МАЛХУСЭЙ ВЭЯЦМАХ ПУРКОНЭЙ ВИКОРЭВ МЭШИХЭЙ.\n<br>\nБЭХАЙЕЙХЭЙН УВЭЙЕЙМЭЙХЭЙН УВЭХАЙЕЙ ДЭХОЛ БЭЙС ЙИСРОЭЙЛ БААГОЛО УВИЗМАН КОРИВ ВЭИМРУ ОМЭЙН. \n<br>\nЙЕГЭЙ ШМЭЙ РАБО МЭВОРАХ ЛЭОЛАМ УЛЭОЛМЭЙ ОЛМАЙО: ЙИСБОРЭЙХ ВЭЙИШТАБАХ ВЭЙИСПОЭЙР ВЭЙИСРЭЙМОМ ВЭЙИСНАСЭЙ ВЭЙИСГАДОР ВЭЙИСАЛЭ ВЭЙИСГАЛOЛ ШМЭЙ ДЭКУДШО БРИХ ГУ: \n<br>\nЛЭЭЙЛО МИН КОЛ БИРХОСО ВЭШИРОСО ТУШБЭХОСО ВЭНЭХЭМОСО ДААМИРОН БЭОЛМО ВЭИМРУ ОМЭЙН:\n<br>\nЙЕГЭЙ ШЛОМО РАБО МИН ШМАЙО ВЭХАЙЙМ ТЭЙВЙМ ОЛЭЙНУ ВЭАЛ КОЛ ЙИСРОЭЙЛ ВЭИМРУ ОМЭЙН:\n<br>\nЭЙСЭ ШОЛЭЙМ БИМРЭЙМОВ ГУ ЯАСЭ ШОЛЭЙМ ОЛЭЙНУ ВЭАЛ КОЛ ЙИСРОЭЙЛ ВЭИМРУ ОМЭЙН:"
+      },
       "wiki4": {
         "Title": "Значение и смысл молитвы кадиш",
         "Body": "Кадиш ятом — молитва которую читают по умершему человеку. В переводе с арамейского — освящение. Основной смысл этой молитвы в том, что человек несмотря на тяжелую потерю близкого человека, признает, восхваляет и благословляет справедливую власть Всевышнего, и восхваляет Творца за все его деяния.</br>\n</br>\nМистическое значение кадиша</br></br>\nСогласно еврейской традиции, после смерти тела происходит очищение души. Душу опускают в гейном чтоб очистить от грехов, которые прилипли к ней в течении жизни человека. Написано в наших святых книгах что максимальный срок пребывания души там 11 месяцев. Это как раз то самое время когда за душу принять читать кадиш.</br></br>\nНаписано в Талмуде (трактат Шаббат стр. 119б), что мистическая сила кадиша может изменить приговор небесного суда.</br></br>\nОбязанность чтения кадиша ложится на сына (или мужа). И согласно нашей традиции очень важно чтоб кадиш читал именно сын. Но если у него не получается читать кадиш на всех трех молитвах то он должен читать когда у него получается и параллельно заказать чтение кадиша.</br></br>\nЕсли же читать кадиш некому, вы можете заказать чтение кадиша онлайн.</br>"
@@ -106371,8 +106401,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Krash\Desktop\OSPanel\domains\Kadish2\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Krash\Desktop\OSPanel\domains\Kadish2\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\Artur\Desktop\OSPanel\domains\Kadish\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Artur\Desktop\OSPanel\domains\Kadish\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
