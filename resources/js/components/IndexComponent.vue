@@ -25,46 +25,83 @@
                                         <form method="post" action="_frame_handler.php">
                                             <div class="fields-wr row">
                                                 <div class="field-wr halfwidth divider col-md-6">
-                                                    <div class="I " :class="{ 'form-group--error': $v.Form.Name_of_Deceased.$error }">
+                                                    <div class="I "
+                                                         :class="{ 'form-group--error': $v.Form.Name_of_Deceased.$error }">
                                                         <input type="text" name="nameOfPassing"
-                                                                          :placeholder="$t('Button.NameD')"
+                                                               :placeholder="$t('Button.NameD')"
                                                                v-model.trim="Form.Name_of_Deceased"
                                                                @input="delayTouch($v.Form.Name_of_Deceased)">
-                                                        <div class="error-mess " v-if="!$v.Form.Name_of_Deceased.required">{{$t('Form.required')}}</div>-->
-                                                        <div class="error-mess" v-if="!$v.Form.Name_of_Deceased.minLength"> {{$t('Form.minLength')}} 2</div>
-                                                        <div class="error-mess" v-if="!$v.Form.Name_of_Deceased.maxLength"> {{$t('Form.maxLength')}} 15</div>
+                                                        <div class="error-mess "
+                                                             v-if="!$v.Form.Name_of_Deceased.required">
+                                                            {{$t('Form.required')}}
+                                                        </div>
+                                                        -->
+                                                        <div class="error-mess"
+                                                             v-if="!$v.Form.Name_of_Deceased.minLength">
+                                                            {{$t('Form.minLength')}} 2
+                                                        </div>
+                                                        <div class="error-mess"
+                                                             v-if="!$v.Form.Name_of_Deceased.maxLength">
+                                                            {{$t('Form.maxLength')}} 15
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <hr class="mobile">
                                                 <div class="field-wr halfwidth col-md-6">
-                                                    <div class="I" :class="{ 'form-group--error': $v.Form.Name_Father_Deceased.$error }"><input type="text" name="nameOfFather"
-                                                                          :placeholder="$t('Button.NameFD')"
-                                                                          v-model.trim="Form.Name_Father_Deceased"
-                                                                          valid="com" @input="delayTouch($v.Form.Name_Father_Deceased)">
-                                                        <div class="error-mess" v-if="!$v.Form.Name_Father_Deceased.required">{{$t('Form.required')}}</div>
-                                                        <div class="error-mess" v-if="!$v.Form.Name_Father_Deceased.minLength"> {{$t('Form.minLength')}} 2</div>
-                                                        <div class="error-mess" v-if="!$v.Form.Name_Father_Deceased.maxLength"> {{$t('Form.maxLength')}} 15</div>
+                                                    <div class="I"
+                                                         :class="{ 'form-group--error': $v.Form.Name_Father_Deceased.$error }">
+                                                        <input type="text" name="nameOfFather"
+                                                               :placeholder="$t('Button.NameFD')"
+                                                               v-model.trim="Form.Name_Father_Deceased"
+                                                               valid="com"
+                                                               @input="delayTouch($v.Form.Name_Father_Deceased)">
+                                                        <div class="error-mess"
+                                                             v-if="!$v.Form.Name_Father_Deceased.required">
+                                                            {{$t('Form.required')}}
+                                                        </div>
+                                                        <div class="error-mess"
+                                                             v-if="!$v.Form.Name_Father_Deceased.minLength">
+                                                            {{$t('Form.minLength')}} 2
+                                                        </div>
+                                                        <div class="error-mess"
+                                                             v-if="!$v.Form.Name_Father_Deceased.maxLength">
+                                                            {{$t('Form.maxLength')}} 15
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="label col-md-12">{{$t('Button.TitleDP')}}</div>
                                                 <div class="loading ">
                                                     <div id="ddate">
                                                         <div class="field-wr ddate col-md-3 bot-np">
-                                                            <div class="I" :class="{ 'form-group--error': $v.Param.Day.$error }">
+                                                            <div class="I"
+                                                                 :class="{ 'form-group--error': $v.Param.Day.$error }">
                                                                 <input type="text" name="ddate_date"
                                                                        placeholder="Date..."
                                                                        id="ddate_date"
-                                                                       v-model.trim="Param.Day" @input="delayTouch($v.Param.Day)">
-                                                                <div class="error-mess" v-if="!$v.Param.Day.required">{{$t('Form.required')}}</div>
-                                                                <div class="error-mess" v-if="!$v.Param.Day.minLength"> {{$t('Form.minLength')}} 2</div>
-                                                                <div class="error-mess" v-if="!$v.Param.Day.maxLength"> {{$t('Form.maxLength')}} 15</div>
-                                                                <div class="error-mess" v-if="!$v.Param.Day.numeric"> {{$t('Form.numeric')}}.</div>
+                                                                       v-model.trim="Param.Day"
+                                                                       @input="delayTouch($v.Param.Day)">
+                                                                <div class="error-mess" v-if="!$v.Param.Day.required">
+                                                                    {{$t('Form.required')}}
+                                                                </div>
+                                                                <div class="error-mess" v-if="!$v.Param.Day.minLength">
+                                                                    {{$t('Form.minLength')}} 2
+                                                                </div>
+                                                                <div class="error-mess" v-if="!$v.Param.Day.maxLength">
+                                                                    {{$t('Form.maxLength')}} 15
+                                                                </div>
+                                                                <div class="error-mess" v-if="!$v.Param.Day.numeric">
+                                                                    {{$t('Form.numeric')}}.
+                                                                </div>
                                                             </div>
                                                         </div>
                                                         <div class="field-wr dmnth col-md-3 bot-np">
-                                                            <div class="I" :class="{ 'form-group--error': $v.Param.Month.$error }">
-                                                                <select v-model.trim="Param.Month" class="custom-select custom-select-sm text-white" v-if="showJ">
-                                                                    <option value="1" selected>{{$t('Month.January')}}</option>
+                                                            <div class="I"
+                                                                 :class="{ 'form-group--error': $v.Param.Month.$error }">
+                                                                <select v-model.trim="Param.Month"
+                                                                        class="custom-select custom-select-sm text-white"
+                                                                        v-if="showJ">
+                                                                    <option value="1" selected>{{$t('Month.January')}}
+                                                                    </option>
                                                                     <option value="2">{{$t('Month.February')}}</option>
                                                                     <option value="3">{{$t('Month.March')}}</option>
                                                                     <option value="4">{{$t('Month.April')}}</option>
@@ -77,18 +114,32 @@
                                                                     <option value="11">{{$t('Month.November')}}</option>
                                                                     <option value="12">{{$t('Month.December')}}</option>
                                                                 </select>
-                                                                <select v-model.trim="Param.Month" class="custom-select custom-select-sm text-white" v-else>
-                                                                    <option value="1" selected>{{$t('JewishMonth.Tishry')}}</option>
-                                                                    <option value="2">{{$t('JewishMonth.Heshvan')}}</option>
-                                                                    <option value="3">{{$t('JewishMonth.Kislev')}}</option>
-                                                                    <option value="4">{{$t('JewishMonth.Tevet')}}</option>
-                                                                    <option value="5">{{$t('JewishMonth.Shevat')}}</option>
-                                                                    <option value="6">{{$t('JewishMonth.Adar')}}</option>
-                                                                    <option value="7">{{$t('JewishMonth.Adar II')}}</option>
-                                                                    <option value="8">{{$t('JewishMonth.Nissan')}}</option>
-                                                                    <option value="9">{{$t('JewishMonth.Iyar')}}</option>
-                                                                    <option value="10">{{$t('JewishMonth.Sevan')}}</option>
-                                                                    <option value="11">{{$t('JewishMonth.Tammuz')}}</option>
+                                                                <select v-model.trim="Param.Month"
+                                                                        class="custom-select custom-select-sm text-white"
+                                                                        v-else>
+                                                                    <option value="1" selected>
+                                                                        {{$t('JewishMonth.Tishry')}}
+                                                                    </option>
+                                                                    <option value="2">{{$t('JewishMonth.Heshvan')}}
+                                                                    </option>
+                                                                    <option value="3">{{$t('JewishMonth.Kislev')}}
+                                                                    </option>
+                                                                    <option value="4">{{$t('JewishMonth.Tevet')}}
+                                                                    </option>
+                                                                    <option value="5">{{$t('JewishMonth.Shevat')}}
+                                                                    </option>
+                                                                    <option value="6">{{$t('JewishMonth.Adar')}}
+                                                                    </option>
+                                                                    <option value="7">{{$t('JewishMonth.Adar II')}}
+                                                                    </option>
+                                                                    <option value="8">{{$t('JewishMonth.Nissan')}}
+                                                                    </option>
+                                                                    <option value="9">{{$t('JewishMonth.Iyar')}}
+                                                                    </option>
+                                                                    <option value="10">{{$t('JewishMonth.Sevan')}}
+                                                                    </option>
+                                                                    <option value="11">{{$t('JewishMonth.Tammuz')}}
+                                                                    </option>
                                                                     <option value="12">{{$t('JewishMonth.Av')}}</option>
                                                                     <option value="13">{{$t('JewishMonth.Elul')}}
                                                                     </option>
@@ -97,15 +148,20 @@
                                                             </div>
                                                         </div>
                                                         <div class="field-wr dyear col-md-2 bot-np">
-                                                            <div class="I" :class="{ 'form-group--error': $v.Param.Year.$error }">
+                                                            <div class="I"
+                                                                 :class="{ 'form-group--error': $v.Param.Year.$error }">
                                                                 <input type="text" class="pp" name="ddate_year"
                                                                        placeholder="Year..." value="2019" min="1869"
                                                                        max="2019" id="ddate_year"
                                                                        v-model.trim="Param.Year"
                                                                        @input="delayTouch($v.Param.Year)">
-                                                                <div class="error-mess" v-if="!$v.Param.Year.required">{{$t('Form.required')}}</div>
-<!--                                                                <div class="error-mess" v-if="!$v.Param.Year.between">{{$v.Param.Year.$params.between.min}}-{{$v.Param.Year.$params.between.max}}</div>-->
-                                                                <div class="error-mess" v-if="!$v.Param.Year.numeric"> {{$t('Form.numeric')}}.</div>
+                                                                <div class="error-mess" v-if="!$v.Param.Year.required">
+                                                                    {{$t('Form.required')}}
+                                                                </div>
+                                                                <!--                                                                <div class="error-mess" v-if="!$v.Param.Year.between">{{$v.Param.Year.$params.between.min}}-{{$v.Param.Year.$params.between.max}}</div>-->
+                                                                <div class="error-mess" v-if="!$v.Param.Year.numeric">
+                                                                    {{$t('Form.numeric')}}.
+                                                                </div>
                                                             </div>
                                                         </div>
                                                         <div class="field-wr dsuns col-md-4 bot-np">
@@ -127,11 +183,12 @@
 
                                                                         <a class="jdate orange-text np"
                                                                            @click="HebrewCal('J')" v-if="showJ">
-                                                                            <div class="spinner-grow text-warning pl-5" role="status" v-show="spiner">
-                                                                            <span class="sr-only">Loading...</span>
-                                                                        </div>
+                                                                            <div class="spinner-grow text-warning pl-5"
+                                                                                 role="status" v-show="spiner">
+                                                                                <span class="sr-only">Loading...</span>
+                                                                            </div>
                                                                             <span
-                                                                            v-html="$t('Button.JewishCal')"></span>
+                                                                                v-html="$t('Button.JewishCal')"></span>
                                                                             <div class="hint right pr-2"><i
                                                                                 v-html="$t('Button.JewishTitle')"></i>
 
@@ -140,11 +197,12 @@
                                                                         </a>
                                                                         <a class="jdate  orange-text np"
                                                                            @click="HebrewCal('G')" v-else>
-                                                                            <div class="spinner-grow text-warning pl-5" role="status" v-show="spiner">
+                                                                            <div class="spinner-grow text-warning pl-5"
+                                                                                 role="status" v-show="spiner">
                                                                                 <span class="sr-only">Loading...</span>
                                                                             </div>
                                                                             <span
-                                                                            v-html="$t('Button.JewishCal2')"></span>
+                                                                                v-html="$t('Button.JewishCal2')"></span>
                                                                             <div class="hint right pr-2"><i>{{$t('Button.JewishTitle2')}}</i>
                                                                             </div>
                                                                         </a>
@@ -157,27 +215,47 @@
                                                 </div>
 
                                                 <div class="field-wr top-np halfwidth divider lastline">
-                                                    <div class="I" :class="{ 'form-group--error': $v.Form.Email.$error }"><input type="text" name="email"
-                                                                          :placeholder="$t('Button.Mail')"
-                                                                          v-model.trim="Form.Email"
-                                                                           @input="delayTouch($v.Form.Email)">
-                                                         <div class="error-mess" v-if="!$v.Form.Email.required">{{$t('Form.required')}}</div>
-                                                        <div class="error-mess" v-if="!$v.Form.Email.minLength"> {{$t('Form.minLength')}} 2</div>
-                                                        <div class="error-mess" v-if="!$v.Form.Email.maxLength"> {{$t('Form.maxLength')}} 15</div>
-                                                         <div class="error-mess" v-if="!$v.Form.Email.email"> {{$t('Form.email')}}</div>
+                                                    <div class="I"
+                                                         :class="{ 'form-group--error': $v.Form.Email.$error }"><input
+                                                        type="text" name="email"
+                                                        :placeholder="$t('Button.Mail')"
+                                                        v-model.trim="Form.Email"
+                                                        @input="delayTouch($v.Form.Email)">
+                                                        <div class="error-mess" v-if="!$v.Form.Email.required">
+                                                            {{$t('Form.required')}}
+                                                        </div>
+                                                        <div class="error-mess" v-if="!$v.Form.Email.minLength">
+                                                            {{$t('Form.minLength')}} 2
+                                                        </div>
+                                                        <div class="error-mess" v-if="!$v.Form.Email.maxLength">
+                                                            {{$t('Form.maxLength')}} 15
+                                                        </div>
+                                                        <div class="error-mess" v-if="!$v.Form.Email.email">
+                                                            {{$t('Form.email')}}
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <hr class="mobile">
                                                 <div class="field-wr top-np halfwidth lastline">
-                                                    <div class="I phone" :class="{ 'form-group--error': $v.Form.Phone.$error }">
+                                                    <div class="I phone"
+                                                         :class="{ 'form-group--error': $v.Form.Phone.$error }">
                                                         <input type="text" name="phone"
-                                                                                :placeholder="$t('Button.Phone')"
-                                                                                valid="com"
-                                                                                v-model.trim="Form.Phone" @input="delayTouch($v.Form.Phone)">
-                                                        <div class="error-mess" v-if="!$v.Form.Phone.required">{{$t('Form.required')}}</div>
-                                                        <div class="error-mess" v-if="!$v.Form.Phone.minLength"> {{$t('Form.minLength')}} 2</div>
-                                                        <div class="error-mess" v-if="!$v.Form.Phone.maxLength"> {{$t('Form.maxLength')}} 15</div>
-                                                        <div class="error-mess" v-if="!$v.Form.Phone.numeric"> {{$t('Form.numeric')}}.</div>
+                                                               :placeholder="$t('Button.Phone')"
+                                                               valid="com"
+                                                               v-model.trim="Form.Phone"
+                                                               @input="delayTouch($v.Form.Phone)">
+                                                        <div class="error-mess" v-if="!$v.Form.Phone.required">
+                                                            {{$t('Form.required')}}
+                                                        </div>
+                                                        <div class="error-mess" v-if="!$v.Form.Phone.minLength">
+                                                            {{$t('Form.minLength')}} 2
+                                                        </div>
+                                                        <div class="error-mess" v-if="!$v.Form.Phone.maxLength">
+                                                            {{$t('Form.maxLength')}} 15
+                                                        </div>
+                                                        <div class="error-mess" v-if="!$v.Form.Phone.numeric">
+                                                            {{$t('Form.numeric')}}.
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -189,28 +267,31 @@
                         <div class="row d-flex justify-content-center form-but-wr ">
                             <div class="col-md-4 field-wr halfwidth rmnd ml-3">
                                 <button type="button" class="field-wr" @click="Kaddish(0)">
-                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" v-if="YortchatLoader"></span>
+                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"
+                                          v-if="YortchatLoader"></span>
                                     {{$t('Button.Button1')}}<b class="free">Free</b></button>
                             </div>
                             <div class="col-md-2"></div>
                             <div class="col-md-4 field-wr halfwidth arra ml-4">
-                                <button type="button" class="field-wr " @click="valid"  >
-                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" v-if="kadishLoader"></span>
+                                <button type="button" class="field-wr " @click="valid">
+                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"
+                                          v-if="kadishLoader"></span>
                                     {{$t('Button.Button2')}}<i class="fab fa-amazon-pay" fa-2x></i></button>
                             </div>
-                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content bg-dark">
                                         <div class="modal-body">
-                                            <paypal-checkout
-                                                amount="10.00"
+                                            <PayPal
+                                                amount="1.00"
                                                 currency="USD"
                                                 :client="credentials"
                                                 :braintree="braintreeSdk"
                                                 :button-style="myStyle"
-                                                env="sandbox"
+                                                env="production"
                                                 @payment-completed="payment_completed_cb"
-                                            ></paypal-checkout>
+                                            ></PayPal>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn" data-dismiss="modal">back</button>
@@ -233,9 +314,12 @@
                         <div class="row mt-5 mb-5 pb-5">
                             <ul class="plaques" id="plaques-placeholder col-md-12">
                                 <li class="plaque " v-for="(plaques, index) in plaques">
-                                    <div class="plaque-content" >
-                                        <h2 class="text-white">{{plaques.Name_of_Deceased}}<br> ben(bat)<br> {{plaques.Fathers_Name}}<br></h2>
-                                        <p>{{plaques.J_Date.day}} {{plaques.J_Date.monthname}}  {{plaques.J_Date.year}} <br>{{plaques.G_Date.day}} {{plaques.G_Date.monthname}}  {{plaques.G_Date.year}}</p>
+                                    <div class="plaque-content">
+                                        <h2 class="text-white">{{plaques.Name_of_Deceased}}<br> ben(bat)<br>
+                                            {{plaques.Fathers_Name}}<br></h2>
+                                        <p>{{plaques.J_Date.day}} {{plaques.J_Date.monthname}} {{plaques.J_Date.year}}
+                                            <br>{{plaques.G_Date.day}} {{plaques.G_Date.monthname}}
+                                            {{plaques.G_Date.year}}</p>
                                     </div>
                                 </li>
                             </ul>
@@ -268,30 +352,41 @@
 
 </template>
 <script>
-    import { required, minLength,email,numeric,maxLength,between } from 'vuelidate/lib/validators';
+    import PayPal from 'vue-paypal-checkout'
+    import {required, minLength, email, numeric, maxLength, between} from 'vuelidate/lib/validators';
+
     const touchMap = new WeakMap();
     export default {
 
         data: function () {
             return {
-                Item: [],plaques:[], choice: false, show: true, showJ: true, spiner: false, YortchatLoader: false, kadishLoader: false,
-                Form: {Name_of_Deceased: "", Name_Father_Deceased: "", Email:"", Phone: "", Sunset: false},
-                Param: {Day: "", Month:"", Year: "", DataSet: "G"},
+                Item: [],
+                plaques: [],
+                choice: false,
+                show: true,
+                showJ: true,
+                spiner: false,
+                YortchatLoader: false,
+                kadishLoader: false,
+                Form: {Name_of_Deceased: "", Name_Father_Deceased: "", Email: "", Phone: "", Sunset: false},
+                Param: {Day: "", Month: "", Year: "", DataSet: "G"},
                 showModal: false,
                 credentials: {
                     sandbox: 'AamvJHqtBfrIM4oNPDknTMJmyC5kN-btQRU5baqABM-YEFktx28e_DDpB4nmXQeHUBJnJufE4hYjVxnB',
-                    production: 'AUeEKuSGuBKf1ZVVaSLdXObkXK3-5U-DiXABpfnqXj26am4KABZqO_oSUg_liTQ1iQwDcMqN0R1ZzxpC'
+                    production: 'Adwxz1ebdstxTBHR5fkZdlQDiq4DuG84fkqg1iov0Dne6nTzxo2uazlOBkqCYIrbXD1YJ7Xq8p2Qz4g9'
                 },
                 braintreeSdk: window.braintree,
                 myStyle: {
-                    label:  'pay',
-                    size:  'medium',
+                    label: 'pay',
+                    size: 'medium',
                     shape: 'pill',
                     color: 'blue'
                 }
             }
         },
-
+        components: {
+            PayPal
+        },
         validations: {
             Form: {
                 Name_of_Deceased: {
@@ -315,7 +410,8 @@
                     minLength: minLength(4),
                     maxLength: maxLength(50),
                     numeric,
-                }},
+                }
+            },
             Param: {
                 Day: {
                     required,
@@ -326,11 +422,12 @@
                 Month: {
                     required
                 },
-                Year:{
+                Year: {
                     required,
                     // between: between(1869, 2019),
                     numeric
-                }},
+                }
+            },
         },
         mounted() {
             var date = new Date();
@@ -342,14 +439,14 @@
             });
         },
         methods: {
-            delayTouch(){
+            delayTouch() {
 
             },
-            payment_completed_cb(res){
+            payment_completed_cb(res) {
                 let Sunset;
 
                 (this.Form.Sunset === false) ? Sunset = 0 : Sunset = 1;
-                 axios.get('api/kadish/create', {
+                axios.get('api/kadish/create', {
                     params: {
                         Name_of_Deceased: this.Form.Name_of_Deceased,
                         Name_Father_Deceased: this.Form.Name_Father_Deceased,
@@ -362,16 +459,16 @@
                         DataSet: this.Param.DataSet,
                         Lang: this.$route.params.lang,
                         Order: 1,
-                        First_Name : res.payer.payer_info.first_name,
-                        Last_Name : res.payer.payer_info.last_name,
+                        First_Name: res.payer.payer_info.first_name,
+                        Last_Name: res.payer.payer_info.last_name,
                     }
                 }).then((response) => {
                     this.YortchatLoader = false;
                     this.kadishLoader = false;
-                    if (response){
+                    if (response) {
                     }
-                     $('#exampleModalCenter').modal('hide');
-                        this.$router.push({name: 'Thank'});
+                    $('#exampleModalCenter').modal('hide');
+                    this.$router.push({name: 'Thank'});
 
 
                 });
@@ -380,31 +477,42 @@
             valid() {
                 if (!this.$v.Form.$invalid && !this.$v.Param.$invalid) {
                     $('#exampleModalCenter').modal();
-                }else {
+                } else {
                     this.$v.$touch();
                 }
             },
             HebrewCal($date) {
-                if (!this.$v.Param.$invalid){
-                    let month =this.Param.Month;
-                    this.Param.Month ="";
+                if (!this.$v.Param.$invalid) {
+                    let month = this.Param.Month;
+                    this.Param.Month = "";
                     this.spiner = true;
 
-                    if ($date === "J") { this.showJ = !this.showJ; this.show = !this.show; this.Param.DataSet = "J";}
-
-                    else if ($date === "G") {this.showJ = true;this.show = true;this.Param.DataSet = "G";}
+                    if ($date === "J") {
+                        this.showJ = !this.showJ;
+                        this.show = !this.show;
+                        this.Param.DataSet = "J";
+                    } else if ($date === "G") {
+                        this.showJ = true;
+                        this.show = true;
+                        this.Param.DataSet = "G";
+                    }
 
                     axios.get('http://149.28.51.36/api/' + $date + '/' + this.Param.Day + '/' + month + '/' + this.Param.Year).then((response) => {
-                        this.Param.Month="";
-                        this.Param.Day = response.data.day; this.Param.Month = response.data.month; this.Param.Year = response.data.year; this.spiner = false;
+                        this.Param.Month = "";
+                        this.Param.Day = response.data.day;
+                        this.Param.Month = response.data.month;
+                        this.Param.Year = response.data.year;
+                        this.spiner = false;
                     });
-                } else {this.$v.Param.$touch();}
+                } else {
+                    this.$v.Param.$touch();
+                }
             },
             async Kaddish($order) {
 
                 if (!this.$v.Form.$invalid && !this.$v.Param.$invalid) {
                     let Sunset;
-                    $order === 0 ? this.YortchatLoader = true :  this.kadishLoader = true;
+                    $order === 0 ? this.YortchatLoader = true : this.kadishLoader = true;
                     (this.Form.Sunset === false) ? Sunset = 0 : Sunset = 1;
                     await axios.get('api/kadish/create', {
                         params: {
@@ -423,13 +531,13 @@
                     }).then((response) => {
                         this.YortchatLoader = false;
                         this.kadishLoader = false;
-                        if (response){
+                        if (response) {
                         }
-                            this.$router.push({name: 'Thank'})
+                        this.$router.push({name: 'Thank'})
 
 
                     });
-                }else {
+                } else {
                     this.$v.$touch();
                 }
             }
@@ -440,10 +548,11 @@
 <style scoped>
     .orange-text {
         font-size: 100%;
-        color: #ff9800!important;
+        color: #ff9800 !important;
     }
+
     .view .mask {
-         position: relative;
+        position: relative;
         top: 0;
         left: 0;
         right: 0;
@@ -453,7 +562,11 @@
         height: 100%;
         background-attachment: fixed;
     }
-    .field-wr input[type=email][type=tel] {text-overflow: ellipsis;}
+
+    .field-wr input[type=email][type=tel] {
+        text-overflow: ellipsis;
+    }
+
     .field-wr input[type=tel] {
         font: normal 300 18px/26px 'Roboto', sans-serif;
         width: 100%;
@@ -464,20 +577,52 @@
         outline: none;
     }
 
-    label {display: inline-block;margin-bottom: 0rem;}
-    .mw {max-width: 75%}
-    .np {padding: 0px;}
-    .top-np {padding: 0px 0px 14px 0px;}
-    .bot-np {padding: 14px 0px 0px 0px;}
+    label {
+        display: inline-block;
+        margin-bottom: 0rem;
+    }
+
+    .mw {
+        max-width: 75%
+    }
+
+    .np {
+        padding: 0px;
+    }
+
+    .top-np {
+        padding: 0px 0px 14px 0px;
+    }
+
+    .bot-np {
+        padding: 14px 0px 0px 0px;
+    }
+
     form {
         font-size: 0;
         font-family: 'Roboto', sans-serif;
         transition: all 0.4s ease;
     }
-    .mv2 {max-width: 955px;}
-    .pp {padding: 0 2px;}
-    .fs {font: normal 300 16px/26px 'Roboto', sans-serif;}
-    hr {margin-top: 10px;;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}
+
+    .mv2 {
+        max-width: 955px;
+    }
+
+    .pp {
+        padding: 0 2px;
+    }
+
+    .fs {
+        font: normal 300 16px/26px 'Roboto', sans-serif;
+    }
+
+    hr {
+        margin-top: 10px;;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+    }
+
     .custom-select {
         display: inline-block;
         width: 100%;
@@ -496,9 +641,11 @@
         appearance: none;
         border: none;
     }
+
     .rgba-black-strong, .rgba-black-strong:after {
-        background-color: rgba(0,0,0,.5);
+        background-color: rgba(0, 0, 0, .5);
     }
+
     /*#intro{*/
     /*    height: 1200px;*/
     /*}*/
@@ -577,11 +724,16 @@
     /*    .plaque-content h2 {font-size: 100%; margin: 0; padding: 0; font-weight: 600;}*/
     /*    .plaque-content p {font-size: 90%; margin: 1em 0 0; padding: 0; color: #fc6; text-align: center !important;}*/
     /*}*/
-        @media (max-width: 405px) {
-            /*#intro {height: 1900px;*/
+    @media (max-width: 405px) {
+        /*#intro {height: 1900px;*/
+        .field-wr.divider .I, .field-wr.dname .I, .field-wr.cmail .I {
+            border-right: 0px;
+        }
 
-        .field-wr.divider .I, .field-wr.dname .I, .field-wr.cmail .I {border-right: 0px;}
-        .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I {border: 1px solid #666;}
+        .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I {
+            border: 1px solid #666;
+        }
+
         .row {
             display: -ms-flexbox;
             display: block;
@@ -590,7 +742,14 @@
             margin-right: -15px;
             margin-left: -15px;
         }
-        hr {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}
+
+        hr {
+            margin-top: 0rem;
+            margin-bottom: 1rem;
+            border: 0;
+            border-top: 1px solid rgba(0, 0, 0, .1);
+        }
+
         .field-wr input[type=text], .field-wr label, .field-wr textarea {
             font: normal 300 15px/29px 'Roboto', sans-serif;
             width: 100%;
@@ -600,19 +759,66 @@
             border: none;
             outline: none;
         }
-        .field-wr.ddate, .field-wr.dmnth, .field-wr.dyear {width: 100%;max-width: 100%;}
-        .mw[data-v-754b2df6] {max-width: 100%;}
-        .field-wr.dsuns {width: 72%;}
-        .field-wr.switch-cal {width: 26%; text-align: right;}
-            .plaque {display: inline-block; background-color: #000; width: 30%; height: 190px; position: relative; margin: 0; padding: 0; text-align: center; vertical-align: middle;}
-            .plaque-content h2 {font-size: 100%; margin: 0; padding: 0; font-weight: 600;}
-            .plaque-content p {font-size: 90%; margin: 1em 0 0; padding: 0; color: #fc6; text-align: center !important;}
+
+        .field-wr.ddate, .field-wr.dmnth, .field-wr.dyear {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .mw[data-v-754b2df6] {
+            max-width: 100%;
+        }
+
+        .field-wr.dsuns {
+            width: 72%;
+        }
+
+        .field-wr.switch-cal {
+            width: 26%;
+            text-align: right;
+        }
+
+        .plaque {
+            display: inline-block;
+            background-color: #000;
+            width: 30%;
+            height: 190px;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .plaque-content h2 {
+            font-size: 100%;
+            margin: 0;
+            padding: 0;
+            font-weight: 600;
+        }
+
+        .plaque-content p {
+            font-size: 90%;
+            margin: 1em 0 0;
+            padding: 0;
+            color: #fc6;
+            text-align: center !important;
+        }
     }
+
     @media (max-width: 350px) {
-        #intro
-    {height: 2000px;}
-        .field-wr.divider .I, .field-wr.dname .I, .field-wr.cmail .I {border-right: 0px;}
-        .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I {border: 1px solid #666;}
+        #intro {
+            height: 2000px;
+        }
+
+        .field-wr.divider .I, .field-wr.dname .I, .field-wr.cmail .I {
+            border-right: 0px;
+        }
+
+        .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I {
+            border: 1px solid #666;
+        }
+
         .row {
             display: -ms-flexbox;
             display: block;
@@ -621,7 +827,14 @@
             margin-right: -15px;
             margin-left: -15px;
         }
-        hr {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}
+
+        hr {
+            margin-top: 0rem;
+            margin-bottom: 1rem;
+            border: 0;
+            border-top: 1px solid rgba(0, 0, 0, .1);
+        }
+
         .field-wr input[type=text], .field-wr label, .field-wr textarea {
             font: normal 300 15px/29px 'Roboto', sans-serif;
             width: 100%;
@@ -632,12 +845,50 @@
             outline: none;
 
         }
-        .field-wr.ddate, .field-wr.dmnth, .field-wr.dyear {width: 100%;max-width: 100%;}
-        .mw[data-v-754b2df6] {max-width: 100%;}
-        .field-wr.dsuns {width: 72%;}
-        .field-wr.switch-cal {width: 26%; text-align: right;}
-    .plaque {display: inline-block; background-color: #000; width: 30%; height: 190px; position: relative; margin: 0; padding: 0; text-align: center; vertical-align: middle;}
-    .plaque-content h2 {font-size: 100%; margin: 0; padding: 0; font-weight: 600;}
-    .plaque-content p {font-size: 90%; margin: 1em 0 0; padding: 0; color: #fc6; text-align: center !important;}
+
+        .field-wr.ddate, .field-wr.dmnth, .field-wr.dyear {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .mw[data-v-754b2df6] {
+            max-width: 100%;
+        }
+
+        .field-wr.dsuns {
+            width: 72%;
+        }
+
+        .field-wr.switch-cal {
+            width: 26%;
+            text-align: right;
+        }
+
+        .plaque {
+            display: inline-block;
+            background-color: #000;
+            width: 30%;
+            height: 190px;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .plaque-content h2 {
+            font-size: 100%;
+            margin: 0;
+            padding: 0;
+            font-weight: 600;
+        }
+
+        .plaque-content p {
+            font-size: 90%;
+            margin: 1em 0 0;
+            padding: 0;
+            color: #fc6;
+            text-align: center !important;
+        }
     }
 </style>

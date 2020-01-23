@@ -1918,8 +1918,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuelidate/lib/validators */ "./node_modules/vuelidate/lib/validators/index.js");
-/* harmony import */ var vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var vue_paypal_checkout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-paypal-checkout */ "./node_modules/vue-paypal-checkout/dist/vue-paypal-checkout.esm.js");
+/* harmony import */ var vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vuelidate/lib/validators */ "./node_modules/vuelidate/lib/validators/index.js");
+/* harmony import */ var vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_2__);
 
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -2195,6 +2196,91 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 
 var touchMap = new WeakMap();
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2224,7 +2310,7 @@ var touchMap = new WeakMap();
       showModal: false,
       credentials: {
         sandbox: 'AamvJHqtBfrIM4oNPDknTMJmyC5kN-btQRU5baqABM-YEFktx28e_DDpB4nmXQeHUBJnJufE4hYjVxnB',
-        production: 'AUeEKuSGuBKf1ZVVaSLdXObkXK3-5U-DiXABpfnqXj26am4KABZqO_oSUg_liTQ1iQwDcMqN0R1ZzxpC'
+        production: 'Adwxz1ebdstxTBHR5fkZdlQDiq4DuG84fkqg1iov0Dne6nTzxo2uazlOBkqCYIrbXD1YJ7Xq8p2Qz4g9'
       },
       braintreeSdk: window.braintree,
       myStyle: {
@@ -2235,45 +2321,48 @@ var touchMap = new WeakMap();
       }
     };
   },
+  components: {
+    PayPal: vue_paypal_checkout__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
   validations: {
     Form: {
       Name_of_Deceased: {
-        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["required"],
-        minLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["minLength"])(2),
-        maxLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["maxLength"])(50)
+        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_2__["required"],
+        minLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_2__["minLength"])(2),
+        maxLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_2__["maxLength"])(50)
       },
       Name_Father_Deceased: {
-        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["required"],
-        minLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["minLength"])(2),
-        maxLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["maxLength"])(50)
+        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_2__["required"],
+        minLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_2__["minLength"])(2),
+        maxLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_2__["maxLength"])(50)
       },
       Email: {
-        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["required"],
-        minLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["minLength"])(4),
-        maxLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["maxLength"])(50),
-        email: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["email"]
+        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_2__["required"],
+        minLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_2__["minLength"])(4),
+        maxLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_2__["maxLength"])(50),
+        email: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_2__["email"]
       },
       Phone: {
-        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["required"],
-        minLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["minLength"])(4),
-        maxLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["maxLength"])(50),
-        numeric: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["numeric"]
+        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_2__["required"],
+        minLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_2__["minLength"])(4),
+        maxLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_2__["maxLength"])(50),
+        numeric: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_2__["numeric"]
       }
     },
     Param: {
       Day: {
-        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["required"],
-        minLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["minLength"])(1),
-        maxLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["maxLength"])(50),
-        numeric: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["numeric"]
+        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_2__["required"],
+        minLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_2__["minLength"])(1),
+        maxLength: Object(vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_2__["maxLength"])(50),
+        numeric: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_2__["numeric"]
       },
       Month: {
-        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["required"]
+        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_2__["required"]
       },
       Year: {
-        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["required"],
+        required: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_2__["required"],
         // between: between(1869, 2019),
-        numeric: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_1__["numeric"]
+        numeric: vuelidate_lib_validators__WEBPACK_IMPORTED_MODULE_2__["numeric"]
       }
     }
   },
@@ -2509,6 +2598,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vue_paypal_checkout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-paypal-checkout */ "./node_modules/vue-paypal-checkout/dist/vue-paypal-checkout.esm.js");
 //
 //
 //
@@ -2556,14 +2646,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       credentials: {
-        sandbox: 'AamvJHqtBfrIM4oNPDknTMJmyC5kN-btQRU5baqABM-YEFktx28e_DDpB4nmXQeHUBJnJufE4hYjVxnB',
-        // production: 'AUeEKuSGuBKf1ZVVaSLdXObkXK3-5U-DiXABpfnqXj26am4KABZqO_oSUg_liTQ1iQwDcMqN0R1ZzxpC'
-        production: 'Adwxz1ebdstxTBHR5fkZdlQDiq4DuG84fkqg1iov0Dne6nTzxo2uazlOBkqCYIrbXD1YJ7Xq8p2Qz4g9'
+        // sandbox: 'AamvJHqtBfrIM4oNPDknTMJmyC5kN-btQRU5baqABM-YEFktx28e_DDpB4nmXQeHUBJnJufE4hYjVxnB',
+        production: 'AUeEKuSGuBKf1ZVVaSLdXObkXK3-5U-DiXABpfnqXj26am4KABZqO_oSUg_liTQ1iQwDcMqN0R1ZzxpC' // production: 'Adwxz1ebdstxTBHR5fkZdlQDiq4DuG84fkqg1iov0Dne6nTzxo2uazlOBkqCYIrbXD1YJ7Xq8p2Qz4g9'
+
       },
       braintreeSdk: window.braintree,
       myStyle: {
@@ -2573,6 +2663,9 @@ __webpack_require__.r(__webpack_exports__);
         color: 'blue'
       }
     };
+  },
+  comments: {
+    PayPal: vue_paypal_checkout__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
   methods: {
     payment_completed_cb: function payment_completed_cb(res) {
@@ -10950,7 +11043,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.orange-text[data-v-754b2df6] {\n    font-size: 100%;\n    color: #ff9800!important;\n}\n.view .mask[data-v-754b2df6] {\n     position: relative;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    overflow: hidden;\n    width: 100%;\n    height: 100%;\n    background-attachment: fixed;\n}\n.field-wr input[type=email][type=tel][data-v-754b2df6] {text-overflow: ellipsis;}\n.field-wr input[type=tel][data-v-754b2df6] {\n    font: normal 300 18px/26px 'Roboto', sans-serif;\n    width: 100%;\n    background: none;\n    padding: 0 2px;\n    color: #fff;\n    border: none;\n    outline: none;\n}\nlabel[data-v-754b2df6] {display: inline-block;margin-bottom: 0rem;}\n.mw[data-v-754b2df6] {max-width: 75%}\n.np[data-v-754b2df6] {padding: 0px;}\n.top-np[data-v-754b2df6] {padding: 0px 0px 14px 0px;}\n.bot-np[data-v-754b2df6] {padding: 14px 0px 0px 0px;}\nform[data-v-754b2df6] {\n    font-size: 0;\n    font-family: 'Roboto', sans-serif;\n    transition: all 0.4s ease;\n}\n.mv2[data-v-754b2df6] {max-width: 955px;}\n.pp[data-v-754b2df6] {padding: 0 2px;}\n.fs[data-v-754b2df6] {font: normal 300 16px/26px 'Roboto', sans-serif;}\nhr[data-v-754b2df6] {margin-top: 10px;;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.custom-select[data-v-754b2df6] {\n    display: inline-block;\n    width: 100%;\n    height: calc(1.5em + .75rem + 2px);\n    padding: .375rem 1.75rem .375rem .75rem;\n    font: normal 300 18px/26px 'Roboto', sans-serif;\n    line-height: 1.5;\n    color: #495057;\n    vertical-align: middle;\n    background: url(data:image/svg+xml,%3csvg xmlns= 'http://www.w3.org/2000/svg' viewBox= '0 0 4 5' %3e%3cpath fill= '%23343a40' d= 'M2 0L0 2h4zm0 5L0 3h4z' /%3e%3c/svg%3e) no-repeat right .75 rem center / 8 px 10 px;\n    background-color: #000000;\n    /*border: 1px solid #423d3d;*/\n    border-radius: .25rem;\n    -webkit-appearance: none;\n    -moz-appearance: none;\n    appearance: none;\n    border: none;\n}\n.rgba-black-strong[data-v-754b2df6], .rgba-black-strong[data-v-754b2df6]:after {\n    background-color: rgba(0,0,0,.5);\n}\n/*#intro{*/\n/*    height: 1200px;*/\n/*}*/\n/*@media (max-width: 1200px) {  #intro {min-height: 1200px;}}*/\n/*@media (max-height: 800px){ #intro {height: 950px;}}*/\n/*@media (max-width: 850px) {  #intro {height: 1462px;}*/\n/*    .field-wr.divider .I, .field-wr.dname .I, .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I, .field-wr.cmail .I {border-right: 0px;}*/\n/*    .row {*/\n/*        display: -ms-flexbox;*/\n/*        display: block;*/\n/*        -ms-flex-wrap: wrap;*/\n/*        flex-wrap: wrap;*/\n/*        margin-right: -15px;*/\n/*        margin-left: -15px;*/\n/*    }*/\n/*    hr {margin-top: 10px;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}*/\n/*    .field-wr input[type=text], .field-wr label, .field-wr textarea {*/\n/*        font: normal 300 15px/29px 'Roboto', sans-serif;*/\n/*        width: 100%;*/\n/*        background: none;*/\n/*        !*padding: 0 2px;*!*/\n/*        color: #fff;*/\n/*        border: none;*/\n/*        outline: none;*/\n/*    }*/\n/*    .field-wr.dsuns {width: 30%;}*/\n/*    .field-wr.switch-cal {width: 15%; text-align: right;}*/\n/*}*/\n\n/*@media (max-width: 760px) {  #intro {height: 1460px;}*/\n/*    .field-wr.divider .I, .field-wr.dname .I, .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I, .field-wr.cmail .I {border-right: 0px;}*/\n/*    .row {*/\n/*        display: -ms-flexbox;*/\n/*        display: block;*/\n/*        -ms-flex-wrap: wrap;*/\n/*        flex-wrap: wrap;*/\n/*        margin-right: -15px;*/\n/*        margin-left: -15px;*/\n/*    }*/\n/*    hr {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}*/\n/*    .field-wr input[type=text], .field-wr label, .field-wr textarea {*/\n/*        font: normal 300 15px/29px 'Roboto', sans-serif;*/\n/*        width: 100%;*/\n/*        background: none;*/\n/*        !*padding: 0 2px;*!*/\n/*        color: #fff;*/\n/*        border: none;*/\n/*        outline: none;*/\n/*    }*/\n/*    .field-wr.dsuns {width: 30%;}*/\n/*    .field-wr.switch-cal {width: 15%; text-align: right;}*/\n/*}*/\n\n/*@media (max-width: 660px) {*/\n/*    #intro {*/\n/*        height: 1600px;*/\n/*    }*/\n\n/*    .field-wr.divider .I, .field-wr.dname .I, .field-wr.cmail .I {*/\n/*        border-right: 0px;*/\n/*    }*/\n\n/*    .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I {*/\n/*        border: 1px solid #666;*/\n/*    }*/\n\n/*    .row {*/\n/*        display: -ms-flexbox;*/\n/*        display: block;*/\n/*        -ms-flex-wrap: wrap;*/\n/*        flex-wrap: wrap;*/\n/*        margin-right: -15px;*/\n/*        margin-left: -15px;*/\n/*    }*/\n/*    .plaque {display: inline-block; background-color: #000; width: 30%; height: 190px; position: relative; margin: 0; padding: 0; text-align: center; vertical-align: middle;}*/\n/*    .plaque-content h2 {font-size: 100%; margin: 0; padding: 0; font-weight: 600;}*/\n/*    .plaque-content p {font-size: 90%; margin: 1em 0 0; padding: 0; color: #fc6; text-align: center !important;}*/\n/*}*/\n@media (max-width: 405px) {\n        /*#intro {height: 1900px;*/\n.field-wr.divider .I[data-v-754b2df6], .field-wr.dname .I[data-v-754b2df6], .field-wr.cmail .I[data-v-754b2df6] {border-right: 0px;}\n.field-wr.ddate .I[data-v-754b2df6], .field-wr.dmnth .I[data-v-754b2df6], .field-wr.dyear .I[data-v-754b2df6] {border: 1px solid #666;}\n.row[data-v-754b2df6] {\n        display: -ms-flexbox;\n        display: block;\n        flex-wrap: wrap;\n        margin-right: -15px;\n        margin-left: -15px;\n}\nhr[data-v-754b2df6] {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.field-wr input[type=text][data-v-754b2df6], .field-wr label[data-v-754b2df6], .field-wr textarea[data-v-754b2df6] {\n        font: normal 300 15px/29px 'Roboto', sans-serif;\n        width: 100%;\n        background: none;\n        /*padding: 0 2px;*/\n        color: #fff;\n        border: none;\n        outline: none;\n}\n.field-wr.ddate[data-v-754b2df6], .field-wr.dmnth[data-v-754b2df6], .field-wr.dyear[data-v-754b2df6] {width: 100%;max-width: 100%;}\n.mw[data-v-754b2df6][data-v-754b2df6] {max-width: 100%;}\n.field-wr.dsuns[data-v-754b2df6] {width: 72%;}\n.field-wr.switch-cal[data-v-754b2df6] {width: 26%; text-align: right;}\n.plaque[data-v-754b2df6] {display: inline-block; background-color: #000; width: 30%; height: 190px; position: relative; margin: 0; padding: 0; text-align: center; vertical-align: middle;}\n.plaque-content h2[data-v-754b2df6] {font-size: 100%; margin: 0; padding: 0; font-weight: 600;}\n.plaque-content p[data-v-754b2df6] {font-size: 90%; margin: 1em 0 0; padding: 0; color: #fc6; text-align: center !important;}\n}\n@media (max-width: 350px) {\n#intro[data-v-754b2df6]\n{height: 2000px;}\n.field-wr.divider .I[data-v-754b2df6], .field-wr.dname .I[data-v-754b2df6], .field-wr.cmail .I[data-v-754b2df6] {border-right: 0px;}\n.field-wr.ddate .I[data-v-754b2df6], .field-wr.dmnth .I[data-v-754b2df6], .field-wr.dyear .I[data-v-754b2df6] {border: 1px solid #666;}\n.row[data-v-754b2df6] {\n        display: -ms-flexbox;\n        display: block;\n        flex-wrap: wrap;\n        margin-right: -15px;\n        margin-left: -15px;\n}\nhr[data-v-754b2df6] {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}\n.field-wr input[type=text][data-v-754b2df6], .field-wr label[data-v-754b2df6], .field-wr textarea[data-v-754b2df6] {\n        font: normal 300 15px/29px 'Roboto', sans-serif;\n        width: 100%;\n        background: none;\n        /*padding: 0 2px;*/\n        color: #fff;\n        border: none;\n        outline: none;\n}\n.field-wr.ddate[data-v-754b2df6], .field-wr.dmnth[data-v-754b2df6], .field-wr.dyear[data-v-754b2df6] {width: 100%;max-width: 100%;}\n.mw[data-v-754b2df6][data-v-754b2df6] {max-width: 100%;}\n.field-wr.dsuns[data-v-754b2df6] {width: 72%;}\n.field-wr.switch-cal[data-v-754b2df6] {width: 26%; text-align: right;}\n.plaque[data-v-754b2df6] {display: inline-block; background-color: #000; width: 30%; height: 190px; position: relative; margin: 0; padding: 0; text-align: center; vertical-align: middle;}\n.plaque-content h2[data-v-754b2df6] {font-size: 100%; margin: 0; padding: 0; font-weight: 600;}\n.plaque-content p[data-v-754b2df6] {font-size: 90%; margin: 1em 0 0; padding: 0; color: #fc6; text-align: center !important;}\n}\n", ""]);
+exports.push([module.i, "\n.orange-text[data-v-754b2df6] {\n    font-size: 100%;\n    color: #ff9800 !important;\n}\n.view .mask[data-v-754b2df6] {\n    position: relative;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    overflow: hidden;\n    width: 100%;\n    height: 100%;\n    background-attachment: fixed;\n}\n.field-wr input[type=email][type=tel][data-v-754b2df6] {\n    text-overflow: ellipsis;\n}\n.field-wr input[type=tel][data-v-754b2df6] {\n    font: normal 300 18px/26px 'Roboto', sans-serif;\n    width: 100%;\n    background: none;\n    padding: 0 2px;\n    color: #fff;\n    border: none;\n    outline: none;\n}\nlabel[data-v-754b2df6] {\n    display: inline-block;\n    margin-bottom: 0rem;\n}\n.mw[data-v-754b2df6] {\n    max-width: 75%\n}\n.np[data-v-754b2df6] {\n    padding: 0px;\n}\n.top-np[data-v-754b2df6] {\n    padding: 0px 0px 14px 0px;\n}\n.bot-np[data-v-754b2df6] {\n    padding: 14px 0px 0px 0px;\n}\nform[data-v-754b2df6] {\n    font-size: 0;\n    font-family: 'Roboto', sans-serif;\n    transition: all 0.4s ease;\n}\n.mv2[data-v-754b2df6] {\n    max-width: 955px;\n}\n.pp[data-v-754b2df6] {\n    padding: 0 2px;\n}\n.fs[data-v-754b2df6] {\n    font: normal 300 16px/26px 'Roboto', sans-serif;\n}\nhr[data-v-754b2df6] {\n    margin-top: 10px;;\n    margin-bottom: 1rem;\n    border: 0;\n    border-top: 1px solid rgba(0, 0, 0, .1);\n}\n.custom-select[data-v-754b2df6] {\n    display: inline-block;\n    width: 100%;\n    height: calc(1.5em + .75rem + 2px);\n    padding: .375rem 1.75rem .375rem .75rem;\n    font: normal 300 18px/26px 'Roboto', sans-serif;\n    line-height: 1.5;\n    color: #495057;\n    vertical-align: middle;\n    background: url(data:image/svg+xml,%3csvg xmlns= 'http://www.w3.org/2000/svg' viewBox= '0 0 4 5' %3e%3cpath fill= '%23343a40' d= 'M2 0L0 2h4zm0 5L0 3h4z' /%3e%3c/svg%3e) no-repeat right .75 rem center / 8 px 10 px;\n    background-color: #000000;\n    /*border: 1px solid #423d3d;*/\n    border-radius: .25rem;\n    -webkit-appearance: none;\n    -moz-appearance: none;\n    appearance: none;\n    border: none;\n}\n.rgba-black-strong[data-v-754b2df6], .rgba-black-strong[data-v-754b2df6]:after {\n    background-color: rgba(0, 0, 0, .5);\n}\n\n/*#intro{*/\n/*    height: 1200px;*/\n/*}*/\n/*@media (max-width: 1200px) {  #intro {min-height: 1200px;}}*/\n/*@media (max-height: 800px){ #intro {height: 950px;}}*/\n/*@media (max-width: 850px) {  #intro {height: 1462px;}*/\n/*    .field-wr.divider .I, .field-wr.dname .I, .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I, .field-wr.cmail .I {border-right: 0px;}*/\n/*    .row {*/\n/*        display: -ms-flexbox;*/\n/*        display: block;*/\n/*        -ms-flex-wrap: wrap;*/\n/*        flex-wrap: wrap;*/\n/*        margin-right: -15px;*/\n/*        margin-left: -15px;*/\n/*    }*/\n/*    hr {margin-top: 10px;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}*/\n/*    .field-wr input[type=text], .field-wr label, .field-wr textarea {*/\n/*        font: normal 300 15px/29px 'Roboto', sans-serif;*/\n/*        width: 100%;*/\n/*        background: none;*/\n/*        !*padding: 0 2px;*!*/\n/*        color: #fff;*/\n/*        border: none;*/\n/*        outline: none;*/\n/*    }*/\n/*    .field-wr.dsuns {width: 30%;}*/\n/*    .field-wr.switch-cal {width: 15%; text-align: right;}*/\n/*}*/\n\n/*@media (max-width: 760px) {  #intro {height: 1460px;}*/\n/*    .field-wr.divider .I, .field-wr.dname .I, .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I, .field-wr.cmail .I {border-right: 0px;}*/\n/*    .row {*/\n/*        display: -ms-flexbox;*/\n/*        display: block;*/\n/*        -ms-flex-wrap: wrap;*/\n/*        flex-wrap: wrap;*/\n/*        margin-right: -15px;*/\n/*        margin-left: -15px;*/\n/*    }*/\n/*    hr {margin-top: 0rem;margin-bottom: 1rem;border: 0;border-top: 1px solid rgba(0, 0, 0, .1);}*/\n/*    .field-wr input[type=text], .field-wr label, .field-wr textarea {*/\n/*        font: normal 300 15px/29px 'Roboto', sans-serif;*/\n/*        width: 100%;*/\n/*        background: none;*/\n/*        !*padding: 0 2px;*!*/\n/*        color: #fff;*/\n/*        border: none;*/\n/*        outline: none;*/\n/*    }*/\n/*    .field-wr.dsuns {width: 30%;}*/\n/*    .field-wr.switch-cal {width: 15%; text-align: right;}*/\n/*}*/\n\n/*@media (max-width: 660px) {*/\n/*    #intro {*/\n/*        height: 1600px;*/\n/*    }*/\n\n/*    .field-wr.divider .I, .field-wr.dname .I, .field-wr.cmail .I {*/\n/*        border-right: 0px;*/\n/*    }*/\n\n/*    .field-wr.ddate .I, .field-wr.dmnth .I, .field-wr.dyear .I {*/\n/*        border: 1px solid #666;*/\n/*    }*/\n\n/*    .row {*/\n/*        display: -ms-flexbox;*/\n/*        display: block;*/\n/*        -ms-flex-wrap: wrap;*/\n/*        flex-wrap: wrap;*/\n/*        margin-right: -15px;*/\n/*        margin-left: -15px;*/\n/*    }*/\n/*    .plaque {display: inline-block; background-color: #000; width: 30%; height: 190px; position: relative; margin: 0; padding: 0; text-align: center; vertical-align: middle;}*/\n/*    .plaque-content h2 {font-size: 100%; margin: 0; padding: 0; font-weight: 600;}*/\n/*    .plaque-content p {font-size: 90%; margin: 1em 0 0; padding: 0; color: #fc6; text-align: center !important;}*/\n/*}*/\n@media (max-width: 405px) {\n    /*#intro {height: 1900px;*/\n.field-wr.divider .I[data-v-754b2df6], .field-wr.dname .I[data-v-754b2df6], .field-wr.cmail .I[data-v-754b2df6] {\n        border-right: 0px;\n}\n.field-wr.ddate .I[data-v-754b2df6], .field-wr.dmnth .I[data-v-754b2df6], .field-wr.dyear .I[data-v-754b2df6] {\n        border: 1px solid #666;\n}\n.row[data-v-754b2df6] {\n        display: -ms-flexbox;\n        display: block;\n        flex-wrap: wrap;\n        margin-right: -15px;\n        margin-left: -15px;\n}\nhr[data-v-754b2df6] {\n        margin-top: 0rem;\n        margin-bottom: 1rem;\n        border: 0;\n        border-top: 1px solid rgba(0, 0, 0, .1);\n}\n.field-wr input[type=text][data-v-754b2df6], .field-wr label[data-v-754b2df6], .field-wr textarea[data-v-754b2df6] {\n        font: normal 300 15px/29px 'Roboto', sans-serif;\n        width: 100%;\n        background: none;\n        /*padding: 0 2px;*/\n        color: #fff;\n        border: none;\n        outline: none;\n}\n.field-wr.ddate[data-v-754b2df6], .field-wr.dmnth[data-v-754b2df6], .field-wr.dyear[data-v-754b2df6] {\n        width: 100%;\n        max-width: 100%;\n}\n.mw[data-v-754b2df6][data-v-754b2df6] {\n        max-width: 100%;\n}\n.field-wr.dsuns[data-v-754b2df6] {\n        width: 72%;\n}\n.field-wr.switch-cal[data-v-754b2df6] {\n        width: 26%;\n        text-align: right;\n}\n.plaque[data-v-754b2df6] {\n        display: inline-block;\n        background-color: #000;\n        width: 30%;\n        height: 190px;\n        position: relative;\n        margin: 0;\n        padding: 0;\n        text-align: center;\n        vertical-align: middle;\n}\n.plaque-content h2[data-v-754b2df6] {\n        font-size: 100%;\n        margin: 0;\n        padding: 0;\n        font-weight: 600;\n}\n.plaque-content p[data-v-754b2df6] {\n        font-size: 90%;\n        margin: 1em 0 0;\n        padding: 0;\n        color: #fc6;\n        text-align: center !important;\n}\n}\n@media (max-width: 350px) {\n#intro[data-v-754b2df6] {\n        height: 2000px;\n}\n.field-wr.divider .I[data-v-754b2df6], .field-wr.dname .I[data-v-754b2df6], .field-wr.cmail .I[data-v-754b2df6] {\n        border-right: 0px;\n}\n.field-wr.ddate .I[data-v-754b2df6], .field-wr.dmnth .I[data-v-754b2df6], .field-wr.dyear .I[data-v-754b2df6] {\n        border: 1px solid #666;\n}\n.row[data-v-754b2df6] {\n        display: -ms-flexbox;\n        display: block;\n        flex-wrap: wrap;\n        margin-right: -15px;\n        margin-left: -15px;\n}\nhr[data-v-754b2df6] {\n        margin-top: 0rem;\n        margin-bottom: 1rem;\n        border: 0;\n        border-top: 1px solid rgba(0, 0, 0, .1);\n}\n.field-wr input[type=text][data-v-754b2df6], .field-wr label[data-v-754b2df6], .field-wr textarea[data-v-754b2df6] {\n        font: normal 300 15px/29px 'Roboto', sans-serif;\n        width: 100%;\n        background: none;\n        /*padding: 0 2px;*/\n        color: #fff;\n        border: none;\n        outline: none;\n}\n.field-wr.ddate[data-v-754b2df6], .field-wr.dmnth[data-v-754b2df6], .field-wr.dyear[data-v-754b2df6] {\n        width: 100%;\n        max-width: 100%;\n}\n.mw[data-v-754b2df6][data-v-754b2df6] {\n        max-width: 100%;\n}\n.field-wr.dsuns[data-v-754b2df6] {\n        width: 72%;\n}\n.field-wr.switch-cal[data-v-754b2df6] {\n        width: 26%;\n        text-align: right;\n}\n.plaque[data-v-754b2df6] {\n        display: inline-block;\n        background-color: #000;\n        width: 30%;\n        height: 190px;\n        position: relative;\n        margin: 0;\n        padding: 0;\n        text-align: center;\n        vertical-align: middle;\n}\n.plaque-content h2[data-v-754b2df6] {\n        font-size: 100%;\n        margin: 0;\n        padding: 0;\n        font-weight: 600;\n}\n.plaque-content p[data-v-754b2df6] {\n        font-size: 90%;\n        margin: 1em 0 0;\n        padding: 0;\n        color: #fc6;\n        text-align: center !important;\n}\n}\n", ""]);
 
 // exports
 
@@ -10988,7 +11081,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.cont[data-v-7de99aa0] {\n    background-color: #1d2124;\n    opacity: 0.8;\n    width: 600px;\n}\n@media (max-height: 1000px){\n#intro[data-v-7de99aa0] {height:  100%;}\n.cont[data-v-7de99aa0] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 600px;\n}\n}\n@media (max-width: 850px) {\n#intro[data-v-7de99aa0] {height: 100%;}\n.cont[data-v-7de99aa0] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 600px;\n}\n}\n@media (max-width: 760px) {\n#intro[data-v-7de99aa0] {height: 100%;}\n}\n@media (max-width: 660px) {#intro[data-v-7de99aa0] {height: 100%;}\n}\n@media (max-width: 350px) {#intro[data-v-7de99aa0] {height: 100%;}\n}\n@media (max-height: 750px) {#intro[data-v-7de99aa0] {height:100%;}\n}\n@media (max-width: 238px) {#intro[data-v-7de99aa0] {height: 100%;}\n.cont[data-v-7de99aa0] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 600px;\n}\ndl[data-v-7de99aa0], ol[data-v-7de99aa0], ul[data-v-7de99aa0] {\n        margin-top: 0;\n        margin-bottom: 1rem;\n        font-size: 13px;\n}\n}\n", ""]);
+exports.push([module.i, "\n.cont[data-v-7de99aa0] {\n    background-color: #1d2124;\n    opacity: 0.8;\n    width: 600px;\n}\n@media (max-height: 1000px) {\n#intro[data-v-7de99aa0] {\n        height: 100%;\n}\n.cont[data-v-7de99aa0] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 600px;\n}\n}\n@media (max-width: 850px) {\n#intro[data-v-7de99aa0] {\n        height: 100%;\n}\n.cont[data-v-7de99aa0] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 600px;\n}\n}\n@media (max-width: 760px) {\n#intro[data-v-7de99aa0] {\n        height: 100%;\n}\n}\n@media (max-width: 660px) {\n#intro[data-v-7de99aa0] {\n        height: 100%;\n}\n}\n@media (max-width: 350px) {\n#intro[data-v-7de99aa0] {\n        height: 100%;\n}\n}\n@media (max-height: 750px) {\n#intro[data-v-7de99aa0] {\n        height: 100%;\n}\n}\n@media (max-width: 238px) {\n#intro[data-v-7de99aa0] {\n        height: 100%;\n}\n.cont[data-v-7de99aa0] {\n        background-color: #1d2124;\n        opacity: 0.8;\n        width: 600px;\n}\ndl[data-v-7de99aa0], ol[data-v-7de99aa0], ul[data-v-7de99aa0] {\n        margin-top: 0;\n        margin-bottom: 1rem;\n        font-size: 13px;\n}\n}\n", ""]);
 
 // exports
 
@@ -83715,15 +83808,17 @@ var render = function() {
                                                 { staticClass: "error-mess " },
                                                 [
                                                   _vm._v(
-                                                    _vm._s(
-                                                      _vm.$t("Form.required")
-                                                    )
+                                                    "\n                                                        " +
+                                                      _vm._s(
+                                                        _vm.$t("Form.required")
+                                                      ) +
+                                                      "\n                                                    "
                                                   )
                                                 ]
                                               )
                                             : _vm._e(),
                                           _vm._v(
-                                            "-->\n                                                        "
+                                            "\n                                                    -->\n                                                    "
                                           ),
                                           !_vm.$v.Form.Name_of_Deceased
                                             .minLength
@@ -83732,11 +83827,11 @@ var render = function() {
                                                 { staticClass: "error-mess" },
                                                 [
                                                   _vm._v(
-                                                    " " +
+                                                    "\n                                                        " +
                                                       _vm._s(
                                                         _vm.$t("Form.minLength")
                                                       ) +
-                                                      " 2"
+                                                      " 2\n                                                    "
                                                   )
                                                 ]
                                               )
@@ -83749,11 +83844,11 @@ var render = function() {
                                                 { staticClass: "error-mess" },
                                                 [
                                                   _vm._v(
-                                                    " " +
+                                                    "\n                                                        " +
                                                       _vm._s(
                                                         _vm.$t("Form.maxLength")
                                                       ) +
-                                                      " 15"
+                                                      " 15\n                                                    "
                                                   )
                                                 ]
                                               )
@@ -83838,9 +83933,11 @@ var render = function() {
                                                 { staticClass: "error-mess" },
                                                 [
                                                   _vm._v(
-                                                    _vm._s(
-                                                      _vm.$t("Form.required")
-                                                    )
+                                                    "\n                                                        " +
+                                                      _vm._s(
+                                                        _vm.$t("Form.required")
+                                                      ) +
+                                                      "\n                                                    "
                                                   )
                                                 ]
                                               )
@@ -83853,11 +83950,11 @@ var render = function() {
                                                 { staticClass: "error-mess" },
                                                 [
                                                   _vm._v(
-                                                    " " +
+                                                    "\n                                                        " +
                                                       _vm._s(
                                                         _vm.$t("Form.minLength")
                                                       ) +
-                                                      " 2"
+                                                      " 2\n                                                    "
                                                   )
                                                 ]
                                               )
@@ -83870,11 +83967,11 @@ var render = function() {
                                                 { staticClass: "error-mess" },
                                                 [
                                                   _vm._v(
-                                                    " " +
+                                                    "\n                                                        " +
                                                       _vm._s(
                                                         _vm.$t("Form.maxLength")
                                                       ) +
-                                                      " 15"
+                                                      " 15\n                                                    "
                                                   )
                                                 ]
                                               )
@@ -83962,11 +84059,13 @@ var render = function() {
                                                     },
                                                     [
                                                       _vm._v(
-                                                        _vm._s(
-                                                          _vm.$t(
-                                                            "Form.required"
-                                                          )
-                                                        )
+                                                        "\n                                                                " +
+                                                          _vm._s(
+                                                            _vm.$t(
+                                                              "Form.required"
+                                                            )
+                                                          ) +
+                                                          "\n                                                            "
                                                       )
                                                     ]
                                                   )
@@ -83980,13 +84079,13 @@ var render = function() {
                                                     },
                                                     [
                                                       _vm._v(
-                                                        " " +
+                                                        "\n                                                                " +
                                                           _vm._s(
                                                             _vm.$t(
                                                               "Form.minLength"
                                                             )
                                                           ) +
-                                                          " 2"
+                                                          " 2\n                                                            "
                                                       )
                                                     ]
                                                   )
@@ -84000,13 +84099,13 @@ var render = function() {
                                                     },
                                                     [
                                                       _vm._v(
-                                                        " " +
+                                                        "\n                                                                " +
                                                           _vm._s(
                                                             _vm.$t(
                                                               "Form.maxLength"
                                                             )
                                                           ) +
-                                                          " 15"
+                                                          " 15\n                                                            "
                                                       )
                                                     ]
                                                   )
@@ -84020,13 +84119,13 @@ var render = function() {
                                                     },
                                                     [
                                                       _vm._v(
-                                                        " " +
+                                                        "\n                                                                " +
                                                           _vm._s(
                                                             _vm.$t(
                                                               "Form.numeric"
                                                             )
                                                           ) +
-                                                          "."
+                                                          ".\n                                                            "
                                                       )
                                                     ]
                                                   )
@@ -84118,7 +84217,8 @@ var render = function() {
                                                               _vm.$t(
                                                                 "Month.January"
                                                               )
-                                                            )
+                                                            ) +
+                                                              "\n                                                                "
                                                           )
                                                         ]
                                                       ),
@@ -84360,11 +84460,13 @@ var render = function() {
                                                         },
                                                         [
                                                           _vm._v(
-                                                            _vm._s(
-                                                              _vm.$t(
-                                                                "JewishMonth.Tishry"
-                                                              )
-                                                            )
+                                                            "\n                                                                    " +
+                                                              _vm._s(
+                                                                _vm.$t(
+                                                                  "JewishMonth.Tishry"
+                                                                )
+                                                              ) +
+                                                              "\n                                                                "
                                                           )
                                                         ]
                                                       ),
@@ -84380,7 +84482,8 @@ var render = function() {
                                                               _vm.$t(
                                                                 "JewishMonth.Heshvan"
                                                               )
-                                                            )
+                                                            ) +
+                                                              "\n                                                                "
                                                           )
                                                         ]
                                                       ),
@@ -84396,7 +84499,8 @@ var render = function() {
                                                               _vm.$t(
                                                                 "JewishMonth.Kislev"
                                                               )
-                                                            )
+                                                            ) +
+                                                              "\n                                                                "
                                                           )
                                                         ]
                                                       ),
@@ -84412,7 +84516,8 @@ var render = function() {
                                                               _vm.$t(
                                                                 "JewishMonth.Tevet"
                                                               )
-                                                            )
+                                                            ) +
+                                                              "\n                                                                "
                                                           )
                                                         ]
                                                       ),
@@ -84428,7 +84533,8 @@ var render = function() {
                                                               _vm.$t(
                                                                 "JewishMonth.Shevat"
                                                               )
-                                                            )
+                                                            ) +
+                                                              "\n                                                                "
                                                           )
                                                         ]
                                                       ),
@@ -84444,7 +84550,8 @@ var render = function() {
                                                               _vm.$t(
                                                                 "JewishMonth.Adar"
                                                               )
-                                                            )
+                                                            ) +
+                                                              "\n                                                                "
                                                           )
                                                         ]
                                                       ),
@@ -84460,7 +84567,8 @@ var render = function() {
                                                               _vm.$t(
                                                                 "JewishMonth.Adar II"
                                                               )
-                                                            )
+                                                            ) +
+                                                              "\n                                                                "
                                                           )
                                                         ]
                                                       ),
@@ -84476,7 +84584,8 @@ var render = function() {
                                                               _vm.$t(
                                                                 "JewishMonth.Nissan"
                                                               )
-                                                            )
+                                                            ) +
+                                                              "\n                                                                "
                                                           )
                                                         ]
                                                       ),
@@ -84492,7 +84601,8 @@ var render = function() {
                                                               _vm.$t(
                                                                 "JewishMonth.Iyar"
                                                               )
-                                                            )
+                                                            ) +
+                                                              "\n                                                                "
                                                           )
                                                         ]
                                                       ),
@@ -84508,7 +84618,8 @@ var render = function() {
                                                               _vm.$t(
                                                                 "JewishMonth.Sevan"
                                                               )
-                                                            )
+                                                            ) +
+                                                              "\n                                                                "
                                                           )
                                                         ]
                                                       ),
@@ -84524,7 +84635,8 @@ var render = function() {
                                                               _vm.$t(
                                                                 "JewishMonth.Tammuz"
                                                               )
-                                                            )
+                                                            ) +
+                                                              "\n                                                                "
                                                           )
                                                         ]
                                                       ),
@@ -84557,7 +84669,7 @@ var render = function() {
                                                                 "JewishMonth.Elul"
                                                               )
                                                             ) +
-                                                              "\n                                                                    "
+                                                              "\n                                                                "
                                                           )
                                                         ]
                                                       )
@@ -84642,11 +84754,13 @@ var render = function() {
                                                     },
                                                     [
                                                       _vm._v(
-                                                        _vm._s(
-                                                          _vm.$t(
-                                                            "Form.required"
-                                                          )
-                                                        )
+                                                        "\n                                                                " +
+                                                          _vm._s(
+                                                            _vm.$t(
+                                                              "Form.required"
+                                                            )
+                                                          ) +
+                                                          "\n                                                            "
                                                       )
                                                     ]
                                                   )
@@ -84660,13 +84774,13 @@ var render = function() {
                                                     },
                                                     [
                                                       _vm._v(
-                                                        " " +
+                                                        "\n                                                                " +
                                                           _vm._s(
                                                             _vm.$t(
                                                               "Form.numeric"
                                                             )
                                                           ) +
-                                                          "."
+                                                          ".\n                                                            "
                                                       )
                                                     ]
                                                   )
@@ -84804,7 +84918,7 @@ var render = function() {
                                                             "Button.Sunset"
                                                           )
                                                         ) +
-                                                          "\n                                                                    "
+                                                          "\n                                                                "
                                                       ),
                                                       _c(
                                                         "div",
@@ -85084,9 +85198,11 @@ var render = function() {
                                                 { staticClass: "error-mess" },
                                                 [
                                                   _vm._v(
-                                                    _vm._s(
-                                                      _vm.$t("Form.required")
-                                                    )
+                                                    "\n                                                        " +
+                                                      _vm._s(
+                                                        _vm.$t("Form.required")
+                                                      ) +
+                                                      "\n                                                    "
                                                   )
                                                 ]
                                               )
@@ -85098,11 +85214,11 @@ var render = function() {
                                                 { staticClass: "error-mess" },
                                                 [
                                                   _vm._v(
-                                                    " " +
+                                                    "\n                                                        " +
                                                       _vm._s(
                                                         _vm.$t("Form.minLength")
                                                       ) +
-                                                      " 2"
+                                                      " 2\n                                                    "
                                                   )
                                                 ]
                                               )
@@ -85114,11 +85230,11 @@ var render = function() {
                                                 { staticClass: "error-mess" },
                                                 [
                                                   _vm._v(
-                                                    " " +
+                                                    "\n                                                        " +
                                                       _vm._s(
                                                         _vm.$t("Form.maxLength")
                                                       ) +
-                                                      " 15"
+                                                      " 15\n                                                    "
                                                   )
                                                 ]
                                               )
@@ -85130,10 +85246,11 @@ var render = function() {
                                                 { staticClass: "error-mess" },
                                                 [
                                                   _vm._v(
-                                                    " " +
+                                                    "\n                                                        " +
                                                       _vm._s(
                                                         _vm.$t("Form.email")
-                                                      )
+                                                      ) +
+                                                      "\n                                                    "
                                                   )
                                                 ]
                                               )
@@ -85211,9 +85328,11 @@ var render = function() {
                                                 { staticClass: "error-mess" },
                                                 [
                                                   _vm._v(
-                                                    _vm._s(
-                                                      _vm.$t("Form.required")
-                                                    )
+                                                    "\n                                                        " +
+                                                      _vm._s(
+                                                        _vm.$t("Form.required")
+                                                      ) +
+                                                      "\n                                                    "
                                                   )
                                                 ]
                                               )
@@ -85225,11 +85344,11 @@ var render = function() {
                                                 { staticClass: "error-mess" },
                                                 [
                                                   _vm._v(
-                                                    " " +
+                                                    "\n                                                        " +
                                                       _vm._s(
                                                         _vm.$t("Form.minLength")
                                                       ) +
-                                                      " 2"
+                                                      " 2\n                                                    "
                                                   )
                                                 ]
                                               )
@@ -85241,11 +85360,11 @@ var render = function() {
                                                 { staticClass: "error-mess" },
                                                 [
                                                   _vm._v(
-                                                    " " +
+                                                    "\n                                                        " +
                                                       _vm._s(
                                                         _vm.$t("Form.maxLength")
                                                       ) +
-                                                      " 15"
+                                                      " 15\n                                                    "
                                                   )
                                                 ]
                                               )
@@ -85257,11 +85376,11 @@ var render = function() {
                                                 { staticClass: "error-mess" },
                                                 [
                                                   _vm._v(
-                                                    " " +
+                                                    "\n                                                        " +
                                                       _vm._s(
                                                         _vm.$t("Form.numeric")
                                                       ) +
-                                                      "."
+                                                      ".\n                                                    "
                                                   )
                                                 ]
                                               )
@@ -85314,7 +85433,7 @@ var render = function() {
                                 })
                               : _vm._e(),
                             _vm._v(
-                              "\n                                    " +
+                              "\n                                " +
                                 _vm._s(_vm.$t("Button.Button1"))
                             ),
                             _c("b", { staticClass: "free" }, [_vm._v("Free")])
@@ -85348,7 +85467,7 @@ var render = function() {
                                 })
                               : _vm._e(),
                             _vm._v(
-                              "\n                                    " +
+                              "\n                                " +
                                 _vm._s(_vm.$t("Button.Button2"))
                             ),
                             _c("i", {
@@ -85388,14 +85507,14 @@ var render = function() {
                                   "div",
                                   { staticClass: "modal-body" },
                                   [
-                                    _c("paypal-checkout", {
+                                    _c("PayPal", {
                                       attrs: {
-                                        amount: "10.00",
+                                        amount: "1.00",
                                         currency: "USD",
                                         client: _vm.credentials,
                                         braintree: _vm.braintreeSdk,
                                         "button-style": _vm.myStyle,
-                                        env: "sandbox"
+                                        env: "production"
                                       },
                                       on: {
                                         "payment-completed":
@@ -85433,7 +85552,10 @@ var render = function() {
                             _c("br"),
                             _vm._v(" ben(bat)"),
                             _c("br"),
-                            _vm._v(" " + _vm._s(plaques.Fathers_Name)),
+                            _vm._v(
+                              "\n                                        " +
+                                _vm._s(plaques.Fathers_Name)
+                            ),
                             _c("br")
                           ]),
                           _vm._v(" "),
@@ -85442,16 +85564,16 @@ var render = function() {
                               _vm._s(plaques.J_Date.day) +
                                 " " +
                                 _vm._s(plaques.J_Date.monthname) +
-                                "  " +
+                                " " +
                                 _vm._s(plaques.J_Date.year) +
-                                " "
+                                "\n                                        "
                             ),
                             _c("br"),
                             _vm._v(
                               _vm._s(plaques.G_Date.day) +
                                 " " +
                                 _vm._s(plaques.G_Date.monthname) +
-                                "  " +
+                                "\n                                        " +
                                 _vm._s(plaques.G_Date.year)
                             )
                           ])
@@ -85639,56 +85761,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "view", attrs: { id: "intro" } }, [
-    _c("div", { staticClass: "mask rgba-black-strong" }, [
-      _c(
-        "div",
-        {
-          staticClass:
-            "container-fluid d-flex align-items-center justify-content-center h-100"
-        },
-        [
-          _c(
-            "div",
-            { staticClass: "row d-flex justify-content-center text-center" },
-            [
-              _c("div", { staticClass: "col-md-12 " }, [
-                _c(
-                  "h2",
-                  {
-                    staticClass:
-                      "display-4 font-weight-bold white-text pt-5 mb-2 "
-                  },
-                  [_vm._v("PayPal")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "cont" },
-                  [
-                    _c("hr", { staticClass: "hr-light" }),
-                    _vm._v(" "),
-                    _c("paypal-checkout", {
-                      attrs: {
-                        amount: "1.00",
-                        currency: "USD",
-                        client: _vm.credentials,
-                        braintree: _vm.braintreeSdk,
-                        "button-style": _vm.myStyle,
-                        env: "production"
-                      },
-                      on: { "payment-completed": _vm.payment_completed_cb }
-                    }),
-                    _vm._v(" "),
-                    _c("hr", { staticClass: "hr-light" })
-                  ],
-                  1
-                )
-              ])
-            ]
-          )
-        ]
-      )
-    ]),
+    _vm._m(0),
     _vm._v(" "),
     _c(
       "footer",
@@ -85713,7 +85786,46 @@ var render = function() {
     )
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mask rgba-black-strong" }, [
+      _c(
+        "div",
+        {
+          staticClass:
+            "container-fluid d-flex align-items-center justify-content-center h-100"
+        },
+        [
+          _c(
+            "div",
+            { staticClass: "row d-flex justify-content-center text-center" },
+            [
+              _c("div", { staticClass: "col-md-12 " }, [
+                _c(
+                  "h2",
+                  {
+                    staticClass:
+                      "display-4 font-weight-bold white-text pt-5 mb-2 "
+                  },
+                  [_vm._v("PayPal")]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "cont" }, [
+                  _c("hr", { staticClass: "hr-light" }),
+                  _vm._v(" "),
+                  _c("hr", { staticClass: "hr-light" })
+                ])
+              ])
+            ]
+          )
+        ]
+      )
+    ])
+  }
+]
 render._withStripped = true
 
 

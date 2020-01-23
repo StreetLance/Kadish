@@ -43,8 +43,8 @@
     <!--/.Mask-->
 </header>
 <!-- Footer -->
-<script src="https://unpkg.com/vue"></script>
-<script src="https://unpkg.com/vue-paypal-checkout@2.0.0/dist/vue-paypal-checkout.min.js"></script>
+{{--<script src="https://unpkg.com/vue"></script>--}}
+{{--<script src="https://unpkg.com/vue-paypal-checkout@2.0.0/dist/vue-paypal-checkout.min.js"></script>--}}
 <!-- JQuery -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- Bootstrap tooltips -->
