@@ -89,7 +89,7 @@ class KaddishController extends Controller
         $item['id'] = $kadish->id;
         $item['order'] = $request->Order;
         //send email
-            event(new RemindKaddish($request->Email));
+            event(new RemindKaddish($request->Email,$request->Lang));
 //        Newsletter::subscribe($request->Email);
 //      $listId= Newsletter::getMember($request->Email);
 //        $mailchimp = new \Mailchimp(config('newsletter.apiKey'));

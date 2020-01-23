@@ -30,7 +30,7 @@
                                 <td style="padding:20px;font-size:14px;color:#000;text-align:center;">
 	<span style="font-size:18px;color:#000;">
 {{--		Оплата прошла, заказ приянт<br/><br/>--}}
-		Сообщение о том что нужно читать кадиш за Реувена бен(бат) Шимон уже отправлено раввину. Раввин начнет читать кадиш сегодня и будет читать до Thursday, December 07, 2017
+        {{ __('mail.h1') }}
 	</span>
                                 </td>
                             </tr>
@@ -41,17 +41,7 @@
                             <tbody>
                             <tr>
                                 <td style="padding:16px;font-size:14px;color:#000;">
-                                    Каждый год вам будет приходить напоминание о наступающей дате йорцайт и описание
-                                    всех обычаев этого дня для того чтоб вы могли отметить йорцайт в срок и согласно
-                                    еврейским традициям. Рекомендуем вам добавить e-mail globalkaddish@gmail.com в
-                                    контакты для того чтоб напоминания не попали в спам.
-                                    <br/><br/>
-                                    Спасибо. Что воспользовались сервисом Kaddish-prayer.
-                                    <br/><br/>
-                                    Этот сервис мы сделали для того, чтобы не осталось ни одного еврея без кадиша. Это
-                                    зависит и от вас. Расшарьте нас пожалуйста, на Facebook. Спасибо.
-                                    <br/><br/>
-                                    С уважением и наилучшими пожеланиями,
+                                    {{ __('mail.body') }}
                                     <table border="0" cellpadding="0" cellspacing="0" width="">
                                         <tbody>
                                         <tr>
@@ -60,8 +50,7 @@
 {{--                                                     width="40" height="40" border="0" style="display:block"/>--}}
                                             </td>
                                             <td style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:10px;font-size:14px;">
-                                                Р. Шмуэль Лившиц<br/>
-                                                Руководитель проекта
+                                                {{ __('mail.footer') }}
                                             </td>
                                         </tr>
                                         </tbody>
@@ -119,11 +108,11 @@
                 </tr>
                 <tr>
                     <td style="padding-top:10px;border-top:1px solid #c6c6c6;">
-			<span style="color:#777777;font: 12px Arial, sans-serif;">Если желаете больше не получать напоминаний,
-				<a href="qwe"
-                   style="color:#194678;line-height:20px;-webkit-text-size-adjust:none;text-decoration:underline;"
-                   target="_blank">перейдите по этой ссылке</a>.
-			</span>
+			{{--<span style="color:#777777;font: 12px Arial, sans-serif;">Если желаете больше не получать напоминаний,--}}
+				{{--<a href="qwe"--}}
+                   {{--style="color:#194678;line-height:20px;-webkit-text-size-adjust:none;text-decoration:underline;"--}}
+                   {{--target="_blank">перейдите по этой ссылке</a>.--}}
+			{{--</span>--}}
                     </td>
                 </tr>
                 </tbody>

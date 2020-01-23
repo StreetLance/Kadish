@@ -29,6 +29,6 @@ class SendThankyouMail
      */
     public function handle($event)
     {
-                Mail::to($event->Email)->send(new KaddishSendMailThank_Reg());
+                Mail::to($event->Email)->locale($event->Lang)->send(new KaddishSendMailThank_Reg());
     }
 }

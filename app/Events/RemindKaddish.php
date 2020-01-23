@@ -14,14 +14,16 @@
     {
         use Dispatchable, InteractsWithSockets, SerializesModels;
         public $Email;
+        public $Lang;
 
         /**
          * Create a new event instance.
          *
          * @return void
          */
-        public function __construct ( $email )
+        public function __construct ( $email,$lang )
         {
             $this->Email = $email;
+            $this->Lang = $lang;
         }
     }
