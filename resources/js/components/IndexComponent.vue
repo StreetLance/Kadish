@@ -547,7 +547,7 @@
 
 <style scoped>
     .orange-text {
-        font-size: 100%;
+        /*font-size: 100%;*/
         color: #ff9800 !important;
     }
 
