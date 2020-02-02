@@ -28,7 +28,7 @@ class SendThankyouMailPayMax11
      */
     public function handle($event)
     {
-        Mail::to($event->Email)->locale($event->Lang)->send(new KaddishSendMailThank_RegPayMax11($event->name,$event->fname));
+        Mail::to($event->Email)->locale($event->Lang)->send(new KaddishSendMailThank_RegPayMax11($event->name,$event->Fname));
 
     }
 }

@@ -30,6 +30,6 @@ class SendThankyouMailMin11
      */
     public function handle($event)
     {
-                Mail::to($event->Email)->locale($event->Lang)->send(new KaddishSendMailThank_RegMin11($event->name,$event->fname));
+                Mail::to($event->Email)->locale($event->Lang)->send(new KaddishSendMailThank_RegMin11($event->name,$event->Fname));
     }
 }

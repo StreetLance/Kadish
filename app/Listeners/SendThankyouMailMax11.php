@@ -9,17 +9,13 @@ use Illuminate\Support\Facades\Mail;
 
 class SendThankyouMailMax11
 {
-    protected $name;
-    protected $Fname;
     /**
      * Create the event listener.
      *
      * @return void
      */
-    public function __construct($name, $Fname)
+    public function __construct()
     {
-        $this->name = $name;
-        $this->Fname = $Fname;
     }
 
     /**
@@ -30,6 +26,6 @@ class SendThankyouMailMax11
      */
     public function handle($event)
     {
-        Mail::to($event->Email)->locale($event->Lang)->send(new KaddishSendMailThank_RegMax11($event->name,$event->fname));
+        Mail::to($event->Email)->locale($event->Lang)->send(new KaddishSendMailThank_RegMax11($event->name,$event->Fname));
     }
 }
