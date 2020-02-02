@@ -30,7 +30,7 @@
                                 <td style="padding:20px;font-size:14px;color:#000;">
 	<span style="font-size:18px;color:#000;">
 		{{--Оплата прошла, заказ приянт<br>--}}
-        {!!__('mail.thankMin11.header')!!}
+        {!!__('mail.thankMin11.header',['name' => $name,'Fname' => $Fname])!!}
 	</span>
                                 </td>
                             </tr>

@@ -15,11 +15,15 @@ class RemindKaddishMin11
     use Dispatchable, InteractsWithSockets, SerializesModels;
     public $Email;
     public $Lang;
+    public $name;
+    public $Fname ;
 
-    public function __construct($email,$lang)
+    public function __construct($email,$lang,$name,$Fname)
     {
         $this->Email = $email;
         $this->Lang = $lang;
+        $this->name = $name;
+        $this->Fname = $Fname;
     }
 
     /**

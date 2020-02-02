@@ -26,8 +26,8 @@ Regards and best wishes,<br>
 <br>
 Rabbi Zeev Kushnirsky<br>'],
     "thankPayMax11" => ['header'=>'Hi. Your order is successfully placed.<br>
-The message that you need to read kadish for {Name} ben (bat) { father name } has already been sent to the rabbi.<br>
- The rabbi will to recite kaddish on upcoming yahrzeit {Дата йорцайт}  If you have any questions please write to jrlcofsb@gmail.com<br>
+The message that you need to read kadish for :Name бен (бат) :Fname has already been sent to the rabbi.<br>
+ The rabbi will to recite kaddish on upcoming yahrzeit :data. If you have any questions please write to jrlcofsb@gmail.com<br>
 Each year you will receive a reminder of the upcoming date and a description of all the customs of that day,<br>
  so that you can mark the yortsight on time and in accordance with Jewish traditions. We recommend that you add the email address  jrlcofsb@gmail.com<br>
    to contacts so that reminders do not fall into spam.<br>

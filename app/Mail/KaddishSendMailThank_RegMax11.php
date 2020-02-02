@@ -11,14 +11,17 @@ class KaddishSendMailThank_RegMax11 extends Mailable
 {
     use Queueable, SerializesModels;
 
-
+    protected $name;
+    protected $Fname;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($name, $Fname)
     {
+        $this->name = $name;
+        $this->Fname = $Fname;
     }
     /**
      * Build the message.
@@ -29,6 +32,11 @@ class KaddishSendMailThank_RegMax11 extends Mailable
     {
 
         return $this
-            ->view('mail.Thank_Reg_Max11');
+            ->view('mail.Thank_Reg_Max11')
+            ->subject('Notification !')
+            ->with([
+                'name' => $this->name,
+                'Fname' => $this->Fname,
+            ]);
     }
 }

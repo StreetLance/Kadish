@@ -49,7 +49,7 @@
 {{--                                                     width="40" height="40" border="0" style="display:block"/>--}}
                                             </td>
                                             <td style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:10px;font-size:14px;">
-                                                {!!__('mail.thankMax11.Footer')!!}
+                                                {!!__('mail.thankMax11.Footer',['name' => $name,'Fname' => $Fname])!!}
                                             </td>
                                         </tr>
                                         </tbody>

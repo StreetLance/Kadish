@@ -95,26 +95,28 @@ class KaddishController extends Controller
         $item['order'] = $request->Order;
         //send email
 
+$addMonth = cal_from_jd( unixtojd( strtotime($data_G .'+11 month') ), CAL_JEWISH );
+
         if ($request->has('First_Name')) {
 
             if ($Difirence_Year == true) {
 
-                event(new RemindKaddishPayMin11($request->Email, $request->Lang ,$request->First_Name,$request->Last_Name,$data_J));
+                event(new RemindKaddishPayMin11( $request->Email, $request->Lang ,$request->Name_of_Deceased,$request->Name_Father_Deceased,$addMonth ));
 
             }else{
 
-                event(new RemindKaddishPayMax11($request->Email, $request->Lang,$request->First_Name,$request->Last_Name));
+                event(new RemindKaddishPayMax11( $request->Email, $request->Lang,$request->Name_of_Deceased,$request->Name_Father_Deceased ));
 
             }
         } else {
 
             if ($Difirence_Year == true) {
 
-                event(new RemindKaddishMin11($request->Email, $request->Lang));
+                event(new RemindKaddishMin11( $request->Email, $request->Lang,$request->Name_of_Deceased,$request->Name_Father_Deceased ));
 
             }else{
 
-                event(new RemindKaddishMax11($request->Email, $request->Lang));
+                event(new RemindKaddishMax11( $request->Email, $request->Lang,$request->Name_of_Deceased,$request->Name_Father_Deceased ));
             }
         }
         return $item;

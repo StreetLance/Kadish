@@ -33,7 +33,9 @@ class KaddishSendMailThank_RegPayMin11 extends Mailable
     public function build()
     {
         return $this
-            ->view('mail.Thank_Reg_PayMin11') ->with([
+            ->view('mail.Thank_Reg_PayMin11')
+            ->subject('Notification !')
+            ->with([
                 'name' => $this->name,
                 'Fname' => $this->Fname,
                 'data' => $this->data,
