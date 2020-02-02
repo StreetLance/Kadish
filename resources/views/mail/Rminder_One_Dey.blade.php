@@ -41,14 +41,7 @@
 {{--                            </td></tr></tbody></table>--}}
                     <br /><br />
                     <table border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100%;background-color:#f3f2ef" bgcolor="#f3f2ef"><tbody>
-                        <tr><td style="padding:16px;font-size:14px;color:#000;">
-                                The yorzait of your dear ones will be happening on oct 20th night, it is a special time for the soul of your beloved. The Shabbos prior the elevation of the soul begins .<br>
-                                The customs observed <br>
-                                *The Shabos prior to Yorzait go to your local synagogue to say kadish(there are 3 prayers trough Shabbos : evening ,morning  & afternoon).<br>
-                                *Sponsor a kidush (Dinner ,lunch or a sprits bottle)in honor of the elevation of the soul.<br>
-                                *the actual date of Yorzait gather a minyan(quorum of 10 Jewish men) at the cemetery or synagogue (Kadish should be said in all 3 prayers)<br>
-                                *light a 24/hr candle at the grave or home (home in the evening when Yorzait starts).<br>
-                                * add in charity and Mitzvos/good deeds on the actual date.<br>
+                        <tr><td style="padding:16px;font-size:14px;color:#000;">{!!__('mail.remind', ['name' => $name,'Fname' => $Fname,'data' => $data])!!}
 {{--                                <table border="0" cellpadding="0" cellspacing="0" width=""><tbody>--}}
 {{--                                    <tr><td width="40px" style="width:40px;">--}}
 {{--                                            <img src="http://kaddish-prayer.com/kpw/img/kaddish-prayer_bl.gif" width="40" height="40" border="0" style="display:block" />--}}

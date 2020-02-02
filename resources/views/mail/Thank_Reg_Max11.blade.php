@@ -21,38 +21,46 @@
                     </td>
                 </tr>
                 <tr>
-                    {{--                    <td align="center" width="100%"--}}
-                    {{--                        style="border:1px solid #c6c6c6;padding:1px;background-color:#ffffff;width:100%"--}}
-                    {{--                        bgcolor="#ffffff">--}}
+                    <td align="center" width="100%"
+                        style="border:1px solid #c6c6c6;padding:1px;background-color:#ffffff;width:100%"
+                        bgcolor="#ffffff">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100%;">
+                            <tbody>
+                            <tr>
+                                <td style="padding:20px;font-size:14px;color:#000;text-align:center;">
+	<span style="font-size:18px;color:#000;">
+		{{--Оплата прошла, заказ приянт<br>--}}
+{{--        {!!__('mail.thankMax11.header')!!}--}}
+	</span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                               style="width:100%;background-color:#f3f2ef" bgcolor="#f3f2ef">
+                            <tbody>
+                            <tr>
+                                <td style="padding:16px;font-size:14px;color:#000;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="">
+                                        <tbody>
+                                        <tr>
+                                            <td width="40px" style="width:40px;">
+{{--                                                <img src="http://kaddish-prayer.com/kpw/img/kaddish-prayer_bl.gif"--}}
+{{--                                                     width="40" height="40" border="0" style="display:block"/>--}}
+                                            </td>
+                                            <td style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:10px;font-size:14px;">
+                                                {!!__('mail.thankMax11.Footer')!!}
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
 
-                    {{--                    </td>--}}
-                    {{--                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100%;"><tbody>--}}
-                    {{--                        <tr><td style="padding:20px;font-size:14px;color:#000;text-align:center;">--}}
-                    {{--	<span style="font-size:18px;color:#000;">--}}
-                    {{--		Здравствуйте, Алексей!<br /><br />--}}
-                    {{--		Через 1 дней состоится йорцайт<br />--}}
-                    {{--		вашего дедушки Авраам бен Борух<br /><br />--}}
-                    {{--	</span>--}}
-                    {{--                            </td></tr>--}}
-                    {{--                        </tbody></table>--}}
-                    {{--                    <table border="0" cellpadding="0" cellspacing="0" width="" style="background-color:#ffcc66" bgcolor="#ffcc66"><tbody>--}}
-                    {{--                        <tr><td style="padding:16px;text-align:center;">--}}
-                    {{--                                <a href="" style="text-decoration:none;color:#000000;font: 18px Arial, sans-serif;line-height:22px;-webkit-text-size-adjust:none;" target="_blank">Заказать чтение молитвы Кадиш</a>--}}
-                    {{--                            </td></tr></tbody></table>--}}
-                    <br /><br />
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100%;background-color:#f3f2ef" bgcolor="#f3f2ef"><tbody>
-                        <tr><td style="padding:16px;font-size:14px;color:#000;"> {{__('mail.remind', ['name' => $name,'Fname' => $Fname,'data' => $data])}}
-                                {{--                                <table border="0" cellpadding="0" cellspacing="0" width=""><tbody>--}}
-                                {{--                                    <tr><td width="40px" style="width:40px;">--}}
-                                {{--                                            <img src="http://kaddish-prayer.com/kpw/img/kaddish-prayer_bl.gif" width="40" height="40" border="0" style="display:block" />--}}
-                                {{--                                        </td>--}}
-                                {{--                                        <td style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:10px;font-size:14px;">--}}
-                                {{--                                            Р. Шмуэль Лившиц<br />--}}
-                                {{--                                            Руководитель проекта--}}
-                                {{--                                        </td></tr>--}}
-                                {{--                                    </tbody></table>--}}
-                            </td></tr>
-                        </tbody></table>
+
+                    </td>
                 </tr>
                 <tr>
                     <td style="padding-bottom:10px;">
@@ -66,16 +74,16 @@
                                 <td valign="middle"
                                     style="padding-top:10px;padding-right:0;padding-bottom:0;padding-left:8px;font-size:12px;width:80%;color:#777777;vertical-align:middle;line-height:20px;">
                                     <b>Kaddish Prayer</b>: Remind Yortzait and Arrange Kaddish<br/>
-                                    <a href="http://149.28.51.36/en"
+                                    <a href="qwe"
                                        style="padding-right:4px;color:#194678;font: 12px Arial, sans-serif;line-height:20px;-webkit-text-size-adjust:none;text-decoration:underline;"
                                        target="_blank">Arrange Kaddish</a>
-                                    <a href="http://149.28.51.36/en/wiki"
+                                    <a href="qwe"
                                        style="padding-right:4px;color:#194678;font: 12px Arial, sans-serif;line-height:20px;-webkit-text-size-adjust:none;text-decoration:underline;"
                                        target="_blank">What is kaddish</a>
-                                    <a href="http://149.28.51.36/en/wiki"
+                                    <a href="qwe"
                                        style="padding-right:4px;color:#194678;font: 12px Arial, sans-serif;line-height:20px;-webkit-text-size-adjust:none;text-decoration:underline;"
                                        target="_blank">What is Yortzait</a>
-                                    <a href="http://149.28.51.36/en/about"
+                                    <a href="qwe"
                                        style="padding-right:4px;color:#194678;font: 12px Arial, sans-serif;line-height:20px;-webkit-text-size-adjust:none;text-decoration:underline;"
                                        target="_blank">About Project</a>
                                 </td>
@@ -97,15 +105,15 @@
                         </table>
                     </td>
                 </tr>
-                {{--                <tr>--}}
-                {{--                    <td style="padding-top:10px;border-top:1px solid #c6c6c6;">--}}
-                {{--			<span style="color:#777777;font: 12px Arial, sans-serif;">Если желаете больше не получать напоминаний,--}}
-                {{--				<a href="qwe"--}}
-                {{--                   style="color:#194678;line-height:20px;-webkit-text-size-adjust:none;text-decoration:underline;"--}}
-                {{--                   target="_blank">перейдите по этой ссылке</a>.--}}
-                {{--			</span>--}}
-                {{--                    </td>--}}
-                {{--                </tr>--}}
+                <tr>
+                    <td style="padding-top:10px;border-top:1px solid #c6c6c6;">
+			{{--<span style="color:#777777;font: 12px Arial, sans-serif;">Если желаете больше не получать напоминаний,--}}
+				{{--<a href="qwe"--}}
+                   {{--style="color:#194678;line-height:20px;-webkit-text-size-adjust:none;text-decoration:underline;"--}}
+                   {{--target="_blank">перейдите по этой ссылке</a>.--}}
+			{{--</span>--}}
+                    </td>
+                </tr>
                 </tbody>
             </table>
         </td>

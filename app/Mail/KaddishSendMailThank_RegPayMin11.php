@@ -7,7 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class KaddishSendMail1 extends Mailable
+class KaddishSendMailThank_RegPayMin11 extends Mailable
 {
     use Queueable, SerializesModels;
     protected $name;
@@ -25,7 +25,6 @@ class KaddishSendMail1 extends Mailable
         $this->Fname = $Fname;
         $this->data = $data;
     }
-
     /**
      * Build the message.
      *
@@ -33,11 +32,11 @@ class KaddishSendMail1 extends Mailable
      */
     public function build()
     {
-        return $this->view('mail.Rminder_One_Dey')
-            ->with([
-            'name' => $this->name,
-            'Fname' => $this->Fname,
-            'data' => $this->data,
-        ]);
+        return $this
+            ->view('mail.Thank_Reg_PayMin11') ->with([
+                'name' => $this->name,
+                'Fname' => $this->Fname,
+                'data' => $this->data,
+            ]);
     }
 }

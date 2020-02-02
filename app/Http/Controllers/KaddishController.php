@@ -2,12 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Events\RemindKaddish;
+use App\Events\RemindKaddishPayMin11;
+use App\Events\RemindKaddishPayMax11;
+use App\Events\RemindKaddishMin11;
+use App\Events\RemindKaddishMax11;
 use App\Kaddish as Kaddish;
 use App\Client as Clients;
 //use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+
 //use Newsletter;
 
 class KaddishController extends Controller
@@ -21,16 +25,17 @@ class KaddishController extends Controller
 
     {
         $jd = unixtojd(time());
-        $Date_Now = cal_from_jd( $jd,CAL_JEWISH);
-        $Date_Now = $Date_Now[ 'day' ].'.'.$Date_Now[ 'month' ].'.'.'%' ;
+        $Date_Now = cal_from_jd($jd, CAL_JEWISH);
+        $Date_Now = $Date_Now['day'] . '.' . $Date_Now['month'] . '.' . '%';
         $item = DB::table('kaddishes')
-            ->where( 'Order', '=', '1' )
-            ->where( 'Difference_Year', '=', '1' )
+            ->where('Order', '=', '1')
+            ->where('Difference_Year', '=', '1')
             ->where('J_Date', 'like', $Date_Now)
             ->get();
-        $item = collect( $item )->toJson();
+        $item = collect($item)->toJson();
         return $item;
     }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -40,27 +45,27 @@ class KaddishController extends Controller
     {
 
         //Форматирвоание и сборка пришедшей даты
-        if ( $request->DataSet == "J" ) {
+        if ($request->DataSet == "J") {
             $data_J = $request->Day . '.' . $request->Month . '.' . $request->Year;
-            $jd = jewishtojd( $request->Month, $request->Day, $request->Year );
-            $data = cal_from_jd( $jd, CAL_GREGORIAN );
-            $data_G = $data[ 'day' ] . '.' . $data[ 'month' ] . '.' . $data[ 'year' ];
+            $jd = jewishtojd($request->Month, $request->Day, $request->Year);
+            $data = cal_from_jd($jd, CAL_GREGORIAN);
+            $data_G = $data['day'] . '.' . $data['month'] . '.' . $data['year'];
         } else {
-            $jd = unixtojd(mktime(0, 0, 0,$request->Month, $request->Day, $request->Year ));
-            $Data_J= cal_from_jd($jd,CAL_JEWISH);
-            $data_J = $Data_J[ 'day' ] . '.' . $Data_J[ 'month' ] . '.' . $Data_J[ 'year' ];
+            $jd = unixtojd(mktime(0, 0, 0, $request->Month, $request->Day, $request->Year));
+            $Data_J = cal_from_jd($jd, CAL_JEWISH);
+            $data_J = $Data_J['day'] . '.' . $Data_J['month'] . '.' . $Data_J['year'];
             $data_G = $request->Day . '.' . $request->Month . '.' . $request->Year;
         }
 //Поиск разницы с текущей датой в 11 месяцев
-        $Date_Now = date( "d.m.y" );
-        $diff = abs( strtotime( $Date_Now ) - strtotime( $data_G ) );
+        $Date_Now = date("d.m.y");
+        $diff = abs(strtotime($Date_Now) - strtotime($data_G));
 
-        $years = floor( $diff / ( 365 * 60 * 60 * 24 ) );
-        $months = floor( ( $diff - $years * 365 * 60 * 60 * 24 ) / ( 30 * 60 * 60 * 24 ) );
+        $years = floor($diff / (365 * 60 * 60 * 24));
+        $months = floor(($diff - $years * 365 * 60 * 60 * 24) / (30 * 60 * 60 * 24));
 
-        if ( $years > 0 ) {
+        if ($years > 0) {
             $Difirence_Year = false;
-        } elseif ( $months <= 11 ) {
+        } elseif ($months <= 11) {
             $Difirence_Year = true;
         } else {
             $Difirence_Year = false;
@@ -78,48 +83,47 @@ class KaddishController extends Controller
         ];
 
 //Заполнение базы клиентов в случе отсутсвия почты и эмейла
-        $client = Clients::firstOrCreate( ["Email" => $request->Email, "Phone_number" => $request->Phone ] );
-        if (isset($request->First_Name) && isset($request->Last_Name)){
-            $client->update([ 'Name'=>$request->First_Name,'Last_Name'=>$request->Last_Name]);
+        $client = Clients::firstOrCreate(["Email" => $request->Email, "Phone_number" => $request->Phone]);
+        if (isset($request->First_Name) && isset($request->Last_Name)) {
+            $client->update(['Name' => $request->First_Name, 'Last_Name' => $request->Last_Name]);
         }
 
-        $kadish = new Kaddish( $param );
-        $kadish->client()->associate( $client ); // присвоение Client_id при помощи встреоной функции Laravel Relations
+        $kadish = new Kaddish($param);
+        $kadish->client()->associate($client); // присвоение Client_id при помощи встреоной функции Laravel Relations
         $kadish->save();
         $item['id'] = $kadish->id;
         $item['order'] = $request->Order;
         //send email
-            event(new RemindKaddish($request->Email,$request->Lang));
-//        Newsletter::subscribe($request->Email);
-//      $listId= Newsletter::getMember($request->Email);
-//        $mailchimp = new \Mailchimp(config('newsletter.apiKey'));
-//        //Create a Campaign $mailchimp->campaigns->create($type, $options, $content)
-//        $options=[
-//            'list_id' => $listId['list_id'],
-//            'subject' => 'Hello',
-//            'from_email' => 'abezkrovnyi@mail.ru',
-//            'from_name' => 'Scotch Pub',
-//            'to_name' => 'Scotch Subscriber'
-//
-//        ];
-//        $content=  [
-//            'html' => 'HI',
-//            'text' => 'HI',
-//        ];
-//        $campaign = $mailchimp->campaigns->create('regular', $options ,$content);
-////        dd($campaign);
-//
-//        //Send campaign
-//        $mailchimp->campaigns->send($campaign['id']);
 
+        if ($request->has('First_Name')) {
 
+            if ($Difirence_Year == true) {
+
+                event(new RemindKaddishPayMin11($request->Email, $request->Lang ,$request->First_Name,$request->Last_Name,$data_J));
+
+            }else{
+
+                event(new RemindKaddishPayMax11($request->Email, $request->Lang,$request->First_Name,$request->Last_Name));
+
+            }
+        } else {
+
+            if ($Difirence_Year == true) {
+
+                event(new RemindKaddishMin11($request->Email, $request->Lang));
+
+            }else{
+
+                event(new RemindKaddishMax11($request->Email, $request->Lang));
+            }
+        }
         return $item;
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -130,7 +134,7 @@ class KaddishController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Kaddish  $kaddish
+     * @param  \App\Kaddish $kaddish
      * @return \Illuminate\Http\Response
      */
     public function show(Kaddish $kaddish)
@@ -141,10 +145,10 @@ class KaddishController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Kaddish  $kaddish
+     * @param  \App\Kaddish $kaddish
      * @return \Illuminate\Http\Response
      */
-    public function edit( $id)
+    public function edit($id)
     {
 
     }
@@ -152,21 +156,21 @@ class KaddishController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Kaddish  $kaddish
+     * @param  \Illuminate\Http\Request $request
+     * @param  \App\Kaddish $kaddish
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
-        $client = Clients( [ "Name" => $request->Name, "Last_Name" => $request->Last_Name ] );
-        $kadish =  Kaddish::find($id);
+        $client = Clients(["Name" => $request->Name, "Last_Name" => $request->Last_Name]);
+        $kadish = Kaddish::find($id);
         $kadish->client()->save($client);
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Kaddish  $kaddish
+     * @param  \App\Kaddish $kaddish
      * @return \Illuminate\Http\Response
      */
     public function destroy(Kaddish $kaddish)

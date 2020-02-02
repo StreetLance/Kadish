@@ -497,7 +497,7 @@
                         this.Param.DataSet = "G";
                     }
 
-                    axios.get('http://149.28.51.36/api/' + $date + '/' + this.Param.Day + '/' + month + '/' + this.Param.Year).then((response) => {
+                    axios.get('api/' + $date + '/' + this.Param.Day + '/' + month + '/' + this.Param.Year).then((response) => {
                         this.Param.Month = "";
                         this.Param.Day = response.data.day;
                         this.Param.Month = response.data.month;

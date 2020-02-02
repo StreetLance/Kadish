@@ -7,20 +7,20 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class KaddishSendMailThank_Reg extends Mailable
+class KaddishSendMailThank_RegMin11 extends Mailable
 {
     use Queueable, SerializesModels;
+
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct( )
     {
-        //
-    }
 
+    }
     /**
      * Build the message.
      *
@@ -29,7 +29,6 @@ class KaddishSendMailThank_Reg extends Mailable
     public function build()
     {
         return $this
-            ->view('mail.Thank_Reg_PayMin11');
-
+            ->view('mail.Thank_Reg_Min11');
     }
 }

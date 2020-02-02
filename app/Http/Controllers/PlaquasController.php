@@ -8,7 +8,7 @@ use App\Http\Controllers\CallController as  call;
 class PlaquasController extends Controller
 {
     public function getPlaquas(){
-       $item= Kadish::get(['Name_of_Deceased','Fathers_Name','G_Date','J_Date']);
+       $item= Kadish::orderBy('id', 'desc')->get(['Name_of_Deceased','Fathers_Name','G_Date','J_Date']);
         $call = new call;
        foreach ($item as $items){
 

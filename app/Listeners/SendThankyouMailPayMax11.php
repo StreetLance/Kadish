@@ -2,14 +2,13 @@
 
 namespace App\Listeners;
 
+use App\Mail\KaddishSendMailThank_RegPayMax11;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use App\Mail\KaddishSendMailThank_RegMin11;
 use Illuminate\Queue\InteractsWithQueue;
-//use App\Mail;
-    use Config;
 use Illuminate\Support\Facades\Mail;
 
-use App\Mail\KaddishSendMailThank_Reg;
-class SendThankyouMail
+class SendThankyouMailPayMax11
 {
     /**
      * Create the event listener.
@@ -29,6 +28,7 @@ class SendThankyouMail
      */
     public function handle($event)
     {
-                Mail::to($event->Email)->locale($event->Lang)->send(new KaddishSendMailThank_Reg());
+        Mail::to($event->Email)->locale($event->Lang)->send(new KaddishSendMailThank_RegPayMax11($event->name,$event->fname));
+
     }
 }
