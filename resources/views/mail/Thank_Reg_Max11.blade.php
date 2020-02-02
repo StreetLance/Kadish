@@ -16,7 +16,7 @@
                 <tbody>
                 <tr>
                     <td align="center" style="padding-bottom:10px;">
-                        <img src="{{asset("images/mail/kaddish-prayer_email.gif")}}" alt="Kaddish Prayer"
+                        <img src="http://149.28.51.36/images/mail/kaddish-prayer_email.gif" alt="Kaddish Prayer"
                              width="48" height="60" border="0" style="display:block;"/>
                     </td>
                 </tr>
@@ -68,7 +68,7 @@
                             <tbody>
                             <tr>
                                 <td width="40px" style="width:40px;padding-top:10px;">
-                                    <img src="{{asset("images/mail/kaddish-prayer_email_footer.gif")}}"
+                                    <img src="http://149.28.51.36/images/mail/kaddish-prayer_email_footer.gif"
                                          width="32" height="40" border="0" style="display:block"/>
                                 </td>
                                 <td valign="middle"
@@ -96,7 +96,7 @@
                                 <td width="29px" style="width:29px;padding-top:10px;">
                                     <a href="https://facebook.com/"
                                        style="color:#194678;font: 12px Arial, sans-serif;line-height:16px;-webkit-text-size-adjust:none;"
-                                       target="_blank"><img src="{{asset("images/mail/fb_email.gif")}}"
+                                       target="_blank"><img src="http://149.28.51.36/images/mail/fb_email.gif"
                                                             width="29" height="29" border="0"
                                                             style="display:block"/></a>
                                 </td>
