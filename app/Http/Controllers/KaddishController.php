@@ -95,7 +95,7 @@ class KaddishController extends Controller
         $item['order'] = $request->Order;
         //send email
 
-$addMonth = cal_from_jd( unixtojd( strtotime($data_G .'+11 month') ), CAL_JEWISH );
+$addMonth = cal_from_jd( unixtojd( strtotime($data_G .'+10 month') ), CAL_JEWISH );
 
         if ($request->has('First_Name')) {
 
