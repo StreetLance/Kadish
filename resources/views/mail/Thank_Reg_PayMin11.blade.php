@@ -58,60 +58,6 @@
                             </tr>
                             </tbody>
                         </table>
-
-
-                    </td>
-                </tr>
-                <tr>
-                    <td style="padding-bottom:10px;">
-                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="width:100%;">
-                            <tbody>
-                            <tr>
-                                <td width="40px" style="width:40px;padding-top:10px;">
-                                    <img src="http://149.28.51.36/images/mail/kaddish-prayer_email_footer.gif"
-                                         width="32" height="40" border="0" style="display:block"/>
-                                </td>
-                                <td valign="middle"
-                                    style="padding-top:10px;padding-right:0;padding-bottom:0;padding-left:8px;font-size:12px;width:80%;color:#777777;vertical-align:middle;line-height:20px;">
-                                    <b>Kaddish Prayer</b>: Remind Yortzait and Arrange Kaddish<br/>
-                                    <a href="qwe"
-                                       style="padding-right:4px;color:#194678;font: 12px Arial, sans-serif;line-height:20px;-webkit-text-size-adjust:none;text-decoration:underline;"
-                                       target="_blank">Arrange Kaddish</a>
-                                    <a href="qwe"
-                                       style="padding-right:4px;color:#194678;font: 12px Arial, sans-serif;line-height:20px;-webkit-text-size-adjust:none;text-decoration:underline;"
-                                       target="_blank">What is kaddish</a>
-                                    <a href="qwe"
-                                       style="padding-right:4px;color:#194678;font: 12px Arial, sans-serif;line-height:20px;-webkit-text-size-adjust:none;text-decoration:underline;"
-                                       target="_blank">What is Yortzait</a>
-                                    <a href="qwe"
-                                       style="padding-right:4px;color:#194678;font: 12px Arial, sans-serif;line-height:20px;-webkit-text-size-adjust:none;text-decoration:underline;"
-                                       target="_blank">About Project</a>
-                                </td>
-                                <td valign="middle" align="right"
-                                    style="padding-top:10px;padding-right:8px;padding-bottom:0;padding-left:0;font-size:12px;width:20%;text-align:right;vertical-align:middle;">
-                                    <a href="https://facebook.com/"
-                                       style="color:#194678;font: 12px Arial, sans-serif;line-height:16px;-webkit-text-size-adjust:none;text-decoration:underline;"
-                                       target="_blank">Kaddish Prayer<br/>on Facebook</a>
-                                </td>
-                                <td width="29px" style="width:29px;padding-top:10px;">
-                                    <a href="https://facebook.com/"
-                                       style="color:#194678;font: 12px Arial, sans-serif;line-height:16px;-webkit-text-size-adjust:none;"
-                                       target="_blank"><img src="http://149.28.51.36/images/mail/fb_email.gif"
-                                                            width="29" height="29" border="0"
-                                                            style="display:block"/></a>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="padding-top:10px;border-top:1px solid #c6c6c6;">
-			{{--<span style="color:#777777;font: 12px Arial, sans-serif;">Если желаете больше не получать напоминаний,--}}
-				{{--<a href="qwe"--}}
-                   {{--style="color:#194678;line-height:20px;-webkit-text-size-adjust:none;text-decoration:underline;"--}}
-                   {{--target="_blank">перейдите по этой ссылке</a>.--}}
-			{{--</span>--}}
                     </td>
                 </tr>
                 </tbody>

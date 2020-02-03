@@ -34,7 +34,7 @@ class KaddishSendMail1 extends Mailable
     public function build()
     {
         return $this->view('mail.Rminder_One_Dey')
-            ->subject('Notification about Yorzait')
+            ->subject('Yarzeit Reminder')
             ->with([
             'name' => $this->name,
             'Fname' => $this->Fname,

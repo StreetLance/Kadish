@@ -92,7 +92,7 @@ class SendEmails extends Command
             $mail = $getKadish->Email;
             $name = $getKadish->kaddish->Name_of_Deceased;
             $Fname = $getKadish->kaddish->Fathers_Name;
-            $Data = cal_from_jd( unixtojd( time() ), CAL_JEWISH );
+            $Data = cal_from_jd( unixtojd( time() ), CAL_GREGORIAN );
             $data =  $Data['day'] . '.' . $Data['month'] . '.' . $Data['year'];
             $lang = $getKadish->Lang;
             Mail::to( $mail )->locale($lang)->later($when, new KaddishSendMail1( $name,$Fname,$data ) );
@@ -103,7 +103,7 @@ class SendEmails extends Command
             $mail = $getKadish->Email;
             $name = $getKadish->kaddish->Name_of_Deceased;
             $Fname = $getKadish->kaddish->Fathers_Name;
-            $Data = cal_from_jd( unixtojd( time()+6 ), CAL_JEWISH );
+            $Data = cal_from_jd( unixtojd( time()+6 ), CAL_GREGORIAN );
             $data =  $Data['day'] . '.' . $Data['month'] . '.' . $Data['year'];
             $lang = $getKadish->Lang;
             Mail::to( $mail )->locale($lang)->later($when, new KaddishSendMail1( $name,$Fname,$data ) );
@@ -114,7 +114,7 @@ class SendEmails extends Command
             $mail = $getKadish->Email;
             $name = $getKadish->kaddish->Name_of_Deceased;
             $Fname = $getKadish->kaddish->Fathers_Name;
-            $Data = cal_from_jd( unixtojd( time()+13 ), CAL_JEWISH );
+            $Data = cal_from_jd( unixtojd( time()+13 ), CAL_GREGORIAN );
             $data =  $Data['day'] . '.' . $Data['month'] . '.' . $Data['year'];
             $lang = $getKadish->Lang;
             Mail::to( $mail )->locale($lang)->later($when, new KaddishSendMail1( $name,$Fname,$data ) );

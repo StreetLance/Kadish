@@ -33,7 +33,7 @@ class KaddishSendMailThank_RegMax11 extends Mailable
 
         return $this
             ->view('mail.Thank_Reg_Max11')
-            ->subject('Notification !')
+            ->subject('Yarzeit Reminder')
             ->with([
                 'name' => $this->name,
                 'Fname' => $this->Fname,
