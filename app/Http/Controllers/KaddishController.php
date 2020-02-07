@@ -96,7 +96,7 @@ class KaddishController extends Controller
         //send email
 
 $addMonth = cal_from_jd( unixtojd( strtotime($data_G .'+10 month') ), CAL_JEWISH );
-
+        $addMonth =  $addMonth['day'] . ' ' . $addMonth['monthname'] . ' ' . $addMonth['year'];
         if ($request->has('First_Name')) {
 
             if ($Difirence_Year == true) {
