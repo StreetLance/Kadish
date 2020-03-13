@@ -11,14 +11,14 @@ The customs observed <br>
 *light a 24/hr candle at the grave or home (home in the evening when Yorzait starts).<br>
 * add in charity and Mitzvos/good deeds on the actual date.<br>
  <br>
-If you have any question, please, send it to jrlcofsb@gmail.com I will be happy to help you<br>
+If you have any question, please, send it to  Rabbisarytchev@hotmail.com I will be happy to help you<br>
 Regards and best wishes,<br>
 <br>
 Rabbi Zeev Kushnirsky<br>",
     "thankPayMin11" => ['header'=>'Hi. Your order is successfully placed.<br>
 The message that you need to read kadish for :Name ben (bat) :Fname has already been sent to the rabbi. <br>
 The rabbi will begin to read kadish today and will read until  :data .<br>
-If you have any questions please write to jrlcofsb@gmail.com<br>',
+If you have any questions please write to zeevwk@gmail.com <br>',
         'Footer'=>'Each year you will receive a reminder of the upcoming date and description all the customs of this day so that you can mark yortsayt on time and according Jewish traditions.<br>
          We recommend that you add the e-mail mitzvakadish@gmail.com<br>
   to contacts so that reminders do not fall into spam.<br>
@@ -27,9 +27,9 @@ Regards and best wishes,<br>
 Rabbi Zeev Kushnirsky<br>'],
     "thankPayMax11" => ['header'=>'Hi. Your order is successfully placed.<br>
 The message that you need to read kadish for :Name ben (bat) :Fname has already been sent to the rabbi.<br>
- The rabbi will to recite kaddish on upcoming yahrzeit :data. If you have any questions please write to jrlcofsb@gmail.com.<br>
+ The rabbi will to recite kaddish on upcoming yahrzeit. If you have any questions please write to zeevwk@gmail.com <br>
 Each year you will receive a reminder of the upcoming date and a description of all the customs of that day,<br>
- so that you can mark the yortsight on time and in accordance with Jewish traditions. We recommend that you add the email address  jrlcofsb@gmail.com<br>
+ so that you can mark the yortsight on time and in accordance with Jewish traditions. We recommend that you add the email address  zeevwk@gmail.com<br>
    to contacts so that reminders do not fall into spam.<br>
 Regards and best wishes,<br>
 <br>
@@ -38,9 +38,9 @@ Rabbi Zeev Kushnirsky<br>',
     "thankMin11" => ['header'=>'
     Hello. We received a message saying that you need to send a reminder about yorzayt :Name ben (bat) :Fname.<br>
      We see that 11 months have not passed since the date of death, so if no one else reads kaddish,<br>
-      we recommend that you contact me jrlcofsb@gmail.com and we will help you order a kadish reading.<br>',
+      we recommend that you contact me zeevwk@gmail.com or  and we will help you order a kadish reading.<br>',
         'Footer'=>'Each year you will receive a reminder of the upcoming date and a description of all the customs of that day,<br>
-         so that you can mark the yortsight on time and in accordance with Jewish traditions. We recommend that you add the email address  jrlcofsb@gmail.com<br>
+         so that you can mark the yortsight on time and in accordance with Jewish traditions. We recommend that you add the email address  mitzvakadish@gmail.com<br>
    to contacts so that reminders do not fall into spam.<br>
 Regards and best wishes,<br>
 <br>

@@ -147,7 +147,8 @@ class Kadish extends Model
     if(!$datam['Month']== '0'){
     $data=explode('/', $this->attributes['G_Date']);
     $data[1] = $datam['Month'];
-    $this->attributes['G_Date'] = implode('.',$data);
+                $this->attributes['Jday'] =$data[0];
+        $this->attributes['G_Date'] = implode('.',$data);
 }else{
         $month = [
             1=>"January",
@@ -166,12 +167,14 @@ class Kadish extends Model
         $data=explode('/', $this->attributes['G_Date']);
         $key = array_search($data[1], $month); // $key = 2;
         $data[1] = $key;
+        $this->attributes['Jday'] =$data[0];
         $this->attributes['G_Date'] = implode('.',$data);
     }
 
         if(!$datam['J_Month']=='0') {
             $data = explode( '/', $this->attributes[ 'J_Date' ] );
             $data[ 1 ] = $datam[ 'J_Month' ];
+            $this->attributes['Jday'] =$data[0];
             $this->attributes[ 'J_Date' ] = implode( '.', $data );
         }else{
             $month = [
@@ -207,9 +210,12 @@ if(!$datam['Month']== '0' &&$datam['J_Month']=='0'){
             $data=explode('.', $this->attributes['J_Date']);
             $jd = jewishtojd( $data[1], $data[0], $data[2] );
             $Data_J= cal_from_jd($jd,CAL_GREGORIAN);
+            $this->attributes['Jday'] =$data[0];
             $data_J = $Data_J[ 'day' ] . '.' . $Data_J[ 'month' ] . '.' . $Data_J[ 'year' ];
             $this->attributes['G_Date'] = $data_J;
         }
 
     }
+
+
 }

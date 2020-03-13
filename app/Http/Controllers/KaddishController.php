@@ -102,10 +102,12 @@ $addMonth = cal_from_jd( unixtojd( strtotime($data_G .'+10 month') ), CAL_JEWISH
             if ($Difirence_Year == true) {
 
                 event(new RemindKaddishPayMin11( $request->Email, $request->Lang ,$request->Name_of_Deceased,$request->Name_Father_Deceased,$addMonth ));
+                event(new RemindKaddishPayMin11( 'zeevwk@gmail.com', $request->Lang ,$request->Name_of_Deceased,$request->Name_Father_Deceased,$addMonth ));
 
             }else{
 
                 event(new RemindKaddishPayMax11( $request->Email, $request->Lang,$request->Name_of_Deceased,$request->Name_Father_Deceased ));
+                event(new RemindKaddishPayMax11( 'zeevwk@gmail.com', $request->Lang,$request->Name_of_Deceased,$request->Name_Father_Deceased ));
 
             }
         } else {
@@ -113,10 +115,12 @@ $addMonth = cal_from_jd( unixtojd( strtotime($data_G .'+10 month') ), CAL_JEWISH
             if ($Difirence_Year == true) {
 
                 event(new RemindKaddishMin11( $request->Email, $request->Lang,$request->Name_of_Deceased,$request->Name_Father_Deceased ));
+                event(new RemindKaddishMin11( 'zeevwk@gmail.com', $request->Lang,$request->Name_of_Deceased,$request->Name_Father_Deceased ));
 
             }else{
 
                 event(new RemindKaddishMax11( $request->Email, $request->Lang,$request->Name_of_Deceased,$request->Name_Father_Deceased ));
+                event(new RemindKaddishMax11( 'zeevwk@gmail.com', $request->Lang,$request->Name_of_Deceased,$request->Name_Father_Deceased ));
             }
         }
         return $item;

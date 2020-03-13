@@ -1,16 +1,16 @@
 <?php
 
     return [
-        "Tishry" => "Tishry",
-        "Heshvan" => "Heshvan",
+        "Tishry" => "Tishrei",
+        "Heshvan" => "Cheshvan",
         "Kislev" => "Kislev",
         "Tevet" => "Tevet",
         "Shevat" => "Shevat",
         "Adar" => "Adar",
         "Adar II" => "Adar II",
-        "Nissan" => "Nissan",
+        "Nissan" => "Nisan",
         "Iyar" => "Iyar",
-        "Sevan" => "Sevan",
+        "Sevan" => "Sivan",
         "Tammuz" => "Tammuz",
         "Av" => "Av",
         "Elul" => "Elul"

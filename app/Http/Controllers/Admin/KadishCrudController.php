@@ -10,6 +10,7 @@ use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 use Backpack\CRUD\app\Library\CrudPanel\Traits\Columns;
 use Barryvdh\Debugbar\Twig\Extension\Debug;
 use DebugBar\DebugBar;
+use App\Models\Kadish;
 use function MongoDB\BSON\toJSON;
 
 /**
@@ -32,9 +33,7 @@ class KadishCrudController extends CrudController
         $this->crud->setRoute(config('backpack.base.route_prefix') . '/Kadish');
         $this->crud->setEntityNameStrings('kadish', 'kaddishes');
         $this->crud->with('client');
-//        $Data_J1 = cal_from_jd( unixtojd( time() ), CAL_JEWISH );
-//        $Data_J1 = $Data_J1[ 'day' ].'/'.$Data_J1[ 'month' ].'/'.'%';
-//        dd($Data_J1);
+        $this->crud->orderBy('Client_id','DESC');
 
 
         $this->crud->addFilter([ // add a "simple" filter called Draft
@@ -64,6 +63,45 @@ class KadishCrudController extends CrudController
             function() { // if the filter is active (the GET parameter "draft" exits)
                 $this->crud->addClause('where', 'After_sunset', '1');
             });
+
+        $this->crud->addFilter([ // add a "simple" filter called Draft
+            'type' => 'simple',
+            'name' => 'This_Month',
+            'label'=> 'This_Month'
+        ],
+            false, // the simple filter has no values, just the "Draft" label specified above
+            function() { // if the filter is active (the GET parameter "draft" exits)
+                @ $Data_J1 = cal_from_jd( unixtojd( time() ), CAL_JEWISH );
+                $Data_J1 = '%'.'.'.$Data_J1[ 'month' ].'.'.'%';
+                $this->crud->addClause('where', 'J_Date','LIKE', $Data_J1);
+//                $this->crud->orderBy('J_day', 'DESC');
+            });
+
+        $this->crud->addFilter([ // add a "simple" filter called Draft
+            'type' => 'simple',
+            'name' => 'Second_Month',
+            'label'=> 'Second_Month'
+        ],
+            false, // the simple filter has no values, just the "Draft" label specified above
+            function() { // if the filter is active (the GET parameter "draft" exits)
+                @ $Data_J1 = cal_from_jd( unixtojd( time() )+31, CAL_JEWISH );
+                $Data_J1 = '%'.'.'.$Data_J1[ 'month' ].'.'.'%';
+                $this->crud->addClause('where', 'J_Date','LIKE', $Data_J1);
+            });
+
+        $this->crud->addFilter([ // add a "simple" filter called Draft
+            'type' => 'simple',
+            'name' => 'Third_Month',
+            'label'=> 'Third_Month'
+        ],
+            false, // the simple filter has no values, just the "Draft" label specified above
+            function() { // if the filter is active (the GET parameter "draft" exits)
+                @ $Data_J1 = cal_from_jd( unixtojd( time() )+61, CAL_JEWISH );
+                $Data_J1 = '%'.'.'.$Data_J1[ 'month' ].'.'.'%';
+                $this->crud->addClause('where', 'J_Date','LIKE', $Data_J1);
+//                $this->crud-;
+            });
+
         $this->crud->addFilter([
             'type' => 'text',
             'name' => 'J_Date',
@@ -96,10 +134,12 @@ class KadishCrudController extends CrudController
 //        $this->crud->setFromDb();
         $this->crud->setColumns(
             [
+                'id',
             'Name_of_Deceased',
             'Fathers_Name',
             'G_Date',
             'J_Date',
+            'Jday',
             'Lang',
             'After_sunset',
                 'Order',
