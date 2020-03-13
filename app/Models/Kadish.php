@@ -36,6 +36,7 @@ class Kadish extends Model
         'Lang',
         'After_sunset',
         'Order',
+        'Jday',
         'Difference_Year','Extras'];
     // protected $hidden = [];
     // protected $dates = [];

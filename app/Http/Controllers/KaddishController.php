@@ -54,7 +54,7 @@ class KaddishController extends Controller
         } else {
             $jd = unixtojd(mktime(0, 0, 0, $request->Month, $request->Day, $request->Year));
             $Data_J = cal_from_jd($jd, CAL_JEWISH);
-            $day_J = $Data_J['day'];
+            $day_J =$Data_J['day'];
             $data_J = $Data_J['day'] . '.' . $Data_J['month'] . '.' . $Data_J['year'];
             $data_G = $request->Day . '.' . $request->Month . '.' . $request->Year;
         }
@@ -84,7 +84,6 @@ class KaddishController extends Controller
             'Order' => (bool)$request->Order,
             'Difference_Year' => $Difirence_Year,
         ];
-
 //Заполнение базы клиентов в случе отсутсвия почты и эмейла
         $client = Clients::firstOrCreate(["Email" => $request->Email, "Phone_number" => $request->Phone]);
         if (isset($request->First_Name) && isset($request->Last_Name)) {
@@ -105,12 +104,12 @@ $addMonth = cal_from_jd( unixtojd( strtotime($data_G .'+10 month') ), CAL_JEWISH
             if ($Difirence_Year == true) {
 
                 event(new RemindKaddishPayMin11( $request->Email, $request->Lang ,$request->Name_of_Deceased,$request->Name_Father_Deceased,$addMonth ));
-                event(new RemindKaddishPayMin11( 'zeevwk@gmail.com', $request->Lang ,$request->Name_of_Deceased,$request->Name_Father_Deceased,$addMonth ));
+                event(new RemindKaddishPayMin11( 'zeevwk@gmail.com' , $request->Lang ,$request->Name_of_Deceased,$request->Name_Father_Deceased,$addMonth ));
 
             }else{
 
                 event(new RemindKaddishPayMax11( $request->Email, $request->Lang,$request->Name_of_Deceased,$request->Name_Father_Deceased ));
-                event(new RemindKaddishPayMax11( 'zeevwk@gmail.com', $request->Lang,$request->Name_of_Deceased,$request->Name_Father_Deceased ));
+                event(new RemindKaddishPayMax11( 'zeevwk@gmail.com' , $request->Lang,$request->Name_of_Deceased,$request->Name_Father_Deceased ));
 
             }
         } else {
@@ -118,12 +117,12 @@ $addMonth = cal_from_jd( unixtojd( strtotime($data_G .'+10 month') ), CAL_JEWISH
             if ($Difirence_Year == true) {
 
                 event(new RemindKaddishMin11( $request->Email, $request->Lang,$request->Name_of_Deceased,$request->Name_Father_Deceased ));
-                event(new RemindKaddishMin11( 'zeevwk@gmail.com', $request->Lang,$request->Name_of_Deceased,$request->Name_Father_Deceased ));
+                event(new RemindKaddishMin11( 'zeevwk@gmail.com' , $request->Lang,$request->Name_of_Deceased,$request->Name_Father_Deceased ));
 
             }else{
 
                 event(new RemindKaddishMax11( $request->Email, $request->Lang,$request->Name_of_Deceased,$request->Name_Father_Deceased ));
-                event(new RemindKaddishMax11( 'zeevwk@gmail.com', $request->Lang,$request->Name_of_Deceased,$request->Name_Father_Deceased ));
+                event(new RemindKaddishMax11( 'zeevwk@gmail.com' , $request->Lang,$request->Name_of_Deceased,$request->Name_Father_Deceased ));
             }
         }
         return $item;
