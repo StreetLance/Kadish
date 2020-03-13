@@ -33,7 +33,7 @@ class KadishCrudController extends CrudController
         $this->crud->setRoute(config('backpack.base.route_prefix') . '/Kadish');
         $this->crud->setEntityNameStrings('kadish', 'kaddishes');
         $this->crud->with('client');
-        $this->crud->orderBy('Client_id','DESC');
+//        $this->crud->orderBy('Client_id','DESC');
 
 
         $this->crud->addFilter([ // add a "simple" filter called Draft
