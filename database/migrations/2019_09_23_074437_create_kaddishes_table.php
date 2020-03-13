@@ -19,7 +19,7 @@ class CreateKaddishesTable extends Migration
             $table->string('Fathers_Name');
             $table->string('G_Date');
             $table->string('J_Date');
-            $table->string('Jday');
+            $table->integer('Jday');
             $table->string('Lang');
             $table->boolean('After_sunset');
             $table->boolean('Order');

@@ -47,12 +47,14 @@ class KaddishController extends Controller
         //Форматирвоание и сборка пришедшей даты
         if ($request->DataSet == "J") {
             $data_J = $request->Day . '.' . $request->Month . '.' . $request->Year;
+            $day_J = $request->Day;
             $jd = jewishtojd($request->Month, $request->Day, $request->Year);
             $data = cal_from_jd($jd, CAL_GREGORIAN);
             $data_G = $data['day'] . '.' . $data['month'] . '.' . $data['year'];
         } else {
             $jd = unixtojd(mktime(0, 0, 0, $request->Month, $request->Day, $request->Year));
             $Data_J = cal_from_jd($jd, CAL_JEWISH);
+            $day_J = $Data_J['day'];
             $data_J = $Data_J['day'] . '.' . $Data_J['month'] . '.' . $Data_J['year'];
             $data_G = $request->Day . '.' . $request->Month . '.' . $request->Year;
         }
@@ -76,6 +78,7 @@ class KaddishController extends Controller
             'Fathers_Name' => $request->Name_Father_Deceased,
             'G_Date' => $data_G,
             'J_Date' => $data_J,
+            'Jday' => $day_J,
             'Lang' => $request->Lang,
             'After_sunset' => (bool)$request->Sunset,
             'Order' => (bool)$request->Order,
